@@ -1,11 +1,20 @@
+import os
 from reportlab.lib.pagesizes import A4
 from reportlab.lib.units import cm
 from reportlab.pdfgen import canvas
-import os
 
 def txt_to_pdf(txt_path, title):
-    # Verzeichnis erstellen, falls es nicht existiert
-    output_dir = f"Lösungen/PDF"
+    # Basisverzeichnis dynamisch vom Skriptverzeichnis ableiten
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    full_txt_path = os.path.join(base_dir, txt_path)
+
+    # Überprüfen, ob die Datei existiert
+    if not os.path.isfile(full_txt_path):
+        print(f"Fehler: Die Datei '{full_txt_path}' wurde nicht gefunden.")
+        return
+
+    # Ausgabe-Verzeichnis erstellen
+    output_dir = os.path.join(base_dir, "Lösungen", "PDF")
     os.makedirs(output_dir, exist_ok=True)
 
     # Pfad zur Ausgabedatei
@@ -25,7 +34,7 @@ def txt_to_pdf(txt_path, title):
     text_obj.setLeading(20)  # Zeilenabstand
 
     # .txt-Datei lesen und Zeilen hinzufügen
-    with open(txt_path, 'r', encoding='utf-8') as txt_file:
+    with open(full_txt_path, 'r', encoding='utf-8') as txt_file:
         for line in txt_file:
             text_obj.textLine(line.strip('\n'))
 
@@ -35,5 +44,5 @@ def txt_to_pdf(txt_path, title):
 
     print(f"PDF wurde gespeichert unter: {pdf_path}")
 
-# Beispielaufruf
-txt_to_pdf("Lösungen/yourfile.txt", "Beispielüberschrift")
+# Beispielaufruf, Verzeichnis wird relativ zum Skriptpfad ermittelt
+txt_to_pdf("Lösungen/UserCase/2.2ÜbungUseCase.txt", "Use Case Übung 2.2")

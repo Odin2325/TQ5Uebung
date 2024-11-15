@@ -1,0 +1,36 @@
+UseCase Name: Event System
+Akteure: Veranstalter, Administrator, Teilnehmer
+
+Ziel: Der Veranstalter erstellt ein Event und plant Ressourcen sowie Zeitablauf, sodass Teilnehmer sich anmelden können und alle relevanten Informationen bereitgestellt werden.
+
+Vorbedingungen:
+- Der Veranstalter ist eingeloggt.
+- Der Kalender und die Ressourcenverfügbarkeit sind auf dem neuesten Stand.
+
+Nachbedingungen:
+- Das Event ist im Eventkalender sichtbar.
+- Alle reservierten Ressourcen sind für das Event gebucht.
+- Teilnehmer sind über das Event informiert und können sich anmelden
+
+Hauptablauf:
+- Der Veranstalter navigiert zum Dashboard und wählt „Neues Event erstellen“.
+- Der Veranstalter gibt grundlegende Eventinformationen ein (Eventname, Datum, Uhrzeit, Beschreibung).
+- Der Veranstalter überprüft und reserviert benötigte Ressourcen (z. B. Räume, Technik).
+- Das System überprüft die Ressourcenverfügbarkeit und bestätigt die Reservierung.
+- Der Veranstalter gibt das Event frei, damit es im Kalender für Teilnehmer sichtbar ist.
+- Teilnehmer melden sich für das Event an.
+- Das System bestätigt die Anmeldungen und aktualisiert die Teilnehmerliste.
+
+Alternativabläufe:
+A1 -->
+-  Der Veranstalter gibt ein nicht verfügbares Datum oder eine nicht verfügbare Ressource ein.
+- Das System zeigt eine Fehlermeldung, und der Veranstalter kann das Datum oder die Ressource anpassen.
+A2 -->
+- Der Veranstalter möchte das Event nach der Veröffentlichung ändern.
+- Das System erlaubt Bearbeitungen und sendet Benachrichtigungen an alle angemeldeten Teilnehmer über die Änderungen.
+
+Ausnahmen:
+E1 -->
+- Der Server ist aufgrund von Wartungsarbeiten nicht verfügbar.
+E2 -->
+Der Veranstalter hat keine Berechtigung zur Erstellung eines Events.
