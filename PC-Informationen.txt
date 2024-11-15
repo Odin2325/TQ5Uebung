@@ -1,0 +1,49 @@
+$currentUsername = $env:USERNAME
+$computerName = $env:COMPUTERNAME
+$timeStamp = Get-Date -Format "ss-mm-HH-dd-MM-yyyy"
+$desktopPath = [System.IO.Path]::Combine($env:USERPROFILE, 'Desktop')
+$outputFileName = "${timeStamp}_${currentUsername}_${computerName}.csv"
+$outputFile = [System.IO.Path]::Combine($desktopPath, $outputFileName)
+$installedApps = Get-ItemProperty -Path "HKLM:\Software\Microsoft\Windows\CurrentVersion\Uninstall\*" | Where-Object { $_.DisplayName -ne $null }
+$installedAppsList = $installedApps | ForEach-Object {"$($_.DisplayName) ($($_.DisplayVersion))"}
+$firewallStatus = Get-NetFirewallProfile | Select-Object -ExpandProperty Enabled
+$firewallStatusNames = "Domain", "Private", "Public"
+$wlanAdapter = Get-NetAdapter | Where-Object { $_.Name -eq "WLAN" -and $_.Status -eq "Up" }
+$ethernetAdapter = Get-NetAdapter | Where-Object { $_.Name -eq "Ethernet" -and $_.Status -eq "Up" }
+$lanAdapter = Get-NetAdapter | Where-Object { $_.Name -eq "LAN-Verbindung" -and $_.Status -eq "Up" }
+$admins = Get-LocalGroupMember -Group "Administratoren"
+$autostartPath = Join-Path -Path $env:APPDATA -ChildPath "Microsoft\Windows\Start Menu\Programs\Startup"
+$autostartPrograms = Get-ChildItem -Path $autostartPath | Select-Object -ExpandProperty Name
+
+# Ermittle die maximale Anzahl von Elementen in den verschiedenen Arrays
+$maxCount = 0
+$maxCount = [Math]::Max($maxCount, $installedAppsList.Count)
+$maxCount = [Math]::Max($maxCount, $firewallStatusNames.Count)
+$maxCount = [Math]::Max($maxCount, $wlanAdapter.Count)
+$maxCount = [Math]::Max($maxCount, $ethernetAdapter.Count)
+$maxCount = [Math]::Max($maxCount, $lanAdapter.Count)
+$maxCount = [Math]::Max($maxCount, $admins.Count)
+$maxCount = [Math]::Max($maxCount, $autostartPrograms.Count)
+# Erstelle ein leeres Array, um Zeilen zu speichern
+$data = @()
+
+for ($i = 0; $i -lt $maxCount; $i++) {
+    $app = if ($i -lt $installedAppsList.Count) { $installedAppsList[$i] } else { $null }
+    $statusName = if ($i -lt $firewallStatusNames.Count) { $firewallStatusNames[$i] } else { $null }
+    $wlan = if ($i -lt $wlanAdapter.Count) { $wlanAdapter[$i].MacAddress } else { $null }
+    $ethernet = if ($i -lt $ethernetAdapter.Count) { $ethernetAdapter[$i].MacAddress } else { $null }
+    $lan = if ($i -lt $lanAdapter.Count) { $lanAdapter[$i].MacAddress } else { $null }
+    $admin = if ($i -lt $admins.Count) { $admins[$i].Name } else { $null }
+    $autostart = if ($i -lt $autostartPrograms.Count) { $autostartPrograms[$i] } else { $null }
+    
+    $data += [PSCustomObject]@{
+        "WLAN MAC-Adresse"       = $wlan
+        "Ethernet MAC-Adresse"   = $ethernet
+        "LAN MAC-Adresse"        = $lan
+        "Firewall Status"        = $statusName -as [string]
+        "Autostart Anwendung"    = $autostart
+        "Administrator"          = $admin
+        "Anwendung"              = $app
+    }
+}
+$data | Export-Csv -Path $outputFile -NoTypeInformation -Delimiter ";" -Encoding UTF8
