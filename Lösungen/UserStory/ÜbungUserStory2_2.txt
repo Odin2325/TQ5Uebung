@@ -1,0 +1,12 @@
+Titel: Event System
+
+Beschreibung:
+Als Veranstalter möchte ich ein Event erstellen und die benötigten Ressourcen wie Räume und Technik reservieren können, damit ich das Event erfolgreich organisieren und Teilnehmer informieren kann.
+
+Akzeptanzkriterien:
+- Der Veranstalter kann Eventdetails wie Name, Datum, Uhrzeit und Beschreibung eingeben.
+- Der Veranstalter kann verfügbare Ressourcen auswählen und für das Event reservieren.
+- Das System überprüft die Verfügbarkeit der Ressourcen und zeigt eine Bestätigung der Reservierung an.
+- Das Event wird nach der Erstellung im Eventkalender angezeigt und ist für Teilnehmer sichtbar.
+- Teilnehmer können sich für das Event anmelden und erhalten eine Bestätigung der Anmeldung.
+- Der Veranstalter kann das Event nach der Veröffentlichung bearbeiten oder stornieren, wobei Änderungen den Teilnehmern mitgeteilt werden.

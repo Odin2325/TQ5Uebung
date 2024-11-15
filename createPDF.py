@@ -1,48 +1,90 @@
+from reportlab.lib import colors
+from reportlab.lib.pagesizes import letter
+from reportlab.lib.styles import getSampleStyleSheet, ParagraphStyle
+from reportlab.platypus import SimpleDocTemplate, Paragraph, Table, TableStyle, Spacer
 import os
-from reportlab.lib.pagesizes import A4
-from reportlab.lib.units import cm
-from reportlab.pdfgen import canvas
 
-def txt_to_pdf(txt_path, title):
-    # Basisverzeichnis dynamisch vom Skriptverzeichnis ableiten
-    base_dir = os.path.dirname(os.path.abspath(__file__))
-    full_txt_path = os.path.join(base_dir, txt_path)
+def txt_to_pdf(filePath, überschrift, targetPath):
+    # Dokument erstellen
+    document = SimpleDocTemplate(
+        targetPath,
+        pagesize=letter,
+        leftMargin=20,
+        rightMargin=20,
+        topMargin=20,
+        bottomMargin=20
+    )
+    
+    # Stile definieren
+    styles = getSampleStyleSheet()
 
-    # Überprüfen, ob die Datei existiert
-    if not os.path.isfile(full_txt_path):
-        print(f"Fehler: Die Datei '{full_txt_path}' wurde nicht gefunden.")
-        return
+    # Erstellen eines benutzerdefinierten ParagraphStyle für die Überschrift
+    überschrift_style = ParagraphStyle(
+        name="ÜberschriftStyle",
+        parent=styles['Heading1'],  # Hier kannst du den Standardstil für Überschrift nutzen
+        fontSize=18,  # Schriftgröße auf 18 setzen
+        alignment=1,  # Zentrieren
+        spaceAfter=12,  # Abstand nach der Überschrift
+    )
+    
+    # Benutzerdefinierten Stil für den Fließtext erstellen
+    text_style = ParagraphStyle(
+        name="TextStyle",
+        fontSize=12,  # Standard-Schriftgröße für den Text
+        alignment=0,  # Links ausrichten
+        spaceAfter=8,  # Abstand nach jedem Absatz
+    )
 
-    # Ausgabe-Verzeichnis erstellen
-    output_dir = os.path.join(base_dir, "Lösungen", "PDF")
-    os.makedirs(output_dir, exist_ok=True)
+    elements = []
 
-    # Pfad zur Ausgabedatei
-    pdf_path = os.path.join(output_dir, f"{title}.pdf")
+    # Überschrift hinzufügen
+    überschrift_data = [
+        [Paragraph(f"<b>{überschrift}</b>", überschrift_style)]
+    ]
+    überschrift_table = Table(überschrift_data, colWidths=250)
+    überschrift_table.setStyle(TableStyle([
+        ('VALIGN', (0, 0), (-1, -1), 'TOP'),
+        ('ALIGN', (0, 0), (-1, -1), 'CENTER'),
+        ('GRID', (0, 0), (-1, -1), 0, colors.black)
+    ]))
+    elements.append(überschrift_table)
+    elements.append(Spacer(1, 40))
+
+    # Text aus der .txt-Datei einlesen
+    if os.path.exists(filePath):
+        with open(filePath, 'r', encoding='utf-8') as file:
+            text_content = file.read()
+
+        # Den Text in Absätze aufteilen und einfügen
+        for paragraph in text_content.split('\n'):
+            p = Paragraph(paragraph, text_style)
+            elements.append(p)
+    else:
+        print(f"Die Datei {filePath} existiert nicht.")
 
     # PDF erstellen
-    c = canvas.Canvas(pdf_path, pagesize=A4)
-    width, height = A4
+    document.build(elements)
 
-    # Titel hinzufügen
-    c.setFont("Helvetica-Bold", 25)
-    c.drawCentredString(width / 2.0, height - 2 * cm, title)
+    print(f"PDF wurde erstellt.\nPfad: {filePath}\nName: {überschrift}")
 
-    # Inhalt der .txt-Datei lesen und in die PDF schreiben
-    c.setFont("Helvetica", 16)
-    text_obj = c.beginText(2 * cm, height - 4 * cm)
-    text_obj.setLeading(20)  # Zeilenabstand
+# Beispielaufruf
+if __name__ == "__main__":
+    # Nicht Verändern
+    useCase = "Lösungen/UseCase/"
+    userStory = "Lösungen/UserStory/"
+    txt = ".txt"
+    pdf = ".pdf"
 
-    # .txt-Datei lesen und Zeilen hinzufügen
-    with open(full_txt_path, 'r', encoding='utf-8') as txt_file:
-        for line in txt_file:
-            text_obj.textLine(line.strip('\n'))
+    # Hier anpassen
+    fileName = "ÜbungUserStory2_2"
+    überschrift = "UserStory Übung 2.2"
 
-    # Inhalt zur PDF-Seite hinzufügen und speichern
-    c.drawText(text_obj)
-    c.save()
+    # Passe hier nur userStory/useCase an
+    useFile = f"{userStory}{fileName}{txt}"
+    targetPath = f"Lösungen/PDF/{fileName}{pdf}"
 
-    print(f"PDF wurde gespeichert unter: {pdf_path}")
-
-# Beispielaufruf, Verzeichnis wird relativ zum Skriptpfad ermittelt
-txt_to_pdf("Lösungen/UserCase/2.2ÜbungUseCase.txt", "Use Case Übung 2.2")
+    if os.path.exists(useFile):
+        print("Starte mit dem Erstellen der PDF.")
+        txt_to_pdf(useFile, überschrift, targetPath)
+    else:
+        print("Text-Datei nicht gefunden.")
