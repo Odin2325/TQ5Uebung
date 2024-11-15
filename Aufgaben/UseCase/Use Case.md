@@ -17,6 +17,6 @@
     1. Der Benutzer wählt Vormerken aus 
     1. Der Benutzer erhält Bestätigung über erfolgreiches Vormerken
 * Alternativabläufe:
-    *A1:* Es sind keine ausleihbaren Exemplare vorhanden, dann kann Vormerken nicht durchgeführt werden
+    * *A1:* Es sind keine ausleihbaren Exemplare vorhanden, dann kann Vormerken nicht durchgeführt werden
 * Ausnahmen:
-    *E1:* Der Benutzer hat unbeglichene Mahngebühren
+    * *E1:* Der Benutzer hat unbeglichene Mahngebühren
