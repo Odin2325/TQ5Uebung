@@ -1,0 +1,854 @@
+[CmdletBinding(DefaultParameterSetName = "ByCsvFile")]
+Param(
+    [Parameter(Mandatory=$false,Position=0,ParameterSetName='ByCsvFile')]
+    [ValidateNotNullOrEmpty()]
+    [System.String]$CsvFile,
+
+    [Parameter(Mandatory=$false,Position=0,ParameterSetName='ByManual')]
+    [ValidateNotNullOrEmpty()]
+    [System.String]$GroupName,
+
+    [Parameter(Mandatory=$false,Position=1,ParameterSetName='ByManual')]
+    [ValidateNotNullOrEmpty()]
+    [System.String]$AddComputerName,
+    
+    [Parameter(Mandatory=$false,Position=2,ParameterSetName='ByManual')]
+    [ValidateNotNullOrEmpty()]
+    [System.String]$RemoveComputerName,
+    
+    [Parameter(Mandatory=$false,Position=1,ParameterSetName='ByCsvFile')]
+    [Parameter(Mandatory=$false,Position=3,ParameterSetName='ByManual')]
+    [ValidateNotNullOrEmpty()]
+    [System.String]$LogFile
+)
+
+Begin {
+function Get-abcAdComputer {
+    <#
+   	 .SYNOPSIS
+   		 Sucht in der angebenen Domäne nach Computer Objekte.
+
+   	 .DESCRIPTION
+   		 Sucht in der angebenen Domäne nach Computer Objekte, die entweder durch Namen, Beschreibungen oder den DistinguishedName gefiltert werden können.
+
+   	 .PARAMETER
+   		 ComputerName
+
+   	 .PARAMETER
+   		 Description
+
+   	 .PARAMETER
+   		 DistinguishedName
+
+   	 .PARAMETER
+   		 Domain
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -Name <ComputerName>
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -Name <ComputerName> -Domain <DomainName>
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -Description <GruppenBeschreibung>
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -Description <GruppenBeschreibung> -Domain <DomainName>
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -DistinguishedName <GruppenDistinguishedName>
+
+   	 .EXAMPLE
+   		 Get-abcAdComputer -DistinguishedName <GruppenDistinguishedName> -Domain <DomainName>
+
+   	 .NOTES
+
+   	 .LINK
+   		 https://www.abc.de
+    #>
+
+    [CmdletBinding(DefaultParameterSetName = "__AllParameterSets")]
+    Param(
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='Name')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Name,
+
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='Description')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Description,
+
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='DistinguishedName')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$DistinguishedName,
+
+   	 [Parameter(Mandatory=$false,Position=1,ParameterSetName='Name')]
+   	 [Parameter(Mandatory=$false,Position=1,ParameterSetName='Description')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$NotMatch,
+
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='Name')]
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='Description')]
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='DistinguishedName')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Domain = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().Domains.Name
+    )
+
+    Begin {
+   	 # region Define Output PSCustomObject Array Object
+   	 $abcAdComputer = [PSCustomObject]@()
+   	 # endregion Define Output PSCustomObject Array Object
+
+   	 # region Define Directory Searcher
+   	 $DirectorySearcher = New-Object -TypeName System.DirectoryServices.DirectorySearcher -ErrorAction 'Stop' -ErrorVariable ErrorDirectorySearcher
+
+   	 $DirectorySearcher.PageSize = 200
+   	 # $Properties = 'name', 'description', 'dnshostname', 'operatingsystem', 'operatingsystemversion', 'whencreated', 'whenchanged', 'distinguishedname', 'adspath', 'memberof'
+   	 $Properties = 'name', 'description', 'dnshostname', 'operatingsystem', 'operatingsystemversion',
+   				 'whencreated', 'whenchanged', 'distinguishedname', 'adspath', 'memberof',
+   				 'lastlogon', 'lastlogontimestamp', 'NetBootGuid'
+    
+   	 # $Properties = 'name', 'description', 'distinguishedname', 'info', 'whencreated', 'whenchanged', 'lastlogon', 'lastlogontimestamp', 'adspath', 'member'
+   	 foreach ($Prop in $Properties){ $DirectorySearcher.PropertiesToLoad.Add($Prop)| out-null }
+   	 # $DirectorySearcher.SearchScope = "Subtree"
+   	 # $DirectorySearcher.SizeLimit = 1000
+   	 
+   	 # region DEFINE Directory Searcher Filter
+   	 $DirectorySearcher.Filter = '(objectCategory=Computer)'
+   	 $Filter = [PSCustomObject]@()
+   	 # region Add Directory Searcher Group Name
+   	 if ($PSCmdlet.ParameterSetName -eq 'Name') {
+   		 foreach ($GpName in $Name) {
+   			 $FilterName = '(cn={0})' -f $GpName
+   			 if ($NotMatch) {
+   				 $FilterNotMatch = [PSCustomObject]@()
+   				 foreach ($NoMat in $NotMatch) { $FilterNotMatch += '(cn={0})' -f $NoMat }
+   				 if ($FilterNotMatch.Count -gt 1) { $FilterName = '(&{0}(!(|{1})))' -f $FilterName, ($FilterNotMatch -Join ('')) }
+   				 else { $FilterName = '(&{0}(!{1}))' -f $FilterName, ($FilterNotMatch -Join ('')) }
+   			 }
+   			 $Filter += $FilterName
+   		 }
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f ($Filter -Join ('')) }
+   		 else { $SearcherFilter = $Filter -Join ('') }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f $DirectorySearcher.Filter, $SearcherFilter)   	 
+   	 }
+   	 # endregion Add Directory Searcher Group Name
+
+   	 # region Add Directory Searcher Group Description
+   	 if ($PSCmdlet.ParameterSetName -eq 'Description') {
+   		 foreach ($GPDisc in $Description) {
+   			 $FilterName = '(description={0})' -f $GpDisc
+   			 if ($NotMatch) {
+   				 $FilterNotMatch = [PSCustomObject]@()
+   				 foreach ($NoMat in $NotMatch) { $FilterNotMatch += '(description={0})' -f $NoMat }
+   				 if ($FilterNotMatch.Count -gt 1) { $FilterName = '(&{0}(!(|{1})))' -f $FilterName, ($FilterNotMatch -Join ('')) }
+   				 else { $FilterName = '(&{0}(!{1}))' -f $FilterName, ($FilterNotMatch -Join ('')) }
+   			 }
+   			 $Filter += $FilterName
+   		 }
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f ($Filter -Join ('')) }
+   		 else { $SearcherFilter = $Filter -Join ('') }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f ($DirectorySearcher.Filter.Substring(0,$DirectorySearcher.Filter.Length)), $SearcherFilter)
+   	 }
+   	 # endregion Add Directory Searcher Group Description
+
+   	 # region Add Directory Searcher Group DistinguishedName
+   	 if ($PSCmdlet.ParameterSetName -eq 'DistinguishedName') {
+   		 foreach ($GpDistinguishedName in $DistinguishedName) {
+   			 $Filter += '(distinguishedname={0})' -f $DistinguishedName
+   		 }
+   		 $SearcherFilter = $Filter -Join ('')
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f $SearcherFilter }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f ($DirectorySearcher.Filter.Substring(0,$DirectorySearcher.Filter.Length)), $SearcherFilter)
+   	 }
+   	 # endregion Add Directory Searcher Group DistinguishedName
+
+   	 Write-Verbose -Message ('DirectorySearcher Filter : {0}' -f $DirectorySearcher.Filter)
+   	 # endregion DEFINE Directory Searcher Filter
+
+   	 # endregion Define Directory Searcher
+    }
+
+    Process {
+   	 if (-not [System.String]::IsNullOrEmpty($Domain)) {
+   		 foreach ($DomainName in $Domain) {
+   			 # region Add Directory Searcher SearchRoot
+   			 if ($DomainName -notlike 'LDAP://*') { $DomainName = 'LDAP://{0}' -f $DomainName}
+   			 $DirectorySearcher.SearchRoot = $DomainName
+   			 Write-Verbose -Message ('DirectorySearcher SearchRoot : {0}' -f $DirectorySearcher.SearchRoot.Path)
+   			 # endregion Add Directory Searcher SearchRoot
+
+   			 foreach ($Object in $DirectorySearcher.FindAll()) {
+   				 # region Define PSCustomObject Hash Object
+   				 $Created = $Object.Properties.item("whencreated")
+   				 $Modified = $Object.Properties.item("whenchanged")
+   				 $LastLogon = $Object.Properties.item("lastlogon")
+   				 if ($LastLogon -gt 0) {
+   					 $LastLogon = (Get-Date ([System.DateTime]::FromFileTime($($LastLogon))))
+   				 }
+   				 else { $LastLogon = '' }
+   					 
+   				 $LastLogonTimestamp = $Object.Properties.item("lastlogontimestamp")
+   				 if ($LastLogonTimestamp -gt 0) {
+   					 $LastLogonTimestamp = (Get-Date ([System.DateTime]::FromFileTime($($LastLogonTimestamp))))
+   				 }
+   				 else { $LastLogonTimestamp = '' }
+   				 $LastFailedInteractiveLogonTime = $Object.Properties.item("msds-lastfailedinteractivelogontime")
+   				 $LastSuccessfulInteractiveLogonTime = $Object.Properties.item("msds-lastsuccessfulinteractivelogontime")
+
+   				 $MemberOf = [System.Array]$Object.Properties.item("memberof")
+   				 
+   				 $DnsHostName = [System.String]$Object.Properties.item("dnshostname")
+   				 
+   				 $IPv4Address =  try { [System.Net.Dns]::GetHostByName($DnsHostName).AddressList } catch { [System.Net.IPAddress]::None }
+
+   				 $AdComputer = [Ordered]@{
+   					 'Name' = [System.String]$Object.Properties.item("name")
+   					 'Description' = [System.String]$Object.Properties.item("description")
+   					 'DnsHostName' = $DnsHostName
+   					 'IPv4Address' = $IPv4Address
+   					 'Created' = (Get-Date ($Created.DateTime))
+   					 'Modified' = (Get-Date ($Modified.DateTime))
+   					 'LastLogon' = $LastLogon
+   					 'LastLogonTimestamp' = $LastLogonTimestamp
+   					 'OperatingSystem' = [System.String]$Object.Properties.item("operatingsystem")
+   					 'OperatingSystemVersion' = [System.String]$Object.Properties.item("operatingsystemversion")
+   					 # 'Created' = (Get-Date ($Created.DateTime) -Format 'yyyy-MM-dd HH:mm:ss')
+   					 # 'Modified' = (Get-Date ($Modified.DateTime) -Format 'yyyy-MM-dd HH:mm:ss')
+   					 # 'LastFailedInteractiveLogonTime' = $LastFailedInteractiveLogonTime
+   					 # 'LastSuccessfulInteractiveLogonTime' = $LastSuccessfulInteractiveLogonTime
+   					 'DistinguishedName' = [System.String]$Object.Properties.item("distinguishedname")
+   					 'AdsPath' = [System.String]$Object.Properties.item("adspath")
+   					 'MemberOfCount' = $MemberOf.Count
+   					 'MemberOf' = $MemberOf
+   				 }
+   				 # endregion Define PSCustomObject Hash Object
+
+   				 # region Define PSCustomObject Default Display Properties
+   				 $AdComputer = [PSCustomObject]$AdComputer
+   				 $AdComputer.PSObject.TypeNames.Insert(0,'abc.AD.Computer')
+   				 $defaultDisplaySet = 'Name', 'OperatingSystem', 'LastLogonTimestamp', 'Description'
+   				 $defaultDisplayPropertySet = New-Object System.Management.Automation.PSPropertySet('DefaultDisplayPropertySet',[string[]]$defaultDisplaySet)
+   				 $PSStandardMembers = [System.Management.Automation.PSMemberInfo[]]@($defaultDisplayPropertySet)
+   				 $AdComputer | Add-Member -MemberType MemberSet -Name PSStandardMembers -Value $PSStandardMembers -Force
+   				 # endregion Define PSCustomObject Default Display Properties
+
+   				 # region Add PSCustomObject Hash Object to PSCustomObject Array Object
+   				 $abcAdComputer += $AdComputer
+   				 # $AdComputer
+   				 # endregion Add PSCustomObject Hash Object to PSCustomObject Array Object
+   			 }
+   		 }
+
+   		 # region Return Output PSCustomObject Array Object
+   		 $abcAdComputer
+   		 # endregion Return Output PSCustomObject Array Object
+   	 }
+    }
+
+    End {
+    }
+}
+function Get-abcAdGroup {
+    <#
+   	 .SYNOPSIS
+   		 Sucht in der angebenen Domäne nach Gruppen Objekten.
+
+   	 .DESCRIPTION
+   		 Sucht in der angebenen Domäne nach Gruppen Objekten, die entweder durch den Namen, Beschreibungen oder dem DistinguishedName gefiltert werden können.
+
+   	 .PARAMETER
+   		 Name
+
+   	 .PARAMETER
+   		 Description
+
+   	 .PARAMETER
+   		 DistinguishedName
+
+   	 .PARAMETER
+   		 Domain
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -Name <GruppenName>
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -Name <GruppenName> -Domain <DomainName>
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -Description <GruppenBeschreibung>
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -Description <GruppenBeschreibung> -Domain <DomainName>
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -DistinguishedName <GruppenDistinguishedName>
+
+   	 .EXAMPLE
+   		 Get-abcAdGroup -DistinguishedName <GruppenDistinguishedName> -Domain <DomainName>
+
+   	 .NOTES
+
+   	 .LINK
+   		 https://www.abc.de
+    #>
+    [CmdletBinding(DefaultParameterSetName = "__AllParameterSets")]
+    Param(
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='Name')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Name,
+
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='Description')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Description,
+
+   	 [Parameter(Mandatory=$false,Position=0,ParameterSetName='DistinguishedName')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$DistinguishedName,
+
+   	 [Parameter(Mandatory=$false,Position=1,ParameterSetName='Name')]
+   	 [Parameter(Mandatory=$false,Position=1,ParameterSetName='Description')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String]$NotMatch,
+
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='Name')]
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='Description')]
+   	 [Parameter(Mandatory=$false,Position=2,ParameterSetName='DistinguishedName')]
+   	 [ValidateNotNullorEmpty()]
+   	 [System.String[]]$Domain = [System.DirectoryServices.ActiveDirectory.Forest]::GetCurrentForest().Domains.Name
+    )
+
+    Begin {
+   	 # region Define Output PSCustomObject Array Object
+   	 $abcAdGroup = [PSCustomObject]@()
+   	 # endregion Define Output PSCustomObject Array Object
+
+   	 # region Define Directory Searcher
+   	 $DirectorySearcher = New-Object -TypeName System.DirectoryServices.DirectorySearcher -ErrorAction 'Stop' -ErrorVariable ErrorDirectorySearcher
+   	 
+   	 $DirectorySearcher.PageSize = 200
+   	 $Properties = 'name', 'description', 'distinguishedname', 'info', 'whencreated', 'whenchanged', 'adspath', 'member'
+   	 foreach ($Prop in $Properties){ $DirectorySearcher.PropertiesToLoad.Add($Prop)| out-null }
+   	 # $DirectorySearcher.SearchScope = "Subtree"
+   	 # $DirectorySearcher.SizeLimit = 1000
+   	 
+   	 # region DEFINE Directory Searcher Filter
+   	 $DirectorySearcher.Filter = '(objectCategory=Group)'
+   	 $Filter = [PSCustomObject]@()
+   	 # region Add Directory Searcher Group Name
+   	 if ($PSCmdlet.ParameterSetName -eq 'Name') {
+   		 foreach ($GpName in $Name) {
+   			 $FilterName = '(cn={0})' -f $GpName
+   			 if ($NotMatch) { $FilterName = '(&({0})(!(cn={1})))' -f $FilterName, $NotMatch }
+   			 $Filter += $FilterName
+   		 }
+
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f $SearcherFilter }
+   		 else { $SearcherFilter = $Filter -Join ('') }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f ($DirectorySearcher.Filter.Substring(0,$DirectorySearcher.Filter.Length)), $SearcherFilter)
+   		 }
+   	 # endregion Add Directory Searcher Group Name
+
+   	 # region Add Directory Searcher Group Description
+   	 if ($PSCmdlet.ParameterSetName -eq 'Description') {
+   		 foreach ($GPDisc in $Description) {
+   			 $FilterName = '(description={0})' -f $GpDisc
+   			 if ($NotMatch) { $FilterName = '(&({0})(!(description={1})))' -f $FilterName, $NotMatch }
+   			 $Filter += $FilterName
+   		 }
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f $SearcherFilter }
+   		 else { $SearcherFilter = $Filter -Join ('') }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f ($DirectorySearcher.Filter.Substring(0,$DirectorySearcher.Filter.Length)), $SearcherFilter)
+   	 }
+   	 # endregion Add Directory Searcher Group Description
+
+   	 # region Add Directory Searcher Group DistinguishedName
+   	 if ($PSCmdlet.ParameterSetName -eq 'DistinguishedName') {
+   		 foreach ($GpDistinguishedName in $DistinguishedName) {
+   			 $Filter += '(distinguishedname={0})' -f $DistinguishedName
+   		 }
+   		 $SearcherFilter = $Filter -Join ('')
+   		 if ($Filter.Count -gt 1) { $SearcherFilter = '(|{0})' -f $SearcherFilter }
+   		 $DirectorySearcher.Filter = ('(&{0}{1})' -f ($DirectorySearcher.Filter.Substring(0,$DirectorySearcher.Filter.Length)), $SearcherFilter)
+   	 }
+   	 # endregion Add Directory Searcher Group DistinguishedName
+
+   	 Write-Verbose -Message ('DirectorySearcher Filter : {0}' -f $DirectorySearcher.Filter)
+   	 # endregion DEFINE Directory Searcher Filter
+
+   	 # endregion Define Directory Searcher
+    }
+
+    Process {
+   	 if (-not [System.String]::IsNullOrEmpty($Domain)) {
+   		 foreach ($DomainName in $Domain) {
+   			 # region DEFINE Directory Searcher SearchRoot
+   			 if ($DomainName -notlike 'LDAP://*') { $DomainName = 'LDAP://{0}' -f $DomainName}
+   			 $DirectorySearcher.SearchRoot = $DomainName
+   			 Write-Verbose -Message ('DirectorySearcher SearchRoot : {0}' -f $DirectorySearcher.SearchRoot.Path)
+   			 # endregion DEFINE Directory Searcher SearchRoot
+   			 
+   			 # region GET Directory Searcher Objects
+   			 if ($AdObjects = $DirectorySearcher.FindAll()) {
+   				 try {
+   					 foreach ($Object in $AdObjects) {
+   						 $i++
+   						 Write-Verbose ("AD Object  : {0}`n{1}" -f $Object.Properties.name.Trim(), ($Object.Properties | Out-String))
+   						 # region DEFINE Ordered Hash Object
+   						 $Created = $Object.Properties.whencreated.datetime
+   						 $Modified = $Object.Properties.whenchanged.datetime
+
+   						 $AdGroup = [Ordered]@{
+   							 'Name'= [System.String]($Object.Properties.name)
+   							 'Description' = [System.String]($Object.Properties.description)
+   							 'DistinguishedName' = [System.String]($Object.Properties.distinguishedname)
+   							 'Info' = [System.String]($Object.Properties.info)
+   							 'Created' = (Get-Date ($Created) -Format 'yyyy-MM-dd HH:mm:ss')
+   							 'Modified' = (Get-Date ($Modified) -Format 'yyyy-MM-dd HH:mm:ss')
+   							 'AdsPath' = [System.String]($Object.Properties.adspath)
+   						 }
+   						 
+   						 $DirectorySearcher.Filter= ("(&(objectClass=group)(distinguishedname={0}))" -f $AdGroup.DistinguishedName)
+   						 if ($Object = $DirectorySearcher.FindOne()) {
+   							 # region get real group member
+   							 $AdGroupMembers = @()
+   							 $moreThan1500Members = [System.Boolean]($Object.Properties.PropertyNames | Where-Object { $_ -like "member;range=*" })
+
+   							 if ($moreThan1500Members) {
+   								 #we need to recurse through ranges
+   								 $iteratedAllRanges = $false
+   								 $rangeBottom = 0
+   								 $rangeTop = 0
+   								 while (-not ($iteratedAllRanges)) {
+   									 $rangeTop = $rangeBottom + 1499
+   									 #set new range
+   									 $memberRange = "member;range=$rangeBottom-$rangeTop"
+   									 $DirectorySearcher.PropertiesToLoad.Clear()
+   									 [void]$DirectorySearcher.PropertiesToLoad.Add("$memberRange")
+   									 try {
+   										 $Object = $DirectorySearcher.FindOne()
+   										 $rangedProperty = $Object.Properties.PropertyNames -like "member;range=*"
+   										 $AdGroupMembers += $Object.Properties.item($rangedProperty)
+   										 if ($AdGroupMembers.count -eq 0) { $iteratedAllRanges = $true }
+   									 }
+   									 catch {
+   										 $iteratedAllRanges = $true
+   									 }
+   									 #increment bottom of range for next iteration
+   									 $rangeBottom += 1500
+   								 }
+   							 }
+   							 else {
+   								 #group member count is less than 1500
+   								 $AdGroupMembers += $Object.properties.item("member")
+   							 }
+
+   							 # $AdGroup.Member = (Get-abcAdGroupMembers -DistinguishedName $AdGroup.DistinguishedName)
+   							 # endregion get real group member
+   						 }
+   						 else {
+   							 $AdGroupMembers = [System.String]($Object.properties.item("member"))
+   						 }
+   						 $AdGroup.MemberCount = $AdGroupMembers.Count
+   						 $AdGroup.Member = $AdGroupMembers
+   						 # endregion DEFINE Ordered Hash Object
+
+   						 # region DEFINE PSCustomObject Default Display Properties
+   						 $AdGroup = [PSCustomObject]$AdGroup
+   						 $AdGroup.PSObject.TypeNames.Insert(0,'abc.AD.Group')
+   						 $defaultDisplaySet = 'Name', 'Description', 'Info', 'DistinguishedName'
+   						 $defaultDisplayPropertySet = New-Object System.Management.Automation.PSPropertySet('DefaultDisplayPropertySet',[string[]]$defaultDisplaySet)
+   						 $PSStandardMembers = [System.Management.Automation.PSMemberInfo[]]@($defaultDisplayPropertySet)
+   						 $AdGroup | Add-Member -MemberType MemberSet -Name PSStandardMembers -Value $PSStandardMembers -Force
+   						 # endregion DEFINE PSCustomObject Default Display Properties
+
+   						 # region Add PSCustomObject Hash Object to PSCustomObject Array Object
+   						 # $abcAdGroup += $AdGroup
+   						 $AdGroup
+   						 # endregion Add PSCustomObject Hash Object to PSCustomObject Array Object
+   					 }
+   				 }
+   				 catch { throw $_ }
+   			 }
+   			 # endregion GET Directory Searcher Objects
+   		 }
+
+   		 # region DISPOSE Directory Searcher
+   		 $DirectorySearcher.Dispose()
+   		 # endregion DISPOSE Directory Searcher
+
+   		 # region RETURN PSCustomObject Array Object
+   		 # $abcAdGroup
+   		 # endregion RETURN PSCustomObject Array Object
+   	 }
+    }
+
+    End {
+    }
+}
+function Set-abcAdGroup {
+   	 <#
+   		 .SYNOPSIS
+   			 Verwaltung von PC Namen in AD Gruppen
+
+   		 .DESCRIPTION
+   			 Fügt einer bestimmten ADGruppe in der Domäne einen neuen PC Namen hinzu oder entfernt einen bisherigen der Gruppe. Wir können auch beides gleichzeitig ausführen
+
+   		 .PARAMETER
+   			 GroupName
+
+   		 .PARAMETER
+   			 AddComputerName
+
+   		 .PARAMETER
+   			 RemoveComputerName
+
+   		 .PARAMETER
+   			 ResultLimit
+
+   		 .EXAMPLE
+   			 Set-abcAdGroup -GroupName <Gruppen Name> -AddComputerName <Neuer Computer Name> -RemoveComputerName <Alter Computer Name>
+
+   		 .EXAMPLE
+   			 Set-abcAdGroup -GroupName <Gruppen Name> -AddComputerName <Neuer Computer Name>
+
+   		 .EXAMPLE
+   			 Set-abcAdGroup -GroupName <Gruppen Name> -RemoveComputerName <Alter Computer Name>
+
+   		 .NOTES
+
+   		 .LINK
+   			 https://www.abc.de
+   	 #>
+   	 [CmdletBinding(DefaultParameterSetName = "__AllParameterSets")]
+   	 #Anfang Parameter Bereich für Set-abcAdGroup
+   	 Param(
+   		 [Parameter(Mandatory=$false,Position=0)]
+   		 [ValidateNotNullOrEmpty()]
+   		 [System.String]$GroupName,
+
+   		 [Parameter(Mandatory=$false,Position=1)] #wird mit in die Konsole manuell eingetippt und ausgelesen!! // da wir hier 'false' angeben, erlauben wir, dass man auch nur einen Computer entfernen darf
+   		 [ValidateNotNullOrEmpty()]
+   		 [System.String]$AddComputerName,
+
+   		 [Parameter(Mandatory=$false,Position=2)] #wird mit in die Konsole manuell eingetippt und ausgelesen!! // da wir hier 'false' angeben, erlauben wir, dass man auch nur einen Computer hinzufügen darf
+   		 [ValidateNotNullOrEmpty()]
+   		 [System.String]$RemoveComputerName,
+
+   		 [Parameter(Mandatory=$false,Position=3)]
+   		 [switch]$PassThru
+   	 )
+   	 #Ende Parameter Bereich für Set-abcAdGroup
+   	 Begin {
+   	 }
+
+   	 Process {
+   		 if ($AdGroup = Get-abcAdGroup -Name $GroupName) {
+   			 $AdsiGroup = [ADSI]$AdGroup.AdsPath
+   			 if (-not [System.String]::IsNullOrEmpty($AdsiGroup)) {
+   				 Write-Verbose ('Ihre angegebene AD Gruppe {0} konnte gefunden werden' -f [System.String]$AdsiGroup.name)
+   				 if ($PassThru.isPresent) {
+   					 $passthrucustomobject = @{
+   						 'Group' = $AdGroup
+   					 }
+   				 }
+   				 if (-not [System.String]::IsNullOrEmpty($AddComputerName)) {
+   					 if ($ComputerNameOld = Get-abcAdComputer -Name $AddComputerName) {
+   						 if (-not ($ComputerNameOld.DistinguishedName -in $AdGroup.member)){
+   							 $AdsiGroup.Add($ComputerNameOld.AdsPath)
+   							 Write-Verbose ("Client [{0}] erfolgreich der AD Gruppe [{1}] hinzugefügt." -f $ComputerNameOld.DnsHostName, $AdGroup.Name)
+   						 }
+   						 if ($PassThru.isPresent) {
+   							 $passthrucustomobject.AddComputer = $ComputerNameOld
+   						 }
+   					 }
+   				 }
+   				 if (-not [System.String]::IsNullOrEmpty($RemoveComputerName)) {
+   					 if ($ComputerNameNew = Get-abcAdComputer -Name $RemoveComputerName) {
+   						 if ($ComputerNameNew.DistinguishedName -in $AdGroup.member){
+   							 $AdsiGroup.Remove($ComputerNameNew.AdsPath)
+   							 Write-Verbose ("Client [{0}] erfolgreich der AD Gruppe [{1}] entfernt." -f $ComputerNameOld.DnsHostName, $AdGroup.Name)
+   						 }
+   						 if ($PassThru.isPresent) {
+   							 $passthrucustomobject.RemoveComputer = $ComputerNameNew
+   						 }
+   					 }
+   				 }
+
+   				 if ($PassThru.isPresent) {
+   					 return [PSCustomObject]$passthrucustomobject
+   				 }
+   			 }
+   		 }
+   	 }
+
+   	 End {
+   	 }
+    }
+function Write-log {
+
+	[CmdletBinding()]
+	Param(
+      	[parameter(Mandatory=$true)]
+      	[String]$Path,
+
+      	[parameter(Mandatory=$true)]
+      	[String]$Message,
+
+      	[parameter(Mandatory=$true)]
+      	[String]$Component,
+
+      	[Parameter(Mandatory=$true)]
+      	[ValidateSet("Info", "Warning", "Error")]
+      	[String]$Type
+	)
+
+	switch ($Type) {
+    	"Info" { [int]$Type = 1 }
+    	"Warning" { [int]$Type = 2 }
+    	"Error" { [int]$Type = 3 }
+	}
+
+	# Create a log entry
+	$Content = "<![LOG[$Message]LOG]!>" +`
+    	"<time=`"$(Get-Date -Format "HH:mm:ss.ffffff")`" " +`
+    	"date=`"$(Get-Date -Format "M-d-yyyy")`" " +`
+    	"component=`"$Component`" " +`
+    	"context=`"$([System.Security.Principal.WindowsIdentity]::GetCurrent().Name)`" " +`
+    	"type=`"$Type`" " +`
+    	"thread=`"$([Threading.Thread]::CurrentThread.ManagedThreadId)`" " +`
+    	"file=`"`">"
+
+	# Write the line to the log file
+	Add-Content -Path $Path -Value $Content
+    }
+    $TimeStamp = Get-Date -Format "yyyy-MM-dd HH:mm"
+    Write-Host ("Skript gestartet! Datum: $TimeStamp ")  -foregroundcolor black -backgroundcolor yellow
+    #Log Header Begin
+    $Message = ("*************************************************************")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*    	Script: Set-abcAdComputerGroup                           	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*                	$Timestamp                                             	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*                      	Gestartet                                                     	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*************************************************************")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    #Log Header End
+    Write-Host ("Funktionen geladen!") -foregroundcolor White
+}
+
+Process {
+    Write-Host ("Prozess gestartet!") -foregroundcolor White
+    if ($PSCmdlet.ParameterSetName -eq 'ByCsvFile') {
+   	 $ImportObject = Get-Content -Path $CsvFile -Encoding UTF8 | Convertfrom-Csv -Delimiter ";"
+    }
+    if ($PSCmdlet.ParameterSetName -eq 'ByManual') {
+   	 $HashTableManual = [ordered]@{
+   		 GroupName = ''
+   		 AddComputerName = ''
+   		 RemoveComputerName = ''
+   	 }
+   	 if (-not [System.String]::IsNullOrEmpty($GroupName)) {
+   		 $HashTableManual.GroupName = $GroupName
+   	 }
+   	 if (-not [System.String]::IsNullOrEmpty($AddComputerName)) {
+   		 $HashTableManual.AddComputerName = $AddComputerName
+   	 }
+   	 if (-not [System.String]::IsNullOrEmpty($RemoveComputerName)) {
+   		 $HashTableManual.RemoveComputerName = $RemoveComputerName
+   	 }
+   	 $ImportObject = New-Object -Typename PSObject -Property $HashTableManual
+    }    
+    #Beginn der Verarbeitung der Eingaben
+    if (-not [System.String]::IsNullOrEmpty($ImportObject)) {
+   	 foreach ($Object in $ImportObject) {
+   		 $GroupCN = ''
+   		 $AddCN = ''
+   		 $RemoveCN = ''
+   		 $GroupNameEntryTrue = -not [System.String]::IsNullOrEmpty($Object.GroupName)
+   		 $GroupNameEntryNull = [System.String]::IsNullOrEmpty($Object.GroupName)
+   		 $AddComputerEntryTrue = -not [System.String]::IsNullOrEmpty($Object.AddComputerName)
+   		 $AddComputerEntryNull = [System.String]::IsNullOrEmpty($Object.AddComputerName)
+   		 $RemoveComputerEntryTrue = -not [System.String]::IsNullOrEmpty($Object.RemoveComputerName)
+   		 $RemoveComputerEntryNull = [System.String]::IsNullOrEmpty($Object.RemoveComputerName)
+   		 $HashTable = @{}
+   		 #Überprüfe GroupName Eintrag und füge ihn hinzu
+   		 if ($GroupnameEntryTrue) {
+   			 $GroupCN = $Object.GroupName.Trim()
+   			 if ($abcAdGroup = Get-abcAdGroup -Name $GroupCN){
+   				 $HashTable.GroupName = $abcAdGroup.Name
+   				 #Überprüfe den AddComputer Eintrag und füge ihn hinzu
+   				 if ($AddComputerEntryTrue){
+   					 $AddCN = $Object.AddComputerName.Trim()
+   					 if ($AddComputer = Get-abcAdComputer -Name $AddCN){
+   						 $HashTable.AddComputerName = $AddComputer.Name
+   						 #Überprüfe den RemoveComputer Eintrag und füge ihn hinzu
+   						 if ($RemoveComputerEntryTrue){
+   							 $RemoveCN = $Object.RemoveComputerName.Trim()
+   							 if ($RemoveComputer = Get-abcAdComputer -Name $RemoveCN) {
+   								 $HashTable.RemoveComputerName = $RemoveComputer.Name
+   								 $PassObject = Set-abcAdGroup @HashTable -PassThru
+   									 $Message = ("Der Computer: [{0}] wurde der Gruppe: [{1}] hinzugefuegt. Der Computer: [{2}] aus dieser entfernt."-f $PassObject.AddComputer.Name,$PassObject.Group.Name,$Passobject.RemoveComputer.Name)
+   									 Write-Host -Object $Message
+   									 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+   							 }
+   							 # RemoveComputer nicht im AD
+   							 else {
+   								 if ($PassObject = Set-abcAdGroup @HashTable -PassThru) {
+   									 $Message = ("Der Computer: [{0}] wurde der Gruppe: [{1}] hinzugefuegt. Der Computer: [{2}] wurde nicht in der AD gefunden und kann nicht entfernt werden."-f $AddCN,$GroupCN,$RemoveCN )
+   									 Write-Host -Object $Message
+   									 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   								 }
+   							 }
+   						 }
+   						 # RemoveComputer Eintrag Leer
+   						 else {
+   							 if ($RemoveComputerEntryNull){
+   								 if ($PassObject = Set-abcAdGroup @HashTable -PassThru) {
+   									 $Message = ("Der Computer: [{0}] wurde der Gruppe: [{1}] hinzugefuegt."-f $PassObject.AddComputer.Name,$PassObject.Group.Name )
+   									 Write-Host -Object $Message
+   									 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+   								 }    
+   							 }
+   						 }
+   					 }
+   					 #AddComputer nicht im AD
+   					 else {
+   						 $Message = ("Die Gruppe: [{0}] wurde gefunden. Der Computer: [{1}] wurde nicht in der AD gefunden und konnte nicht hinzugefuegt werden." -f $GroupCN, $AddCN)
+   						 Write-Host -Object $Message
+   						 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Warning'
+   					 }
+   				 }
+   				 #AddComputer Eintrag leer
+   				 else {
+   					 if ($AddComputerEntryNull) {
+   						 #RemoveComputer Eintrag vorhanden
+   						 if ($RemoveComputerEntryTrue) {
+   							 $RemoveCN = $Object.RemoveComputerName.Trim()
+   							 if ($RemoveComputer = Get-abcAdComputer -Name $RemoveCN) {
+   								 $HashTable.RemoveComputerName = $RemoveComputer.Name
+   								 $PassObject = Set-abcAdGroup @HashTable -PassThru
+   									 $Message = ("Der Computer: [{0}] wurde aus der Gruppe: [{1}] entfernt."-f $Passobject.RemoveComputer.Name,$PassObject.Group.Name)
+   									 Write-Host -Object $Message
+   									 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+   							 }
+   							 #RemoveComputer nicht im AD
+   							 else {
+   								 $Message = ("Die Gruppe: [{0}] wurde gefunden. Der Computer: [{1}] wurde nicht in der AD gefunden und kann nicht entfernt werden." -f $GroupCN, $RemoveCN)
+   								 Write-Host -Object $Message
+   								 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Warning'
+   							 }
+   						 }   	 
+   					 }
+   				 }
+   			 }
+   			 #Gruppeneintrag wurde nicht im AD gefunden
+   			 else {
+   				 $Message = ("Die angegebene Gruppe: [{0}] wurde nicht im AD gefunden." -f $GroupCN)
+   				 Write-Host -Object $Message
+   				 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   				 if ($AddComputerEntryTrue){
+   					 $Message = ("[{0}] konnte nicht hinzugefuegt werden." -f $Object.AddComputerName)    
+   					 Write-Host -Object $Message
+   					 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   				 }
+   				 if ($RemoveComputerEntryTrue){
+   					 $Message = ("[{0}] konnte nicht entfernt werden." -f $Object.RemoveComputerName)
+   					 Write-Host -Object $Message
+   					 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   				 }
+   			 }
+   		 }    
+   		 #Gruppeneintrag ist leer
+   		 if ($GroupNameEntryNull) {
+   			 if ($AddComputerEntryNull) {
+   				 if ($RemoveComputerEntryNull) {
+   					 $Message = ("Es wurden keine Gruppe oder Computer Angaben gefunden.")
+   					 Write-Host -Object $Message
+   					 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   				 }
+   				 #RemoveComputer Eintrag ist vorhanden
+   				 if ($RemoveComputerEntryTrue) {
+   					 $RemoveCN = $Object.RemoveComputerName.Trim()
+   					 if ($RemoveComputer = Get-abcAdComputer -Name $RemoveCN) {
+   						 $Message = ("Der Computer: [{0}] wurde im AD gefunden, er kann aber keiner Gruppe entfernt werden, da keine Angaben zu einer Gruppe oder einem hinzufuegendem Computer vorhanden sind." -f $RemoveCN)
+   						 Write-Host -Object $Message
+   						 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Warning'
+   					 }
+   					 #RemoveComputer Eintrag ist nicht im AD
+   					 else {
+   					 $Message = ("Der Computer: [{0}] wurde nicht im AD gefunden. Er kann nicht entfernt werden." -f $RemoveCN)
+   					 Write-Host -Object $Message
+   					 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   					 }
+   				 }    
+   			 }
+   			 #Kein Gruppeneintrag aber AddComputer Eintrag und RemoveComputer Eintrag
+   			 if ($AddComputerEntryTrue) {
+   				 $AddCN = $Object.AddComputerName.Trim()   					 
+   				 if ($AddComputer = Get-abcAdComputer -Name $AddCN){
+   					 $HashTable.AddComputerName = $AddComputer.Name
+   					 if ($RemoveComputerEntryTrue) {
+   						 $RemoveCN = $Object.RemoveComputerName.Trim()
+   						 if ($RemoveComputer = Get-abcAdComputer -Name $RemoveCN) {
+   							 $HashTable.RemoveComputerName = $RemoveComputer.Name
+   							 foreach ($RemoveGroupDN in $RemoveComputer.MemberOf) {
+   								 if ($abcAdgroup = Get-abcAdgroup -DistinguishedName $RemoveGroupDN){
+   									 $HashTable.GroupName = $abcAdGroup.Name
+   									 $PassObject = Set-abcAdGroup @HashTable -PassThru
+   									 $Message = ("Der Gruppe: [{0}] wurde der Computer: [{1}] hinzugefuegt und der Computer: [{2}] entfernt." -f $PassObject.Group.Name, $PassObject.AddComputer.Name, $Passobject.RemoveComputer.Name)
+   									 Write-Host -Object $Message
+   									 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+   								 }
+   							 }
+   						 }
+   						 # RemoveComputer Eintrag ist nicht im AD
+   						 else {
+   							 $Message = ("Der Computer: [{0}] wurde in der AD gefunden, er wird aber keiner Gruppe hinzugefuegt, da die Angabe fehlt. Der Computer: [{1}] wurde nicht im AD gefunden. Er kann nicht entfernt werden." -f $AddCN,$RemoveCN)
+   							 Write-Host -Object $Message
+   							 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Warning'
+   						 }
+   					 }
+   					 if ($RemoveComputerEntryNull) {
+   						 $Message = ("Der Computer: [{0}] wurde in der AD gefunden, er wird aber keiner Gruppe hinzugefuegt, da die Angabe fehlt." -f $AddCN)
+   						 Write-Host -Object $Message
+   						 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Warning'
+   					 }
+   				 }
+   				 #AddComputer Eintrag ist nicht im AD
+   				 else {
+   					 $Message = ("Der Computer: [{0}] wurde nicht im AD gefunden. Er kann nicht hinzugefuegt werden." -f $AddCN)
+   					 Write-Host -Object $Message
+   					 Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Error'
+   				 }
+   			 }
+   		 }
+   		 Write-Host
+   		 #Ende der Verarbeitung der Eingaben
+   	 }
+    }
+}
+End {
+    Write-Host ("Prozess Beendet. Aenderungen wurden durchgefuehrt und bitte das LogFile beachten!") -foregroundcolor white
+    Write-Host ("Skript beendet! Datum: $TimeStamp ")  -foregroundcolor black -backgroundcolor yellow
+    #Log Footer Begin
+    $Message = ("*************************************************************")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*    	Script: Set-abcAdComputerGroup                           	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*              	$Timestamp                                               	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*                    	Beendet                                                        	*")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    $Message = ("*************************************************************")
+    Write-log -Path $LogFile -Message $Message -Component 'abc AD Group' -Type 'Info'
+    #Log Footer End
+}
+
+# H:\PowerShell\Set-abcAdComputerGroup.ps1 -CsvFile 'H:\PowerShell\Textdokument_Test.csv'
+
+# H:\PowerShell\Set-abcAdComputerGroup.ps1 -GroupName 'DM_Test_1' -AddComputerName 'JN02024XYZ' -RemoveComputerName 'JN02024UVW'
+
+# H:\PowerShell\Set-abcAdComputerGroup.ps1 -AddComputerName 'JN02024XYZ' -RemoveComputerName 'JN02024XYZ'
+
