@@ -21,7 +21,7 @@ def txt_to_pdf(filePath, überschrift, targetPath):
     # Erstellen eines benutzerdefinierten ParagraphStyle für die Überschrift
     überschrift_style = ParagraphStyle(
         name="ÜberschriftStyle",
-        parent=styles['Heading1'],  # Hier kannst du den Standardstil für Überschrift nutzen
+        parent=styles['Heading1'],
         fontSize=18,  # Schriftgröße auf 18 setzen
         alignment=1,  # Zentrieren
         spaceAfter=12,  # Abstand nach der Überschrift
