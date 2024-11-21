@@ -23,15 +23,14 @@ Read Opereator
 
    elif operator is "/"
        if number2 Not egal To 0
-       result = number1/number2
+           result = number1/number2
+        elif Show "Error : division by zero"
+            END of Program
 
-   elif Show "Error : division by zero"
-      END of Program
-
-elif Show "Error : Operator invalid"
-  End of Program
+    elif Show "Error : Operator invalid"
+      End of Program
    
-      Show " the result ist : resultat
+Show " the result ist : resultat
 
 END OF Program. 
   
@@ -56,7 +55,7 @@ elif note betwen 70 AND 80
 elif note betwen 60 AND 70 
         Show "Grade D"
 
-else note < 60 
+else
    
      Show "Grade F"
 
@@ -81,7 +80,7 @@ If number1 >= number2 and number1 >= number3
 max = number1
  elif number2 >= number1 and number2 >= number3
 max = number2
-elif
+else
 max = number3
 
 Display “The largest number is: ”, max
@@ -98,8 +97,8 @@ End of program
       Read number
 
       While number >= 0
-      Display number
-      number = number - 1
+        Display number
+        number = number - 1
 
 End of the program
 
