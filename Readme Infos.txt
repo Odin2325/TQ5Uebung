@@ -14,3 +14,4 @@ git push
 Falls ihr in Visual Studio Code arbeitet, koennt ihr diese Updates ohne Befehle und nur mit ein paar click schaffen.
 Erstens auf der linken Leiste auf Source Control druecken (dieser knopf erscheint nur wenn wir unser porjekt mit git verknuepft haben)
 Dannach in Message eine Kurze nachricht schreiben "Dies ist mein upload zu unsere gemeinsame Datei, von (Name schreiben)".
+ 
