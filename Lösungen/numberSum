@@ -1,0 +1,12 @@
+#NumberSum
+
+START
+    INPUT n
+    sum = 0
+
+    FOR i = 1 TO n
+        IF i MOD 2 = 0
+            sum = sum + i
+
+    PRINT "Sum of even numbers: ", sum
+END
