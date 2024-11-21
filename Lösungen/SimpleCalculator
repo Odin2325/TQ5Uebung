@@ -1,0 +1,25 @@
+# Simple Calculator
+
+START
+    INPUT number1
+    INPUT number2
+    INPUT operator
+
+    IF operator = "+"
+        result = number1 + number2
+    ELSE IF operator = "-"
+        result = number1 - number2
+    ELSE IF operator = "*"
+        result = number1 * number2
+    ELSE IF operator = "/"
+        IF number2 != 0
+            result = number1 / number2
+        ELSE
+            PRINT "Error: Division by zero"
+            STOP
+    ELSE
+        PRINT "Invalid operator"
+        STOP
+
+    PRINT "Result: ", result
+END
