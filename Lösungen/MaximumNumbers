@@ -1,0 +1,16 @@
+#Maximum Numbers
+
+START
+    INPUT number1
+    INPUT number2
+    INPUT number3
+
+    max = number1
+
+    IF number2 > max
+        max = number2
+    IF number3 > max
+        max = number3
+
+    PRINT "Maximum: ", max
+END
