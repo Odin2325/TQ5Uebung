@@ -26,10 +26,10 @@ Read Opereator
        result = number1/number2
 
    elif Show "Error : division by zero"
-END of Program
+      END of Program
 
 elif Show "Error : Operator invalid"
-End of Program
+  End of Program
    
       Show " the result ist : resultat
 
