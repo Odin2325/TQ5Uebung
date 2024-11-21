@@ -1,0 +1,9 @@
+#CountDown Timer
+
+START
+    INPUT number
+
+    WHILE number >= 0
+        PRINT number
+        number = number - 1
+END
