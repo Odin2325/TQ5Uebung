@@ -1,0 +1,10 @@
+start
+
+input = "radar"
+
+if input == turned(input):
+    return "Input ist ein Palindrom"
+else:
+    return "Input ist kein Palindrom"
+
+end

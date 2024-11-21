@@ -1,0 +1,14 @@
+start
+
+n = 13 
+
+if n <= 1:
+    return "n ist keine Primzahl"
+
+for i von 2 bis sqrt(n): 
+    if n % i == 0:
+        return "n ist keine Primzahl"
+        
+return "n ist eine Primzahl"
+    
+end

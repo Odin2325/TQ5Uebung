@@ -1,0 +1,12 @@
+start
+
+numbers = [2, 5, 7, 9]
+
+for i in range(0, length(numbers))
+   for j in range(0, length(numbers) - i - 1)
+      if numbers[j] > numbers[j+1]
+          temp = numbers[j]
+          numbers[j] = numbers[j+1]
+          numbers[j+1] = temp
+
+end
