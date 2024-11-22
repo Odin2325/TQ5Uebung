@@ -1,7 +1,7 @@
 BEGIN
     INPUT candidate
 
-    SET checkMax to floor(sqrt(candidate+1))
+    SET checkMax to floor(sqrt(candidate) + 1)
     SET primes TO bool[checkMax]
     initialize(primes, true)
     SET prime TO true
