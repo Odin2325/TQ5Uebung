@@ -1,0 +1,27 @@
+BEGIN
+    INPUT candidate
+
+    SET checkMax to floor(sqrt(candidate+1))
+    SET primes TO bool[checkMax]
+    initialize(primes, true)
+    SET prime TO true
+
+    FOR i FROM 2 TO checkMax DO
+        IF primes[i] EQUAL true THEN
+            IF candidate mod i EQUAL 0 THEN
+                SET prime TO false
+                BREAK
+            END IF
+            SET j TO 2 * i
+            WHILE j LESS OR EQUAL checkMax
+                SET primes[j] TO false
+                SET j TO j + i
+            END WHILE
+        END IF
+    END FOR
+    IF prime EQUAL false THEN
+        PRINT "not prime"
+    ELSE 
+        PRINT "prime"
+    END IF
+END 

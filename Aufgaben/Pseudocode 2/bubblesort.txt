@@ -1,0 +1,16 @@
+BEGIN
+    INPUT list
+
+    SET length TO length(list)
+    SET swapped TO true
+
+    WHILE swapped EQUAL true DO
+        SET swapped TO false
+        FOR i FROM 0 to length(list) - 2
+            IF list[i] GREATER THAN list[i+1] THEN
+                swap(list, i, i+1)
+                SET swapped TO true
+            END IF
+        END FOR
+    END WHILE
+END

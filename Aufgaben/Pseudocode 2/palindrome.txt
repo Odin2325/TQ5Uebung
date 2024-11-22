@@ -1,0 +1,19 @@
+BEGIN
+    INPUT string
+
+    SET length TO length(string)
+    SET palindrome TO true
+
+    FOR i FROM 0 to floor(length / 2)
+        IF string[i] NOT EQUAL string[length - i] THEN
+            SET palindrome TO false
+            BREAK
+        END IF
+    END FOR
+
+    IF palindrom EQUAL true THEN
+        PRINT "is palindrome"
+    ELSE
+        PRINT "is not palindrome"
+    END IF
+END
