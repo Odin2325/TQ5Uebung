@@ -1,0 +1,24 @@
+@startuml
+
+start
+    :Karte einstecken;
+    :Pin eingeben;
+    if (PIN korregt) then (ja)
+        if () then (Geld abheben?)
+            :Betrag eingeben;
+            if (Ausreichende Deckung?) then (ja)
+                fork
+                    :Geld auszahlen;
+                fork again
+                    :Beleg drucken;
+                end fork
+            else (nein)
+                :Ausgabe: Deckung unzureichend;
+            endif
+        else (Kontostand prüfen?)
+            :Kontostand anzeigen;
+        endif
+    endif
+    :Karte ausgeben;
+stop
+@enduml

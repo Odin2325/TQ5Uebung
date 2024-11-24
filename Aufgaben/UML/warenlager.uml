@@ -1,0 +1,15 @@
+@startuml
+
+start
+    repeat
+        repeat
+            :Produktanfrage;
+        repeat while () is (Produkt nicht vorrätig)
+        :Lagerroboter sucht Produkt;
+    repeat while () is (Fehler: Produkt nicht auffindbar)
+    :Produktentnahme;
+    :Verpackung;
+    :Vorbereitung Versand;
+stop
+
+@enduml

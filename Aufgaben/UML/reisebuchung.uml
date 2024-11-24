@@ -1,0 +1,19 @@
+@startuml
+start
+    repeat
+        :Flugsuche;
+        :Auswahl von Flug und Hotel;
+        :Eingabe Passagierdaten;
+        if (Zusatzbuchungen?) then (ja)
+            fork
+                :Mietwagen buchen;
+            fork again
+                :Versicherung buchen;
+            end fork
+        else (nein)
+        endif
+    repeat while (Buchung abbrechen) is (ja) not (nein)
+    :Zahlung;
+    :Bestätigungsmail;
+stop
+@enduml
