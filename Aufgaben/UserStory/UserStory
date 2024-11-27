@@ -1,0 +1,18 @@
+User Story 1 für einen Online-Shop für Bücher
+
+Titel: Buch zum Warenkorb hinzufügen
+Beschreibung: Als Käufer möchte ich ein Buch zu meinem Warenkorb hinzufügen können, damit ich mehrere Bücher kaufen und die Bestellung bequem abschließen kann.
+Akzeptanzkriterien:
+Der Käufer kann ein Buch aus der Buchliste auswählen und zum Warenkorb hinzufügen.
+Das ausgewählte Buch wird im Warenkorb angezeigt, einschließlich Titel, Preis und Anzahl.
+Der Käufer kann die Anzahl der Bücher im Warenkorb ändern oder das Buch entfernen.
+
+
+User Story 2 für einen Online-Shop für Bücher
+
+Titel: Bestellung abschließen
+Beschreibung: Als Käufer möchte ich meine Bestellung mit einer bevorzugten Zahlungsmethode abschließen können, damit ich die gekauften Bücher schnell erhalte.
+Akzeptanzkriterien:
+Der Käufer kann seine Versandadresse angeben und diese vor dem Abschließen der Bestellung bearbeiten.
+Der Käufer kann eine Zahlungsmethode auswählen (z.B. Kreditkarte, PayPal) und die Zahlung erfolgreich abschließen.
+Der Käufer erhält eine Bestellbestätigung mit einer Übersicht der bestellten Bücher und der voraussichtlichen Lieferzeit.
