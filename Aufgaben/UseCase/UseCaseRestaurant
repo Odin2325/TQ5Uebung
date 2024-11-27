@@ -1,0 +1,73 @@
+Use Case für eine Essensbestellungs-App für ein Restaurant
+
+Use Case Name: Bestellung aufgeben
+Akteure: Kunde, Restaurant-Server, Zahlungssystem
+Ziel: Der Kunde bestellt Essen aus dem Menü und bezahlt die Bestellung online.
+Vorbedingungen:
+Der Kunde ist in der App angemeldet.
+Der Kunde hat ein aktives Zahlungsmittel hinterlegt.
+Das Restaurant bietet das ausgewählte Gericht an.
+Nachbedingungen:
+Die Bestellung wird im Restaurant-System registriert.
+Der Betrag wird vom Kundenkonto abgebucht.
+Der Kunde erhält eine Bestellbestätigung mit Lieferzeit.
+Hauptablauf:
+Der Kunde öffnet die Essensbestellungs-App.
+Der Kunde wählt die gewünschten Gerichte aus dem Menü aus.
+Der Kunde gibt die Lieferadresse und zusätzliche Wünsche (z.B. Beilagen, Getränk) an.
+Der Kunde überprüft die Bestellung und den Gesamtbetrag.
+Der Kunde wählt die Zahlungsmethode (z.B. Kreditkarte, PayPal).
+Der Kunde bestätigt die Bestellung und bezahlt.
+Der Restaurant-Server erhält die Bestellung und bestätigt den Eingang.
+Der Kunde erhält eine Bestätigung der Bestellung sowie eine geschätzte Lieferzeit.
+Das Restaurant bereitet das Essen zu und liefert es an die angegebene Adresse.
+Alternativabläufe:
+A1: Der Kunde gibt eine falsche Adresse ein.
+Der Server zeigt eine Fehlermeldung an, und der Kunde kann die Adresse korrigieren.
+A2: Der Kunde storniert die Bestellung während der Auswahl.
+Der Use Case endet ohne jegliche Transaktion.
+A3: Der Kunde erhält während der Bestellung eine Fehlermeldung zu einem nicht verfügbaren Gericht.
+Der Server bietet ähnliche Gerichte oder eine Entschuldigung an.
+Ausnahmen:
+E1: Das Zahlungssystem ist aufgrund technischer Probleme nicht verfügbar.
+Der Kunde wird aufgefordert, eine andere Zahlungsmethode auszuwählen oder später zu bezahlen.
+E2: Das Restaurant hat aufgrund von Auslastung eine längere Lieferzeit als üblich.
+Der Kunde wird informiert und kann die Bestellung bestätigen oder abbrechen.
+E3: Die Zahlung schlägt fehl (z.B. ungültige Kreditkarte).
+Der Kunde wird aufgefordert, eine gültige Zahlungsmethode einzugeben.Use Case für eine Essensbestellungs-App für ein Restaurant
+
+Use Case Name: Bestellung aufgeben
+Akteure: Kunde, Restaurant-Server, Zahlungssystem
+Ziel: Der Kunde bestellt Essen aus dem Menü und bezahlt die Bestellung online.
+Vorbedingungen:
+Der Kunde ist in der App angemeldet.
+Der Kunde hat ein aktives Zahlungsmittel hinterlegt.
+Das Restaurant bietet das ausgewählte Gericht an.
+Nachbedingungen:
+Die Bestellung wird im Restaurant-System registriert.
+Der Betrag wird vom Kundenkonto abgebucht.
+Der Kunde erhält eine Bestellbestätigung mit Lieferzeit.
+Hauptablauf:
+Der Kunde öffnet die Essensbestellungs-App.
+Der Kunde wählt die gewünschten Gerichte aus dem Menü aus.
+Der Kunde gibt die Lieferadresse und zusätzliche Wünsche (z.B. Beilagen, Getränk) an.
+Der Kunde überprüft die Bestellung und den Gesamtbetrag.
+Der Kunde wählt die Zahlungsmethode (z.B. Kreditkarte, PayPal).
+Der Kunde bestätigt die Bestellung und bezahlt.
+Der Restaurant-Server erhält die Bestellung und bestätigt den Eingang.
+Der Kunde erhält eine Bestätigung der Bestellung sowie eine geschätzte Lieferzeit.
+Das Restaurant bereitet das Essen zu und liefert es an die angegebene Adresse.
+Alternativabläufe:
+A1: Der Kunde gibt eine falsche Adresse ein.
+Der Server zeigt eine Fehlermeldung an, und der Kunde kann die Adresse korrigieren.
+A2: Der Kunde storniert die Bestellung während der Auswahl.
+Der Use Case endet ohne jegliche Transaktion.
+A3: Der Kunde erhält während der Bestellung eine Fehlermeldung zu einem nicht verfügbaren Gericht.
+Der Server bietet ähnliche Gerichte oder eine Entschuldigung an.
+Ausnahmen:
+E1: Das Zahlungssystem ist aufgrund technischer Probleme nicht verfügbar.
+Der Kunde wird aufgefordert, eine andere Zahlungsmethode auszuwählen oder später zu bezahlen.
+E2: Das Restaurant hat aufgrund von Auslastung eine längere Lieferzeit als üblich.
+Der Kunde wird informiert und kann die Bestellung bestätigen oder abbrechen.
+E3: Die Zahlung schlägt fehl (z.B. ungültige Kreditkarte).
+Der Kunde wird aufgefordert, eine gültige Zahlungsmethode einzugeben.
