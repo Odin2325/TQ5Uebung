@@ -1,0 +1,44 @@
+@startuml
+
+class Bibliothek {
+    Buch[] Bücher
+    Mitglied[] Mitglieder
+    string Name
+    string Adresse
+}
+
+class Buch {
+    string Titel
+    string Autor
+    string ISBN
+    Exemplar[] Exemplare
+}
+
+class Exemplar {
+    Buch Buch
+    bool Ausgeliehen
+    Date AusgeliehenAb
+    Date AusgeliehenBis
+    enum Zustand
+    int Bestandsnummer
+}
+
+class Mitglied {
+    string Name
+    string Adresse
+    Date AnmeldeDatum
+    Exemplar[] Ausleihen
+    ausleihen(Exemplar)
+}
+note right
+    ???
+    Wo passiert z.B. die Ausleihe?
+    Im Exemplar? Im Mitglied?
+end note
+
+Bibliothek "1" o-- "0..*" Buch
+Buch "1" *-- "0..*" Exemplar
+Mitglied "1" o-- "0..*" Exemplar
+Bibliothek "1" o-- "0..*" Mitglied
+
+@enduml
