@@ -22,6 +22,18 @@ class Exemplar {
     enum Zustand
     int Bestandsnummer
 }
+note right
+    ???
+    Buch <--> Exemplar, oder auch
+    bei den anderen Paaren:
+    Komposition? Aggregation?
+    So wie ich das hier mache
+    könnte man den Pfeil auch in
+    beide Richtungen zeigen
+    lassen: das Buch kennt seine
+    Exemplare, das Exemplar kennt
+    sein zugehöriges Buch. 🤷
+end note
 
 class Mitglied {
     string Name
