@@ -1,0 +1,41 @@
+@startuml
+
+class Kurs {
+    string Titel
+    string Beschreibung
+    Lehrer Lehrer
+    enum Status
+    Lektion[] Lektionen
+    Teilnehmer[] Teilnehmer
+}
+
+class Lehrer {
+    int Nummer
+    string Name
+    string Email
+    string Spezialbereich
+}
+
+class Teilnehmer {
+    int Nummer
+    string Name
+    string Email
+    Kurs[] Kurse
+}
+
+class Lektion {
+    string Titel
+    Interval Dauer
+    Inhalt[] Inhalte
+}
+
+class Inhalt {
+    string Beschreibung
+}
+
+Lektion "1" *-- "0..*" Inhalt
+Kurs -- Lehrer
+Kurs "1" -- "0..*" Lektion
+Teilnehmer "0..*" -- "0..*" Kurs
+
+@enduml
