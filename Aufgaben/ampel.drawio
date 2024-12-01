@@ -1,0 +1,78 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0" version="25.0.1">
+  <diagram name="Seite-1" id="7QXTFXTlCHHpIe0RmJ88">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="FI95JjiJLStWkL7jTkRr-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FI95JjiJLStWkL7jTkRr-2" target="FI95JjiJLStWkL7jTkRr-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-2" value="Rot" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="120" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-3" value="" style="ellipse;html=1;shape=startState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="340" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-4" value="" style="edgeStyle=orthogonalEdgeStyle;html=1;verticalAlign=bottom;endArrow=open;endSize=8;strokeColor=#ff0000;rounded=0;" edge="1" parent="1" source="FI95JjiJLStWkL7jTkRr-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="355" y="120" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-5" value="" style="ellipse;html=1;shape=endState;fillColor=#000000;strokeColor=#ff0000;" vertex="1" parent="1">
+          <mxGeometry x="270" y="30" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-6" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="290" y="110" as="sourcePoint" />
+            <mxPoint x="290" y="70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="FI95JjiJLStWkL7jTkRr-7" target="FI95JjiJLStWkL7jTkRr-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-7" value="rot-gelb" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-9" value="" style="curved=1;endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="400" y="170" as="sourcePoint" />
+            <mxPoint x="400" y="140" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="450" y="170" />
+              <mxPoint x="400" y="120" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="FI95JjiJLStWkL7jTkRr-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="110" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-11" value="grün" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="270" y="410" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FI95JjiJLStWkL7jTkRr-12" target="FI95JjiJLStWkL7jTkRr-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-12" value="gelb&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="280" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-16" value="fest zeit panne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="220" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-17" value="krank wagen" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="430" y="135" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-19" value="feste zeit panne&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="370" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-21" value="feste zeit panne&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="110" y="380" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FI95JjiJLStWkL7jTkRr-23" value="feste zeit panne" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="60" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
