@@ -1,0 +1,7 @@
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\bin\Debug\Grundlagen.exe.config
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\bin\Debug\Grundlagen.exe
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\bin\Debug\Grundlagen.pdb
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\obj\Debug\Grundlagen.csproj.AssemblyReference.cache
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\obj\Debug\Grundlagen.csproj.CoreCompileInputs.cache
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\obj\Debug\Grundlagen.exe
+C:\Users\akein\Desktop\Schule\Programmierung\Git Hub\TQ5Uebung\Programmierung\Grundlagen\Grundlagen\obj\Debug\Grundlagen.pdb
