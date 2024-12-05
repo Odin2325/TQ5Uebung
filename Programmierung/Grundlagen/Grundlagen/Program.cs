@@ -1,4 +1,4 @@
-﻿using Grundlagen.Durchschnitt;
+﻿using Grundlagen.Simple;
 using Grundlagen.utils;
 using System;
 using System.Collections.Generic;
@@ -24,8 +24,6 @@ namespace Grundlagen
 
             WaitForExit(calculate, outputs);
         }
-
-        
 
         private static void WaitForExit(Calculate calculate, Outputs outputs)
         {

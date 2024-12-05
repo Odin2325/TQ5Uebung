@@ -3,16 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\utils\\versionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\utils\\versionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\simple\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\simple\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\durchschnitt\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\durchschnitt\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\utils\\versionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\utils\\versionhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\utils\\outputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,27 +35,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "VersionHandler.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\VersionHandler.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\utils\\VersionHandler.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\VersionHandler.cs*",
-              "RelativeToolTip": "Grundlagen\\utils\\VersionHandler.cs*",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAxwBoAAAA9AAAAAAAAAA==",
+              "Title": "Calculate.cs",
+              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\Calculate.cs",
+              "RelativeDocumentMoniker": "Grundlagen\\Simple\\Calculate.cs",
+              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\Calculate.cs",
+              "RelativeToolTip": "Grundlagen\\Simple\\Calculate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T22:26:15.408Z",
+              "WhenOpened": "2024-12-05T22:49:38.338Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Calculate.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Durchschnitt\\Calculate.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\Durchschnitt\\Calculate.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Durchschnitt\\Calculate.cs",
-              "RelativeToolTip": "Grundlagen\\Durchschnitt\\Calculate.cs",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAwwGQAAAAJAAAAAAAAAA==",
+              "Title": "VersionHandler.cs",
+              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\VersionHandler.cs",
+              "RelativeDocumentMoniker": "Grundlagen\\utils\\VersionHandler.cs",
+              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\VersionHandler.cs",
+              "RelativeToolTip": "Grundlagen\\utils\\VersionHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-05T07:33:58.505Z",
+              "WhenOpened": "2024-12-05T22:26:15.408Z",
               "EditorCaption": ""
             },
             {
@@ -78,7 +78,7 @@
               "RelativeDocumentMoniker": "Grundlagen\\Program.cs",
               "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs",
               "RelativeToolTip": "Grundlagen\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T09:52:33.508Z",
               "EditorCaption": ""

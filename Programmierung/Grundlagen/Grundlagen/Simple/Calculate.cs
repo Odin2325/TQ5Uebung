@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Grundlagen.Durchschnitt
+namespace Grundlagen.Simple
 {
     internal class Calculate
     {
