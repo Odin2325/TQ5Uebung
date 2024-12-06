@@ -1,0 +1,15 @@
+C:\Users\ruth-\Coding\TQ5\cLernen\bin\Debug\net8.0\cLernen.exe
+C:\Users\ruth-\Coding\TQ5\cLernen\bin\Debug\net8.0\cLernen.deps.json
+C:\Users\ruth-\Coding\TQ5\cLernen\bin\Debug\net8.0\cLernen.runtimeconfig.json
+C:\Users\ruth-\Coding\TQ5\cLernen\bin\Debug\net8.0\cLernen.dll
+C:\Users\ruth-\Coding\TQ5\cLernen\bin\Debug\net8.0\cLernen.pdb
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.AssemblyInfoInputs.cache
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.AssemblyInfo.cs
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.csproj.CoreCompileInputs.cache
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.sourcelink.json
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.dll
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\refint\cLernen.dll
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.pdb
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\cLernen.genruntimeconfig.cache
+C:\Users\ruth-\Coding\TQ5\cLernen\obj\Debug\net8.0\ref\cLernen.dll
