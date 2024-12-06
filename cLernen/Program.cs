@@ -4,6 +4,11 @@
     {
         static void Main(string[] args)
         {
+           Aufgaben0512()
+        }
+
+        static void Aufgaben0512()
+        {
             Console.WriteLine("Enter a temperature in Celsius:");
             double celsius = Convert.ToDouble(Console.ReadLine());
             double fahrenheit = celsius * 1.8 + 32;
