@@ -16,17 +16,17 @@ namespace Grundlagen
             Console.OutputEncoding = Encoding.UTF8;
             Outputs outputs = new Outputs();
             Calculate calculate = new Calculate();
-            CalculateTwo calculateTwo = new CalculateTwo();
+            DictionaryCalculate dictionaryCalculate = new DictionaryCalculate();
             VersionHandler versionClass = new VersionHandler();
 
             string version = versionClass.Update(versionClass.Read());
             versionClass.Save(version);
             outputs.NormalOutput($"Starte den Grundkurs.\nFolgende Version wird verwendet: {version}");
 
-            WaitForExit(calculate, calculateTwo, outputs);
+            WaitForExit(calculate, dictionaryCalculate, outputs);
         }
 
-        private static void WaitForExit(Calculate calculate, CalculateTwo calculateTwo, Outputs outputs)
+        private static void WaitForExit(Calculate calculate, DictionaryCalculate dictionaryCalculate, Outputs outputs)
         {
             string[] options = {
                 "Durchschnitt",
@@ -82,7 +82,7 @@ namespace Grundlagen
                 }
                 else if (input.Equals("noten", StringComparison.OrdinalIgnoreCase))
                 {
-                    calculateTwo.NotenCalculate();
+                    dictionaryCalculate.NotenCalculate();
 
                     outputs.SuccessOutput($"Die Berechnung ist fertig.");
                 }

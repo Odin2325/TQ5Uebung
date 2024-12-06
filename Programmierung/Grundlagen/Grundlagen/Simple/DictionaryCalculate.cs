@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Grundlagen.Simple
 {
-    internal class CalculateTwo
+    internal class DictionaryCalculate
     {
         private Dictionary<string, Dictionary<string, int>> schuelerNoten = new Dictionary<string, Dictionary<string, int>>(StringComparer.OrdinalIgnoreCase)
         {
@@ -16,7 +16,7 @@ namespace Grundlagen.Simple
 
         private Outputs outputs;
 
-        public CalculateTwo()
+        public DictionaryCalculate()
         {
             outputs = new Outputs();
         }
