@@ -99,5 +99,24 @@ namespace Grundlagen.Simple
             decimal endbetrag = invest * (decimal)Math.Pow((double)(1 + zinssatz), jahre);
             return Math.Round(endbetrag, 2);
         }
+
+        public void ZufallsGenerator()
+        { 
+            Random random = new Random(); 
+            HashSet<int> zufallsZahlen = new HashSet<int>(); 
+            
+            while (zufallsZahlen.Count < 3) 
+            { 
+                int zahl = random.Next(1, 301); 
+                zufallsZahlen.Add(zahl); 
+            } 
+            
+            outputs.SuccessOutput("Die generierten Zufallszahlen sind:"); 
+            
+            foreach (int zahl in zufallsZahlen) 
+            {
+                outputs.SuccessOutput(zahl.ToString()); 
+            } 
+        }
     }
 }

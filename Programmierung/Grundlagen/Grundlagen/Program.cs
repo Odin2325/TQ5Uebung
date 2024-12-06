@@ -35,6 +35,7 @@ namespace Grundlagen
                 "Zylinder",
                 "Invest",
                 "Noten",
+                "Random",
                 "Exit"
             };
 
@@ -85,6 +86,10 @@ namespace Grundlagen
                     dictionaryCalculate.NotenCalculate();
 
                     outputs.SuccessOutput($"Die Berechnung ist fertig.");
+                }
+                else if (input.Equals("random", StringComparison.OrdinalIgnoreCase))
+                {
+                    calculate.ZufallsGenerator();
                 }
                 else if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {

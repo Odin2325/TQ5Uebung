@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\simple\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\simple\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\simple\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\simple\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\simple\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +38,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "CalculateTwo.cs",
               "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\CalculateTwo.cs",
               "RelativeDocumentMoniker": "Grundlagen\\Simple\\CalculateTwo.cs",
@@ -88,13 +88,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs",
               "RelativeDocumentMoniker": "Grundlagen\\Program.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs",
-              "RelativeToolTip": "Grundlagen\\Program.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFYAAABGAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs*",
+              "RelativeToolTip": "Grundlagen\\Program.cs*",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAYwFYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T09:52:33.508Z",
               "EditorCaption": ""
