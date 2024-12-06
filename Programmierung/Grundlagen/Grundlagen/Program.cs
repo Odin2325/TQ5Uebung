@@ -16,16 +16,17 @@ namespace Grundlagen
             Console.OutputEncoding = Encoding.UTF8;
             Outputs outputs = new Outputs();
             Calculate calculate = new Calculate();
+            CalculateTwo calculateTwo = new CalculateTwo();
             VersionHandler versionClass = new VersionHandler();
 
             string version = versionClass.Update(versionClass.Read());
             versionClass.Save(version);
             outputs.NormalOutput($"Starte den Grundkurs.\nFolgende Version wird verwendet: {version}");
 
-            WaitForExit(calculate, outputs);
+            WaitForExit(calculate, calculateTwo, outputs);
         }
 
-        private static void WaitForExit(Calculate calculate, Outputs outputs)
+        private static void WaitForExit(Calculate calculate, CalculateTwo calculateTwo, Outputs outputs)
         {
             string[] options = {
                 "Durchschnitt",
@@ -33,6 +34,7 @@ namespace Grundlagen
                 "Temperatur",
                 "Zylinder",
                 "Invest",
+                "Noten",
                 "Exit"
             };
 
@@ -77,6 +79,12 @@ namespace Grundlagen
                     decimal result = calculate.BerechneInvestErtrag();
 
                     outputs.SuccessOutput($"Am Ende hast du {result}€");
+                }
+                else if (input.Equals("noten", StringComparison.OrdinalIgnoreCase))
+                {
+                    calculateTwo.NotenCalculate();
+
+                    outputs.SuccessOutput($"Die Berechnung ist fertig.");
                 }
                 else if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {
