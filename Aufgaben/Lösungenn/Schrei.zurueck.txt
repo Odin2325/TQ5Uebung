@@ -1,0 +1,14 @@
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Gib etwas ein:");
+            string eingabe = Console.ReadLine(); // Eingabe vom Benutzer
+            string geschrien = SchreieZurück(eingabe); // Methode aufrufen
+            Console.WriteLine(geschrien); // Ausgabe
+        }
+
+        static string SchreieZurück(string text)
+        {
+            return text.ToUpper(); // Text in Großbuchstaben umwandeln
+        }
+    }
+}
