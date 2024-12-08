@@ -11,32 +11,38 @@ namespace Grundlagen
 {
     internal class Program
     {
+        private static Outputs outputs;
+        private static Calculate calculate;
+        private static DictionaryCalculate dictionaryCalculate;
+        private static MessageWorker msgWorker;
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
-            Outputs outputs = new Outputs();
-            Calculate calculate = new Calculate();
-            DictionaryCalculate dictionaryCalculate = new DictionaryCalculate();
             VersionHandler versionClass = new VersionHandler();
+            outputs = new Outputs();
+            calculate = new Calculate();
+            dictionaryCalculate = new DictionaryCalculate();
+            msgWorker = new MessageWorker();
 
             string version = versionClass.Update(versionClass.Read());
             versionClass.Save(version);
             outputs.NormalOutput($"Starte den Grundkurs.\nFolgende Version wird verwendet: {version}");
 
-            WaitForExit(calculate, dictionaryCalculate, outputs);
+            WaitForExit();
         }
 
-        private static void WaitForExit(Calculate calculate, DictionaryCalculate dictionaryCalculate, Outputs outputs)
+        private static void WaitForExit()
         {
             string[] options = {
-                "Durchschnitt",
-                "Volume",
-                "Temperatur",
-                "Zylinder",
-                "Invest",
-                "Noten",
-                "Random",
-                "Exit"
+                "- Durchschnitt",
+                "- Volume",
+                "- Temperatur",
+                "- Zylinder",
+                "- Invest",
+                "- Noten",
+                "- Random",
+                "- CallBack",
+                "- Exit"
             };
 
             while (true)
@@ -90,6 +96,13 @@ namespace Grundlagen
                 else if (input.Equals("random", StringComparison.OrdinalIgnoreCase))
                 {
                     calculate.ZufallsGenerator();
+                }
+                else if (input.Equals("callback", StringComparison.OrdinalIgnoreCase))
+                {
+                    outputs.NormalOutput("Sprich mit mir😁Schreibe irgendeinen Satz!");
+                    string msg = Console.ReadLine();
+                    string answer = msgWorker.CallBack(msg);
+                    outputs.SuccessOutput(answer);
                 }
                 else if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {
