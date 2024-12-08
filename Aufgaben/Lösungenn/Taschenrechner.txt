@@ -1,0 +1,54 @@
+class TemperaturUmrechnung
+    {
+        static void Main()
+        {
+            // Benutzer muss zuerst eine Temperatur in Grad Celsius eingeben
+            Console.Write("Geben Sie eine Temperatur in Grad Celsius ein: ");
+            string eingabe = Console.ReadLine();
+
+            // Eingabe in eine Zahl umwandeln
+            if (double.TryParse(eingabe, out double celsius))
+            {
+                // Umrechnung von Celsius in Fahrenheit
+                double fahrenheit = celsius * 1.8 + 32;
+
+                // Ergebnis ausgeben
+                Console.WriteLine($"Die Temperatur in Fahrenheit beträgt: {fahrenheit:F2}°F");
+            }
+            else
+            {
+                // Fehlermeldung, wenn die Eingabe keine gültige Zahl ist
+                Console.WriteLine("Die Eingabe war ungültig! Bitte geben Sie eine Zahl ein.");
+            }
+        }
+    }
+
+}
+
+using System;
+
+class ZylinderBerechnungen
+{
+    static void Main(string[] args)
+    {
+        const double PI = 3.1415;
+
+        // Eingabe der Höhe und des Radius
+        Console.Write("Bitte geben Sie die Höhe des Zylinders (h) ein: ");
+        double hoehe = Convert.ToDouble(Console.ReadLine());
+
+        Console.Write("Bitte geben Sie den Radius des Zylinders (r) ein: ");
+        double radius = Convert.ToDouble(Console.ReadLine());
+
+        // Berechnungen
+        double gekruemmterOberflaechenbereich = 2 * PI * radius * hoehe;
+        double gesamtoberflaeche = 2 * PI * radius * (radius + hoehe);
+        double volumen = PI * radius * radius * hoehe;
+
+        // Ausgabe der Ergebnisse
+        Console.WriteLine("\nErgebnisse:");
+        Console.WriteLine($"Gekrümmter Oberflächenbereich: {gekruemmterOberflaechenbereich:F2}");
+        Console.WriteLine($"Gesamtoberfläche: {gesamtoberflaeche:F2}");
+        Console.WriteLine($"Volumen: {volumen:F2}");
+    }
+}
