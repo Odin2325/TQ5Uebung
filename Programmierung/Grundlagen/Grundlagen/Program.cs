@@ -1,4 +1,5 @@
-﻿using Grundlagen.Simple;
+﻿using Grundlagen.Fortgeschritten;
+using Grundlagen.Simple;
 using Grundlagen.utils;
 using System;
 using System.Collections.Generic;
@@ -15,6 +16,7 @@ namespace Grundlagen
         private static Calculate calculate;
         private static DictionaryCalculate dictionaryCalculate;
         private static MessageWorker msgWorker;
+        private static Switches switches;
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -23,6 +25,7 @@ namespace Grundlagen
             calculate = new Calculate();
             dictionaryCalculate = new DictionaryCalculate();
             msgWorker = new MessageWorker();
+            switches = new Switches();
 
             string version = versionClass.Update(versionClass.Read());
             versionClass.Save(version);
@@ -42,6 +45,9 @@ namespace Grundlagen
                 "- Noten",
                 "- Random",
                 "- CallBack",
+                "- Login",
+                "- Würfelgame",
+                "- Währungsrechner",
                 "- Exit"
             };
 
@@ -103,6 +109,34 @@ namespace Grundlagen
                     string msg = Console.ReadLine();
                     string answer = msgWorker.CallBack(msg);
                     outputs.SuccessOutput(answer);
+                }
+                else if (input.Equals("login", StringComparison.OrdinalIgnoreCase))
+                {
+                    outputs.NormalOutput("Gebe bitte dein Username ein.");
+                    string userName = Console.ReadLine();
+                    outputs.NormalOutput("Gebe bitte dein Password ein.");
+                    string pass = Console.ReadLine();
+
+                    string answer = msgWorker.Login(userName, pass);
+                    outputs.SuccessOutput(answer);
+                }
+                else if (input.Equals("würfelgame", StringComparison.OrdinalIgnoreCase))
+                {
+                    msgWorker.WürfelGame();
+                }
+                else if (input.Equals("währungsrechner", StringComparison.OrdinalIgnoreCase))
+                {
+                    decimal ergebnis = switches.Währungsrechner();
+                    string währung = switches.choosenWährung;
+
+                    if (ergebnis == 0)
+                    {
+                        outputs.ErrorOutput("Fehler 404: Ungültige Eingabe!");
+                    }
+                    else
+                    {
+                        outputs.SuccessOutput($"Dein umgerechneter Bertag beläuft sich auf {ergebnis}{währung}");
+                    }
                 }
                 else if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {

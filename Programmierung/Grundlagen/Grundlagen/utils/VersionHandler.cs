@@ -43,8 +43,16 @@ namespace Grundlagen.utils
                 else
                 {
                     parts[i] = "0";
+
+                    // Wenn wir am letzten Part angelangt sind und zurücksetzen, prüfen wir, ob wir eine weitere Stelle hinzufügen müssen
+                    if (i == 0)
+                    {
+                        // Füge dem ersten Part eine Stelle hinzu
+                        parts[i] = (part + 1).ToString();
+                    }
                 }
             }
+
             return string.Join(".", parts);
         }
     }
