@@ -1,0 +1,56 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Ein Alter und einen Wochentag eigeben");
+            int Alter = int.Parse(Console.ReadLine());
+            int Wochentag = int.Parse(Console.ReadLine());
+
+
+            if (Alter < 18)
+            {
+                Console.WriteLine("Alter unter 18: Ermäßigter Eintritt ");
+
+
+            }
+            else if (Alter == 18)
+            {
+                Console.WriteLine("Alter 18: Normaler Eintritt");
+            }
+            else  
+            {
+                Console.WriteLine("\"Alter 18: Normaler Eintritt\"");
+            }
+
+            switch (Wochentag)
+            {
+                    case 1: 
+                    case 2:
+                    case 3: 
+                    case 4:
+                    case 5:
+                    Console.WriteLine("Ist ein Werktag");
+                    break;
+                case 6:
+                    case 7:
+                    Console.WriteLine("Wochenende");
+                    break;
+            }
+
+            if (Alter < 18 && Wochentag >= 1 && Wochentag <=5)
+            {
+                Console.WriteLine("Ermäßigter Eintritt - Wertag");
+            }
+            else if (Alter > 18 &&  Wochentag >= 6 &&  Wochentag <=7)
+            {
+                Console.WriteLine("Normal Eintritt - Wochenende");
+            }
+            else
+            {
+                Console.WriteLine("Normal Eintritt - Wochenende");
+            }
+        }
+    }
+}
