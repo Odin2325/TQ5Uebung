@@ -1,0 +1,27 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine(" liest die Temperatur ein und gibt eine Empfehlung:");
+            int Temperatur = int.Parse(Console.ReadLine());
+
+            if (Temperatur > 30)
+            {
+                Console.WriteLine("Es ist heiß, trinke viel Wasser");
+
+            }
+            else if (Temperatur >= 15 && Temperatur <= 30)
+            {
+                Console.WriteLine("Das Wetter ist angenem");
+            }
+            else 
+            {
+                Console.WriteLine("Es ist kalt, ziehe eine Jacke an");
+            }
+
+
+        }
+    }
+}
