@@ -5,6 +5,20 @@
 
         static void Main(string[] args)
         {
+            //datentyp variableName = wert;
+            //datentyp variableName;
+            string name;
+            Console.WriteLine("Geben Sie bitte Ihr name ein: ");
+            name = Console.ReadLine();
+            Console.WriteLine("Geben Sie Ihr alter ein: ");
+            //int alter = Convert.ToInt32(Console.ReadLine());
+            //int.TryParse(Console.ReadLine(),out int alter);
+
+            double zahlMitKommaStelle = 90.5;
+            int ganzeZahl = (int)zahlMitKommaStelle;
+
+            SummeZufallsZahlen();
+
 
         }
 
@@ -15,7 +29,7 @@
             Program.Summe(zufallszahlGenerator.Next(1, 301), zufallszahlGenerator.Next(1, 301), zufallszahlGenerator.Next(1, 301));
         }
 
-        internal static void Summe(int a, int b, int c)
+        internal static void Summe(int a, int b, double c)
         {
             Console.WriteLine($"Die Summe von {a} + {b} + {c} ist: {a+b+c}");
         }
