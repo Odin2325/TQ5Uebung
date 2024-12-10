@@ -4,9 +4,143 @@
     {
         static void Main(string[] args)
         {
-
             
 
+            
+        }
+        public static void RepeatInput()
+        {
+            Console.WriteLine("Bitte gebe ein Zeichen oder einen Text ein:");
+            string input = Console.ReadLine();
+
+            Console.WriteLine("Wie oft soll es wiederholt werden?");
+            if (!int.TryParse(Console.ReadLine(), out int height) || height <= 0)
+            {
+                Console.WriteLine("Bitte gebe eine gültige Zahl größer als 0 ein.");
+                return;
+            }
+
+            for (int i = 1; i <= height; i++)
+            {
+                string spaces = new string(' ', (height - i) * 2);
+
+                string layer = string.Join("   ", Enumerable.Repeat(input, i));
+
+                Console.WriteLine(spaces + layer);
+            }
+        }
+
+        public static void PyramideErstellen(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                for (int k = n; k >= i; k--)
+                {
+                    Console.Write(" ");
+                }
+                for (int j = 0; j < i+1; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        public static void PinUeberpruefung(string echtenPin)
+        {
+            string pinEingabe = "";
+            for (int i = 1; i <= 3; i++)
+            {
+                Console.WriteLine("Geben Sie bitte ihr pin ein: ");
+                pinEingabe = Console.ReadLine();
+                if (pinEingabe == echtenPin)
+                {
+                    Console.WriteLine("Sie werden eingeloggt.");
+                    return;
+                }
+                else
+                {
+                    Console.WriteLine("Uebrige versuche: " + (3 - i));
+                }
+            }
+            Console.WriteLine("Kontaktieren Sie bitte die Filiale um ihr Konto wieder zu aktivieren.");
+        }
+
+
+        //public void ValidateInput()
+        //{
+        //    outputs.NormalOutput("Bitte gebe eine Zahl zwischen 0 und 15 ein.");
+
+        //    int versuche = 0;
+        //    int zahl;
+        //    bool validate;
+
+        //    while (true)
+        //    {
+        //        validate = int.TryParse(Console.ReadLine(), out zahl);
+
+        //        if (!validate)
+        //        {
+        //            outputs.ErrorOutput("Bitte gebe eine Zahl ohne Kommastelle oder Buchstabe/Sonderzeichen ein.");
+        //            versuche++;
+        //            continue;
+        //        }
+
+        //        if (zahl >= 0 && zahl <= 15)
+        //        {
+        //            outputs.SuccessOutput($"Du hast die {zahl} als gültige Zahl eingegeben.\nDu brauchtest {versuche + 1} Versuche.");
+        //            break;
+        //        }
+        //        else
+        //        {
+        //            outputs.ErrorOutput("Die Zahl liegt nicht im Bereich von 0 bis 15.");
+        //            versuche++;
+        //        }
+        //    }
+        //}
+
+        public static void EingabePruefen()
+        {
+            int resultat = -1;
+            int versuche = 0;
+
+            while (true)
+            {
+                Console.WriteLine("Geben Sie bitte eine Zahl zwischen 0 und 15 ein: ");
+                if(int.TryParse(Console.ReadLine(), out resultat))
+                {
+                    if(resultat >=0 && resultat <= 15)
+                    {
+                        break;
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("Bitte nur Zahlen eingeben!");
+                }
+                versuche++;
+            }
+
+            Console.WriteLine($"Eingabe Zahl: {resultat} - Versuche: {versuche+1}");
+        }
+
+        public static void CalculateSumme(int target)
+        {
+            Console.WriteLine($"Beginne mit berechnung der Summe.");
+
+            int summe = 0;
+            //for (int i = 0; i < target; i++)
+            //{
+            //    summe += i;
+            //}
+            int i = 1;
+            while (i < target)
+            {
+                summe += i;
+                i++;
+            }
+
+            Console.WriteLine($"Deine berechnete Summe beträgt: {summe}");
         }
 
         internal static void Waehrungsrechner()
@@ -15,21 +149,36 @@
             const decimal inr = 89.655121m;
             const decimal gbp = 0.82812935m;
             const decimal usd = 1.0581981m;
+            decimal betragInEuro = -1;
 
             Console.WriteLine("-----------Waehrungsrechner-----------");
-            Console.WriteLine("Geben Sie dein Betrag ein: ");
-            decimal.TryParse(Console.ReadLine(),out decimal betragInEuro);
+            do
+            {
+                Console.WriteLine("Geben Sie dein Betrag ein: ");
+                bool istZahl = decimal.TryParse(Console.ReadLine(), out betragInEuro);
+                if (betragInEuro <= 0)
+                {
+                    Console.WriteLine("Ungueltige Eingabe, probieren Sie bitte nochmal mit nur positive Zahlen.");
+                }
+                else if(istZahl)
+                {
+                    break;
+                }
+            } while (true);
 
-            Console.WriteLine("Wir arbeiten mit die folgenden Waehrungen. Waehlen Sie bitte eins davon aus, anhand der Zahl:");
-            Console.WriteLine("1. YEN\n2. INR\n3. GBP\n4. USD");
-            string gewuenschteWaehrung = Console.ReadLine().ToUpper();
+            int gewuenschteWaehrung = 0;
+            do {
+                Console.WriteLine("Wir arbeiten nur mit die folgenden Waehrungen. Waehlen Sie bitte eins davon aus, anhand der Zahl:");
+                Console.WriteLine("1. YEN\n2. INR\n3. GBP\n4. USD");
+                int.TryParse(Console.ReadLine(), out gewuenschteWaehrung);
+            } while (gewuenschteWaehrung <= 0 || gewuenschteWaehrung >= 5);
 
             decimal endBetrag = gewuenschteWaehrung switch
             {
-                "1" => yen*betragInEuro,
-                "2" => inr*betragInEuro,
-                "3" => gbp*betragInEuro,
-                "4" => usd*betragInEuro,
+                1 => yen*betragInEuro,
+                2 => inr*betragInEuro,
+                3 => gbp*betragInEuro,
+                4 => usd*betragInEuro,
                 _ => throw new Exception("Ungueltige Option.")
             };
 
