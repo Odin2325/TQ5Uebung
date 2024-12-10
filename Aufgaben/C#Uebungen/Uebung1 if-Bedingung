@@ -1,0 +1,32 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            //int zahl;
+            //zahl = 5;
+            Console.WriteLine(" Bitte eine Zahl zwischen 1 und 10 eingeben");
+            string eingabe= Console.ReadLine();
+            int zahl = Convert.ToInt32(eingabe);
+            if (zahl > 5)
+            {
+                Console.WriteLine("Die Zahl ist größer als 5");
+               
+            }
+            else if (zahl < 5)
+            {
+                Console.WriteLine("Die Zahl ist größer 5");
+               
+            }
+            else
+            {
+                Console.WriteLine("Zahl gleich 5");
+               
+            }
+
+
+
+        }
+    }
+}
