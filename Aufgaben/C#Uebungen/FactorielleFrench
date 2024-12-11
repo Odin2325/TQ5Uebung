@@ -1,0 +1,29 @@
+amespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Vous voulez la factorielle de quel nombre?");
+            string nombre_utisateur =Console.ReadLine();
+
+            int convertion = int.Parse(nombre_utisateur);
+
+            int factorielle = 1;
+
+            for (int i = 1; i <= convertion; i++) 
+            {
+               factorielle *= i;    
+            }
+
+            if (convertion <= 31)
+            {
+                Console.WriteLine(string.Format("La factorielle de {0} est {1}", nombre_utisateur, factorielle));
+            }
+            else
+            {
+                Console.WriteLine("Le nombre est trop grand ! On sort du int");
+            }
+        }
+    }
+}
