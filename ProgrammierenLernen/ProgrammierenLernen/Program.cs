@@ -1,13 +1,489 @@
-﻿namespace ProgrammierenLernen
+﻿using System.Numerics;
+using System.IO;
+using System.Text;
+using System;
+
+namespace ProgrammierenLernen
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            
-
-            
+            /*
+             * Einkaufen bei TechStore (mediamarkt, apple store, saturn, etc...) list mit budget.
+             * 
+             * Wir gehen einkaufen. Wir sollten ein budget in die methode als parameter eingeben.
+             * Wir sollten jetzt in einen TechStore einkaufen gehen.
+             * Der benutzer soll einen Menue bekommen mit die Produkte und ihre Preise die er kaufen koennte.
+             * D.h. Wir brauchen einen dictionary fuer produkt und preis.
+             * 
+             * Dann soll der benutzer in einen Kleinen menue aufgefordert werden produkte zu kaufen.
+             * Wichtig hier, er darf sein budget nicht ueberschreiten.
+             * 
+             * Programmablauf:
+             * Wilkommen in MediaMarkt!
+             * Was moechten Sie heute kaufen?
+             * 1. Laptop - 1200
+             * 2. Handy - 800
+             * 3. Kaffeemaschine - 400
+             * 4. Waschmaschine - 700
+             * 5. Druecker - 140
+             * 6. Fernseher - 340
+             * 7. Beenden
+             * 
+             * Wenn etwas gekauft wird, dann soll es zu die gekaufteProdukte hinzugefuegt werden.
+             * Wir haben hierfuer eine Liste mit alle produkte die gekauft worden sind
+             * Und auch eine variable fuer die gesamt summe aller produkte die wir gekauft haben.
+             * 
+             * Es soll am ende eine Rechnung erstellt werden:
+             * Es soll ausgegeben werden welche produkte gekauft worden sind, wie viel wir dafuer gezahlt haben und am ende die summe.
+             * Bspw: [Handy, Drueker, Fernseher, Handy]:
+             * 
+             * Handy x2 - 1600
+             * Druecker x1 - 140
+             * Fernseher x1 - 340
+             * Betrag: 2080
+             */
         }
+
+        public static void TechEinkaufen(decimal budget)
+        {
+            Dictionary<string, int> warenkorb = new Dictionary<string, int>();
+            decimal betrag = 0;
+            string? eingabe = "";
+            bool willAbrechen = false;
+            Dictionary<string, decimal> produkte = new Dictionary<string, decimal>
+            {
+                {"Laptop", 1200},
+                {"Handy", 800},
+                {"Drucker", 140},
+                {"Fernseher", 340},
+                {"Kaffeemaschine", 400},
+                {"Waschmaschine",700},
+            };
+
+            Console.WriteLine("Wilkommen in MediaMarkt: ");
+            Console.WriteLine("Was moechten Sie heute kaufen?");
+            Console.WriteLine("Druecken Sie bitte die dazugehoerige Zahl um ein Produkt in Ihr Warenkorb hinzuzufuegen.");
+
+            while (!willAbrechen)
+            {
+                Console.WriteLine("Druecken Sie bitte eine Taste um weiter zu machen.");
+                Console.ReadKey();
+                Console.Clear();
+                if (betrag + MinDictionary(produkte) > budget)
+                {
+                    Console.WriteLine("Sie koennen keine weitere Produkte kaufen.");
+                    Console.WriteLine("Ihr Budget ist ausgenutzt, wir schicken Ihnen zum Checkout.");
+                    break;
+                }
+                Console.WriteLine("Ihr budget betraegt: " + (budget-betrag));
+                Console.WriteLine("1. Laptop - 1200\r\n2. Handy - 800\r\n3. Kaffeemaschine - 400\r\n4. Waschmaschine - 700\r\n5. Drucker - 140\r\n6. Fernseher - 340\r\n7. Beenden");
+                eingabe = Console.ReadLine();
+                if(eingabe == null || eingabe == "")
+                {
+                    continue;
+                }
+                var ausgewaehlterProdukt = "";
+                switch (eingabe)
+                {
+                    case "1":
+                        ausgewaehlterProdukt = "Laptop";
+                        break;
+                    case "2":
+                        ausgewaehlterProdukt = "Handy";
+                        break;
+                    case "3":
+                        ausgewaehlterProdukt = "Kaffeemaschine";
+                        break;
+                    case "4":
+                        ausgewaehlterProdukt = "Waschmaschine";
+                        break;
+                    case "5":
+                        ausgewaehlterProdukt = "Drucker";                        
+                        break;
+                    case "6":
+                        ausgewaehlterProdukt = "Fernseher";
+                        break;
+                    case "7":
+                        willAbrechen = true;
+                        continue;
+                    default:
+                        Console.WriteLine("Ungueltige Eingabe, bitte nur Zahlen zwischen 1-7 eingeben.");
+                        continue;
+                }
+
+                if (betrag + produkte[ausgewaehlterProdukt] <= budget)
+                {
+                    //Wenn ein key nicht vorhanden ist und wir machen eine zuweisung mit schluessel und wert, dann wird es hinzugefuegt.
+                    warenkorb[ausgewaehlterProdukt] = warenkorb.GetValueOrDefault(ausgewaehlterProdukt, 0) + 1;
+                    betrag += produkte[ausgewaehlterProdukt];
+                }
+                else
+                {
+                    Console.WriteLine("Nicht genug geld im Budget.");
+                }
+            }
+            Console.WriteLine("Hier ist Ihre Rechnung: ");
+            Console.WriteLine(RechnungErstellenOhneGesamtBetrag(produkte, warenkorb)+"Betrag: " + betrag);
+        }
+
+        public static string RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal> produkte, Dictionary<string, int> warenkorb)
+        {
+            //laptop, 2
+            //Handy x2 - 1600
+            string resultat = "";
+            foreach (var kvp in warenkorb)
+            {
+                if (produkte.ContainsKey(kvp.Key))
+                {
+                    resultat += $"{kvp.Key} x{kvp.Value} - {kvp.Value * produkte[kvp.Key]}\r\n";
+                }
+            }
+            return resultat;
+        }
+
+        public static decimal MinDictionary(Dictionary<string, decimal> produkte)
+        {
+            decimal min = decimal.MaxValue;
+            foreach(var paar in produkte)
+            { 
+                if(paar.Value < min)
+                {
+                    min = paar.Value;
+                }
+            }
+            return min;
+        }
+
+        public static void OpenWith(string pfad)
+        {
+            string dateiName = DateiName(pfad);
+            string dateiTyp = DateiTyp(pfad);
+            string applicationName = "";
+
+            Dictionary<string, string> openingApplication = new Dictionary<string, string>();
+            openingApplication.Add("txt", "C:\\Windows\\system32\\notepad.exe");
+            openingApplication.Add("cs", "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe");
+            openingApplication.Add("py", "C:\\Users\\MYTQ-Trainer\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe");
+            openingApplication.Add("html", "C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe");
+
+            if (openingApplication.ContainsKey(dateiTyp))
+            {
+                applicationName = DateiName(openingApplication[dateiTyp]);
+                Console.WriteLine($"Sie koennen die Datei {dateiName} mit {applicationName} oeffnen, da es eine {dateiTyp} Datei ist.");
+            }
+            else
+            {
+                Console.WriteLine("Unknown File Type.");
+                Console.WriteLine("Please download a software to open that kind of file.");
+            }
+        }
+
+
+        public static string DateiTyp(string pfad)
+        {
+            int indexPunkt = pfad.LastIndexOf(".");
+
+            string nachPunkt = pfad.Substring(indexPunkt + 1);
+
+            return nachPunkt;
+            //return Path.GetExtension(pfad).Trim('.');
+        }
+
+        public static string DateiName(string pfad)
+        {
+            int indexSchraegstrich = 0;
+            if (pfad.Contains("\\"))
+            {
+                indexSchraegstrich = pfad.LastIndexOf('\\');
+
+            }
+            else if (pfad.Contains("/"))
+            {
+                indexSchraegstrich = pfad.LastIndexOf('/');
+            }
+            else
+            {
+                indexSchraegstrich = -1;
+            }
+
+            //01234567891011 =>Laenge = 12 - 5 = 7-3 = 4
+            //text/name.py
+            int laenge = pfad.Length - indexSchraegstrich - DateiTyp(pfad).Length - 2;
+
+            return pfad.Substring(indexSchraegstrich + 1,laenge);
+        }
+
+
+        public static Tuple<List<string>, List<string>> Pangram()
+        {
+            List<string> originalWords = new List<string>();
+            List<string> reversedWords = new List<string>();
+
+            Console.WriteLine("Geben Sie Wörter ein. Geben Sie 'stop' ein, um die Eingabe zu beenden:");
+
+            while (true)
+            {
+                Console.ForegroundColor = ConsoleColor.Blue;
+                string input = Console.ReadLine();
+
+                if (input.ToLower() == "stop")
+                {
+                    break;
+                }
+
+                originalWords.Add(input);
+                char[] charArray = input.ToCharArray();
+                Array.Reverse(charArray);
+                reversedWords.Add(new string(charArray));
+            }
+
+            Console.ResetColor();
+            return Tuple.Create(originalWords, reversedWords);
+        }
+
+        public static string Pangram(string input, string sep = " ")
+        {
+            var words = new List<string>();
+
+            foreach (var word in input.Split(sep))
+            {
+                words.Add(Reverse(word));
+            }
+
+            return string.Join(" ", words);
+        }
+
+        static string Reverse(string str)
+        {
+            return string.Concat(str.Reverse());
+        }
+
+        /// <summary>
+        /// Ein gegebener Satz wird aufgeteilt in einzelne Woerter.
+        /// Danach werden diese Woerter umgedreht mit unsere Reverse() methode.
+        /// Dann geben wir wieder alle Woerter in einen String zurueck ohne die Reihenfolge zu veraendern.
+        /// </summary>
+        /// <param name="eingabe">Unser Eingabe Satz</param>
+        /// <exception cref="NullPointerException">Moeglicherweise string ist null</exception>
+        /// <returns><ref name="eingabe">Eingabe </ref>Soll umgedreht werden.</returns>
+        public static string Pangram(string eingabe)
+        {
+            //Woerter sind in einen string array aufgeteilt.
+            string[] aufgeteilterSatz = eingabe.Split(' ');
+            //List<string> umgredehtreWoerter = new List<string>();
+            string[] resultatWoerter = new string[aufgeteilterSatz.Length];
+
+            //Wert an der stelle 0 = Hallo
+            //foreach (string wort in aufgeteilterSatz)
+            //{
+            //    umgredehtreWoerter.Add(ReverseString(wort));
+            //}
+            
+            for(int i = 0; i< resultatWoerter.Length; i++)
+            {
+                resultatWoerter[i] = ReverseString(aufgeteilterSatz[i]);
+            }
+
+            return JoinArray(resultatWoerter);
+        }
+
+        public static string ReverseString(string wort)
+        {
+            char[] zeichenWort = wort.ToCharArray();
+
+            Array.Reverse(zeichenWort);
+
+            string resultat = new string(zeichenWort);
+
+            return resultat;
+        }
+
+        public static string JoinArray(string[] zeichenFolgen, string seperator = " ")
+        {
+            string resultat = "";
+
+            for (int i = 0; i < zeichenFolgen.Length; i++)
+            {
+                if (i == zeichenFolgen.Length - 1)
+                {
+                    resultat += zeichenFolgen[i];
+                }
+                else
+                {
+                    resultat += zeichenFolgen[i] + seperator;
+                }
+            }
+
+            return resultat;
+        }
+
+
+        public static string RandomChars(int length, bool includeUpperCase = false)
+        {
+            var random = new Random();
+            List<char> chars = new List<char>(length);
+
+            while (chars.Count() < length)
+            {
+                if (includeUpperCase)
+                {
+                    char c = (char)random.Next('A', 'z' + 1);
+                    // ...UVWXYZ[\]^_`abcdef...
+                    //         ^-skip-^
+                    if ('Z' < c && c < 'a') continue;
+                    chars.Add(c);
+                }
+                else
+                {
+                    chars.Add((char)random.Next('a', 'z' + 1));
+                }
+            }
+            return string.Join("", chars);
+        }
+        public string GenerateRandomWord(int length)
+        {
+            if (length <= 0)
+            {
+                throw new ArgumentException("Die Länge muss größer als 0 sein.");
+            }
+
+            Random random = new Random();
+            StringBuilder wordBuilder = new StringBuilder();
+
+            for (int i = 0; i < length; i++)
+            {
+                int charType = random.Next(0, 52);
+
+                char randomChar;
+                if (charType < 26)
+                {
+                    randomChar = (char)(charType + 97);
+                }
+                else
+                {
+                    randomChar = (char)(charType - 26 + 65);
+                }
+
+                wordBuilder.Append(randomChar);
+            }
+
+            return wordBuilder.ToString();
+        }
+
+        public static List<string> EinkaufsListeGenerator()
+        {
+            string eingabe = "";
+            List<string> einkaufsListe = new List<string>();
+            do
+            {
+                Console.WriteLine("Geben Sie das naechste Produkt fuer Ihre einkaufsliste: ");
+                eingabe = Console.ReadLine();
+                if (eingabe == "" || eingabe == null)
+                {
+                    Console.WriteLine("Ungueltige Eingabe!");
+                    continue;
+                }
+
+                if (eingabe.ToUpper() == "FERTIG")
+                {
+                    continue;
+                }
+
+                einkaufsListe.Add(eingabe);
+
+            } while (eingabe.ToUpper() != "FERTIG");
+
+            Console.WriteLine("Einkaufsliste Erstellt!");
+            return einkaufsListe;
+        }
+
+        public static int FindIndex(double[] zahlen, double gesuchteZahl)
+        {
+            if (zahlen == null || zahlen.Length == 0) Console.WriteLine("");
+
+            for(int i = 0; i<zahlen.Length; i++)
+            {
+                if (zahlen[i] == gesuchteZahl)
+                {
+                    return i;
+                }
+            }
+            return -1;
+        }
+
+        public static void PrintArray(string[] array)
+        {
+            Console.WriteLine("{" + JoinArray(array, ", ") + "}");
+        }
+
+
+
+        //text sep
+        //sep text
+
+        
+
+
+        public static decimal Summe(decimal[] zahlen)
+        {
+            decimal summe = 0;
+            for (int i = 0; i < zahlen.Length; i++)
+            {
+                summe += zahlen[i];
+                if (zahlen[i] % 2 == 0)
+                {
+                    zahlen[i]++;
+                }
+            }
+            //foreach(int zahl in zahlen)
+            //{
+            //    summe += zahl;
+            //    if (zahl % 2 == 0)
+            //    {
+
+            //    }
+            //}
+            return summe;
+        }
+        public static int Summe(int a, int b)
+        {
+            return a + b;
+        }
+
+        public static int Summe(int[] zahlen)
+        {
+            int summe = 0;
+            for(int i = 0; i < zahlen.Length; i++)
+            {
+                summe += zahlen[i];
+                if (zahlen[i] % 2 == 0)
+                {
+                    zahlen[i]++;
+                }
+            }
+            //foreach(int zahl in zahlen)
+            //{
+            //    summe += zahl;
+            //    if (zahl % 2 == 0)
+            //    {
+                    
+            //    }
+            //}
+            return summe;
+        }
+
+        public static BigInteger Faktoriell(BigInteger zahl)
+        {
+            if (zahl == 0)
+            {
+                return 1;
+            }
+
+            return zahl * Faktoriell(zahl - 1);
+        }
+
         public static void RepeatInput()
         {
             Console.WriteLine("Bitte gebe ein Zeichen oder einen Text ein:");
@@ -46,7 +522,7 @@
             }
         }
 
-        public static void PinUeberpruefung(string echtenPin)
+        public static bool PinUeberpruefung(string echtenPin)
         {
             string pinEingabe = "";
             for (int i = 1; i <= 3; i++)
@@ -56,7 +532,7 @@
                 if (pinEingabe == echtenPin)
                 {
                     Console.WriteLine("Sie werden eingeloggt.");
-                    return;
+                    return true;
                 }
                 else
                 {
@@ -64,6 +540,7 @@
                 }
             }
             Console.WriteLine("Kontaktieren Sie bitte die Filiale um ihr Konto wieder zu aktivieren.");
+            return false;
         }
 
 
