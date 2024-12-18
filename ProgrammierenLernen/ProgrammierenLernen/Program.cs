@@ -8,8 +8,291 @@ namespace ProgrammierenLernen
     {
         static void Main(string[] args)
         {
-            var person = (Name:"Nicolas",Alter:45);
-            Console.WriteLine(person.Name);
+            Buch lordOfTheRings = new Buch(
+                423,
+                "JRR Tolkien",
+                "FellowshipOfTheRing",
+                "Fantasy",
+                "1.",
+                "978-0547928210",
+                40,
+                "1954"
+                );
+
+            lordOfTheRings.InhalteLesen(3);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        /// <summary>
+        /// Erzeugt eine schoene ausgabe anhand von die StudentenInfos Tupeln.
+        /// </summary>
+        public static void StudentAusgabe()
+        {
+            List<(string Name, int Alter, double DurchschnittsNote)> StudentenInfos = StudentenInformationen();
+            Console.WriteLine("--------------------------------");
+            Console.WriteLine("Name\t\t| Age\t| Grade");
+            Console.WriteLine("--------------------------------");
+            foreach (var student in StudentenInfos) 
+            {
+                Console.WriteLine($"{student.Name}\t| {student.Alter}\t| {Math.Round(student.DurchschnittsNote,1)}");
+            }
+        }
+        /// <summary>
+        /// Methode um Studentent Tupeln zu erstellen und als Liste zurueckzugeben.
+        /// 
+        /// </summary>
+        /// <returns>(string Name, int Alter, double DurchschnittsNote)</returns>
+        private static List<(string Name,int Alter,double DurchschnittsNote)> StudentenInformationen()
+        {
+            List<(string Name, int Alter, double DurchschnittsNote)> studentenListe = new List<(string Name, int Alter, double DurchschnittsNote)>();
+
+            int zaehler = 1;
+            string name;
+            int alter;
+            double note;
+
+            while (true)
+            {
+                Console.WriteLine($"Geben Sie die details von Student {zaehler} ein:");
+
+                name = StudententNameOrWert("Name");
+                alter = StudententAlter();
+                note = StudententNote();
+
+                studentenListe.Add((name, alter, note));
+                Console.Clear();
+                if (StudententNameOrWert("Weiter") == "n")
+                {
+                    break;
+                }
+                
+                zaehler++;
+            }
+            return studentenListe;
+        }
+
+        private static int StudententAlter()
+        {
+            int alter;
+            bool validerInput = false;
+
+            do
+            {
+                Console.Write("Alter: ");
+                int.TryParse(Console.ReadLine(),out alter);
+
+                if (alter>6 && alter<=20)
+                {
+                    validerInput = true;
+                }
+            } while (!validerInput);
+            return alter;
+        }
+
+        private static double StudententNote()
+        {
+            double note = 0;
+            bool validerInput = false;
+
+            do
+            {
+                try
+                {
+                    Console.Write("Note: ");
+                    note = Convert.ToDouble(Console.ReadLine());
+                }
+                catch(FormatException e)
+                {
+                    Console.WriteLine("Nicht valide Note. Bitte nur zahlen eingeben.");
+                    continue;
+                }
+
+                if (note <= 100 && note >= 0)
+                {
+                    validerInput = true;
+                }
+                else
+                {
+                    Console.WriteLine("Zahl muss im Bereich zwischen 0 und 100 sein.");
+                }
+            } while (!validerInput);
+            return note;
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="ausgabe"></param>
+        /// <returns></returns>
+        private static string StudententNameOrWert(string ausgabe)
+        {
+            string eingabe = "";
+            bool validerInput = false;
+
+            do
+            {
+                if (ausgabe == "Name")
+                {
+                    Console.Write("Name: ");
+                    eingabe = Console.ReadLine();
+                }
+                else if(ausgabe == "Weiter")
+                {
+                    Console.WriteLine("Moechten Sie noch einen Student im System speichern? y oder n eingeben bitte.");
+                    eingabe = Console.ReadLine();
+                    if(eingabe=="y" || eingabe == "n")
+                    {
+                        return eingabe;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+
+                if (eingabe != null && eingabe != "")
+                {
+                    validerInput = true;
+                }
+            } while (!validerInput);
+            return eingabe;
+        }
+
+        public static (double Durchschnitt,double Summe,double Min,double Max,int Count) ListStatistics(List<double> zahlen)
+        {
+            return (zahlen.Average(), zahlen.Sum(), zahlen.Min(), zahlen.Max(), zahlen.Count);
+        }
+
+        /*
+         * Wir moechten eine Methode schreibe die heisst ListStatistics(List<double> zahlen).
+         * Diese methode sollte einen Tupel zurueckgeben mit die folgenden informationen.
+         * 
+         * 1. Durchschnitt
+         * 2. Summe
+         * 3. Min
+         * 4. Max
+         * 5. Anzahl Werte
+         * 
+         * Dies heisst, der rueckgabetyp sollte einen Tupel sein. 
+         * Dieser Tupel soll Benannte Tupel variablen verwenden.
+         * 
+         * Am besten selber methoden schreiben um alle Werte zu bekommen. 
+         * 4 helfermethoden + unsere ListStatistics Methode
+         * 
+         * Beispiel von die Folien:
+         * public static (string Name, int Alter) GetPerson(){}
+         */
+
+
+
+        /*
+         * Wir muessen dir Formel berechnen:
+         * n! / (r!*((n-r)!))
+         * 
+         * Eine for schleife um die Zahl n zu berechnen (aktueller zeilen nummer)
+         * Innere for schleife um die Zahl r zu berechnen (aktuelle spalten)
+         */
+        /// <summary>
+        /// Creates a pyramid representing the values in Pascals Triangle.
+        /// </summary>
+        /// <param name="hoehe"></param>
+        public static void PascalTriangle(int hoehe)
+        {
+            for(int n = 0; n <= hoehe; n++)
+            {
+                Console.Write(new string(' ', (int)hoehe - n));
+                for (int r = 0; r <= n; r++)
+                {
+                    Console.Write(NcR(n,r) + " ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        /// <summary>
+        /// Calculates n choose r.
+        /// </summary>
+        /// <param name="n"></param>
+        /// <param name="r"></param>
+        /// <returns></returns>
+        public static BigInteger NcR(BigInteger n, BigInteger r)
+        {
+            return Faktoriell(n) / (Faktoriell(r) * Faktoriell(n - r));
+        }
+        
+
+
+        public static void NANP(string telephoneNummer)
+        {
+            //Sonderzeichen Loeschen-Entfernen
+            char[] einzelZeichen = telephoneNummer.ToCharArray();
+            string resultat = "";
+
+            foreach(char zeichen in einzelZeichen)
+            {
+                if(zeichen>='0' && zeichen <= '9')
+                {
+                    resultat += zeichen;
+                }
+            }
+
+            if (resultat.Length > 10)
+            {
+                //4912345678910
+                //49816112345 6
+                //Laenge 11
+                //11-10 = 1 Index
+
+                //Substring(1) wenn nur NANP telephonenummern.
+                //Unsere variante, alle telephonnummern egal welche laendervorwahlzahl
+                //Wir gehen davon aus alle zahlen haben 10 zeichen.
+                resultat = resultat.Substring(resultat.Length - 10);
+            }
+
+            Console.WriteLine("Telephonenummer: " + resultat);
+        }
+
+        //gerade => n/2
+        //ungerade => 3n + 1
+        //Bis die Zahl 1
+        public static (int,int) Collatz(int n, int schritte=0)
+        {
+            if(n <= 0)
+            {
+                Console.WriteLine("Ungueltige Eingabe.");
+                return (-1,-1);
+            }
+
+            if (n == 1)
+            {
+                return (n, schritte);
+            }
+
+            Console.WriteLine($"{schritte+1}. {n}");
+            if (n % 2 == 0)
+            {
+                //n /= 2;
+                return Collatz( n / 2, schritte++);
+            }
+            else
+            {
+                return Collatz( 3 * n + 1, schritte++);
+            }
+            
         }
 
 
