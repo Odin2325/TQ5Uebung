@@ -35,24 +35,19 @@ namespace Grundlagen.utils
             {
                 int part = int.Parse(parts[i]);
 
-                if (part < 9)
+                if (part < 99)
                 {
-                    parts[i] = (part + 1).ToString();
-                    break;
+                    parts[i] = (part + 1).ToString("D2"); // Inkrementieren, mit führender Null
+                    return string.Join(".", parts);
                 }
                 else
                 {
-                    parts[i] = "0";
-
-                    // Wenn wir am letzten Part angelangt sind und zurücksetzen, prüfen wir, ob wir eine weitere Stelle hinzufügen müssen
-                    if (i == 0)
-                    {
-                        // Füge dem ersten Part eine Stelle hinzu
-                        parts[i] = (part + 1).ToString();
-                    }
+                    parts[i] = "00"; // Zurücksetzen auf "00", wenn die Grenze erreicht ist
                 }
             }
 
+            // Wenn alle Teile "99" waren und zurückgesetzt wurden, erweitere die Struktur
+            parts = new string[] { "1" }.Concat(parts).ToArray();
             return string.Join(".", parts);
         }
     }

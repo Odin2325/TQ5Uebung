@@ -10,8 +10,8 @@ namespace Grundlagen.Simple
     internal class MessageWorker
     {
         Outputs outputs;
-        public MessageWorker() 
-        { 
+        public MessageWorker()
+        {
             outputs = new Outputs();
         }
 
@@ -114,6 +114,75 @@ namespace Grundlagen.Simple
                 {
                     finish = true;
                 }
+            }
+        }
+
+        public void ValidateInput()
+        {
+            outputs.NormalOutput("Bitte gebe eine Zahl zwischen 0 und 15 ein.");
+
+            int versuche = 0;
+            int zahl;
+            bool validate;
+
+            while (true)
+            {
+                validate = int.TryParse(Console.ReadLine(), out zahl);
+
+                if (!validate)
+                {
+                    outputs.ErrorOutput("Bitte gebe eine Zahl ohne Kommastelle oder Buchstabe/Sonderzeichen ein.");
+                    versuche++;
+                    continue;
+                }
+
+                if (zahl >= 0 && zahl <= 15)
+                {
+                    outputs.SuccessOutput($"Du hast die {zahl} als gültige Zahl eingegeben.\nDu brauchtest {versuche + 1} Versuche.");
+                    break;
+                }
+                else
+                {
+                    outputs.ErrorOutput("Die Zahl liegt nicht im Bereich von 0 bis 15.");
+                    versuche++;
+                }
+            }
+        }
+
+        public void RepeatInput()
+        {
+            outputs.NormalOutput("Bitte gebe ein Zeichen oder einen Text ein:");
+            string input = Console.ReadLine();
+
+            outputs.NormalOutput("Wie oft soll es wiederholt werden?");
+            if (!int.TryParse(Console.ReadLine(), out int height) || height <= 0)
+            {
+                outputs.ErrorOutput("Bitte gebe eine gültige Zahl größer als 0 ein.");
+                return;
+            }
+
+            for (int i = 1; i <= height; i++)
+            {
+                string spaces = new string(' ', (height - i) * 2);
+
+                string layer = string.Join("   ", Enumerable.Repeat(input, i));
+
+                outputs.NormalOutput(spaces + layer);
+            }
+        }
+
+        public void NameChecker()
+        {
+            outputs.NormalOutput("Bitte gebe deinen Namen ein...");
+            string name = Console.ReadLine();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                outputs.SuccessOutput($"Eins für {name} und eins für mich.");
+            }
+            else
+            {
+                outputs.SuccessOutput("Eins für dich, eins für mich.");
             }
         }
     }

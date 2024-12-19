@@ -118,5 +118,55 @@ namespace Grundlagen.Simple
                 outputs.SuccessOutput(zahl.ToString()); 
             } 
         }
+
+        public void CalculateSumme(int target)
+        {
+            outputs.NormalOutput($"Beginne mit berechnung der Summe.");
+
+            int summe = 0;
+            for (int i = 0; i < target; i++)
+            {
+                summe += i;
+            }
+
+            outputs.SuccessOutput($"Deine berechnete Summe beträgt: {summe}");
+        }
+
+        public void FaktorAusgabe()
+        {
+            outputs.NormalOutput("==============Berechne den Faktor==============");
+            int count3 = 0, count5 = 0, count7 = 0;
+
+            for (int i = 0; i <= 100; i++)
+            {
+                string ausgabe = i.ToString();
+                string ergaenzung = "";
+
+                if (i % 3 == 0)
+                {
+                    ergaenzung += "pling";
+                    count3++;
+                }
+                if (i % 5 == 0)
+                {
+                    ergaenzung += "plang";
+                    count5++;
+                }
+                if (i % 7 == 0)
+                {
+                    ergaenzung += "plong";
+                    count7++;
+                }
+
+                if (!string.IsNullOrEmpty(ergaenzung)) ausgabe += " " + ergaenzung;
+
+                outputs.SuccessOutput(ausgabe);
+            }
+
+            outputs.NormalOutput("\n============Statistik============");
+            outputs.NormalOutput($"Anzahl Zahlen durch 3 teilbar: {count3}");
+            outputs.NormalOutput($"Anzahl Zahlen durch 5 teilbar: {count5}");
+            outputs.NormalOutput($"Anzahl Zahlen durch 7 teilbar: {count7}");
+        }
     }
 }

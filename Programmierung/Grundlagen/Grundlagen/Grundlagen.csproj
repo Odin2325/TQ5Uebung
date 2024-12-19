@@ -58,12 +58,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Aufgaben\Kasse.cs" />
+    <Compile Include="Erfahren\RNASequenzierung.cs" />
+    <Compile Include="Fortgeschritten\ArraysAndLists.cs" />
+    <Compile Include="Fortgeschritten\CalculateTwo.cs" />
     <Compile Include="Fortgeschritten\Switches.cs" />
     <Compile Include="Simple\Calculate.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simple\DictionaryCalculate.cs" />
     <Compile Include="Simple\MessageWorker.cs" />
+    <Compile Include="utils\FileOpener.cs" />
+    <Compile Include="utils\ListUtils.cs" />
     <Compile Include="utils\Outputs.cs" />
     <Compile Include="utils\VersionHandler.cs" />
   </ItemGroup>
