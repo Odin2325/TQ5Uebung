@@ -41,7 +41,7 @@ namespace ProgrammierenLernen
                 {
                     inhaltDatei = File.ReadAllLines(file);
                     //seiten = inhaltDatei.Chunk(30).Select((zeilen, index) => (index + 1, zeilen)).ToArray();
-                    BuchBefuellenNoLambda(inhaltDatei, 30);
+                    BuchBefuellenNoLambda2(inhaltDatei, 30);
                     return;
                 }
             }
@@ -60,6 +60,20 @@ namespace ProgrammierenLernen
 
                 Array.Copy(inhaltDatei, start, chunk, 0, count);
                 result.Add((i + 1, chunk));
+            }
+
+            seiten = result.ToArray();
+        }
+
+        void BuchBefuellenNoLambda2(string[] inhaltDatei, int chunkSize)
+        {
+            var result = new List<(int nummer, string[] inhalt)>();
+
+            int seitennummer = 1;
+            foreach (var zeilen in inhaltDatei.Chunk(chunkSize))
+            {
+                result.Add((seitennummer, zeilen));
+                seitennummer++;
             }
 
             seiten = result.ToArray();
