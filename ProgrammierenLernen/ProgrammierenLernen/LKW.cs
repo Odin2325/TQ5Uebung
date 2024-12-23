@@ -6,8 +6,18 @@ using System.Threading.Tasks;
 using System.Threading;
 
 namespace ProgrammierenLernen
-{
-    public class Fahrzeug
+{/*
+             * Veraender den namen der Klasse Auto zu PKW.
+             * Wir erstellen dannach auch die Klasse LKW.
+             * Hier brauchen wir mind. 5 eigenschaften.
+             * Diese sollten alle private sein.
+             * Wenn wir glauben ein benutzer die Werte veraendern sollte, 
+             * dann auch einen getter/setter schreiben. Entweder mit Methode oder Properties.
+             * Diese Klasse soll folgende Methoden haben: 
+             * schnellerFahren, bremsen, hupen, parken, motorAnschalten/Ausschalten,
+             * LKWBeladen, LKWEntladen.
+             */
+    public abstract class Fahrzeug
     {
         protected string marke;
         protected string klasse;
@@ -17,7 +27,7 @@ namespace ProgrammierenLernen
         protected bool motorLäuft = false;
         protected int aktuelleGeschwindigkeit = 0;
 
-        public Fahrzeug(string marke, string klasse, int baujahr, string motor)
+        protected Fahrzeug(string marke, string klasse, int baujahr, string motor)
         {
             this.marke = marke;
             this.klasse = klasse;
@@ -63,21 +73,18 @@ namespace ProgrammierenLernen
                 Console.WriteLine("Wir bremsen.");
                 while (aktuelleGeschwindigkeit > 0)
                 {
-                    Bremsen();
+                    Bremsen(10);
                 }
                 Console.WriteLine("Wir sind geparkt.");
             }
             return true;
         }
-        public void Hupen()
-        {
-            Console.WriteLine("MEEP, MEEP");
-        }
-        public void Bremsen()
+        public abstract void Hupen();
+        public void Bremsen(int inkrement)
         {
             if (aktuelleGeschwindigkeit > 0)
             {
-                aktuelleGeschwindigkeit += 10;
+                aktuelleGeschwindigkeit += inkrement;
                 Console.WriteLine($"Geschwindigkeit: {aktuelleGeschwindigkeit}");
             }
             else
@@ -85,7 +92,7 @@ namespace ProgrammierenLernen
                 Console.WriteLine("Wir sind angehalten.");
             }
         }
-        public void SchnellerFahren()
+        public void SchnellerFahren(int inkrement)
         {
             if (!motorLäuft)
             {
@@ -94,7 +101,7 @@ namespace ProgrammierenLernen
             }
             if (aktuelleGeschwindigkeit < maxGeschwindigkeit)
             {
-                aktuelleGeschwindigkeit += 10;
+                aktuelleGeschwindigkeit += inkrement;
                 Console.WriteLine($"Geschwindigkeit: {aktuelleGeschwindigkeit}");
             }
             else
@@ -109,14 +116,28 @@ namespace ProgrammierenLernen
             Console.WriteLine(motorLäuft ? "Motor gestartet!" : "Motor abgeschalten.");
         }
     }
-    internal class PKW : Fahrzeug
+    public class Motorrad : Fahrzeug
+    {
+        public Motorrad(string marke, string klasse, int baujahr, string motor) : base(marke, klasse, baujahr, motor)
+        {
+            base.maxGeschwindigkeit = 240;
+        }
+
+        public override void Hupen()
+        {
+            Console.WriteLine("NEAUUUUU");
+        }
+    }
+    public class PKW : Fahrzeug
     {
         public PKW(string marke, string klasse, int baujahr, string motor) : base(marke, klasse, baujahr, motor)
         {
             base.maxGeschwindigkeit = 200;
         }
-        
-
+        public override void Hupen()
+        {
+            Console.WriteLine("MEEP MEEP");
+        }
     }
 
     internal class LKW2 : Fahrzeug
@@ -144,6 +165,11 @@ namespace ProgrammierenLernen
                     Console.WriteLine("Motor ist nicht so gut.");
                 maxGeschwindigkeit = value;
             }
+        }
+
+        public override void Hupen()
+        {
+            Console.WriteLine("TÖRRRÖÖÖÖÖÖ BEEEEEEEEEP MOOOOVE");
         }
 
         public void Beladen()

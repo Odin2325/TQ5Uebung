@@ -9,18 +9,13 @@ namespace ProgrammierenLernen
         static void Main(string[] args)
         {
 
-            /*
-             * Veraender den namen der Klasse Auto zu PKW.
-             * Wir erstellen dannach auch die Klasse LKW.
-             * Hier brauchen wir mind. 5 eigenschaften.
-             * Diese sollten alle private sein.
-             * Wenn wir glauben ein benutzer die Werte veraendern sollte, 
-             * dann auch einen getter/setter schreiben. Entweder mit Methode oder Properties.
-             * Diese Klasse soll folgende Methoden haben: 
-             * schnellerFahren, bremsen, hupen, parken, motorAnschalten/Ausschalten,
-             * LKWBeladen, LKWEntladen.
-             */
+            FBKonto fBKonto = new FBKonto("max.mustermann@gmail.com","Musterstrasse 10","Max Mustermann","08248434345","maxie99","MaxMax");
 
+            fBKonto.DetailsAnzeigen();
+
+            fBKonto.FreundeHinzufuegen(new FBKonto("rosa.rosalie@outlook.com","Rosie Strasse 3","Rosa Rosalie","08347636238","sonnenschein123!@#$%^&*Rosa","Rosie1"));
+
+            fBKonto.DetailsAnzeigen();
         }
 
     }

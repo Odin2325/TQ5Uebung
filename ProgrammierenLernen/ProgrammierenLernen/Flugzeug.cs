@@ -3,25 +3,6 @@
     public class Flugzeug
     {
         private string hersteller;
-        public string Hersteller
-        {
-            get
-            { 
-                return hersteller;
-            }
-            set
-            {
-                if (value == null)
-                {
-                    throw new ArgumentNullException("Hersteller darf nicht null sein.");
-                }
-                else if (value.Length < 2)
-                {
-                    throw new ArgumentException("Hersteller muss mindestens 2 Zeichen lang sein.");
-                }
-                hersteller = value;
-            }
-        }
         private string modell;
         private int sitzplaetze;
         private double maxGeschwindigkeit;
@@ -50,11 +31,35 @@
             this.maxGeschwindigkeit = maxGeschwindigkeit;
         }
 
+        //private=> nur innerhalb der Klasse sichtbar
+        //protected=> nur innerhalb der Klasse und abgeleiteten Klassen sichtbar
+        //internal=> nur innerhalb des Assemblies sichtbar
+        //public=> ueberall sichtbar
+        public string Hersteller
+        {
+            get
+            {
+                return hersteller;
+            }
+            set
+            {
+                if (value == null)
+                {
+                    throw new ArgumentNullException("Hersteller darf nicht null sein.");
+                }
+                else if (value.Length < 2)
+                {
+                    throw new ArgumentException("Hersteller muss mindestens 2 Zeichen lang sein.");
+                }
+                hersteller = value;
+            }
+        }
+
         //flapsAnOderAus()
         //steigen()
         //sinken()
         //tuerOeffnen()
-       
+
 
         internal void SchnellerFahren(double gewuenschteGeschwindigkeit)
         {
@@ -90,7 +95,6 @@
                 Console.WriteLine($"Aktuelle Geschwindigkeit: {aktuelleGeschwindigkeit}");
             }
             Console.WriteLine("Gewuenschte Geschwindigkeit erreicht.");
-
         }
         internal void Starten()
         {
