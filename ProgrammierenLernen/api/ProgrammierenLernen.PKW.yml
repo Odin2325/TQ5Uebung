@@ -1,0 +1,607 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProgrammierenLernen.PKW
+  commentId: T:ProgrammierenLernen.PKW
+  id: PKW
+  parent: ProgrammierenLernen
+  children:
+  - ProgrammierenLernen.PKW.#ctor(System.String,System.String,System.Int32,System.String)
+  - ProgrammierenLernen.PKW.Hupen
+  langs:
+  - csharp
+  - vb
+  name: PKW
+  nameWithType: PKW
+  fullName: ProgrammierenLernen.PKW
+  type: Class
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/LKW.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PKW
+    path: ProgrammierenLernen/LKW.cs
+    startLine: 169
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: 'public class PKW : Fahrzeug'
+    content.vb: Public Class PKW Inherits Fahrzeug
+  inheritance:
+  - System.Object
+  - ProgrammierenLernen.Fahrzeug
+  inheritedMembers:
+  - ProgrammierenLernen.Fahrzeug.marke
+  - ProgrammierenLernen.Fahrzeug.klasse
+  - ProgrammierenLernen.Fahrzeug.baujahr
+  - ProgrammierenLernen.Fahrzeug.motor
+  - ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  - ProgrammierenLernen.Fahrzeug.motorLäuft
+  - ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  - ProgrammierenLernen.Fahrzeug.Motor
+  - ProgrammierenLernen.Fahrzeug.Baujahr
+  - ProgrammierenLernen.Fahrzeug.Klasse
+  - ProgrammierenLernen.Fahrzeug.Marke
+  - ProgrammierenLernen.Fahrzeug.Parken
+  - ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+  - ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+  - ProgrammierenLernen.Fahrzeug.ManageMotor
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProgrammierenLernen.PKW.#ctor(System.String,System.String,System.Int32,System.String)
+  commentId: M:ProgrammierenLernen.PKW.#ctor(System.String,System.String,System.Int32,System.String)
+  id: '#ctor(System.String,System.String,System.Int32,System.String)'
+  parent: ProgrammierenLernen.PKW
+  langs:
+  - csharp
+  - vb
+  name: PKW(string, string, int, string)
+  nameWithType: PKW.PKW(string, string, int, string)
+  fullName: ProgrammierenLernen.PKW.PKW(string, string, int, string)
+  type: Constructor
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/LKW.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: .ctor
+    path: ProgrammierenLernen/LKW.cs
+    startLine: 171
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public PKW(string marke, string klasse, int baujahr, string motor)
+    parameters:
+    - id: marke
+      type: System.String
+    - id: klasse
+      type: System.String
+    - id: baujahr
+      type: System.Int32
+    - id: motor
+      type: System.String
+    content.vb: Public Sub New(marke As String, klasse As String, baujahr As Integer, motor As String)
+  overload: ProgrammierenLernen.PKW.#ctor*
+  nameWithType.vb: PKW.New(String, String, Integer, String)
+  fullName.vb: ProgrammierenLernen.PKW.New(String, String, Integer, String)
+  name.vb: New(String, String, Integer, String)
+- uid: ProgrammierenLernen.PKW.Hupen
+  commentId: M:ProgrammierenLernen.PKW.Hupen
+  id: Hupen
+  parent: ProgrammierenLernen.PKW
+  langs:
+  - csharp
+  - vb
+  name: Hupen()
+  nameWithType: PKW.Hupen()
+  fullName: ProgrammierenLernen.PKW.Hupen()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/LKW.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Hupen
+    path: ProgrammierenLernen/LKW.cs
+    startLine: 175
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  summary: Abstract method to implement the sound of a vehicles horn.
+  example: []
+  syntax:
+    content: public override void Hupen()
+    content.vb: Public Overrides Sub Hupen()
+  overridden: ProgrammierenLernen.Fahrzeug.Hupen
+  overload: ProgrammierenLernen.PKW.Hupen*
+references:
+- uid: ProgrammierenLernen
+  commentId: N:ProgrammierenLernen
+  href: ProgrammierenLernen.html
+  name: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+  fullName: ProgrammierenLernen
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ProgrammierenLernen.Fahrzeug
+  commentId: T:ProgrammierenLernen.Fahrzeug
+  parent: ProgrammierenLernen
+  href: ProgrammierenLernen.Fahrzeug.html
+  name: Fahrzeug
+  nameWithType: Fahrzeug
+  fullName: ProgrammierenLernen.Fahrzeug
+- uid: ProgrammierenLernen.Fahrzeug.marke
+  commentId: F:ProgrammierenLernen.Fahrzeug.marke
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_marke
+  name: marke
+  nameWithType: Fahrzeug.marke
+  fullName: ProgrammierenLernen.Fahrzeug.marke
+- uid: ProgrammierenLernen.Fahrzeug.klasse
+  commentId: F:ProgrammierenLernen.Fahrzeug.klasse
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_klasse
+  name: klasse
+  nameWithType: Fahrzeug.klasse
+  fullName: ProgrammierenLernen.Fahrzeug.klasse
+- uid: ProgrammierenLernen.Fahrzeug.baujahr
+  commentId: F:ProgrammierenLernen.Fahrzeug.baujahr
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_baujahr
+  name: baujahr
+  nameWithType: Fahrzeug.baujahr
+  fullName: ProgrammierenLernen.Fahrzeug.baujahr
+- uid: ProgrammierenLernen.Fahrzeug.motor
+  commentId: F:ProgrammierenLernen.Fahrzeug.motor
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_motor
+  name: motor
+  nameWithType: Fahrzeug.motor
+  fullName: ProgrammierenLernen.Fahrzeug.motor
+- uid: ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  commentId: F:ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_maxGeschwindigkeit
+  name: maxGeschwindigkeit
+  nameWithType: Fahrzeug.maxGeschwindigkeit
+  fullName: ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+- uid: ProgrammierenLernen.Fahrzeug.motorLäuft
+  commentId: F:ProgrammierenLernen.Fahrzeug.motorLäuft
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_motorLäuft
+  name: motorLäuft
+  nameWithType: Fahrzeug.motorLäuft
+  fullName: ProgrammierenLernen.Fahrzeug.motorLäuft
+- uid: ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  commentId: F:ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_aktuelleGeschwindigkeit
+  name: aktuelleGeschwindigkeit
+  nameWithType: Fahrzeug.aktuelleGeschwindigkeit
+  fullName: ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+- uid: ProgrammierenLernen.Fahrzeug.Motor
+  commentId: P:ProgrammierenLernen.Fahrzeug.Motor
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Motor
+  name: Motor
+  nameWithType: Fahrzeug.Motor
+  fullName: ProgrammierenLernen.Fahrzeug.Motor
+- uid: ProgrammierenLernen.Fahrzeug.Baujahr
+  commentId: P:ProgrammierenLernen.Fahrzeug.Baujahr
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Baujahr
+  name: Baujahr
+  nameWithType: Fahrzeug.Baujahr
+  fullName: ProgrammierenLernen.Fahrzeug.Baujahr
+- uid: ProgrammierenLernen.Fahrzeug.Klasse
+  commentId: P:ProgrammierenLernen.Fahrzeug.Klasse
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Klasse
+  name: Klasse
+  nameWithType: Fahrzeug.Klasse
+  fullName: ProgrammierenLernen.Fahrzeug.Klasse
+- uid: ProgrammierenLernen.Fahrzeug.Marke
+  commentId: P:ProgrammierenLernen.Fahrzeug.Marke
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Marke
+  name: Marke
+  nameWithType: Fahrzeug.Marke
+  fullName: ProgrammierenLernen.Fahrzeug.Marke
+- uid: ProgrammierenLernen.Fahrzeug.Parken
+  commentId: M:ProgrammierenLernen.Fahrzeug.Parken
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Parken
+  name: Parken()
+  nameWithType: Fahrzeug.Parken()
+  fullName: ProgrammierenLernen.Fahrzeug.Parken()
+  spec.csharp:
+  - uid: ProgrammierenLernen.Fahrzeug.Parken
+    name: Parken
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Parken
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.Fahrzeug.Parken
+    name: Parken
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Parken
+  - name: (
+  - name: )
+- uid: ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+  commentId: M:ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+  parent: ProgrammierenLernen.Fahrzeug
+  isExternal: true
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Bremsen_System_Int32_
+  name: Bremsen(int)
+  nameWithType: Fahrzeug.Bremsen(int)
+  fullName: ProgrammierenLernen.Fahrzeug.Bremsen(int)
+  nameWithType.vb: Fahrzeug.Bremsen(Integer)
+  fullName.vb: ProgrammierenLernen.Fahrzeug.Bremsen(Integer)
+  name.vb: Bremsen(Integer)
+  spec.csharp:
+  - uid: ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+    name: Bremsen
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Bremsen_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+    name: Bremsen
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Bremsen_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+  commentId: M:ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+  parent: ProgrammierenLernen.Fahrzeug
+  isExternal: true
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_SchnellerFahren_System_Int32_
+  name: SchnellerFahren(int)
+  nameWithType: Fahrzeug.SchnellerFahren(int)
+  fullName: ProgrammierenLernen.Fahrzeug.SchnellerFahren(int)
+  nameWithType.vb: Fahrzeug.SchnellerFahren(Integer)
+  fullName.vb: ProgrammierenLernen.Fahrzeug.SchnellerFahren(Integer)
+  name.vb: SchnellerFahren(Integer)
+  spec.csharp:
+  - uid: ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+    name: SchnellerFahren
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_SchnellerFahren_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+    name: SchnellerFahren
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_SchnellerFahren_System_Int32_
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: ProgrammierenLernen.Fahrzeug.ManageMotor
+  commentId: M:ProgrammierenLernen.Fahrzeug.ManageMotor
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_ManageMotor
+  name: ManageMotor()
+  nameWithType: Fahrzeug.ManageMotor()
+  fullName: ProgrammierenLernen.Fahrzeug.ManageMotor()
+  spec.csharp:
+  - uid: ProgrammierenLernen.Fahrzeug.ManageMotor
+    name: ManageMotor
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_ManageMotor
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.Fahrzeug.ManageMotor
+    name: ManageMotor
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_ManageMotor
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProgrammierenLernen.PKW.#ctor*
+  commentId: Overload:ProgrammierenLernen.PKW.#ctor
+  href: ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW__ctor_System_String_System_String_System_Int32_System_String_
+  name: PKW
+  nameWithType: PKW.PKW
+  fullName: ProgrammierenLernen.PKW.PKW
+  nameWithType.vb: PKW.New
+  fullName.vb: ProgrammierenLernen.PKW.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProgrammierenLernen.Fahrzeug.Hupen
+  commentId: M:ProgrammierenLernen.Fahrzeug.Hupen
+  parent: ProgrammierenLernen.Fahrzeug
+  href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Hupen
+  name: Hupen()
+  nameWithType: Fahrzeug.Hupen()
+  fullName: ProgrammierenLernen.Fahrzeug.Hupen()
+  spec.csharp:
+  - uid: ProgrammierenLernen.Fahrzeug.Hupen
+    name: Hupen
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Hupen
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.Fahrzeug.Hupen
+    name: Hupen
+    href: ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Hupen
+  - name: (
+  - name: )
+- uid: ProgrammierenLernen.PKW.Hupen*
+  commentId: Overload:ProgrammierenLernen.PKW.Hupen
+  href: ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW_Hupen
+  name: Hupen
+  nameWithType: PKW.Hupen
+  fullName: ProgrammierenLernen.PKW.Hupen

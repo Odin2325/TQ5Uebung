@@ -1,0 +1,337 @@
+{
+  "source_base_path": "C:/Users/nicoa/Desktop/TQ5Uebung/ProgrammierenLernen",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember10.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember10.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember11.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember11.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember12.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember12.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember13.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember13.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember16.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember16.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember19.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember19.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember4.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember4.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember5.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember5.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember6.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember6.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/Dezember9.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/Dezember9.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/bin/Debug/net8.0/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/bin/Debug/net8.0/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/bin/Debug/net8.0/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/bin/Debug/net8.0/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ProgrammierenLernen/bin/Debug/net8.0/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/bin/Debug/net8.0/toc.html"
+        },
+        ".json": {
+          "relative_path": "ProgrammierenLernen/bin/Debug/net8.0/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ProgrammierenLernen/docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "ProgrammierenLernen/docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "ProgrammierenLernen/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "ProgrammierenLernen/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "ProgrammierenLernen/toc.html"
+        },
+        ".json": {
+          "relative_path": "ProgrammierenLernen/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Fahrzeug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Fahrzeug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Flugzeug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Flugzeug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Motorrad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Motorrad.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.PKW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.PKW.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title> | ProgLearn </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content=" | ProgLearn ">
+      
+      
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/Odin2325/TQ5Uebung/blob/main/ProgrammierenLernen/ProgrammierenLernen/Dezember13.md/#L1">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+
+      <script type="module" src="./../public/docfx.min.js"></script>
+
+      <script>
+        const theme = localStorage.getItem('theme') || 'auto'
+        document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+      </script>
+
+  </head>
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="ProgLearn">
+            ProgLearn
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="">
+
+<p><strong>Dictionaries Anfang Beispiel</strong></p>
+<pre><code>        //Supermarkt lager
+        Dictionary&lt;string, int&gt; lagerPaletten = new Dictionary&lt;string, int&gt;();
+
+        lagerPaletten.Add(&quot;Milch&quot;, 5);
+        lagerPaletten.Add(&quot;Gurke&quot;, 1);
+        lagerPaletten.Add(&quot;Kekse&quot;, 2);
+
+
+        foreach (var keyValuePair in lagerPaletten)
+        {
+            Console.WriteLine($&quot;Key: {keyValuePair.Key} - Value: {keyValuePair.Value}&quot;);
+            Console.WriteLine(lagerPaletten[&quot;Milch&quot;]);
+        }
+
+        foreach (var key in lagerPaletten.Keys)
+        {
+            if(key == &quot;Milch&quot;)
+            {
+                lagerPaletten[key] = 2;
+            }
+        }
+        
+        //List&lt;string&gt; test = new List&lt;string&gt;();
+        //Jeder wert in List&lt;string&gt; ist ein string.
+
+        //Bei dictionaries, jeder wert ist ein Key Value Pair
+</code></pre>
+<p><strong>Dictionary openWith Uebung</strong></p>
+<pre><code>        /*
+         * Ihr definiert eine Methode die heisst openWith(string path)
+         * 
+         * HelferMethode:
+         * &quot;/asdf/asdf/dateiname.exe&quot;
+         * parameter(string pfad): rueckgabewert string
+         * Wir muessen als erster schritt ueberpruefen, was die datei endung in unser pfad ist.
+         * Um die Zeichen nach den Punkt zu bekommen, 
+         * empfehle ich eine neue Methode zu schreiben, die dass fuer euch schafft.
+         * Diese helfermethode koennte beispielsweise in den pfad nach den index von einen &quot;.&quot; suchen.
+         * Dann anhand von diesen index und die Methode Substring(indexVonPunkt) die letzte Zeichen bekommen.
+         * 
+         * Unsere Uebung wieder:
+         * Dann moechten wir in unser openWith methode unser dictionary erstellen,
+         * der als erster eintrag (schluessel) den string mit verschiedene dateiendungen enthaelt.
+         * Bspw: txt, py, cs, html
+         * Dann als wert paar moechten wir den pfad zu eine exe datei angeben. 
+         * Bspw: &quot;asdf/notepad.exe&quot;, &quot;asdf/vscode.exe&quot;, &quot;visualstudio.exe&quot;, &quot;microsoftedge.exe&quot;
+         * 
+         * Ueberpruefen ob key in unser dictionary enthalten ist.
+         * 
+         * Wenn ja, dann gebe aus welche application wir verwenden wuerden um die datei zu oeffnen.
+         * 
+         * Beipsiels ausgabe:
+         * Sie koennen die Datei {dateiname} mit {applikation} oeffnen, da es eine {dateiendung} Datei ist.
+         * =&gt; Mit Werte: Sie koennen die Datei {Aufgabe13Dez} mit {VSCode} oeffnen, da es eine {py} Datei ist.
+         */
+</code></pre>
+<p><em>Loesung</em></p>
+<pre><code>    public static void OpenWith(string pfad)
+    {
+        string dateiName = DateiName(pfad);
+        string dateiTyp = DateiTyp(pfad);
+        string applicationName = &quot;&quot;;
+
+        Dictionary&lt;string, string&gt; openingApplication = new Dictionary&lt;string, string&gt;();
+        openingApplication.Add(&quot;txt&quot;, &quot;C:\\Windows\\system32\\notepad.exe&quot;);
+        openingApplication.Add(&quot;cs&quot;, &quot;C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\Common7\\IDE\\devenv.exe&quot;);
+        openingApplication.Add(&quot;py&quot;, &quot;C:\\Users\\MYTQ-Trainer\\AppData\\Local\\Programs\\Microsoft VS Code\\Code.exe&quot;);
+        openingApplication.Add(&quot;html&quot;, &quot;C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe&quot;);
+
+        if (openingApplication.ContainsKey(dateiTyp))
+        {
+            applicationName = DateiName(openingApplication[dateiTyp]);
+            Console.WriteLine($&quot;Sie koennen die Datei {dateiName} mit {applicationName} oeffnen, da es eine {dateiTyp} Datei ist.&quot;);
+        }
+        else
+        {
+            Console.WriteLine(&quot;Unknown File Type.&quot;);
+            Console.WriteLine(&quot;Please download a software to open that kind of file.&quot;);
+        }
+    }
+
+
+    public static string DateiTyp(string pfad)
+    {
+        int indexPunkt = pfad.LastIndexOf(&quot;.&quot;);
+
+        string nachPunkt = pfad.Substring(indexPunkt + 1);
+
+        return nachPunkt;
+        //return Path.GetExtension(pfad).Trim('.');
+    }
+
+    public static string DateiName(string pfad)
+    {
+        int indexSchraegstrich = 0;
+        if (pfad.Contains(&quot;\\&quot;))
+        {
+            indexSchraegstrich = pfad.LastIndexOf('\\');
+
+        }
+        else if (pfad.Contains(&quot;/&quot;))
+        {
+            indexSchraegstrich = pfad.LastIndexOf('/');
+        }
+        else
+        {
+            indexSchraegstrich = -1;
+        }
+
+        //01234567891011 =&gt;Laenge = 12 - 5 = 7-3 = 4
+        //text/name.py
+        int laenge = pfad.Length - indexSchraegstrich - DateiTyp(pfad).Length - 2;
+
+        return pfad.Substring(indexSchraegstrich + 1,laenge);
+    }
+</code></pre>
+<p><strong>Dictionary Einkaufen Uebung</strong></p>
+<pre><code>        /*
+         * Einkaufen bei TechStore (mediamarkt, apple store, saturn, etc...) list mit budget.
+         * 
+         * Wir gehen einkaufen. Wir sollten ein budget in die methode als parameter eingeben.
+         * Wir sollten jetzt in einen TechStore einkaufen gehen.
+         * Der benutzer soll einen Menue bekommen mit die Produkte und ihre Preise die er kaufen koennte.
+         * D.h. Wir brauchen einen dictionary fuer produkt und preis.
+         * 
+         * Dann soll der benutzer in einen Kleinen menue aufgefordert werden produkte zu kaufen.
+         * Wichtig hier, er darf sein budget nicht ueberschreiten.
+         * 
+         * Programmablauf:
+         * Wilkommen in MediaMarkt!
+         * Was moechten Sie heute kaufen?
+         * 1. Laptop - 1200
+         * 2. Handy - 800
+         * 3. Kaffeemaschine - 400
+         * 4. Waschmaschine - 700
+         * 5. Druecker - 140
+         * 6. Fernseher - 340
+         * 7. Beenden
+         * 
+         * Wenn etwas gekauft wird, dann soll es zu die gekaufteProdukte hinzugefuegt werden.
+         * Wir haben hierfuer eine Liste mit alle produkte die gekauft worden sind
+         * Und auch eine variable fuer die gesamt summe aller produkte die wir gekauft haben.
+         * 
+         * Es soll am ende eine Rechnung erstellt werden:
+         * Es soll ausgegeben werden welche produkte gekauft worden sind, wie viel wir dafuer gezahlt haben und am ende die summe.
+         * Bspw: [Handy, Drueker, Fernseher, Handy]:
+         * 
+         * Handy x2 - 1600
+         * Druecker x1 - 140
+         * Fernseher x1 - 340
+         * Betrag: 2080
+         */
+</code></pre>
+<p><em>Loesung</em></p>
+<pre><code>    public static void TechEinkaufen(decimal budget)
+    {
+        Dictionary&lt;string, int&gt; warenkorb = new Dictionary&lt;string, int&gt;();
+        decimal betrag = 0;
+        string? eingabe = &quot;&quot;;
+        bool willAbrechen = false;
+        Dictionary&lt;string, decimal&gt; produkte = new Dictionary&lt;string, decimal&gt;
+        {
+            {&quot;Laptop&quot;, 1200},
+            {&quot;Handy&quot;, 800},
+            {&quot;Drucker&quot;, 140},
+            {&quot;Fernseher&quot;, 340},
+            {&quot;Kaffeemaschine&quot;, 400},
+            {&quot;Waschmaschine&quot;,700},
+        };
+
+        Console.WriteLine(&quot;Wilkommen in MediaMarkt: &quot;);
+        Console.WriteLine(&quot;Was moechten Sie heute kaufen?&quot;);
+        Console.WriteLine(&quot;Druecken Sie bitte die dazugehoerige Zahl um ein Produkt in Ihr Warenkorb hinzuzufuegen.&quot;);
+
+        while (!willAbrechen)
+        {
+            Console.WriteLine(&quot;Druecken Sie bitte eine Taste um weiter zu machen.&quot;);
+            Console.ReadKey();
+            Console.Clear();
+            if (betrag + MinDictionary(produkte) &gt; budget)
+            {
+                Console.WriteLine(&quot;Sie koennen keine weitere Produkte kaufen.&quot;);
+                Console.WriteLine(&quot;Ihr Budget ist ausgenutzt, wir schicken Ihnen zum Checkout.&quot;);
+                break;
+            }
+            Console.WriteLine(&quot;Ihr budget betraegt: &quot; + (budget-betrag));
+            Console.WriteLine(&quot;1. Laptop - 1200\r\n2. Handy - 800\r\n3. Kaffeemaschine - 400\r\n4. Waschmaschine - 700\r\n5. Drucker - 140\r\n6. Fernseher - 340\r\n7. Beenden&quot;);
+            eingabe = Console.ReadLine();
+            if(eingabe == null || eingabe == &quot;&quot;)
+            {
+                continue;
+            }
+            var ausgewaehlterProdukt = &quot;&quot;;
+            switch (eingabe)
+            {
+                case &quot;1&quot;:
+                    ausgewaehlterProdukt = &quot;Laptop&quot;;
+                    break;
+                case &quot;2&quot;:
+                    ausgewaehlterProdukt = &quot;Handy&quot;;
+                    break;
+                case &quot;3&quot;:
+                    ausgewaehlterProdukt = &quot;Kaffeemaschine&quot;;
+                    break;
+                case &quot;4&quot;:
+                    ausgewaehlterProdukt = &quot;Waschmaschine&quot;;
+                    break;
+                case &quot;5&quot;:
+                    ausgewaehlterProdukt = &quot;Drucker&quot;;                        
+                    break;
+                case &quot;6&quot;:
+                    ausgewaehlterProdukt = &quot;Fernseher&quot;;
+                    break;
+                case &quot;7&quot;:
+                    willAbrechen = true;
+                    continue;
+                default:
+                    Console.WriteLine(&quot;Ungueltige Eingabe, bitte nur Zahlen zwischen 1-7 eingeben.&quot;);
+                    continue;
+            }
+
+            if (betrag + produkte[ausgewaehlterProdukt] &lt;= budget)
+            {
+                //Wenn ein key nicht vorhanden ist und wir machen eine zuweisung mit schluessel und wert, dann wird es hinzugefuegt.
+                warenkorb[ausgewaehlterProdukt] = warenkorb.GetValueOrDefault(ausgewaehlterProdukt, 0) + 1;
+                betrag += produkte[ausgewaehlterProdukt];
+            }
+            else
+            {
+                Console.WriteLine(&quot;Nicht genug geld im Budget.&quot;);
+            }
+        }
+        Console.WriteLine(&quot;Hier ist Ihre Rechnung: &quot;);
+        Console.WriteLine(RechnungErstellenOhneGesamtBetrag(produkte, warenkorb)+&quot;Betrag: &quot; + betrag);
+    }
+
+    public static string RechnungErstellenOhneGesamtBetrag(Dictionary&lt;string, decimal&gt; produkte, Dictionary&lt;string, int&gt; warenkorb)
+    {
+        //laptop, 2
+        //Handy x2 - 1600
+        string resultat = &quot;&quot;;
+        foreach (var kvp in warenkorb)
+        {
+            if (produkte.ContainsKey(kvp.Key))
+            {
+                resultat += $&quot;{kvp.Key} x{kvp.Value} - {kvp.Value * produkte[kvp.Key]}\r\n&quot;;
+            }
+        }
+        return resultat;
+    }
+
+    public static decimal MinDictionary(Dictionary&lt;string, decimal&gt; produkte)
+    {
+        decimal min = decimal.MaxValue;
+        foreach(var paar in produkte)
+        { 
+            if(paar.Value &lt; min)
+            {
+                min = paar.Value;
+            }
+        }
+        return min;
+    }
+</code></pre>
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/Odin2325/TQ5Uebung/blob/main/ProgrammierenLernen/ProgrammierenLernen/Dezember13.md/#L1" class="edit-link">Edit this page</a>
+        </div>
+
+        <div class="next-article d-print-none border-top" id="nextArticle"></div>
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

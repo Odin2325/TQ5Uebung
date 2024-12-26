@@ -17,8 +17,13 @@ namespace ProgrammierenLernen
              * schnellerFahren, bremsen, hupen, parken, motorAnschalten/Ausschalten,
              * LKWBeladen, LKWEntladen.
              */
+
+    /// <summary>
+    /// Parent Class to represent all vehicles.
+    /// </summary>
     public abstract class Fahrzeug
     {
+        //Fields
         protected string marke;
         protected string klasse;
         protected int baujahr;
@@ -27,6 +32,13 @@ namespace ProgrammierenLernen
         protected bool motorLäuft = false;
         protected int aktuelleGeschwindigkeit = 0;
 
+        /// <summary>
+        /// Constructor for a generic vehicle
+        /// </summary>
+        /// <param name="marke"></param>
+        /// <param name="klasse"></param>
+        /// <param name="baujahr"></param>
+        /// <param name="motor"></param>
         protected Fahrzeug(string marke, string klasse, int baujahr, string motor)
         {
             this.marke = marke;
@@ -34,6 +46,8 @@ namespace ProgrammierenLernen
             this.baujahr = baujahr;
             this.motor = motor;
         }
+
+        //Properties
         public string Motor
         {
             get { return motor; }
@@ -55,6 +69,12 @@ namespace ProgrammierenLernen
             set { marke = value; }
         }
 
+        /// <summary>
+        /// Parking class.
+        /// Allows parking only if the motor is off and the speed is 0.
+        /// Otherwise we turn the motor off or brake until we reach the speed 0.
+        /// </summary>
+        /// <returns></returns>
         public bool Parken()
         {
             if (aktuelleGeschwindigkeit == 0 && !motorLäuft)
@@ -79,7 +99,15 @@ namespace ProgrammierenLernen
             }
             return true;
         }
+        /// <summary>
+        /// Abstract method to implement the sound of a vehicles horn.
+        /// </summary>
         public abstract void Hupen();
+
+        /// <summary>
+        /// Method to decrease the speed of the vehicle given a specific increment.
+        /// </summary>
+        /// <param name="inkrement"></param>
         public void Bremsen(int inkrement)
         {
             if (aktuelleGeschwindigkeit > 0)
@@ -92,6 +120,10 @@ namespace ProgrammierenLernen
                 Console.WriteLine("Wir sind angehalten.");
             }
         }
+        /// <summary>
+        /// Increase the speed of our vehicle given a specific increment.
+        /// </summary>
+        /// <param name="inkrement"></param>
         public void SchnellerFahren(int inkrement)
         {
             if (!motorLäuft)
@@ -109,6 +141,9 @@ namespace ProgrammierenLernen
                 Console.WriteLine("Maximale Geschwindigkeit erreicht.");
             }
         }
+        /// <summary>
+        /// Change the current state of the motor.
+        /// </summary>
         public void ManageMotor()
         {
             Console.WriteLine(motorLäuft ? "Schalte Motor ab..." : "Starte Motor...");
@@ -116,6 +151,10 @@ namespace ProgrammierenLernen
             Console.WriteLine(motorLäuft ? "Motor gestartet!" : "Motor abgeschalten.");
         }
     }
+
+    /// <summary>
+    /// Class to represent motorcycles.
+    /// </summary>
     public class Motorrad : Fahrzeug
     {
         public Motorrad(string marke, string klasse, int baujahr, string motor) : base(marke, klasse, baujahr, motor)
@@ -142,16 +181,27 @@ namespace ProgrammierenLernen
 
     internal class LKW2 : Fahrzeug
     {
+
+        //Fields
         private double hoehe;
         private double maxVolume = 50;
         private double maxGewicht = 80000;
         private List<(string produktName, double volume, double gewicht)> ladung = new List<(string produktName, double volume, double gewicht)>();
 
+        /// <summary>
+        /// Values necessary to create a Truck.
+        /// </summary>
+        /// <param name="marke"></param>
+        /// <param name="klasse"></param>
+        /// <param name="baujahr"></param>
+        /// <param name="motor"></param>
+        /// <param name="hoehe"></param>
         public LKW2(string marke, string klasse, int baujahr, string motor, double hoehe) : base(marke, klasse, baujahr, motor)
         {   
             this.hoehe = hoehe;
         }
 
+        //Properties.
         public double Hoehe { get { return hoehe; } }
         
         public int MaxGeschwindigkeit
@@ -167,11 +217,17 @@ namespace ProgrammierenLernen
             }
         }
 
+        /// <summary>
+        /// Overwritten Sound method.
+        /// </summary>
         public override void Hupen()
         {
             Console.WriteLine("TÖRRRÖÖÖÖÖÖ BEEEEEEEEEP MOOOOVE");
         }
 
+        /// <summary>
+        /// Method to load the truck.
+        /// </summary>
         public void Beladen()
         {
             do
@@ -214,6 +270,9 @@ namespace ProgrammierenLernen
             } while (GetCurrentValues("volume")<maxVolume && GetCurrentValues("gewicht")<maxGewicht);
         }
 
+        /// <summary>
+        /// Method to empty the truck.
+        /// </summary>
         public void Entladen()
         {
             List<(string produktName, double volume, double gewicht)> temp = new List<(string produktName, double volume, double gewicht)>();
@@ -229,6 +288,11 @@ namespace ProgrammierenLernen
             }
         }
 
+        /// <summary>
+        /// Help method to extract values from out list.
+        /// </summary>
+        /// <param name="valueType"></param>
+        /// <returns></returns>
         private double GetCurrentValues(string valueType)
         {
             if (valueType == "volume")
@@ -251,6 +315,9 @@ namespace ProgrammierenLernen
             }
         }
 
+        /// <summary>
+        /// Method to show the details of our truck.
+        /// </summary>
         public void InfosZeigen()
         {
             Console.WriteLine($"Marke: {marke}\nKlasse: {klasse}\nBaujahr: {baujahr}\nMotor: {motor}\nHoehe: {hoehe}\nMaxSpeed: {maxGeschwindigkeit}");

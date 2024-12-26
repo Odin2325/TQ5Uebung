@@ -1,0 +1,858 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: ProgrammierenLernen
+  name: ProgrammierenLernen
+  href: api/ProgrammierenLernen.html
+  commentId: N:ProgrammierenLernen
+  fullName: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+- uid: ProgrammierenLernen.Fahrzeug
+  name: Fahrzeug
+  href: api/ProgrammierenLernen.Fahrzeug.html
+  commentId: T:ProgrammierenLernen.Fahrzeug
+  fullName: ProgrammierenLernen.Fahrzeug
+  nameWithType: Fahrzeug
+- uid: ProgrammierenLernen.Fahrzeug.#ctor(System.String,System.String,System.Int32,System.String)
+  name: Fahrzeug(string, string, int, string)
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug__ctor_System_String_System_String_System_Int32_System_String_
+  commentId: M:ProgrammierenLernen.Fahrzeug.#ctor(System.String,System.String,System.Int32,System.String)
+  name.vb: New(String, String, Integer, String)
+  fullName: ProgrammierenLernen.Fahrzeug.Fahrzeug(string, string, int, string)
+  fullName.vb: ProgrammierenLernen.Fahrzeug.New(String, String, Integer, String)
+  nameWithType: Fahrzeug.Fahrzeug(string, string, int, string)
+  nameWithType.vb: Fahrzeug.New(String, String, Integer, String)
+- uid: ProgrammierenLernen.Fahrzeug.#ctor*
+  name: Fahrzeug
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug__ctor_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ProgrammierenLernen.Fahrzeug.Fahrzeug
+  fullName.vb: ProgrammierenLernen.Fahrzeug.New
+  nameWithType: Fahrzeug.Fahrzeug
+  nameWithType.vb: Fahrzeug.New
+- uid: ProgrammierenLernen.Fahrzeug.Baujahr
+  name: Baujahr
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Baujahr
+  commentId: P:ProgrammierenLernen.Fahrzeug.Baujahr
+  fullName: ProgrammierenLernen.Fahrzeug.Baujahr
+  nameWithType: Fahrzeug.Baujahr
+- uid: ProgrammierenLernen.Fahrzeug.Baujahr*
+  name: Baujahr
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Baujahr_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Baujahr
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Baujahr
+  nameWithType: Fahrzeug.Baujahr
+- uid: ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+  name: Bremsen(int)
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Bremsen_System_Int32_
+  commentId: M:ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)
+  name.vb: Bremsen(Integer)
+  fullName: ProgrammierenLernen.Fahrzeug.Bremsen(int)
+  fullName.vb: ProgrammierenLernen.Fahrzeug.Bremsen(Integer)
+  nameWithType: Fahrzeug.Bremsen(int)
+  nameWithType.vb: Fahrzeug.Bremsen(Integer)
+- uid: ProgrammierenLernen.Fahrzeug.Bremsen*
+  name: Bremsen
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Bremsen_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Bremsen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Bremsen
+  nameWithType: Fahrzeug.Bremsen
+- uid: ProgrammierenLernen.Fahrzeug.Hupen
+  name: Hupen()
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Hupen
+  commentId: M:ProgrammierenLernen.Fahrzeug.Hupen
+  fullName: ProgrammierenLernen.Fahrzeug.Hupen()
+  nameWithType: Fahrzeug.Hupen()
+- uid: ProgrammierenLernen.Fahrzeug.Hupen*
+  name: Hupen
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Hupen_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Hupen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Hupen
+  nameWithType: Fahrzeug.Hupen
+- uid: ProgrammierenLernen.Fahrzeug.Klasse
+  name: Klasse
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Klasse
+  commentId: P:ProgrammierenLernen.Fahrzeug.Klasse
+  fullName: ProgrammierenLernen.Fahrzeug.Klasse
+  nameWithType: Fahrzeug.Klasse
+- uid: ProgrammierenLernen.Fahrzeug.Klasse*
+  name: Klasse
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Klasse_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Klasse
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Klasse
+  nameWithType: Fahrzeug.Klasse
+- uid: ProgrammierenLernen.Fahrzeug.ManageMotor
+  name: ManageMotor()
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_ManageMotor
+  commentId: M:ProgrammierenLernen.Fahrzeug.ManageMotor
+  fullName: ProgrammierenLernen.Fahrzeug.ManageMotor()
+  nameWithType: Fahrzeug.ManageMotor()
+- uid: ProgrammierenLernen.Fahrzeug.ManageMotor*
+  name: ManageMotor
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_ManageMotor_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.ManageMotor
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.ManageMotor
+  nameWithType: Fahrzeug.ManageMotor
+- uid: ProgrammierenLernen.Fahrzeug.Marke
+  name: Marke
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Marke
+  commentId: P:ProgrammierenLernen.Fahrzeug.Marke
+  fullName: ProgrammierenLernen.Fahrzeug.Marke
+  nameWithType: Fahrzeug.Marke
+- uid: ProgrammierenLernen.Fahrzeug.Marke*
+  name: Marke
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Marke_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Marke
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Marke
+  nameWithType: Fahrzeug.Marke
+- uid: ProgrammierenLernen.Fahrzeug.Motor
+  name: Motor
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Motor
+  commentId: P:ProgrammierenLernen.Fahrzeug.Motor
+  fullName: ProgrammierenLernen.Fahrzeug.Motor
+  nameWithType: Fahrzeug.Motor
+- uid: ProgrammierenLernen.Fahrzeug.Motor*
+  name: Motor
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Motor_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Motor
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Motor
+  nameWithType: Fahrzeug.Motor
+- uid: ProgrammierenLernen.Fahrzeug.Parken
+  name: Parken()
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Parken
+  commentId: M:ProgrammierenLernen.Fahrzeug.Parken
+  fullName: ProgrammierenLernen.Fahrzeug.Parken()
+  nameWithType: Fahrzeug.Parken()
+- uid: ProgrammierenLernen.Fahrzeug.Parken*
+  name: Parken
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_Parken_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.Parken
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.Parken
+  nameWithType: Fahrzeug.Parken
+- uid: ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+  name: SchnellerFahren(int)
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_SchnellerFahren_System_Int32_
+  commentId: M:ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)
+  name.vb: SchnellerFahren(Integer)
+  fullName: ProgrammierenLernen.Fahrzeug.SchnellerFahren(int)
+  fullName.vb: ProgrammierenLernen.Fahrzeug.SchnellerFahren(Integer)
+  nameWithType: Fahrzeug.SchnellerFahren(int)
+  nameWithType.vb: Fahrzeug.SchnellerFahren(Integer)
+- uid: ProgrammierenLernen.Fahrzeug.SchnellerFahren*
+  name: SchnellerFahren
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_SchnellerFahren_
+  commentId: Overload:ProgrammierenLernen.Fahrzeug.SchnellerFahren
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Fahrzeug.SchnellerFahren
+  nameWithType: Fahrzeug.SchnellerFahren
+- uid: ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  name: aktuelleGeschwindigkeit
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_aktuelleGeschwindigkeit
+  commentId: F:ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  fullName: ProgrammierenLernen.Fahrzeug.aktuelleGeschwindigkeit
+  nameWithType: Fahrzeug.aktuelleGeschwindigkeit
+- uid: ProgrammierenLernen.Fahrzeug.baujahr
+  name: baujahr
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_baujahr
+  commentId: F:ProgrammierenLernen.Fahrzeug.baujahr
+  fullName: ProgrammierenLernen.Fahrzeug.baujahr
+  nameWithType: Fahrzeug.baujahr
+- uid: ProgrammierenLernen.Fahrzeug.klasse
+  name: klasse
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_klasse
+  commentId: F:ProgrammierenLernen.Fahrzeug.klasse
+  fullName: ProgrammierenLernen.Fahrzeug.klasse
+  nameWithType: Fahrzeug.klasse
+- uid: ProgrammierenLernen.Fahrzeug.marke
+  name: marke
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_marke
+  commentId: F:ProgrammierenLernen.Fahrzeug.marke
+  fullName: ProgrammierenLernen.Fahrzeug.marke
+  nameWithType: Fahrzeug.marke
+- uid: ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  name: maxGeschwindigkeit
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_maxGeschwindigkeit
+  commentId: F:ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  fullName: ProgrammierenLernen.Fahrzeug.maxGeschwindigkeit
+  nameWithType: Fahrzeug.maxGeschwindigkeit
+- uid: ProgrammierenLernen.Fahrzeug.motor
+  name: motor
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_motor
+  commentId: F:ProgrammierenLernen.Fahrzeug.motor
+  fullName: ProgrammierenLernen.Fahrzeug.motor
+  nameWithType: Fahrzeug.motor
+- uid: ProgrammierenLernen.Fahrzeug.motorLäuft
+  name: motorLäuft
+  href: api/ProgrammierenLernen.Fahrzeug.html#ProgrammierenLernen_Fahrzeug_motorL_uft
+  commentId: F:ProgrammierenLernen.Fahrzeug.motorLäuft
+  fullName: ProgrammierenLernen.Fahrzeug.motorLäuft
+  nameWithType: Fahrzeug.motorLäuft
+- uid: ProgrammierenLernen.Flugzeug
+  name: Flugzeug
+  href: api/ProgrammierenLernen.Flugzeug.html
+  commentId: T:ProgrammierenLernen.Flugzeug
+  fullName: ProgrammierenLernen.Flugzeug
+  nameWithType: Flugzeug
+- uid: ProgrammierenLernen.Flugzeug.#ctor(System.String,System.String,System.Int32,System.Double)
+  name: Flugzeug(string, string, int, double)
+  href: api/ProgrammierenLernen.Flugzeug.html#ProgrammierenLernen_Flugzeug__ctor_System_String_System_String_System_Int32_System_Double_
+  commentId: M:ProgrammierenLernen.Flugzeug.#ctor(System.String,System.String,System.Int32,System.Double)
+  name.vb: New(String, String, Integer, Double)
+  fullName: ProgrammierenLernen.Flugzeug.Flugzeug(string, string, int, double)
+  fullName.vb: ProgrammierenLernen.Flugzeug.New(String, String, Integer, Double)
+  nameWithType: Flugzeug.Flugzeug(string, string, int, double)
+  nameWithType.vb: Flugzeug.New(String, String, Integer, Double)
+- uid: ProgrammierenLernen.Flugzeug.#ctor*
+  name: Flugzeug
+  href: api/ProgrammierenLernen.Flugzeug.html#ProgrammierenLernen_Flugzeug__ctor_
+  commentId: Overload:ProgrammierenLernen.Flugzeug.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ProgrammierenLernen.Flugzeug.Flugzeug
+  fullName.vb: ProgrammierenLernen.Flugzeug.New
+  nameWithType: Flugzeug.Flugzeug
+  nameWithType.vb: Flugzeug.New
+- uid: ProgrammierenLernen.Flugzeug.Hersteller
+  name: Hersteller
+  href: api/ProgrammierenLernen.Flugzeug.html#ProgrammierenLernen_Flugzeug_Hersteller
+  commentId: P:ProgrammierenLernen.Flugzeug.Hersteller
+  fullName: ProgrammierenLernen.Flugzeug.Hersteller
+  nameWithType: Flugzeug.Hersteller
+- uid: ProgrammierenLernen.Flugzeug.Hersteller*
+  name: Hersteller
+  href: api/ProgrammierenLernen.Flugzeug.html#ProgrammierenLernen_Flugzeug_Hersteller_
+  commentId: Overload:ProgrammierenLernen.Flugzeug.Hersteller
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Flugzeug.Hersteller
+  nameWithType: Flugzeug.Hersteller
+- uid: ProgrammierenLernen.Motorrad
+  name: Motorrad
+  href: api/ProgrammierenLernen.Motorrad.html
+  commentId: T:ProgrammierenLernen.Motorrad
+  fullName: ProgrammierenLernen.Motorrad
+  nameWithType: Motorrad
+- uid: ProgrammierenLernen.Motorrad.#ctor(System.String,System.String,System.Int32,System.String)
+  name: Motorrad(string, string, int, string)
+  href: api/ProgrammierenLernen.Motorrad.html#ProgrammierenLernen_Motorrad__ctor_System_String_System_String_System_Int32_System_String_
+  commentId: M:ProgrammierenLernen.Motorrad.#ctor(System.String,System.String,System.Int32,System.String)
+  name.vb: New(String, String, Integer, String)
+  fullName: ProgrammierenLernen.Motorrad.Motorrad(string, string, int, string)
+  fullName.vb: ProgrammierenLernen.Motorrad.New(String, String, Integer, String)
+  nameWithType: Motorrad.Motorrad(string, string, int, string)
+  nameWithType.vb: Motorrad.New(String, String, Integer, String)
+- uid: ProgrammierenLernen.Motorrad.#ctor*
+  name: Motorrad
+  href: api/ProgrammierenLernen.Motorrad.html#ProgrammierenLernen_Motorrad__ctor_
+  commentId: Overload:ProgrammierenLernen.Motorrad.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ProgrammierenLernen.Motorrad.Motorrad
+  fullName.vb: ProgrammierenLernen.Motorrad.New
+  nameWithType: Motorrad.Motorrad
+  nameWithType.vb: Motorrad.New
+- uid: ProgrammierenLernen.Motorrad.Hupen
+  name: Hupen()
+  href: api/ProgrammierenLernen.Motorrad.html#ProgrammierenLernen_Motorrad_Hupen
+  commentId: M:ProgrammierenLernen.Motorrad.Hupen
+  fullName: ProgrammierenLernen.Motorrad.Hupen()
+  nameWithType: Motorrad.Hupen()
+- uid: ProgrammierenLernen.Motorrad.Hupen*
+  name: Hupen
+  href: api/ProgrammierenLernen.Motorrad.html#ProgrammierenLernen_Motorrad_Hupen_
+  commentId: Overload:ProgrammierenLernen.Motorrad.Hupen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Motorrad.Hupen
+  nameWithType: Motorrad.Hupen
+- uid: ProgrammierenLernen.PKW
+  name: PKW
+  href: api/ProgrammierenLernen.PKW.html
+  commentId: T:ProgrammierenLernen.PKW
+  fullName: ProgrammierenLernen.PKW
+  nameWithType: PKW
+- uid: ProgrammierenLernen.PKW.#ctor(System.String,System.String,System.Int32,System.String)
+  name: PKW(string, string, int, string)
+  href: api/ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW__ctor_System_String_System_String_System_Int32_System_String_
+  commentId: M:ProgrammierenLernen.PKW.#ctor(System.String,System.String,System.Int32,System.String)
+  name.vb: New(String, String, Integer, String)
+  fullName: ProgrammierenLernen.PKW.PKW(string, string, int, string)
+  fullName.vb: ProgrammierenLernen.PKW.New(String, String, Integer, String)
+  nameWithType: PKW.PKW(string, string, int, string)
+  nameWithType.vb: PKW.New(String, String, Integer, String)
+- uid: ProgrammierenLernen.PKW.#ctor*
+  name: PKW
+  href: api/ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW__ctor_
+  commentId: Overload:ProgrammierenLernen.PKW.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: ProgrammierenLernen.PKW.PKW
+  fullName.vb: ProgrammierenLernen.PKW.New
+  nameWithType: PKW.PKW
+  nameWithType.vb: PKW.New
+- uid: ProgrammierenLernen.PKW.Hupen
+  name: Hupen()
+  href: api/ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW_Hupen
+  commentId: M:ProgrammierenLernen.PKW.Hupen
+  fullName: ProgrammierenLernen.PKW.Hupen()
+  nameWithType: PKW.Hupen()
+- uid: ProgrammierenLernen.PKW.Hupen*
+  name: Hupen
+  href: api/ProgrammierenLernen.PKW.html#ProgrammierenLernen_PKW_Hupen_
+  commentId: Overload:ProgrammierenLernen.PKW.Hupen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.PKW.Hupen
+  nameWithType: PKW.Hupen
+- uid: ProgrammierenLernen.Utils
+  name: Utils
+  href: api/ProgrammierenLernen.Utils.html
+  commentId: T:ProgrammierenLernen.Utils
+  fullName: ProgrammierenLernen.Utils
+  nameWithType: Utils
+- uid: ProgrammierenLernen.Utils.BerechneSchaltjahr(System.Int32)
+  name: BerechneSchaltjahr(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_BerechneSchaltjahr_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.BerechneSchaltjahr(System.Int32)
+  name.vb: BerechneSchaltjahr(Integer)
+  fullName: ProgrammierenLernen.Utils.BerechneSchaltjahr(int)
+  fullName.vb: ProgrammierenLernen.Utils.BerechneSchaltjahr(Integer)
+  nameWithType: Utils.BerechneSchaltjahr(int)
+  nameWithType.vb: Utils.BerechneSchaltjahr(Integer)
+- uid: ProgrammierenLernen.Utils.BerechneSchaltjahr*
+  name: BerechneSchaltjahr
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_BerechneSchaltjahr_
+  commentId: Overload:ProgrammierenLernen.Utils.BerechneSchaltjahr
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.BerechneSchaltjahr
+  nameWithType: Utils.BerechneSchaltjahr
+- uid: ProgrammierenLernen.Utils.CalculateSumme(System.Int32)
+  name: CalculateSumme(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_CalculateSumme_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.CalculateSumme(System.Int32)
+  name.vb: CalculateSumme(Integer)
+  fullName: ProgrammierenLernen.Utils.CalculateSumme(int)
+  fullName.vb: ProgrammierenLernen.Utils.CalculateSumme(Integer)
+  nameWithType: Utils.CalculateSumme(int)
+  nameWithType.vb: Utils.CalculateSumme(Integer)
+- uid: ProgrammierenLernen.Utils.CalculateSumme*
+  name: CalculateSumme
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_CalculateSumme_
+  commentId: Overload:ProgrammierenLernen.Utils.CalculateSumme
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.CalculateSumme
+  nameWithType: Utils.CalculateSumme
+- uid: ProgrammierenLernen.Utils.Collatz(System.Int32,System.Int32)
+  name: Collatz(int, int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Collatz_System_Int32_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.Collatz(System.Int32,System.Int32)
+  name.vb: Collatz(Integer, Integer)
+  fullName: ProgrammierenLernen.Utils.Collatz(int, int)
+  fullName.vb: ProgrammierenLernen.Utils.Collatz(Integer, Integer)
+  nameWithType: Utils.Collatz(int, int)
+  nameWithType.vb: Utils.Collatz(Integer, Integer)
+- uid: ProgrammierenLernen.Utils.Collatz*
+  name: Collatz
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Collatz_
+  commentId: Overload:ProgrammierenLernen.Utils.Collatz
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.Collatz
+  nameWithType: Utils.Collatz
+- uid: ProgrammierenLernen.Utils.DateiName(System.String)
+  name: DateiName(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiName_System_String_
+  commentId: M:ProgrammierenLernen.Utils.DateiName(System.String)
+  name.vb: DateiName(String)
+  fullName: ProgrammierenLernen.Utils.DateiName(string)
+  fullName.vb: ProgrammierenLernen.Utils.DateiName(String)
+  nameWithType: Utils.DateiName(string)
+  nameWithType.vb: Utils.DateiName(String)
+- uid: ProgrammierenLernen.Utils.DateiName*
+  name: DateiName
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiName_
+  commentId: Overload:ProgrammierenLernen.Utils.DateiName
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.DateiName
+  nameWithType: Utils.DateiName
+- uid: ProgrammierenLernen.Utils.DateiTyp(System.String)
+  name: DateiTyp(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiTyp_System_String_
+  commentId: M:ProgrammierenLernen.Utils.DateiTyp(System.String)
+  name.vb: DateiTyp(String)
+  fullName: ProgrammierenLernen.Utils.DateiTyp(string)
+  fullName.vb: ProgrammierenLernen.Utils.DateiTyp(String)
+  nameWithType: Utils.DateiTyp(string)
+  nameWithType.vb: Utils.DateiTyp(String)
+- uid: ProgrammierenLernen.Utils.DateiTyp*
+  name: DateiTyp
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiTyp_
+  commentId: Overload:ProgrammierenLernen.Utils.DateiTyp
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.DateiTyp
+  nameWithType: Utils.DateiTyp
+- uid: ProgrammierenLernen.Utils.EingabePruefen
+  name: EingabePruefen()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EingabePruefen
+  commentId: M:ProgrammierenLernen.Utils.EingabePruefen
+  fullName: ProgrammierenLernen.Utils.EingabePruefen()
+  nameWithType: Utils.EingabePruefen()
+- uid: ProgrammierenLernen.Utils.EingabePruefen*
+  name: EingabePruefen
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EingabePruefen_
+  commentId: Overload:ProgrammierenLernen.Utils.EingabePruefen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.EingabePruefen
+  nameWithType: Utils.EingabePruefen
+- uid: ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  name: EinkaufsListeGenerator()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinkaufsListeGenerator
+  commentId: M:ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  fullName: ProgrammierenLernen.Utils.EinkaufsListeGenerator()
+  nameWithType: Utils.EinkaufsListeGenerator()
+- uid: ProgrammierenLernen.Utils.EinkaufsListeGenerator*
+  name: EinkaufsListeGenerator
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinkaufsListeGenerator_
+  commentId: Overload:ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  nameWithType: Utils.EinkaufsListeGenerator
+- uid: ProgrammierenLernen.Utils.EinsDichMich
+  name: EinsDichMich()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinsDichMich
+  commentId: M:ProgrammierenLernen.Utils.EinsDichMich
+  fullName: ProgrammierenLernen.Utils.EinsDichMich()
+  nameWithType: Utils.EinsDichMich()
+- uid: ProgrammierenLernen.Utils.EinsDichMich*
+  name: EinsDichMich
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinsDichMich_
+  commentId: Overload:ProgrammierenLernen.Utils.EinsDichMich
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.EinsDichMich
+  nameWithType: Utils.EinsDichMich
+- uid: ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  name: Faktoriell(BigInteger)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Faktoriell_System_Numerics_BigInteger_
+  commentId: M:ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  fullName: ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  nameWithType: Utils.Faktoriell(BigInteger)
+- uid: ProgrammierenLernen.Utils.Faktoriell*
+  name: Faktoriell
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Faktoriell_
+  commentId: Overload:ProgrammierenLernen.Utils.Faktoriell
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.Faktoriell
+  nameWithType: Utils.Faktoriell
+- uid: ProgrammierenLernen.Utils.FindIndex(System.Double[],System.Double)
+  name: FindIndex(double[], double)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_FindIndex_System_Double___System_Double_
+  commentId: M:ProgrammierenLernen.Utils.FindIndex(System.Double[],System.Double)
+  name.vb: FindIndex(Double(), Double)
+  fullName: ProgrammierenLernen.Utils.FindIndex(double[], double)
+  fullName.vb: ProgrammierenLernen.Utils.FindIndex(Double(), Double)
+  nameWithType: Utils.FindIndex(double[], double)
+  nameWithType.vb: Utils.FindIndex(Double(), Double)
+- uid: ProgrammierenLernen.Utils.FindIndex*
+  name: FindIndex
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_FindIndex_
+  commentId: Overload:ProgrammierenLernen.Utils.FindIndex
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.FindIndex
+  nameWithType: Utils.FindIndex
+- uid: ProgrammierenLernen.Utils.GenerateRandomWord(System.Int32)
+  name: GenerateRandomWord(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_GenerateRandomWord_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.GenerateRandomWord(System.Int32)
+  name.vb: GenerateRandomWord(Integer)
+  fullName: ProgrammierenLernen.Utils.GenerateRandomWord(int)
+  fullName.vb: ProgrammierenLernen.Utils.GenerateRandomWord(Integer)
+  nameWithType: Utils.GenerateRandomWord(int)
+  nameWithType.vb: Utils.GenerateRandomWord(Integer)
+- uid: ProgrammierenLernen.Utils.GenerateRandomWord*
+  name: GenerateRandomWord
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_GenerateRandomWord_
+  commentId: Overload:ProgrammierenLernen.Utils.GenerateRandomWord
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.GenerateRandomWord
+  nameWithType: Utils.GenerateRandomWord
+- uid: ProgrammierenLernen.Utils.JoinArray(System.Int32[],System.String)
+  name: JoinArray(int[], string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_JoinArray_System_Int32___System_String_
+  commentId: M:ProgrammierenLernen.Utils.JoinArray(System.Int32[],System.String)
+  name.vb: JoinArray(Integer(), String)
+  fullName: ProgrammierenLernen.Utils.JoinArray(int[], string)
+  fullName.vb: ProgrammierenLernen.Utils.JoinArray(Integer(), String)
+  nameWithType: Utils.JoinArray(int[], string)
+  nameWithType.vb: Utils.JoinArray(Integer(), String)
+- uid: ProgrammierenLernen.Utils.JoinArray(System.String[],System.String)
+  name: JoinArray(string[], string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_JoinArray_System_String___System_String_
+  commentId: M:ProgrammierenLernen.Utils.JoinArray(System.String[],System.String)
+  name.vb: JoinArray(String(), String)
+  fullName: ProgrammierenLernen.Utils.JoinArray(string[], string)
+  fullName.vb: ProgrammierenLernen.Utils.JoinArray(String(), String)
+  nameWithType: Utils.JoinArray(string[], string)
+  nameWithType.vb: Utils.JoinArray(String(), String)
+- uid: ProgrammierenLernen.Utils.JoinArray*
+  name: JoinArray
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_JoinArray_
+  commentId: Overload:ProgrammierenLernen.Utils.JoinArray
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.JoinArray
+  nameWithType: Utils.JoinArray
+- uid: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List{System.Double})
+  name: ListStatistics(List<double>)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ListStatistics_System_Collections_Generic_List_System_Double__
+  commentId: M:ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List{System.Double})
+  name.vb: ListStatistics(List(Of Double))
+  fullName: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List<double>)
+  fullName.vb: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List(Of Double))
+  nameWithType: Utils.ListStatistics(List<double>)
+  nameWithType.vb: Utils.ListStatistics(List(Of Double))
+- uid: ProgrammierenLernen.Utils.ListStatistics*
+  name: ListStatistics
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ListStatistics_
+  commentId: Overload:ProgrammierenLernen.Utils.ListStatistics
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.ListStatistics
+  nameWithType: Utils.ListStatistics
+- uid: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  name: MinDictionary(Dictionary<string, decimal>)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_MinDictionary_System_Collections_Generic_Dictionary_System_String_System_Decimal__
+  commentId: M:ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  name.vb: MinDictionary(Dictionary(Of String, Decimal))
+  fullName: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary<string, decimal>)
+  fullName.vb: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary(Of String, Decimal))
+  nameWithType: Utils.MinDictionary(Dictionary<string, decimal>)
+  nameWithType.vb: Utils.MinDictionary(Dictionary(Of String, Decimal))
+- uid: ProgrammierenLernen.Utils.MinDictionary*
+  name: MinDictionary
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_MinDictionary_
+  commentId: Overload:ProgrammierenLernen.Utils.MinDictionary
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.MinDictionary
+  nameWithType: Utils.MinDictionary
+- uid: ProgrammierenLernen.Utils.NANP(System.String)
+  name: NANP(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NANP_System_String_
+  commentId: M:ProgrammierenLernen.Utils.NANP(System.String)
+  name.vb: NANP(String)
+  fullName: ProgrammierenLernen.Utils.NANP(string)
+  fullName.vb: ProgrammierenLernen.Utils.NANP(String)
+  nameWithType: Utils.NANP(string)
+  nameWithType.vb: Utils.NANP(String)
+- uid: ProgrammierenLernen.Utils.NANP*
+  name: NANP
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NANP_
+  commentId: Overload:ProgrammierenLernen.Utils.NANP
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.NANP
+  nameWithType: Utils.NANP
+- uid: ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  name: NcR(BigInteger, BigInteger)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NcR_System_Numerics_BigInteger_System_Numerics_BigInteger_
+  commentId: M:ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  fullName: ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger, System.Numerics.BigInteger)
+  nameWithType: Utils.NcR(BigInteger, BigInteger)
+- uid: ProgrammierenLernen.Utils.NcR*
+  name: NcR
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NcR_
+  commentId: Overload:ProgrammierenLernen.Utils.NcR
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.NcR
+  nameWithType: Utils.NcR
+- uid: ProgrammierenLernen.Utils.OpenWith(System.String)
+  name: OpenWith(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_OpenWith_System_String_
+  commentId: M:ProgrammierenLernen.Utils.OpenWith(System.String)
+  name.vb: OpenWith(String)
+  fullName: ProgrammierenLernen.Utils.OpenWith(string)
+  fullName.vb: ProgrammierenLernen.Utils.OpenWith(String)
+  nameWithType: Utils.OpenWith(string)
+  nameWithType.vb: Utils.OpenWith(String)
+- uid: ProgrammierenLernen.Utils.OpenWith*
+  name: OpenWith
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_OpenWith_
+  commentId: Overload:ProgrammierenLernen.Utils.OpenWith
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.OpenWith
+  nameWithType: Utils.OpenWith
+- uid: ProgrammierenLernen.Utils.Pangram
+  name: Pangram()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Pangram
+  commentId: M:ProgrammierenLernen.Utils.Pangram
+  fullName: ProgrammierenLernen.Utils.Pangram()
+  nameWithType: Utils.Pangram()
+- uid: ProgrammierenLernen.Utils.Pangram(System.String)
+  name: Pangram(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Pangram_System_String_
+  commentId: M:ProgrammierenLernen.Utils.Pangram(System.String)
+  name.vb: Pangram(String)
+  fullName: ProgrammierenLernen.Utils.Pangram(string)
+  fullName.vb: ProgrammierenLernen.Utils.Pangram(String)
+  nameWithType: Utils.Pangram(string)
+  nameWithType.vb: Utils.Pangram(String)
+- uid: ProgrammierenLernen.Utils.Pangram(System.String,System.String)
+  name: Pangram(string, string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Pangram_System_String_System_String_
+  commentId: M:ProgrammierenLernen.Utils.Pangram(System.String,System.String)
+  name.vb: Pangram(String, String)
+  fullName: ProgrammierenLernen.Utils.Pangram(string, string)
+  fullName.vb: ProgrammierenLernen.Utils.Pangram(String, String)
+  nameWithType: Utils.Pangram(string, string)
+  nameWithType.vb: Utils.Pangram(String, String)
+- uid: ProgrammierenLernen.Utils.Pangram*
+  name: Pangram
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Pangram_
+  commentId: Overload:ProgrammierenLernen.Utils.Pangram
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.Pangram
+  nameWithType: Utils.Pangram
+- uid: ProgrammierenLernen.Utils.PascalTriangle(System.Int32)
+  name: PascalTriangle(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PascalTriangle_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.PascalTriangle(System.Int32)
+  name.vb: PascalTriangle(Integer)
+  fullName: ProgrammierenLernen.Utils.PascalTriangle(int)
+  fullName.vb: ProgrammierenLernen.Utils.PascalTriangle(Integer)
+  nameWithType: Utils.PascalTriangle(int)
+  nameWithType.vb: Utils.PascalTriangle(Integer)
+- uid: ProgrammierenLernen.Utils.PascalTriangle*
+  name: PascalTriangle
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PascalTriangle_
+  commentId: Overload:ProgrammierenLernen.Utils.PascalTriangle
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.PascalTriangle
+  nameWithType: Utils.PascalTriangle
+- uid: ProgrammierenLernen.Utils.PinUeberpruefung(System.String)
+  name: PinUeberpruefung(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PinUeberpruefung_System_String_
+  commentId: M:ProgrammierenLernen.Utils.PinUeberpruefung(System.String)
+  name.vb: PinUeberpruefung(String)
+  fullName: ProgrammierenLernen.Utils.PinUeberpruefung(string)
+  fullName.vb: ProgrammierenLernen.Utils.PinUeberpruefung(String)
+  nameWithType: Utils.PinUeberpruefung(string)
+  nameWithType.vb: Utils.PinUeberpruefung(String)
+- uid: ProgrammierenLernen.Utils.PinUeberpruefung*
+  name: PinUeberpruefung
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PinUeberpruefung_
+  commentId: Overload:ProgrammierenLernen.Utils.PinUeberpruefung
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.PinUeberpruefung
+  nameWithType: Utils.PinUeberpruefung
+- uid: ProgrammierenLernen.Utils.PlanetenAlter
+  name: PlanetenAlter()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PlanetenAlter
+  commentId: M:ProgrammierenLernen.Utils.PlanetenAlter
+  fullName: ProgrammierenLernen.Utils.PlanetenAlter()
+  nameWithType: Utils.PlanetenAlter()
+- uid: ProgrammierenLernen.Utils.PlanetenAlter*
+  name: PlanetenAlter
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PlanetenAlter_
+  commentId: Overload:ProgrammierenLernen.Utils.PlanetenAlter
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.PlanetenAlter
+  nameWithType: Utils.PlanetenAlter
+- uid: ProgrammierenLernen.Utils.PrintArray(System.Int32[])
+  name: PrintArray(int[])
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PrintArray_System_Int32___
+  commentId: M:ProgrammierenLernen.Utils.PrintArray(System.Int32[])
+  name.vb: PrintArray(Integer())
+  fullName: ProgrammierenLernen.Utils.PrintArray(int[])
+  fullName.vb: ProgrammierenLernen.Utils.PrintArray(Integer())
+  nameWithType: Utils.PrintArray(int[])
+  nameWithType.vb: Utils.PrintArray(Integer())
+- uid: ProgrammierenLernen.Utils.PrintArray(System.String[])
+  name: PrintArray(string[])
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PrintArray_System_String___
+  commentId: M:ProgrammierenLernen.Utils.PrintArray(System.String[])
+  name.vb: PrintArray(String())
+  fullName: ProgrammierenLernen.Utils.PrintArray(string[])
+  fullName.vb: ProgrammierenLernen.Utils.PrintArray(String())
+  nameWithType: Utils.PrintArray(string[])
+  nameWithType.vb: Utils.PrintArray(String())
+- uid: ProgrammierenLernen.Utils.PrintArray*
+  name: PrintArray
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PrintArray_
+  commentId: Overload:ProgrammierenLernen.Utils.PrintArray
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.PrintArray
+  nameWithType: Utils.PrintArray
+- uid: ProgrammierenLernen.Utils.PyramideErstellen(System.Int32)
+  name: PyramideErstellen(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PyramideErstellen_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.PyramideErstellen(System.Int32)
+  name.vb: PyramideErstellen(Integer)
+  fullName: ProgrammierenLernen.Utils.PyramideErstellen(int)
+  fullName.vb: ProgrammierenLernen.Utils.PyramideErstellen(Integer)
+  nameWithType: Utils.PyramideErstellen(int)
+  nameWithType.vb: Utils.PyramideErstellen(Integer)
+- uid: ProgrammierenLernen.Utils.PyramideErstellen*
+  name: PyramideErstellen
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PyramideErstellen_
+  commentId: Overload:ProgrammierenLernen.Utils.PyramideErstellen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.PyramideErstellen
+  nameWithType: Utils.PyramideErstellen
+- uid: ProgrammierenLernen.Utils.RandomChars(System.Int32,System.Boolean)
+  name: RandomChars(int, bool)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RandomChars_System_Int32_System_Boolean_
+  commentId: M:ProgrammierenLernen.Utils.RandomChars(System.Int32,System.Boolean)
+  name.vb: RandomChars(Integer, Boolean)
+  fullName: ProgrammierenLernen.Utils.RandomChars(int, bool)
+  fullName.vb: ProgrammierenLernen.Utils.RandomChars(Integer, Boolean)
+  nameWithType: Utils.RandomChars(int, bool)
+  nameWithType.vb: Utils.RandomChars(Integer, Boolean)
+- uid: ProgrammierenLernen.Utils.RandomChars*
+  name: RandomChars
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RandomChars_
+  commentId: Overload:ProgrammierenLernen.Utils.RandomChars
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.RandomChars
+  nameWithType: Utils.RandomChars
+- uid: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  name: RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal>, Dictionary<string, int>)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RechnungErstellenOhneGesamtBetrag_System_Collections_Generic_Dictionary_System_String_System_Decimal__System_Collections_Generic_Dictionary_System_String_System_Int32__
+  commentId: M:ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  name.vb: RechnungErstellenOhneGesamtBetrag(Dictionary(Of String, Decimal), Dictionary(Of String, Integer))
+  fullName: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary<string, decimal>, System.Collections.Generic.Dictionary<string, int>)
+  fullName.vb: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary(Of String, Decimal), System.Collections.Generic.Dictionary(Of String, Integer))
+  nameWithType: Utils.RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal>, Dictionary<string, int>)
+  nameWithType.vb: Utils.RechnungErstellenOhneGesamtBetrag(Dictionary(Of String, Decimal), Dictionary(Of String, Integer))
+- uid: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag*
+  name: RechnungErstellenOhneGesamtBetrag
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RechnungErstellenOhneGesamtBetrag_
+  commentId: Overload:ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag
+  nameWithType: Utils.RechnungErstellenOhneGesamtBetrag
+- uid: ProgrammierenLernen.Utils.RegentropfenFaktoren(System.Int32)
+  name: RegentropfenFaktoren(int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RegentropfenFaktoren_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.RegentropfenFaktoren(System.Int32)
+  name.vb: RegentropfenFaktoren(Integer)
+  fullName: ProgrammierenLernen.Utils.RegentropfenFaktoren(int)
+  fullName.vb: ProgrammierenLernen.Utils.RegentropfenFaktoren(Integer)
+  nameWithType: Utils.RegentropfenFaktoren(int)
+  nameWithType.vb: Utils.RegentropfenFaktoren(Integer)
+- uid: ProgrammierenLernen.Utils.RegentropfenFaktoren*
+  name: RegentropfenFaktoren
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RegentropfenFaktoren_
+  commentId: Overload:ProgrammierenLernen.Utils.RegentropfenFaktoren
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.RegentropfenFaktoren
+  nameWithType: Utils.RegentropfenFaktoren
+- uid: ProgrammierenLernen.Utils.RepeatInput
+  name: RepeatInput()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RepeatInput
+  commentId: M:ProgrammierenLernen.Utils.RepeatInput
+  fullName: ProgrammierenLernen.Utils.RepeatInput()
+  nameWithType: Utils.RepeatInput()
+- uid: ProgrammierenLernen.Utils.RepeatInput*
+  name: RepeatInput
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RepeatInput_
+  commentId: Overload:ProgrammierenLernen.Utils.RepeatInput
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.RepeatInput
+  nameWithType: Utils.RepeatInput
+- uid: ProgrammierenLernen.Utils.ReverseString(System.String)
+  name: ReverseString(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ReverseString_System_String_
+  commentId: M:ProgrammierenLernen.Utils.ReverseString(System.String)
+  name.vb: ReverseString(String)
+  fullName: ProgrammierenLernen.Utils.ReverseString(string)
+  fullName.vb: ProgrammierenLernen.Utils.ReverseString(String)
+  nameWithType: Utils.ReverseString(string)
+  nameWithType.vb: Utils.ReverseString(String)
+- uid: ProgrammierenLernen.Utils.ReverseString*
+  name: ReverseString
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ReverseString_
+  commentId: Overload:ProgrammierenLernen.Utils.ReverseString
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.ReverseString
+  nameWithType: Utils.ReverseString
+- uid: ProgrammierenLernen.Utils.RnaUebersetzung(System.String)
+  name: RnaUebersetzung(string)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RnaUebersetzung_System_String_
+  commentId: M:ProgrammierenLernen.Utils.RnaUebersetzung(System.String)
+  name.vb: RnaUebersetzung(String)
+  fullName: ProgrammierenLernen.Utils.RnaUebersetzung(string)
+  fullName.vb: ProgrammierenLernen.Utils.RnaUebersetzung(String)
+  nameWithType: Utils.RnaUebersetzung(string)
+  nameWithType.vb: Utils.RnaUebersetzung(String)
+- uid: ProgrammierenLernen.Utils.RnaUebersetzung*
+  name: RnaUebersetzung
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RnaUebersetzung_
+  commentId: Overload:ProgrammierenLernen.Utils.RnaUebersetzung
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.RnaUebersetzung
+  nameWithType: Utils.RnaUebersetzung
+- uid: ProgrammierenLernen.Utils.StudentAusgabe
+  name: StudentAusgabe()
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_StudentAusgabe
+  commentId: M:ProgrammierenLernen.Utils.StudentAusgabe
+  fullName: ProgrammierenLernen.Utils.StudentAusgabe()
+  nameWithType: Utils.StudentAusgabe()
+- uid: ProgrammierenLernen.Utils.StudentAusgabe*
+  name: StudentAusgabe
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_StudentAusgabe_
+  commentId: Overload:ProgrammierenLernen.Utils.StudentAusgabe
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.StudentAusgabe
+  nameWithType: Utils.StudentAusgabe
+- uid: ProgrammierenLernen.Utils.Summe(System.Decimal[])
+  name: Summe(decimal[])
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Summe_System_Decimal___
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Decimal[])
+  name.vb: Summe(Decimal())
+  fullName: ProgrammierenLernen.Utils.Summe(decimal[])
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Decimal())
+  nameWithType: Utils.Summe(decimal[])
+  nameWithType.vb: Utils.Summe(Decimal())
+- uid: ProgrammierenLernen.Utils.Summe(System.Int32,System.Int32)
+  name: Summe(int, int)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Summe_System_Int32_System_Int32_
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Int32,System.Int32)
+  name.vb: Summe(Integer, Integer)
+  fullName: ProgrammierenLernen.Utils.Summe(int, int)
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Integer, Integer)
+  nameWithType: Utils.Summe(int, int)
+  nameWithType.vb: Utils.Summe(Integer, Integer)
+- uid: ProgrammierenLernen.Utils.Summe(System.Int32[])
+  name: Summe(int[])
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Summe_System_Int32___
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Int32[])
+  name.vb: Summe(Integer())
+  fullName: ProgrammierenLernen.Utils.Summe(int[])
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Integer())
+  nameWithType: Utils.Summe(int[])
+  nameWithType.vb: Utils.Summe(Integer())
+- uid: ProgrammierenLernen.Utils.Summe*
+  name: Summe
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Summe_
+  commentId: Overload:ProgrammierenLernen.Utils.Summe
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.Summe
+  nameWithType: Utils.Summe
+- uid: ProgrammierenLernen.Utils.TechEinkaufen(System.Decimal)
+  name: TechEinkaufen(decimal)
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_TechEinkaufen_System_Decimal_
+  commentId: M:ProgrammierenLernen.Utils.TechEinkaufen(System.Decimal)
+  name.vb: TechEinkaufen(Decimal)
+  fullName: ProgrammierenLernen.Utils.TechEinkaufen(decimal)
+  fullName.vb: ProgrammierenLernen.Utils.TechEinkaufen(Decimal)
+  nameWithType: Utils.TechEinkaufen(decimal)
+  nameWithType.vb: Utils.TechEinkaufen(Decimal)
+- uid: ProgrammierenLernen.Utils.TechEinkaufen*
+  name: TechEinkaufen
+  href: api/ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_TechEinkaufen_
+  commentId: Overload:ProgrammierenLernen.Utils.TechEinkaufen
+  isSpec: "True"
+  fullName: ProgrammierenLernen.Utils.TechEinkaufen
+  nameWithType: Utils.TechEinkaufen

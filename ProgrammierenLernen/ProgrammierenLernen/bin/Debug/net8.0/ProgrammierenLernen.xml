@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ProgrammierenLernen</name>
+    </assembly>
+    <members>
+        <member name="T:ProgrammierenLernen.Fahrzeug">
+            <summary>
+            Parent Class to represent all vehicles.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.#ctor(System.String,System.String,System.Int32,System.String)">
+            <summary>
+            Constructor for a generic vehicle
+            </summary>
+            <param name="marke"></param>
+            <param name="klasse"></param>
+            <param name="baujahr"></param>
+            <param name="motor"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.Parken">
+            <summary>
+            Parking class.
+            Allows parking only if the motor is off and the speed is 0.
+            Otherwise we turn the motor off or brake until we reach the speed 0.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.Hupen">
+            <summary>
+            Abstract method to implement the sound of a vehicles horn.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.Bremsen(System.Int32)">
+            <summary>
+            Method to decrease the speed of the vehicle given a specific increment.
+            </summary>
+            <param name="inkrement"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)">
+            <summary>
+            Increase the speed of our vehicle given a specific increment.
+            </summary>
+            <param name="inkrement"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.Fahrzeug.ManageMotor">
+            <summary>
+            Change the current state of the motor.
+            </summary>
+        </member>
+        <member name="T:ProgrammierenLernen.Motorrad">
+            <summary>
+            Class to represent motorcycles.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.#ctor(System.String,System.String,System.Int32,System.String,System.Double)">
+            <summary>
+            Values necessary to create a Truck.
+            </summary>
+            <param name="marke"></param>
+            <param name="klasse"></param>
+            <param name="baujahr"></param>
+            <param name="motor"></param>
+            <param name="hoehe"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.Hupen">
+            <summary>
+            Overwritten Sound method.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.Beladen">
+            <summary>
+            Method to load the truck.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.Entladen">
+            <summary>
+            Method to empty the truck.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.GetCurrentValues(System.String)">
+            <summary>
+            Help method to extract values from out list.
+            </summary>
+            <param name="valueType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.LKW2.InfosZeigen">
+            <summary>
+            Method to show the details of our truck.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.StudentAusgabe">
+            <summary>
+            Erzeugt eine schoene ausgabe anhand von die StudentenInfos Tupeln.
+            </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.StudentenInformationen">
+            <summary>
+            Methode um Studentent Tupeln zu erstellen und als Liste zurueckzugeben.
+            
+            </summary>
+            <returns>(string Name, int Alter, double DurchschnittsNote)</returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.StudententNameOrWert(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="ausgabe"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.PascalTriangle(System.Int32)">
+            <summary>
+            Creates a pyramid representing the values in Pascals Triangle.
+            </summary>
+            <param name="hoehe"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)">
+            <summary>
+            Calculates n choose r.
+            </summary>
+            <param name="n"></param>
+            <param name="r"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Utils.Pangram(System.String)">
+            <summary>
+            Ein gegebener Satz wird aufgeteilt in einzelne Woerter.
+            Danach werden diese Woerter umgedreht mit unsere Reverse() methode.
+            Dann geben wir wieder alle Woerter in einen String zurueck ohne die Reihenfolge zu veraendern.
+            </summary>
+            <param name="eingabe">Unser Eingabe Satz</param>
+            <exception cref="!:NullPointerException">Moeglicherweise string ist null</exception>
+            <returns><ref name="eingabe">Eingabe </ref>Soll umgedreht werden.</returns>
+        </member>
+    </members>
+</doc>
