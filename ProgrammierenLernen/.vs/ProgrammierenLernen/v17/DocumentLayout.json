@@ -1,25 +1,25 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\",
+  "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\introduction.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\introduction.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\docs\\introduction.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\getting-started.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\getting-started.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\docs\\getting-started.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\toc.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\toc.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\toc.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\programmierenlernen.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\programmierenlernen.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\programmierenlernen.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
     }
   ],
@@ -30,27 +30,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "introduction.md",
-              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\docs\\introduction.md",
-              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
               "RelativeToolTip": "ProgrammierenLernen\\docs\\introduction.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
@@ -61,35 +49,33 @@
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "getting-started.md",
-              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\docs\\getting-started.md",
-              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
               "RelativeToolTip": "ProgrammierenLernen\\docs\\getting-started.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-12-23T14:17:57.873Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T14:17:57.873Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "toc.yml",
-              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\toc.yml",
-              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
               "RelativeToolTip": "ProgrammierenLernen\\toc.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-12-23T14:17:52.729Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T14:17:52.729Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "ProgrammierenLernen",
-              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\ProgrammierenLernen.csproj",
-              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
               "RelativeToolTip": "ProgrammierenLernen\\ProgrammierenLernen.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2024-12-23T13:46:20.303Z"
@@ -98,14 +84,13 @@
               "$type": "Document",
               "DocumentIndex": 3,
               "Title": "LKW.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\LKW.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\LKW.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\LKW.cs",
-              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\LKW.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\LKW.cs",
               "RelativeToolTip": "ProgrammierenLernen\\LKW.cs",
               "ViewState": "AgIAADMBAAAAAAAAAAAuwD4BAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-23T13:34:20.734Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-23T13:34:20.734Z"
             }
           ]
         }

@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\introduction.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\docs\\introduction.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\docs\\getting-started.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\docs\\getting-started.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\toc.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\toc.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\nicoa\\desktop\\tq5uebung\\programmierenlernen\\programmierenlernen\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,7 +46,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "introduction.md",
+              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
+              "RelativeDocumentMoniker": "ProgrammierenLernen\\docs\\introduction.md",
+              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\introduction.md",
+              "RelativeToolTip": "ProgrammierenLernen\\docs\\introduction.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-12-23T14:17:59.151Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "getting-started.md",
+              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
+              "RelativeDocumentMoniker": "ProgrammierenLernen\\docs\\getting-started.md",
+              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\docs\\getting-started.md",
+              "RelativeToolTip": "ProgrammierenLernen\\docs\\getting-started.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-12-23T14:17:57.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "toc.yml",
+              "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
+              "RelativeDocumentMoniker": "ProgrammierenLernen\\toc.yml",
+              "ToolTip": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\toc.yml",
+              "RelativeToolTip": "ProgrammierenLernen\\toc.yml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-12-23T14:17:52.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ProgrammierenLernen",
               "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\ProgrammierenLernen.csproj",
@@ -45,7 +96,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "LKW.cs",
               "DocumentMoniker": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\LKW.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\LKW.cs",
