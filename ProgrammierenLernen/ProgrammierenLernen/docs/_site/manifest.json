@@ -1,0 +1,238 @@
+{
+  "source_base_path": "C:/Users/nicoa/Desktop/TQ5Uebung/ProgrammierenLernen/ProgrammierenLernen/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Fahrzeug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Fahrzeug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Flugzeug.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Flugzeug.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Giraffe.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Giraffe.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.IFiguren.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.IFiguren.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Motorrad.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Motorrad.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.PKW.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.PKW.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Person.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Person.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Point.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Point.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.PolizeiRoboter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.PolizeiRoboter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.RDreieck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.RDreieck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Roboter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Roboter.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Roomba.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Roomba.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Utils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Utils.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Wolf.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Wolf.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/getting-started.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/getting-started.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "docs/introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "docs/introduction.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "docs/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "docs/toc.html"
+        },
+        ".json": {
+          "relative_path": "docs/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

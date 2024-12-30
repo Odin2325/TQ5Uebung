@@ -4,39 +4,59 @@ using System.Text;
 
 namespace ProgrammierenLernen
 {
+    /*
+     * Wir moechten einen Einfachen interface erstellen.
+     * Dies soll ein interface fuer verschieden Figuren und wie die auf den Bildschirm angezeigt werden.
+     * Wir muessen in diesen interface einen x, y coordinat definieren als Property.
+     * Es soll ein getter und setter haben.
+     * 
+     * Wir muessen auch einen Property fuer die Dimensionen von die Figuren haben.
+     * 
+     * Wir brauechten eine Methode fuer den Oberflaeche, und eine Methode um den Perimeter zu berechnen.
+     * 
+     * Die moeglichen figuren sind:
+     * Punkt, Viereck, rechtwinkliges Dreieck, Linie
+     */
+
+    public struct Point
+    {
+        public int x;
+        public int y;
+
+        public Point(int x, int y)
+        {
+            this.x = x;
+            this.y = y;
+        }
+
+        public void Display()
+        {
+            Console.WriteLine($"Punkt x:{x}, y:{y}");
+        }
+    }
+
     internal class Program
     {
+        //enum
+        //struct
+        public static void TierDetails(IAnimal animal)
+        {
+            Console.WriteLine($"Tierart: {animal.Name}");
+            animal.Geraeusch();
+            animal.Essen("Fisch");
+        }
+
+        public enum Richtungen
+        {
+            Forwaerts,
+            Rueckwaerts,
+            Rechts,
+            Links
+        }
+
         static void Main(string[] args)
         {
-
-            Person person1 = new Person("Max Mustermann", "Berlin 99", false);
-            Person person2 = new Person("Rosie Rosalie", "Berlin 98", true);
-            Person person3 = new Person("The Grinch", "Berlin 97", true);
-
-            PolizeiRoboter polizeiRoboter = new PolizeiRoboter("Berlin Strasse");
-            polizeiRoboter.KriminellenHinzufuegen(new Person("Rosie Rosalie", "Berlin 98", true));
-            polizeiRoboter.KriminellenHinzufuegen(new Person("Bobby Brown", "Berlin 91", true));
-
-
-            //|person1|person2|person3|polizeiRoboter
-
-            /*
-             * Speicher1: Max Mustermann, Berlin 99, false
-             * Speicher2: "Rosie Rosalie", "Berlin 98", true
-             * Speicher3: "The Grinch", "Berlin 97", true
-             * Speicher4: polizeiRoboter.KriminellenListe
-             *      unterSpeicher1:"Rosie Rosalie", "Berlin 98", true
-             *      unterSpeicher2:"Bobby Brown", "Berlin 91", true
-             * 
-             */
-
-            Console.WriteLine("Vergleich Person 1:");
-            polizeiRoboter.PersonVergleichen(person1);
-            Console.WriteLine("Vergleich Person 2:");
-            polizeiRoboter.PersonVergleichen(person2);
-            Console.WriteLine("Vergleich Person 3:");
-            polizeiRoboter.PersonVergleichen(person3);
-
+            PKW fahrzeug = new PKW("BMW","M6",2010,"232V99");
         }
 
     }

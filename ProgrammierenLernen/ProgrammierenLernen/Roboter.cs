@@ -102,12 +102,7 @@ namespace ProgrammierenLernen
             muellEimerStand = 0;
             return true;
         }
-
     }
-
-
-
-
     public class PolizeiRoboter : Roboter
     {
         private List<Person> bekannteKriminelle = new List<Person>();
