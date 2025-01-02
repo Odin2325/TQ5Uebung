@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\erfahren\\rnasequenzierung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\erfahren\\rnasequenzierung.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\fortgeschritten\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\fortgeschritten\\calculatetwo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\utils\\outputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\utils\\outputs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\simple\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\simple\\calculate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|c:\\users\\akein\\desktop\\schule\\programmierung\\git hub\\tq5uebung\\programmierung\\grundlagen\\grundlagen\\simple\\messageworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\simple\\messageworker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\grundlagen\\aufgaben\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D3EC81E4-B013-439B-8676-DBFF4183140E}|Grundlagen\\Grundlagen.csproj|solutionrelative:grundlagen\\aufgaben\\lkw.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,65 +34,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RNASequenzierung.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Erfahren\\RNASequenzierung.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\Erfahren\\RNASequenzierung.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Erfahren\\RNASequenzierung.cs",
-              "RelativeToolTip": "Grundlagen\\Erfahren\\RNASequenzierung.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBwAAABHAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "Outputs.cs",
+              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\Outputs.cs",
+              "RelativeDocumentMoniker": "Grundlagen\\utils\\Outputs.cs",
+              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\utils\\Outputs.cs",
+              "RelativeToolTip": "Grundlagen\\utils\\Outputs.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBkAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T09:45:03.72Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T08:39:37.151Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "CalculateTwo.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Fortgeschritten\\CalculateTwo.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\Fortgeschritten\\CalculateTwo.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Fortgeschritten\\CalculateTwo.cs",
-              "RelativeToolTip": "Grundlagen\\Fortgeschritten\\CalculateTwo.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAmwD0AAAAZAAAAAAAAAA==",
+              "Title": "LKW.cs",
+              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Aufgaben\\LKW.cs",
+              "RelativeDocumentMoniker": "Grundlagen\\Aufgaben\\LKW.cs",
+              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Aufgaben\\LKW.cs",
+              "RelativeToolTip": "Grundlagen\\Aufgaben\\LKW.cs",
+              "ViewState": "AgIAAIIAAAAAAAAAAAAAAJYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T08:27:55.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-20T07:46:20.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Calculate.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\Calculate.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\Simple\\Calculate.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\Calculate.cs",
-              "RelativeToolTip": "Grundlagen\\Simple\\Calculate.cs",
-              "ViewState": "AgIAAIwAAAAAAAAAAAAqwJwAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:35:45.405Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "MessageWorker.cs",
-              "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\MessageWorker.cs",
-              "RelativeDocumentMoniker": "Grundlagen\\Simple\\MessageWorker.cs",
-              "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Simple\\MessageWorker.cs",
-              "RelativeToolTip": "Grundlagen\\Simple\\MessageWorker.cs",
-              "ViewState": "AgIAAJ4AAAAAAAAAAAAswLQAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-16T07:13:09.939Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs",
               "RelativeDocumentMoniker": "Grundlagen\\Program.cs",
               "ToolTip": "C:\\Users\\akein\\Desktop\\Schule\\Programmierung\\Git Hub\\TQ5Uebung\\Programmierung\\Grundlagen\\Grundlagen\\Program.cs",
               "RelativeToolTip": "Grundlagen\\Program.cs",
-              "ViewState": "AgIAAPYAAAAAAAAAAAAAAAsBAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAqwFcAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T09:52:33.508Z",
               "EditorCaption": ""

@@ -24,6 +24,7 @@ namespace Grundlagen
         private static CalculateTwo calTwo;
         private static RNASequenzierung rnaSequenzierung;
         private static Kasse kasse;
+        private static LKW lkw;
         static void Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
@@ -38,6 +39,7 @@ namespace Grundlagen
             calTwo = new CalculateTwo();
             rnaSequenzierung = new RNASequenzierung();
             kasse = new Kasse();
+            lkw = new LKW();
 
             string version = versionClass.Update(versionClass.Read());
             versionClass.Save(version);
@@ -49,43 +51,41 @@ namespace Grundlagen
 
         private static void WaitForExit()
         {
-            string[] options = {
-                "- Durchschnitt",
-                "- Volume",
-                "- Temperatur",
-                "- Zylinder",
-                "- Invest",
-                "- Noten",
-                "- Random",
-                "- CallBack",
-                "- Login",
-                "- Würfelgame",
-                "- Währungsrechner",
-                "- CalculateSumme",
-                "- ValidateInput",
-                "- RepeatInput",
-                "- ReverseArray",
-                "- FindIndex",
-                "- RandomWord",
-                "- Pangram",
-                "- OpenWith",
-                "- NameChecker",
-                "- Faktor",
-                "- TerraAlter",
-                "- Schaltjahr",
-                "- RNA",
-                "- Kasse",
-                "- Exit"
-            };
+            StringBuilder options = new StringBuilder();
+
+            options.AppendLine("- Durchschnitt")
+                   .AppendLine("- Volume")
+                   .AppendLine("- Temperatur")
+                   .AppendLine("- Zylinder")
+                   .AppendLine("- Invest")
+                   .AppendLine("- Noten")
+                   .AppendLine("- Random")
+                   .AppendLine("- CallBack")
+                   .AppendLine("- Login")
+                   .AppendLine("- Würfelgame")
+                   .AppendLine("- Währungsrechner")
+                   .AppendLine("- CalculateSumme")
+                   .AppendLine("- ValidateInput")
+                   .AppendLine("- RepeatInput")
+                   .AppendLine("- ReverseArray")
+                   .AppendLine("- FindIndex")
+                   .AppendLine("- RandomWord")
+                   .AppendLine("- Pangram")
+                   .AppendLine("- OpenWith")
+                   .AppendLine("- NameChecker")
+                   .AppendLine("- Faktor")
+                   .AppendLine("- TerraAlter")
+                   .AppendLine("- Schaltjahr")
+                   .AppendLine("- RNA")
+                   .AppendLine("- Kasse")
+                   .AppendLine("- LKW")
+                   .AppendLine("- Exit");
 
             while (true)
             {
                 outputs.NormalOutput("Bitte gebe eines der folgenden Dinge an, die du testen möchtest:");
                 Console.ResetColor();
-                foreach (var option in options)
-                {
-                    Console.WriteLine(option);
-                }
+                Console.WriteLine(options.ToString());
 
                 Console.ForegroundColor = ConsoleColor.Blue;
                 string input = Console.ReadLine();
@@ -279,6 +279,11 @@ namespace Grundlagen
                     Console.ResetColor();
                     ManageKasse();
                 }
+                else if (input.Equals("lkw", StringComparison.OrdinalIgnoreCase))
+                {
+                    Console.ResetColor();
+                    ManageLKW();
+                }
                 else if (input.Equals("exit", StringComparison.OrdinalIgnoreCase))
                 {
                     Console.ResetColor();
@@ -365,6 +370,40 @@ namespace Grundlagen
                         Console.ResetColor();
 
                         kasse.RechnungDrucken(rechnungsBetrag);
+                        break;
+
+                    case "5":
+                        outputs.SuccessOutput("Programm beendet.");
+                        return;
+
+                    default:
+                        outputs.ErrorOutput("Ungültige Option. Bitte erneut versuchen.");
+                        break;
+                }
+            }
+        }
+
+        private static void ManageLKW()
+        {
+            while (true)
+            {
+                Console.WriteLine("\nWählen Sie eine Option:");
+                Console.WriteLine("1: Motor starten/stoppen");
+                Console.WriteLine("2: Fahren");
+                Console.WriteLine("3: Beenden");
+
+                Console.ForegroundColor = ConsoleColor.Blue;
+                string input = Console.ReadLine();
+                Console.ResetColor();
+
+                switch (input)
+                {
+                    case "1":
+                        lkw.ManageMotor();
+                        break;
+
+                    case "2":
+                        lkw.Fahren();
                         break;
 
                     case "5":

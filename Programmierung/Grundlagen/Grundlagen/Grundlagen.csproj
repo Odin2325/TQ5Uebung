@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aufgaben\Kasse.cs" />
+    <Compile Include="Aufgaben\LKW.cs" />
     <Compile Include="Erfahren\RNASequenzierung.cs" />
     <Compile Include="Fortgeschritten\ArraysAndLists.cs" />
     <Compile Include="Fortgeschritten\CalculateTwo.cs" />
