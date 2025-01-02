@@ -16,6 +16,22 @@ namespace ProgrammierenLernen
         double Perimiter();
     }
 
+    public class Viereck : IFiguren
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public double Laenge { get; set; }
+        public double Hoehe { get; set; }
+        public double Oberflaeche()
+        {
+            return Laenge * Hoehe;
+        }
+        public double Perimiter()
+        {
+            return 2 * Laenge + 2 * Hoehe;
+        }
+    }
+
     public class RDreieck : IFiguren
     {
         public int X { get; set; }
@@ -33,6 +49,38 @@ namespace ProgrammierenLernen
             double hypotenuse = Math.Sqrt(Laenge*Laenge + Hoehe*Hoehe);
 
             return hypotenuse + Laenge + Hoehe;
+        }
+    }
+
+    public class Linie : IFiguren
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public double Laenge { get; set; }
+        public double Hoehe { get; set; } = 0;
+        public double Oberflaeche()
+        {
+            return 0;
+        }
+        public double Perimiter()
+        {
+            return Laenge;
+        }
+    }
+
+    public class Punkt : IFiguren
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+        public double Laenge { get; set; } = 0;
+        public double Hoehe { get; set; } = 0;
+        public double Oberflaeche()
+        {
+            return 0;
+        }
+        public double Perimiter()
+        {
+            return 0;
         }
     }
 }

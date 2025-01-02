@@ -70,11 +70,10 @@ namespace ProgrammierenLernen
         }
 
         /// <summary>
-        /// Parking class.
         /// Allows parking only if the motor is off and the speed is 0.
         /// Otherwise we turn the motor off or brake until we reach the speed 0.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Boolean: Ob wir geparkt sind.</returns>
         public bool Parken()
         {
             if (aktuelleGeschwindigkeit == 0 && !motorLäuft)
@@ -107,7 +106,7 @@ namespace ProgrammierenLernen
         /// <summary>
         /// Method to decrease the speed of the vehicle given a specific increment.
         /// </summary>
-        /// <param name="inkrement"></param>
+        /// <param name="inkrement">Dies ist der inkrement, der unsere geschwindigkeit erhoeht.</param>
         public void Bremsen(int inkrement)
         {
             if (aktuelleGeschwindigkeit > 0)

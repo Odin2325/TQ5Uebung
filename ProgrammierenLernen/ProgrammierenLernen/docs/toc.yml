@@ -1,4 +1,6 @@
-- name: Docs
-  href: docs/
+- name: Introduction
+  href: introduction.md
+- name: Getting Started
+  href: getting-started.md
 - name: API
   href: api/

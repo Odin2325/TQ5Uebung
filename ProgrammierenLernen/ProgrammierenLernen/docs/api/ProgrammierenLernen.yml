@@ -8,15 +8,18 @@ items:
   - ProgrammierenLernen.Flugzeug
   - ProgrammierenLernen.Giraffe
   - ProgrammierenLernen.IFiguren
+  - ProgrammierenLernen.Linie
   - ProgrammierenLernen.Motorrad
   - ProgrammierenLernen.PKW
   - ProgrammierenLernen.Person
   - ProgrammierenLernen.Point
   - ProgrammierenLernen.PolizeiRoboter
+  - ProgrammierenLernen.Punkt
   - ProgrammierenLernen.RDreieck
   - ProgrammierenLernen.Roboter
   - ProgrammierenLernen.Roomba
   - ProgrammierenLernen.Utils
+  - ProgrammierenLernen.Viereck
   - ProgrammierenLernen.Wolf
   langs:
   - csharp
@@ -35,12 +38,30 @@ references:
   name: IFiguren
   nameWithType: IFiguren
   fullName: ProgrammierenLernen.IFiguren
+- uid: ProgrammierenLernen.Viereck
+  commentId: T:ProgrammierenLernen.Viereck
+  href: ProgrammierenLernen.Viereck.html
+  name: Viereck
+  nameWithType: Viereck
+  fullName: ProgrammierenLernen.Viereck
 - uid: ProgrammierenLernen.RDreieck
   commentId: T:ProgrammierenLernen.RDreieck
   href: ProgrammierenLernen.RDreieck.html
   name: RDreieck
   nameWithType: RDreieck
   fullName: ProgrammierenLernen.RDreieck
+- uid: ProgrammierenLernen.Linie
+  commentId: T:ProgrammierenLernen.Linie
+  href: ProgrammierenLernen.Linie.html
+  name: Linie
+  nameWithType: Linie
+  fullName: ProgrammierenLernen.Linie
+- uid: ProgrammierenLernen.Punkt
+  commentId: T:ProgrammierenLernen.Punkt
+  href: ProgrammierenLernen.Punkt.html
+  name: Punkt
+  nameWithType: Punkt
+  fullName: ProgrammierenLernen.Punkt
 - uid: ProgrammierenLernen.Flugzeug
   commentId: T:ProgrammierenLernen.Flugzeug
   href: ProgrammierenLernen.Flugzeug.html

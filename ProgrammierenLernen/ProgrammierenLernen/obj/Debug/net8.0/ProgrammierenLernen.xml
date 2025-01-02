@@ -4,6 +4,11 @@
         <name>ProgrammierenLernen</name>
     </assembly>
     <members>
+        <member name="T:ProgrammierenLernen.Buch">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:ProgrammierenLernen.Fahrzeug">
             <summary>
             Parent Class to represent all vehicles.
@@ -20,11 +25,10 @@
         </member>
         <member name="M:ProgrammierenLernen.Fahrzeug.Parken">
             <summary>
-            Parking class.
             Allows parking only if the motor is off and the speed is 0.
             Otherwise we turn the motor off or brake until we reach the speed 0.
             </summary>
-            <returns></returns>
+            <returns>Boolean: Ob wir geparkt sind.</returns>
         </member>
         <member name="M:ProgrammierenLernen.Fahrzeug.Hupen">
             <summary>
@@ -35,7 +39,7 @@
             <summary>
             Method to decrease the speed of the vehicle given a specific increment.
             </summary>
-            <param name="inkrement"></param>
+            <param name="inkrement">Dies ist der inkrement, der unsere geschwindigkeit erhoeht.</param>
         </member>
         <member name="M:ProgrammierenLernen.Fahrzeug.SchnellerFahren(System.Int32)">
             <summary>
@@ -89,6 +93,19 @@
             <summary>
             Method to show the details of our truck.
             </summary>
+        </member>
+        <member name="M:ProgrammierenLernen.Roomba.GerauescheMachen">
+            <summary>
+            
+            </summary>
+            <exception cref="T:System.IO.IOException">Ein Fehler ist aufgetreten beim auslesen.</exception>"
+        </member>
+        <member name="M:ProgrammierenLernen.Roomba.Putzen(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="indexVonZimmer"></param>
+            <returns></returns>
         </member>
         <member name="M:ProgrammierenLernen.Utils.StudentAusgabe">
             <summary>

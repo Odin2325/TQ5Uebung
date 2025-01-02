@@ -16,6 +16,9 @@ items:
   - uid: ProgrammierenLernen.IFiguren
     name: IFiguren
     type: Interface
+  - uid: ProgrammierenLernen.Linie
+    name: Linie
+    type: Class
   - uid: ProgrammierenLernen.Motorrad
     name: Motorrad
     type: Class
@@ -31,6 +34,9 @@ items:
   - uid: ProgrammierenLernen.PolizeiRoboter
     name: PolizeiRoboter
     type: Class
+  - uid: ProgrammierenLernen.Punkt
+    name: Punkt
+    type: Class
   - uid: ProgrammierenLernen.RDreieck
     name: RDreieck
     type: Class
@@ -42,6 +48,9 @@ items:
     type: Class
   - uid: ProgrammierenLernen.Utils
     name: Utils
+    type: Class
+  - uid: ProgrammierenLernen.Viereck
+    name: Viereck
     type: Class
   - uid: ProgrammierenLernen.Wolf
     name: Wolf
