@@ -56,7 +56,7 @@ namespace ProgrammierenLernen
 
         static void Main(string[] args)
         {
-            PKW fahrzeug = new PKW("BMW","M6",2010,"232V99");
+            
         }
 
     }

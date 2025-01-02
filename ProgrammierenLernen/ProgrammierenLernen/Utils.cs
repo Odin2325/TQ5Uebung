@@ -911,6 +911,10 @@ namespace ProgrammierenLernen
             }
         }
 
+        public double Add(double a, double b)
+        {
+            return a + b;
+        }
         public static bool PinUeberpruefung(string echtenPin)
         {
             string pinEingabe = "";
