@@ -24,7 +24,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: PolizeiRoboter
     path: ../Roboter.cs
-    startLine: 105
+    startLine: 114
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -65,7 +65,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: .ctor
     path: ../Roboter.cs
-    startLine: 110
+    startLine: 119
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -97,7 +97,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: GerauescheMachen
     path: ../Roboter.cs
-    startLine: 115
+    startLine: 124
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -125,7 +125,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: PersonVergleichen
     path: ../Roboter.cs
-    startLine: 121
+    startLine: 130
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -154,7 +154,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: KriminellenHinzufuegen
     path: ../Roboter.cs
-    startLine: 135
+    startLine: 144
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: KriminellenEntfernen
     path: ../Roboter.cs
-    startLine: 140
+    startLine: 149
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen

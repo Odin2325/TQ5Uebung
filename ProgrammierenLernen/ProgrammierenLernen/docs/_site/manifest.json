@@ -1,5 +1,5 @@
 {
-  "source_base_path": "C:/Users/nicoa/Desktop/TQ5Uebung/ProgrammierenLernen/ProgrammierenLernen/docs",
+  "source_base_path": "C:/Users/MYTQ-Trainer/Documents/GitHub/TQ5Uebung/ProgrammierenLernen/ProgrammierenLernen/docs",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -46,6 +46,16 @@
       "output": {
         ".html": {
           "relative_path": "api/ProgrammierenLernen.IFiguren.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Linie.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Linie.html"
         }
       },
       "version": ""
@@ -102,6 +112,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Punkt.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Punkt.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProgrammierenLernen.RDreieck.yml",
       "output": {
         ".html": {
@@ -142,6 +162,16 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/ProgrammierenLernen.Viereck.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/ProgrammierenLernen.Viereck.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/ProgrammierenLernen.Wolf.yml",
       "output": {
         ".html": {
@@ -175,33 +205,10 @@
     },
     {
       "type": "Conceptual",
-      "source_relative_path": "docs/getting-started.md",
+      "source_relative_path": "getting-started.md",
       "output": {
         ".html": {
-          "relative_path": "docs/getting-started.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Conceptual",
-      "source_relative_path": "docs/introduction.md",
-      "output": {
-        ".html": {
-          "relative_path": "docs/introduction.html"
-        }
-      },
-      "version": ""
-    },
-    {
-      "type": "Toc",
-      "source_relative_path": "docs/toc.yml",
-      "output": {
-        ".html": {
-          "relative_path": "docs/toc.html"
-        },
-        ".json": {
-          "relative_path": "docs/toc.json"
+          "relative_path": "getting-started.html"
         }
       },
       "version": ""
@@ -212,6 +219,16 @@
       "output": {
         ".html": {
           "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "introduction.md",
+      "output": {
+        ".html": {
+          "relative_path": "introduction.html"
         }
       },
       "version": ""

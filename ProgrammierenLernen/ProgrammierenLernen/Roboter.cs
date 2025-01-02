@@ -47,11 +47,20 @@ namespace ProgrammierenLernen
 
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <exception cref="IOException">Ein Fehler ist aufgetreten beim auslesen.</exception>"
         public override void GerauescheMachen()
         {
             Console.WriteLine("Meep meep!");
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="indexVonZimmer"></param>
+        /// <returns></returns>
         public bool Putzen(int indexVonZimmer)
         {
 

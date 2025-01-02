@@ -21,7 +21,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: PKW
     path: ../LKW.cs
-    startLine: 169
+    startLine: 168
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -72,7 +72,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: .ctor
     path: ../LKW.cs
-    startLine: 171
+    startLine: 170
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -110,7 +110,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Hupen
     path: ../LKW.cs
-    startLine: 175
+    startLine: 174
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen

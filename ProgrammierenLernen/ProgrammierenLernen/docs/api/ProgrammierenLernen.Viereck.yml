@@ -1,0 +1,611 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProgrammierenLernen.Viereck
+  commentId: T:ProgrammierenLernen.Viereck
+  id: Viereck
+  parent: ProgrammierenLernen
+  children:
+  - ProgrammierenLernen.Viereck.Hoehe
+  - ProgrammierenLernen.Viereck.Laenge
+  - ProgrammierenLernen.Viereck.Oberflaeche
+  - ProgrammierenLernen.Viereck.Perimiter
+  - ProgrammierenLernen.Viereck.X
+  - ProgrammierenLernen.Viereck.Y
+  langs:
+  - csharp
+  - vb
+  name: Viereck
+  nameWithType: Viereck
+  fullName: ProgrammierenLernen.Viereck
+  type: Class
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Viereck
+    path: ../Figuren.cs
+    startLine: 18
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: 'public class Viereck : IFiguren'
+    content.vb: Public Class Viereck Implements IFiguren
+  inheritance:
+  - System.Object
+  implements:
+  - ProgrammierenLernen.IFiguren
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProgrammierenLernen.Viereck.X
+  commentId: P:ProgrammierenLernen.Viereck.X
+  id: X
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: Viereck.X
+  fullName: ProgrammierenLernen.Viereck.X
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: X
+    path: ../Figuren.cs
+    startLine: 20
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public int X { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property X As Integer
+  overload: ProgrammierenLernen.Viereck.X*
+  implements:
+  - ProgrammierenLernen.IFiguren.X
+- uid: ProgrammierenLernen.Viereck.Y
+  commentId: P:ProgrammierenLernen.Viereck.Y
+  id: Y
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: Viereck.Y
+  fullName: ProgrammierenLernen.Viereck.Y
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Y
+    path: ../Figuren.cs
+    startLine: 21
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public int Y { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property Y As Integer
+  overload: ProgrammierenLernen.Viereck.Y*
+  implements:
+  - ProgrammierenLernen.IFiguren.Y
+- uid: ProgrammierenLernen.Viereck.Laenge
+  commentId: P:ProgrammierenLernen.Viereck.Laenge
+  id: Laenge
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: Laenge
+  nameWithType: Viereck.Laenge
+  fullName: ProgrammierenLernen.Viereck.Laenge
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Laenge
+    path: ../Figuren.cs
+    startLine: 22
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public double Laenge { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Laenge As Double
+  overload: ProgrammierenLernen.Viereck.Laenge*
+  implements:
+  - ProgrammierenLernen.IFiguren.Laenge
+- uid: ProgrammierenLernen.Viereck.Hoehe
+  commentId: P:ProgrammierenLernen.Viereck.Hoehe
+  id: Hoehe
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: Hoehe
+  nameWithType: Viereck.Hoehe
+  fullName: ProgrammierenLernen.Viereck.Hoehe
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Hoehe
+    path: ../Figuren.cs
+    startLine: 23
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public double Hoehe { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Public Property Hoehe As Double
+  overload: ProgrammierenLernen.Viereck.Hoehe*
+  implements:
+  - ProgrammierenLernen.IFiguren.Hoehe
+- uid: ProgrammierenLernen.Viereck.Oberflaeche
+  commentId: M:ProgrammierenLernen.Viereck.Oberflaeche
+  id: Oberflaeche
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: Oberflaeche()
+  nameWithType: Viereck.Oberflaeche()
+  fullName: ProgrammierenLernen.Viereck.Oberflaeche()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Oberflaeche
+    path: ../Figuren.cs
+    startLine: 24
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public double Oberflaeche()
+    return:
+      type: System.Double
+    content.vb: Public Function Oberflaeche() As Double
+  overload: ProgrammierenLernen.Viereck.Oberflaeche*
+  implements:
+  - ProgrammierenLernen.IFiguren.Oberflaeche
+- uid: ProgrammierenLernen.Viereck.Perimiter
+  commentId: M:ProgrammierenLernen.Viereck.Perimiter
+  id: Perimiter
+  parent: ProgrammierenLernen.Viereck
+  langs:
+  - csharp
+  - vb
+  name: Perimiter()
+  nameWithType: Viereck.Perimiter()
+  fullName: ProgrammierenLernen.Viereck.Perimiter()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Perimiter
+    path: ../Figuren.cs
+    startLine: 28
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  example: []
+  syntax:
+    content: public double Perimiter()
+    return:
+      type: System.Double
+    content.vb: Public Function Perimiter() As Double
+  overload: ProgrammierenLernen.Viereck.Perimiter*
+  implements:
+  - ProgrammierenLernen.IFiguren.Perimiter
+references:
+- uid: ProgrammierenLernen
+  commentId: N:ProgrammierenLernen
+  href: ProgrammierenLernen.html
+  name: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+  fullName: ProgrammierenLernen
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: ProgrammierenLernen.IFiguren
+  commentId: T:ProgrammierenLernen.IFiguren
+  parent: ProgrammierenLernen
+  href: ProgrammierenLernen.IFiguren.html
+  name: IFiguren
+  nameWithType: IFiguren
+  fullName: ProgrammierenLernen.IFiguren
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProgrammierenLernen.Viereck.X*
+  commentId: Overload:ProgrammierenLernen.Viereck.X
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_X
+  name: X
+  nameWithType: Viereck.X
+  fullName: ProgrammierenLernen.Viereck.X
+- uid: ProgrammierenLernen.IFiguren.X
+  commentId: P:ProgrammierenLernen.IFiguren.X
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_X
+  name: X
+  nameWithType: IFiguren.X
+  fullName: ProgrammierenLernen.IFiguren.X
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProgrammierenLernen.Viereck.Y*
+  commentId: Overload:ProgrammierenLernen.Viereck.Y
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_Y
+  name: Y
+  nameWithType: Viereck.Y
+  fullName: ProgrammierenLernen.Viereck.Y
+- uid: ProgrammierenLernen.IFiguren.Y
+  commentId: P:ProgrammierenLernen.IFiguren.Y
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Y
+  name: Y
+  nameWithType: IFiguren.Y
+  fullName: ProgrammierenLernen.IFiguren.Y
+- uid: ProgrammierenLernen.Viereck.Laenge*
+  commentId: Overload:ProgrammierenLernen.Viereck.Laenge
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_Laenge
+  name: Laenge
+  nameWithType: Viereck.Laenge
+  fullName: ProgrammierenLernen.Viereck.Laenge
+- uid: ProgrammierenLernen.IFiguren.Laenge
+  commentId: P:ProgrammierenLernen.IFiguren.Laenge
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Laenge
+  name: Laenge
+  nameWithType: IFiguren.Laenge
+  fullName: ProgrammierenLernen.IFiguren.Laenge
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ProgrammierenLernen.Viereck.Hoehe*
+  commentId: Overload:ProgrammierenLernen.Viereck.Hoehe
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_Hoehe
+  name: Hoehe
+  nameWithType: Viereck.Hoehe
+  fullName: ProgrammierenLernen.Viereck.Hoehe
+- uid: ProgrammierenLernen.IFiguren.Hoehe
+  commentId: P:ProgrammierenLernen.IFiguren.Hoehe
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Hoehe
+  name: Hoehe
+  nameWithType: IFiguren.Hoehe
+  fullName: ProgrammierenLernen.IFiguren.Hoehe
+- uid: ProgrammierenLernen.Viereck.Oberflaeche*
+  commentId: Overload:ProgrammierenLernen.Viereck.Oberflaeche
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_Oberflaeche
+  name: Oberflaeche
+  nameWithType: Viereck.Oberflaeche
+  fullName: ProgrammierenLernen.Viereck.Oberflaeche
+- uid: ProgrammierenLernen.IFiguren.Oberflaeche
+  commentId: M:ProgrammierenLernen.IFiguren.Oberflaeche
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Oberflaeche
+  name: Oberflaeche()
+  nameWithType: IFiguren.Oberflaeche()
+  fullName: ProgrammierenLernen.IFiguren.Oberflaeche()
+  spec.csharp:
+  - uid: ProgrammierenLernen.IFiguren.Oberflaeche
+    name: Oberflaeche
+    href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Oberflaeche
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.IFiguren.Oberflaeche
+    name: Oberflaeche
+    href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Oberflaeche
+  - name: (
+  - name: )
+- uid: ProgrammierenLernen.Viereck.Perimiter*
+  commentId: Overload:ProgrammierenLernen.Viereck.Perimiter
+  href: ProgrammierenLernen.Viereck.html#ProgrammierenLernen_Viereck_Perimiter
+  name: Perimiter
+  nameWithType: Viereck.Perimiter
+  fullName: ProgrammierenLernen.Viereck.Perimiter
+- uid: ProgrammierenLernen.IFiguren.Perimiter
+  commentId: M:ProgrammierenLernen.IFiguren.Perimiter
+  parent: ProgrammierenLernen.IFiguren
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Perimiter
+  name: Perimiter()
+  nameWithType: IFiguren.Perimiter()
+  fullName: ProgrammierenLernen.IFiguren.Perimiter()
+  spec.csharp:
+  - uid: ProgrammierenLernen.IFiguren.Perimiter
+    name: Perimiter
+    href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Perimiter
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: ProgrammierenLernen.IFiguren.Perimiter
+    name: Perimiter
+    href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Perimiter
+  - name: (
+  - name: )

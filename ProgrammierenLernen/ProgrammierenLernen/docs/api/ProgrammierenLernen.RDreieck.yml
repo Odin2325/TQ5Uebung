@@ -25,7 +25,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: RDreieck
     path: ../Figuren.cs
-    startLine: 18
+    startLine: 34
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -62,7 +62,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: X
     path: ../Figuren.cs
-    startLine: 20
+    startLine: 36
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -94,7 +94,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Y
     path: ../Figuren.cs
-    startLine: 21
+    startLine: 37
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -126,7 +126,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Laenge
     path: ../Figuren.cs
-    startLine: 22
+    startLine: 38
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -158,7 +158,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Hoehe
     path: ../Figuren.cs
-    startLine: 23
+    startLine: 39
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -190,7 +190,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Oberflaeche
     path: ../Figuren.cs
-    startLine: 25
+    startLine: 41
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -221,7 +221,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Perimiter
     path: ../Figuren.cs
-    startLine: 30
+    startLine: 46
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen

@@ -425,13 +425,11 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Parken
     path: ../LKW.cs
-    startLine: 77
+    startLine: 76
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
   summary: >-
-    Parking class.
-
     Allows parking only if the motor is off and the speed is 0.
 
     Otherwise we turn the motor off or brake until we reach the speed 0.
@@ -440,7 +438,7 @@ items:
     content: public bool Parken()
     return:
       type: System.Boolean
-      description: ''
+      description: 'Boolean: Ob wir geparkt sind.'
     content.vb: Public Function Parken() As Boolean
   overload: ProgrammierenLernen.Fahrzeug.Parken*
 - uid: ProgrammierenLernen.Fahrzeug.Hupen
@@ -461,7 +459,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Hupen
     path: ../LKW.cs
-    startLine: 104
+    startLine: 103
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -489,7 +487,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Bremsen
     path: ../LKW.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -500,7 +498,7 @@ items:
     parameters:
     - id: inkrement
       type: System.Int32
-      description: ''
+      description: Dies ist der inkrement, der unsere geschwindigkeit erhoeht.
     content.vb: Public Sub Bremsen(inkrement As Integer)
   overload: ProgrammierenLernen.Fahrzeug.Bremsen*
   nameWithType.vb: Fahrzeug.Bremsen(Integer)
@@ -524,7 +522,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: SchnellerFahren
     path: ../LKW.cs
-    startLine: 126
+    startLine: 125
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -559,7 +557,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: ManageMotor
     path: ../LKW.cs
-    startLine: 146
+    startLine: 145
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen

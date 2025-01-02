@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProgrammierenLernen
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal class Buch
     {
         int seitenanzahl;

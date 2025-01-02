@@ -98,16 +98,21 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: GerauescheMachen
     path: ../Roboter.cs
-    startLine: 49
+    startLine: 53
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
+  summary: ''
   example: []
   syntax:
     content: public override void GerauescheMachen()
     content.vb: Public Overrides Sub GerauescheMachen()
   overridden: ProgrammierenLernen.Roboter.GerauescheMachen
   overload: ProgrammierenLernen.Roomba.GerauescheMachen*
+  exceptions:
+  - type: System.IO.IOException
+    commentId: T:System.IO.IOException
+    description: Ein Fehler ist aufgetreten beim auslesen.
 - uid: ProgrammierenLernen.Roomba.Putzen(System.Int32)
   commentId: M:ProgrammierenLernen.Roomba.Putzen(System.Int32)
   id: Putzen(System.Int32)
@@ -126,17 +131,21 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: Putzen
     path: ../Roboter.cs
-    startLine: 54
+    startLine: 63
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
+  summary: ''
+  example: []
   syntax:
     content: public bool Putzen(int indexVonZimmer)
     parameters:
     - id: indexVonZimmer
       type: System.Int32
+      description: ''
     return:
       type: System.Boolean
+      description: ''
     content.vb: Public Function Putzen(indexVonZimmer As Integer) As Boolean
   overload: ProgrammierenLernen.Roomba.Putzen*
   nameWithType.vb: Roomba.Putzen(Integer)
@@ -160,7 +169,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: MappingErstellen
     path: ../Roboter.cs
-    startLine: 80
+    startLine: 89
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -192,7 +201,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: MappingsAusgeben
     path: ../Roboter.cs
-    startLine: 87
+    startLine: 96
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -218,7 +227,7 @@ items:
       repo: https://github.com/Odin2325/TQ5Uebung.git
     id: MuellEntsorgen
     path: ../Roboter.cs
-    startLine: 98
+    startLine: 107
   assemblies:
   - ProgrammierenLernen
   namespace: ProgrammierenLernen
@@ -558,6 +567,13 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
+- uid: System.IO.IOException
+  commentId: T:System.IO.IOException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.io.ioexception
+  name: IOException
+  nameWithType: IOException
+  fullName: System.IO.IOException
 - uid: ProgrammierenLernen.Roboter.GerauescheMachen
   commentId: M:ProgrammierenLernen.Roboter.GerauescheMachen
   parent: ProgrammierenLernen.Roboter

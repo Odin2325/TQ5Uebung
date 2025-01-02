@@ -4,7 +4,7 @@
     {
       "src": [
         {
-          "src": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen",
+          "src": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen",
           "files": [
             "**/*.csproj"
           ]
@@ -37,8 +37,8 @@
       "modern"
     ],
     "globalMetadata": {
-      "_appName": "Greatest",
-      "_appTitle": "Greatest",
+      "_appName": "ProgLernen",
+      "_appTitle": "ProgLernen",
       "_enableSearch": true,
       "pdf": true
     }

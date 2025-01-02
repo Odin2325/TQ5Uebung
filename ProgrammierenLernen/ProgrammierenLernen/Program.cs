@@ -46,10 +46,8 @@ namespace ProgrammierenLernen
             animal.Essen("Fisch");
         }
 
-        public enum Richtungen
+        public enum Eye
         {
-            Forwaerts,
-            Rueckwaerts,
             Rechts,
             Links
         }
@@ -57,6 +55,8 @@ namespace ProgrammierenLernen
         static void Main(string[] args)
         {
             PKW fahrzeug = new PKW("BMW","M6",2010,"232V99");
+
+            fahrzeug.Bremsen(10);
         }
 
     }
