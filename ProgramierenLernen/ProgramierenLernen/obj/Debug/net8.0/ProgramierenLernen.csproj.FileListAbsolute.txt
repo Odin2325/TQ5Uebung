@@ -1,0 +1,15 @@
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.AssemblyInfoInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.AssemblyInfo.cs
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.sourcelink.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\bin\Debug\net8.0\ProgramierenLernen.exe
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\bin\Debug\net8.0\ProgramierenLernen.deps.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\bin\Debug\net8.0\ProgramierenLernen.runtimeconfig.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\bin\Debug\net8.0\ProgramierenLernen.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\bin\Debug\net8.0\ProgramierenLernen.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\refint\ProgramierenLernen.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ProgramierenLernen.genruntimeconfig.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ProgramierenLernen\ProgramierenLernen\obj\Debug\net8.0\ref\ProgramierenLernen.dll

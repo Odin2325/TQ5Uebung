@@ -1,0 +1,15 @@
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\bin\Debug\net8.0\BedingungTest.exe
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\bin\Debug\net8.0\BedingungTest.deps.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\bin\Debug\net8.0\BedingungTest.runtimeconfig.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\bin\Debug\net8.0\BedingungTest.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\bin\Debug\net8.0\BedingungTest.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.AssemblyInfoInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.AssemblyInfo.cs
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.sourcelink.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\refint\BedingungTest.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\BedingungTest.genruntimeconfig.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\BedingungTest\BedingungTest\obj\Debug\net8.0\ref\BedingungTest.dll
