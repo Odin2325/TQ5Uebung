@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BedingungTest")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8dd6150ed89ac1b99de1c0ba52835ef0cb440068")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f7165330abef9b5d4c9e4e68f4352717859c75d")]
 [assembly: System.Reflection.AssemblyProductAttribute("BedingungTest")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BedingungTest")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

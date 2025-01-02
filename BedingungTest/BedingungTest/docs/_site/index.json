@@ -1,0 +1,37 @@
+{
+  "api/BedingungTest.Fahrzeug.html": {
+    "href": "api/BedingungTest.Fahrzeug.html",
+    "title": "Class Fahrzeug | klassenÜben",
+    "keywords": "Class Fahrzeug Namespace BedingungTest Assembly BedingungTest.dll Parent Class to represent all vehicles. public abstract class Fahrzeug Inheritance object Fahrzeug Derived Motorrad PKW Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Fahrzeug(string, string, int, string) Constructor for a generic vehicle protected Fahrzeug(string marke, string klasse, int baujahr, string motor) Parameters marke string klasse string baujahr int motor string Fields aktuelleGeschwindigkeit protected int aktuelleGeschwindigkeit Field Value int baujahr protected int baujahr Field Value int klasse protected string klasse Field Value string marke protected string marke Field Value string maxGeschwindigkeit protected int maxGeschwindigkeit Field Value int motor protected string motor Field Value string motorLäuft protected bool motorLäuft Field Value bool Properties Baujahr public int Baujahr { get; } Property Value int Klasse public string Klasse { get; } Property Value string Marke public string Marke { get; set; } Property Value string Motor public string Motor { get; set; } Property Value string Methods Bremsen(int) Method to decrease the speed of the vehicle given a specific increment. public void Bremsen(int inkrement) Parameters inkrement int Dies ist der inkrement, der unsere geschwindigkeit erhoeht. Hupen() Abstract method to implement the sound of a vehicles horn. public abstract void Hupen() ManageMotor() Change the current state of the motor. public void ManageMotor() Parken() Allows parking only if the motor is off and the speed is 0. Otherwise we turn the motor off or brake until we reach the speed 0. public bool Parken() Returns bool Boolean: Ob wir geparkt sind. SchnellerFahren(int) Increase the speed of our vehicle given a specific increment. public void SchnellerFahren(int inkrement) Parameters inkrement int"
+  },
+  "api/BedingungTest.Motorrad.html": {
+    "href": "api/BedingungTest.Motorrad.html",
+    "title": "Class Motorrad | klassenÜben",
+    "keywords": "Class Motorrad Namespace BedingungTest Assembly BedingungTest.dll Class to represent motorcycles. public class Motorrad : Fahrzeug Inheritance object Fahrzeug Motorrad Inherited Members Fahrzeug.marke Fahrzeug.klasse Fahrzeug.baujahr Fahrzeug.motor Fahrzeug.maxGeschwindigkeit Fahrzeug.motorLäuft Fahrzeug.aktuelleGeschwindigkeit Fahrzeug.Motor Fahrzeug.Baujahr Fahrzeug.Klasse Fahrzeug.Marke Fahrzeug.Parken() Fahrzeug.Bremsen(int) Fahrzeug.SchnellerFahren(int) Fahrzeug.ManageMotor() object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors Motorrad(string, string, int, string) public Motorrad(string marke, string klasse, int baujahr, string motor) Parameters marke string klasse string baujahr int motor string Methods Hupen() Abstract method to implement the sound of a vehicles horn. public override void Hupen()"
+  },
+  "api/BedingungTest.PKW.html": {
+    "href": "api/BedingungTest.PKW.html",
+    "title": "Class PKW | klassenÜben",
+    "keywords": "Class PKW Namespace BedingungTest Assembly BedingungTest.dll public class PKW : Fahrzeug Inheritance object Fahrzeug PKW Inherited Members Fahrzeug.marke Fahrzeug.klasse Fahrzeug.baujahr Fahrzeug.motor Fahrzeug.maxGeschwindigkeit Fahrzeug.motorLäuft Fahrzeug.aktuelleGeschwindigkeit Fahrzeug.Motor Fahrzeug.Baujahr Fahrzeug.Klasse Fahrzeug.Marke Fahrzeug.Parken() Fahrzeug.Bremsen(int) Fahrzeug.SchnellerFahren(int) Fahrzeug.ManageMotor() object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors PKW(string, string, int, string) public PKW(string marke, string klasse, int baujahr, string motor) Parameters marke string klasse string baujahr int motor string Methods Hupen() Abstract method to implement the sound of a vehicles horn. public override void Hupen()"
+  },
+  "api/BedingungTest.html": {
+    "href": "api/BedingungTest.html",
+    "title": "Namespace BedingungTest | klassenÜben",
+    "keywords": "Namespace BedingungTest Classes Fahrzeug Parent Class to represent all vehicles. Motorrad Class to represent motorcycles. PKW"
+  },
+  "getting-started.html": {
+    "href": "getting-started.html",
+    "title": "Getting Started | klassenÜben",
+    "keywords": "Getting Started"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | klassenÜben",
+    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  },
+  "introduction.html": {
+    "href": "introduction.html",
+    "title": "Introduction | klassenÜben",
+    "keywords": "Introduction"
+  }
+}

@@ -1,0 +1,16 @@
+### YamlMime:TableOfContent
+items:
+- uid: BedingungTest
+  name: BedingungTest
+  type: Namespace
+  items:
+  - uid: BedingungTest.Fahrzeug
+    name: Fahrzeug
+    type: Class
+  - uid: BedingungTest.Motorrad
+    name: Motorrad
+    type: Class
+  - uid: BedingungTest.PKW
+    name: PKW
+    type: Class
+memberLayout: SamePage

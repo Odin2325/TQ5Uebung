@@ -1,0 +1,44 @@
+### YamlMime:ManagedReference
+items:
+- uid: BedingungTest
+  commentId: N:BedingungTest
+  id: BedingungTest
+  children:
+  - BedingungTest.Fahrzeug
+  - BedingungTest.Motorrad
+  - BedingungTest.PKW
+  langs:
+  - csharp
+  - vb
+  name: BedingungTest
+  nameWithType: BedingungTest
+  fullName: BedingungTest
+  type: Namespace
+  assemblies:
+  - BedingungTest
+references:
+- uid: BedingungTest.Fahrzeug
+  commentId: T:BedingungTest.Fahrzeug
+  parent: BedingungTest
+  href: BedingungTest.Fahrzeug.html
+  name: Fahrzeug
+  nameWithType: Fahrzeug
+  fullName: BedingungTest.Fahrzeug
+- uid: BedingungTest.Motorrad
+  commentId: T:BedingungTest.Motorrad
+  href: BedingungTest.Motorrad.html
+  name: Motorrad
+  nameWithType: Motorrad
+  fullName: BedingungTest.Motorrad
+- uid: BedingungTest.PKW
+  commentId: T:BedingungTest.PKW
+  href: BedingungTest.PKW.html
+  name: PKW
+  nameWithType: PKW
+  fullName: BedingungTest.PKW
+- uid: BedingungTest
+  commentId: N:BedingungTest
+  href: BedingungTest.html
+  name: BedingungTest
+  nameWithType: BedingungTest
+  fullName: BedingungTest
