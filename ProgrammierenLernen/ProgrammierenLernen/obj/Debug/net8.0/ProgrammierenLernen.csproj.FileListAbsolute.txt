@@ -30,3 +30,5 @@ C:\Users\nicoa\Desktop\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\obj\Deb
 C:\Users\nicoa\Desktop\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\obj\Debug\net8.0\ProgrammierenLernen.pdb
 C:\Users\nicoa\Desktop\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\obj\Debug\net8.0\ProgrammierenLernen.genruntimeconfig.cache
 C:\Users\nicoa\Desktop\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\obj\Debug\net8.0\ref\ProgrammierenLernen.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Debug\net8.0\ProgrammierenLernen.xml
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\obj\Debug\net8.0\ProgrammierenLernen.xml
