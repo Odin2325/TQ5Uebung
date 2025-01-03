@@ -1,0 +1,10 @@
+### YamlMime:TableOfContent
+items:
+- uid: IODateien
+  name: IODateien
+  type: Namespace
+  items:
+  - uid: IODateien.IOAufgaben
+    name: IOAufgaben
+    type: Class
+memberLayout: SamePage

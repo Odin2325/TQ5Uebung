@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ProgrammierenLernen")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8a07faf9cd59f04d0f28192edd80f4d87fb62b5c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42e28973dd63dff48c5cfb9b83ac3bda83b37dc4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ProgrammierenLernen")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ProgrammierenLernen")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

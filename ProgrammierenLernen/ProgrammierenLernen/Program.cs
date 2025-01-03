@@ -39,6 +39,10 @@ namespace ProgrammierenLernen
     {
         //enum
         //struct
+        /// <summary>
+        /// Test this
+        /// </summary>
+        /// <param name="animal"></param>
         public static void TierDetails(IAnimal animal)
         {
             Console.WriteLine($"Tierart: {animal.Name}");
