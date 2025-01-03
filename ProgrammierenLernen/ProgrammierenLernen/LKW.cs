@@ -111,7 +111,7 @@ namespace ProgrammierenLernen
         {
             if (aktuelleGeschwindigkeit > 0)
             {
-                aktuelleGeschwindigkeit += inkrement;
+                aktuelleGeschwindigkeit -= inkrement;
                 Console.WriteLine($"Geschwindigkeit: {aktuelleGeschwindigkeit}");
             }
             else

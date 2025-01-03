@@ -17,7 +17,7 @@ namespace ProgrammierenLernen
     * BibliotheksKonto => Eigenschaften: Liste<Buch> ausgeliehenBuecher. 
     * Methode: ausleihen (darf nicht mehr als 3 buecher auf einmal ausleihen), zurueckgeben.
     */
-    internal abstract class Konto
+    public abstract class Konto
     {
         protected string email;
         protected string adresse;
@@ -34,6 +34,16 @@ namespace ProgrammierenLernen
             this.telefonnummer = telefonnummer;
             this.passwort = passwort;
             this.benutzername = benutzername;
+        }
+
+        public string Passwort
+        {
+            get { return passwort; }
+        }
+
+        public string Benutzername
+        {
+            get { return benutzername; }
         }
 
         //abstract => wir *muessen* es in die Kind klasse implementieren.
@@ -81,7 +91,7 @@ namespace ProgrammierenLernen
         }
     }
 
-    internal class FBKonto : Konto
+    public class FBKonto : Konto
     {
         private List<FBKonto> freunde = new List<FBKonto>();
 
@@ -105,7 +115,14 @@ namespace ProgrammierenLernen
         }
     }
 
-        internal class Bankkonto : Konto
+    /*
+     * Pin ueberpruefen => 4 zeichen lang, besteht nur aus zahlen.
+     * Benutzername (IBAN) => 12 zeichen lang, erste 2 zeichen sind DE, letzte 10 zeichen sind nur zahlen.
+     * Email => enthaelt einen "@" und einen ".", wird mit entweder .com oder .de enden.
+     * Geld Einzahlen => negative betrag, positiver betrag, eingabe 0, kontostand wurde richtig erhoeht.
+     * Geld Auszahlen => negative betrag, positiver betrag, eingabe 0, kontostand wurde richtig verringert.
+     */
+    public class Bankkonto : Konto
     {
         private decimal kontostand;
         private List<string> kontoHistorie = new List<string>();
@@ -113,6 +130,20 @@ namespace ProgrammierenLernen
         {
             kontostand = 0;
         }
+        public Bankkonto() : base("maxiemuster@gmail.com", "Berlinerstrasse 99", "Max Mustermann", "086535534233", "1111","DE1234567890")
+        {
+            kontostand = 0;
+        }
+
+        public decimal Kontostand
+        {
+            get { return kontostand; }
+        }
+        public List<string> KontoHistorie
+        {
+            get { return kontoHistorie; }
+        }
+
         private static string BankWerteGenerieren(int laenge)
         {
             string resultat = "";
@@ -152,36 +183,32 @@ namespace ProgrammierenLernen
             Console.WriteLine("=======================================");
         }
 
-        public void GeldEinzahlen()
+        public bool GeldEinzahlen(decimal betrag)
         {
             Console.WriteLine("Geld Einzahlen: ");
-            if (PinUeberpruefen())
+            if (PinUeberpruefen(passwort))
             {
-                Console.WriteLine("Wie viel Geld moechten Sie einzahlen?");
-                decimal betrag = Convert.ToDecimal(Console.ReadLine());
                 kontostand += betrag;
                 kontoHistorie.Add($"Einzahlung: ${betrag} am {DateTime.Now}");
+                return true;
             }
+            return false;
         }
-        public void GeldAuszahlen()
+        public bool GeldAuszahlen(decimal betrag)
         {
             Console.WriteLine("Geld Auszahlen: ");
-            if (PinUeberpruefen())
+            if (PinUeberpruefen(passwort))
             {
-                Console.WriteLine("Wie viel Geld moechten Sie auszahlen?");
-                decimal betrag = Convert.ToDecimal(Console.ReadLine());
                 kontostand -= betrag;
                 kontoHistorie.Add($"Auszahlung: ${betrag} am {DateTime.Now}");
+                return true;
             }
+            return false;
         }
-        private bool PinUeberpruefen()
-        {
-            string eingabe = "";
-
+        private bool PinUeberpruefen(string eingabe)
+        { 
             for (int i = 1; i <= 3; i++)
             {
-                Console.WriteLine("Bitte geben Sie Ihr BankPin ein: ");
-                eingabe = Console.ReadLine();
                 if (eingabe == passwort)
                 {
                     Console.WriteLine("Wilkommen!");
