@@ -10,12 +10,19 @@ namespace TestingSuite
         [SetUp]
         public void Setup()
         {
-            pkw = new PKW("Maseratti","Quatro Porte",2002,"V8");
+
+        }
+
+        public PKW NeuesAutoParken_Parken_PKWErstellen()
+        {
+            return new PKW("Maseratti", "Quatro Porte", 2002, "V8");
         }
 
         [Test]
         public void NeuesAutoParken_Test()
         {
+            var pkw = NeuesAutoParken_Parken_PKWErstellen();
+
             var resultat = pkw.Parken();
 
             Assert.That(resultat, Is.EqualTo(true));

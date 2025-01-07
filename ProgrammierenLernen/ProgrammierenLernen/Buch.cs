@@ -6,9 +6,6 @@ using System.Threading.Tasks;
 
 namespace ProgrammierenLernen
 {
-    /// <summary>
-    /// 
-    /// </summary>
     internal class Buch
     {
         int seitenanzahl;
@@ -19,9 +16,10 @@ namespace ProgrammierenLernen
         string isbn;
         decimal preis;
         string erscheinungsjahr;
-        public (int nummer, string[] inhalt)[] seiten;
+        string inhalt;
+        //public (int nummer, string[] inhalt)[] seiten;
         
-        internal Buch(int seitenanzahl, string autor, string titel, string genre, string? auflage, string isbn, decimal preis, string erscheinungsjahr)
+        internal Buch(int seitenanzahl, string autor, string titel, string genre, string? auflage, string isbn, decimal preis, string erscheinungsjahr, string inhalt)
         {
             this.seitenanzahl = seitenanzahl;
             this.autor = autor;
@@ -31,85 +29,93 @@ namespace ProgrammierenLernen
             this.isbn = isbn;
             this.preis = preis;
             this.erscheinungsjahr = erscheinungsjahr;
-            this.seiten = new (int nummer, string[] inhalt)[seitenanzahl];
-            BuchBefuellen();
+            this.inhalt = inhalt;
+            //this.seiten = new (int nummer, string[] inhalt)[seitenanzahl];
+            //BuchBefuellen();
         }
 
-        private void BuchBefuellen()
+        internal string InhalteLesen()
         {
-            string[] inhaltDatei;
-            foreach (string file in Directory.GetFiles("C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\Buecher"))
-            {
-                if ((file).ToLower().Contains(titel.ToLower()))
-                {
-                    inhaltDatei = File.ReadAllLines(file);
-                    //seiten = inhaltDatei.Chunk(30).Select((zeilen, index) => (index + 1, zeilen)).ToArray();
-                    BuchBefuellenNoLambda2(inhaltDatei, 30);
-                    return;
-                }
-            }
+            return inhalt;
         }
 
-        public void BuchBefuellenNoLambda(string[] inhaltDatei, int chunkSize)
-        {
-            var result = new List<(int nummer, string[] inhalt)>();
-            int totalChunks = (int)Math.Ceiling((double)inhaltDatei.Length / chunkSize);
+        //private void BuchBefuellen()
+        //{
+        //    string[] inhaltDatei;
+        //    foreach (string file in Directory.GetFiles("C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\Buecher"))
+        //    {
+        //        if ((file).ToLower().Contains(titel.ToLower()))
+        //        {
+        //            inhaltDatei = File.ReadAllLines(file);
+        //            //seiten = inhaltDatei.Chunk(30).Select((zeilen, index) => (index + 1, zeilen)).ToArray();
+        //            BuchBefuellenNoLambda2(inhaltDatei, 30);
+        //            return;
+        //        }
+        //    }
+        //}
 
-            for (int i = 0; i < totalChunks; i++)
-            {
-                int start = i * chunkSize;
-                int count = Math.Min(chunkSize, inhaltDatei.Length - start);
-                var chunk = new string[count];
+        //public void BuchBefuellenNoLambda(string[] inhaltDatei, int chunkSize)
+        //{
+        //    var result = new List<(int nummer, string[] inhalt)>();
+        //    int totalChunks = (int)Math.Ceiling((double)inhaltDatei.Length / chunkSize);
 
-                Array.Copy(inhaltDatei, start, chunk, 0, count);
-                result.Add((i + 1, chunk));
-            }
+        //    for (int i = 0; i < totalChunks; i++)
+        //    {
+        //        int start = i * chunkSize;
+        //        int count = Math.Min(chunkSize, inhaltDatei.Length - start);
+        //        var chunk = new string[count];
 
-            seiten = result.ToArray();
-        }
+        //        Array.Copy(inhaltDatei, start, chunk, 0, count);
+        //        result.Add((i + 1, chunk));
+        //    }
 
-        void BuchBefuellenNoLambda2(string[] inhaltDatei, int chunkSize)
-        {
-            var result = new List<(int nummer, string[] inhalt)>();
+        //    seiten = result.ToArray();
+        //}
 
-            int seitennummer = 1;
-            foreach (var zeilen in inhaltDatei.Chunk(chunkSize))
-            {
-                result.Add((seitennummer, zeilen));
-                seitennummer++;
-            }
+        //void BuchBefuellenNoLambda2(string[] inhaltDatei, int chunkSize)
+        //{
+        //    var result = new List<(int nummer, string[] inhalt)>();
 
-            seiten = result.ToArray();
-        }
+        //    int seitennummer = 1;
+        //    foreach (var zeilen in inhaltDatei.Chunk(chunkSize))
+        //    {
+        //        result.Add((seitennummer, zeilen));
+        //        seitennummer++;
+        //    }
 
-        internal void OutputBook()
-        {
-            foreach(var seite in seiten)
-            {
-                InhalteLesen(seite.nummer);
-            }
-        }
+        //    seiten = result.ToArray();
+        //}
+
+        //internal void OutputBook()
+        //{
+        //    foreach(var seite in seiten)
+        //    {
+        //        InhalteLesen(seite.nummer);
+        //    }
+        //}
 
 
-        internal string[] SeiteAufschlagen(int seiteNummer)
-        {
-            foreach(var seite in seiten)
-            {
-                if(seiteNummer == seite.nummer)
-                {
-                    return seite.inhalt;
-                }
-            }
-            return null;
-        }
+        //internal string[] SeiteAufschlagen(int seiteNummer)
+        //{
+        //    foreach(var seite in seiten)
+        //    {
+        //        if(seiteNummer == seite.nummer)
+        //        {
+        //            return seite.inhalt;
+        //        }
+        //    }
+        //    return null;
+        //}
 
-        internal void InhalteLesen(int seiteNummer)
-        {
-            foreach(var zeile in SeiteAufschlagen(seiteNummer))
-            {
-                Console.WriteLine(zeile);
-            }
-        }
+
+
+        //internal void InhalteLesen(int seiteNummer)
+        //{
+        //    foreach(var zeile in SeiteAufschlagen(seiteNummer))
+        //    {
+        //        Console.WriteLine(zeile);
+        //    }
+        //}
 
         //Klasse besteht aus:
         //Eigenschaften/Attributen

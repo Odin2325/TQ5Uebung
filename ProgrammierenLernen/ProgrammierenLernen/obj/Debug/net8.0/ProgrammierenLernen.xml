@@ -4,11 +4,6 @@
         <name>ProgrammierenLernen</name>
     </assembly>
     <members>
-        <member name="T:ProgrammierenLernen.Buch">
-            <summary>
-            
-            </summary>
-        </member>
         <member name="T:ProgrammierenLernen.Fahrzeug">
             <summary>
             Parent Class to represent all vehicles.
