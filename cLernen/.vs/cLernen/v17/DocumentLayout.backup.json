@@ -7,16 +7,19 @@
       "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\roboter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:roboter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\konto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:konto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\fahrzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:fahrzeug.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|c:\\users\\ruth-\\coding\\tq5\\clernen\\buch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC7E2526-2CA1-475B-B3A9-04B42178875F}|cLernen.csproj|solutionrelative:buch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{29F89D87-5BE8-4BB5-9169-83E730B25453}|..\\cLernenTest\\cLernenTest.csproj|c:\\users\\ruth-\\coding\\tq5\\clernentest\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +29,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -47,40 +50,14 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Person.cs",
-              "RelativeDocumentMoniker": "Person.cs",
-              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Person.cs",
-              "RelativeToolTip": "Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Title": "Konto.cs",
+              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Konto.cs",
+              "RelativeDocumentMoniker": "Konto.cs",
+              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Konto.cs",
+              "RelativeToolTip": "Konto.cs",
+              "ViewState": "AgIAALUAAAAAAAAAAAAQwNIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T12:13:08.858Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Fahrzeug.cs",
-              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Fahrzeug.cs",
-              "RelativeDocumentMoniker": "Fahrzeug.cs",
-              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Fahrzeug.cs",
-              "RelativeToolTip": "Fahrzeug.cs",
-              "ViewState": "AgIAACYAAAAAAAAAAAAwwD8AAABYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T10:40:40.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Roboter.cs",
-              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Roboter.cs",
-              "RelativeDocumentMoniker": "Roboter.cs",
-              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Roboter.cs",
-              "RelativeToolTip": "Roboter.cs",
-              "ViewState": "AgIAAGwAAAAAAAAAAAAwwHgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-27T09:20:27.11Z",
+              "WhenOpened": "2025-01-07T15:32:10.412Z",
               "EditorCaption": ""
             },
             {
@@ -91,9 +68,48 @@
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-18T10:05:49.965Z",
+              "WhenOpened": "2025-01-07T15:17:25.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Buch.cs",
+              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Buch.cs",
+              "RelativeDocumentMoniker": "Buch.cs",
+              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Buch.cs",
+              "RelativeToolTip": "Buch.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA8wBkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T13:47:17.633Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UnitTest1.cs",
+              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernenTest\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\cLernenTest\\UnitTest1.cs",
+              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernenTest\\UnitTest1.cs",
+              "RelativeToolTip": "..\\cLernenTest\\UnitTest1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T09:12:06.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Bibkunde.cs",
+              "DocumentMoniker": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Bibkunde.cs",
+              "RelativeDocumentMoniker": "Bibkunde.cs",
+              "ToolTip": "C:\\Users\\ruth-\\Coding\\TQ5\\cLernen\\Bibkunde.cs",
+              "RelativeToolTip": "Bibkunde.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwCUAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-07T09:00:02.773Z",
               "EditorCaption": ""
             }
           ]

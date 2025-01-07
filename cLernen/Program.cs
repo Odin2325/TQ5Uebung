@@ -11,6 +11,15 @@ namespace cLernen
     {
         static void Main(string[] args)
         {
+            Bibkunde john = new Bibkunde("John", "Wick", 42, "Hollywood 4");
+            Buch dogTraining = new Buch(375, "Cesar Millan", "Be the Pack Leader", "Bildung", "87664533578", "2007", new DateTime(2025, 1, 1));
+            Buch fevreDream = new Buch(450, "George R. R. Martin", "Fevre Dream", "Fantasy", "576907857", "1982", new DateTime(2023,01,01));
+            john.GuthabenAufladen(10m);
+            john.BuchAusleihen(dogTraining);
+            john.BuchAusleihen(fevreDream);
+            Console.WriteLine(john.KundenDetails());
+            john.BücherAnzeigen();
+            /*
             Person john = new Person("John Wick", "Hollywood", true);
             Person bob = new Person("BobtheBuilder", "Next Door", false);
             Person chucky = new Person("Chucky", "Your Room", false);
@@ -23,7 +32,7 @@ namespace cLernen
             sonny.KriminellenIdentifizieren(john);
             sonny.KriminellenIdentifizieren(bob);
             sonny.KriminellenIdentifizieren(chucky);
-            /*
+
             Roomba bob = new Roomba();
             bob.MappingErstellen("kinderzimmer");
             bob.PowerButton();

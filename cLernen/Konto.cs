@@ -37,7 +37,7 @@ namespace cLernen
         }
         public virtual void DetailsAnzeigen()
         {
-            Console.WriteLine($"Name: {name}\nErreichbar unter die Nummer: {telefonnummer}\n");
+            Console.WriteLine($"Name: {name}\nErreichbar unter der Nummer: {telefonnummer}\n");
         }
         protected virtual bool PasswortÄndern() //change method from bool to string and add a validation method?
         {
@@ -202,13 +202,13 @@ namespace cLernen
             else
                 Console.WriteLine("Nicht möglich, maximale Ausleihzahl überschritten");
             foreach (Buch listenbuch in ausgelieheneBücher)
-                Console.WriteLine(listenbuch.titel);
+                Console.WriteLine(listenbuch.Titel);
         }
         public void BuchZurückGeben(string name)
         {
             foreach (Buch buch in ausgelieheneBücher)
             {
-                if (buch.titel == name)
+                if (buch.Titel == name)
                     ausgelieheneBücher.Remove(buch);
             }
         }

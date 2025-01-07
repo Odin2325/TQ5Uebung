@@ -8,10 +8,9 @@ namespace cLernen
 {
     public abstract class Roboter
     {
-        //Dictionary<string, string> addresse = new();
         public int Ladekapazität {get; set;}
-        protected bool aktiv = false;
-        protected string seriennummer = SeriennummerErstellen();
+        public bool aktiv = false;
+        public string seriennummer = SeriennummerErstellen();
 
         static string SeriennummerErstellen()
         {
@@ -57,7 +56,7 @@ namespace cLernen
     public class Roomba: Roboter
     {
         private Dictionary<string, List<int>> RaumMapping = new();
-        int müllKapazität = 0;
+        private int müllKapazität = 0;
 
     public void MappingErstellen(string raum)
         {
