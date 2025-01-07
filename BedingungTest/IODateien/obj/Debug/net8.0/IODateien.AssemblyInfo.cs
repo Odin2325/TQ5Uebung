@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IODateien")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4f7165330abef9b5d4c9e4e68f4352717859c75d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b85a6af3be5e1f25ebf6f11058136d2a80198156")]
 [assembly: System.Reflection.AssemblyProductAttribute("IODateien")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IODateien")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
