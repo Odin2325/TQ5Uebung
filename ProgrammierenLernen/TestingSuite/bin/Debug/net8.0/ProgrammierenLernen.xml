@@ -4,6 +4,66 @@
         <name>ProgrammierenLernen</name>
     </assembly>
     <members>
+        <member name="M:ProgrammierenLernen.Bibliothek.Details">
+            <summary>
+            Geben Name, Adresse und Katalog Groesse von diese Bib aus.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.KatalogAusgeben">
+            <summary>
+            Geben in einen bestimmten Format alle buecher aus unser katalog mit die menge.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.KundeBuch_Rueckgabe(ProgrammierenLernen.BibKunde,ProgrammierenLernen.BuchVereinfacht)">
+            <summary>
+            Wir probieren einen Buch wieder zurueckzugeben zu die Bib.
+            Wenn das Buch im Katalog enthalten ist und wenn der Kunde das Buch hat dann wird es zurueckgegeben.
+            Ansonsten ist die Rueckgabe nicht erlaubt.
+            </summary>
+            <param name="kunde"></param>
+            <param name="buch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.KundeBuch_Ausleiehen(ProgrammierenLernen.BibKunde,ProgrammierenLernen.BuchVereinfacht)">
+            <summary>
+            Wir probieren einen Buch auszuleiehn zum Kunde.
+            Wenn das Buch im Katalog enthalten ist und wenn der Kunde das Buch nicht hat 
+            und er nicht schon 3 buecher ausgeliehen hat dann wird es ausgeliehen.
+            </summary>
+            <param name="kunde"></param>
+            <param name="buch"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.KundeHinzufuegen(ProgrammierenLernen.BibKunde)">
+            <summary>
+            Wir erstellen hiermit einen neuen Kunde.
+            </summary>
+            <param name="bibKunde"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.KundeLoeschen(ProgrammierenLernen.BibKunde)">
+            <summary>
+            Wir entfernen einen Kunden von unsere Liste.
+            </summary>
+            <param name="bibKunde"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.BuecherKaufen(ProgrammierenLernen.BuchVereinfacht,System.Int32)">
+            <summary>
+            Buch einkaufen gehen.
+            </summary>
+            <param name="buch"></param>
+            <param name="menge"></param>
+        </member>
+        <member name="M:ProgrammierenLernen.Bibliothek.BuecherEntfernen(ProgrammierenLernen.BuchVereinfacht)">
+            <summary>
+            Buch aus unsere Bib entfernen.
+            </summary>
+            <param name="buch"></param>
+            <returns></returns>
+        </member>
         <member name="T:ProgrammierenLernen.Fahrzeug">
             <summary>
             Parent Class to represent all vehicles.

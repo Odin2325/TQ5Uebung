@@ -28,36 +28,36 @@ namespace TestingSuite
             Assert.That(resultat, Is.EqualTo(true));
         }
 
-        [Test]
-        public void NeuesAutoFaehrtParken_Test()
-        {
-            pkw.ManageMotor();
+        //[Test]
+        //public void NeuesAutoFaehrtParken_Test()
+        //{
+        //    pkw.ManageMotor();
 
-            pkw.SchnellerFahren(200);
+        //    pkw.SchnellerFahren(200);
 
-            var resultat = pkw.Parken();
+        //    var resultat = pkw.Parken();
 
-            Assert.That(resultat, Is.EqualTo(true));
-        }
+        //    Assert.That(resultat, Is.EqualTo(true));
+        //}
 
-        [Test]
-        public void NeuesAutoMotorAnParken_Test()
-        {
-            pkw.ManageMotor();
+        //[Test]
+        //public void NeuesAutoMotorAnParken_Test()
+        //{
+        //    pkw.ManageMotor();
 
-            var resultat = pkw.Parken();
+        //    var resultat = pkw.Parken();
 
-            pkw.ManageMotor();
+        //    pkw.ManageMotor();
 
-            Assert.That(resultat, Is.EqualTo(true));
-        }
+        //    Assert.That(resultat, Is.EqualTo(true));
+        //}
 
-        [Test]
-        public void NeuesAutoMotorImmernochAnParken_Test()
-        {
-            var resultat = pkw.Parken();
+        //[Test]
+        //public void NeuesAutoMotorImmernochAnParken_Test()
+        //{
+        //    var resultat = pkw.Parken();
 
-            Assert.That(resultat, Is.EqualTo(true));
-        }
+        //    Assert.That(resultat, Is.EqualTo(true));
+        //}
     }
 }

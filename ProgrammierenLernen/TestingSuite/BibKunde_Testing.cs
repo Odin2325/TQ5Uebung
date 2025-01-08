@@ -6,7 +6,7 @@ namespace TestingSuite
     {
         public BibKunde StandardBibKunde_Erzeugen()
         {
-            var bibKunde = new BibKunde("Nicolas","Arevalo",30,"Muenchner Strasse 1",40,123456789,"0101");
+            var bibKunde = new BibKunde("Nicolas","Arevalo",30,"Muenchner Strasse 1",40,"0101");
 
             return bibKunde;
         }

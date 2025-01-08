@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\testingsuite\\bibkunde_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|solutionrelative:testingsuite\\bibkunde_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\testingsuite\\bib_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|solutionrelative:testingsuite\\bib_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\testingsuite\\buchtesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|solutionrelative:testingsuite\\buchtesting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,53 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "BibKunde_Testing.cs",
-              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BibKunde_Testing.cs",
-              "RelativeDocumentMoniker": "TestingSuite\\BibKunde_Testing.cs",
-              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BibKunde_Testing.cs",
-              "RelativeToolTip": "TestingSuite\\BibKunde_Testing.cs",
-              "ViewState": "AgIAAAEAAAAAzczMzAwlwD4AAAAAAAAAAAAAAA==",
+              "Title": "Bib_Testing.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\Bib_Testing.cs",
+              "RelativeDocumentMoniker": "TestingSuite\\Bib_Testing.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\Bib_Testing.cs",
+              "RelativeToolTip": "TestingSuite\\Bib_Testing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T09:46:21.368Z",
+              "WhenOpened": "2025-01-08T07:55:47.829Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "BibKunde.cs",
-              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BibKunde.cs",
-              "RelativeDocumentMoniker": "ProgrammierenLernen\\BibKunde.cs",
-              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BibKunde.cs",
-              "RelativeToolTip": "ProgrammierenLernen\\BibKunde.cs",
-              "ViewState": "AgIAACUAAAAAZ2ZmZmYiwDUAAAANAAAAAAAAAA==",
+              "Title": "Bibliothek.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Bibliothek.cs",
+              "RelativeDocumentMoniker": "ProgrammierenLernen\\Bibliothek.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Bibliothek.cs",
+              "RelativeToolTip": "ProgrammierenLernen\\Bibliothek.cs",
+              "ViewState": "AgIAAAcAAAAAMjMzMzMnwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T08:38:57.846Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "BuchTesting.cs",
-              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BuchTesting.cs",
-              "RelativeDocumentMoniker": "TestingSuite\\BuchTesting.cs",
-              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BuchTesting.cs",
-              "RelativeToolTip": "TestingSuite\\BuchTesting.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAABAPQoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:44:02.512Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BuchVereinfacht.cs",
-              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BuchVereinfacht.cs",
-              "RelativeDocumentMoniker": "ProgrammierenLernen\\BuchVereinfacht.cs",
-              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BuchVereinfacht.cs",
-              "RelativeToolTip": "ProgrammierenLernen\\BuchVereinfacht.cs",
-              "ViewState": "AgIAACsAAAAAAAAAAAA3wDEAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T07:40:34.33Z",
+              "WhenOpened": "2025-01-07T10:12:51.827Z",
               "EditorCaption": ""
             }
           ]

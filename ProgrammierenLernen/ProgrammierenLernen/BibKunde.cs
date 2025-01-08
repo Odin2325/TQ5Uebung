@@ -16,17 +16,19 @@ namespace ProgrammierenLernen
         private BuchVereinfacht[] ausgelieheneBuecher;
         private int kundennummer;
         private string passwort;
+        private static int zaehlerKundenummer = 1;
 
-        public BibKunde(string vorname, string nachname, int alter, string adresse, decimal guthaben, int kundennummer, string passwort)
+        public BibKunde(string vorname, string nachname, int alter, string adresse, decimal guthaben, string passwort)
         {
             this.vorname = vorname;
             this.nachname = nachname;
             this.alter = alter;
             this.adresse = adresse;
             this.guthaben = guthaben;
-            this.kundennummer = kundennummer;
+            this.kundennummer = zaehlerKundenummer;
             this.passwort = passwort;
             ausgelieheneBuecher = new BuchVereinfacht[3];
+            zaehlerKundenummer++;
         }
 
         public string Passwort { get => passwort; }
