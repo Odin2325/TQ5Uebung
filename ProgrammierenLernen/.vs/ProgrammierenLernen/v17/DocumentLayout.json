@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\iodateien\\doc\\_site\\index.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|solutionrelative:iodateien\\doc\\_site\\index.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\iodateien\\doc\\docfx.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|solutionrelative:iodateien\\doc\\docfx.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\iodateien\\doc\\_site\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{F719AB82-4309-4355-B75B-FC42FD5FE043}|IODateien\\IODateien.csproj|solutionrelative:iodateien\\doc\\_site\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\testingsuite\\bib_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|solutionrelative:testingsuite\\bib_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,6 +35,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "index.json",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\_site\\index.json",
+              "RelativeDocumentMoniker": "IODateien\\doc\\_site\\index.json",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\_site\\index.json",
+              "RelativeToolTip": "IODateien\\doc\\_site\\index.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T10:36:26.584Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "docfx.json",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\docfx.json",
+              "RelativeDocumentMoniker": "IODateien\\doc\\docfx.json",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\docfx.json",
+              "RelativeToolTip": "IODateien\\doc\\docfx.json",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-08T10:35:28.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\_site\\index.html",
+              "RelativeDocumentMoniker": "IODateien\\doc\\_site\\index.html",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\doc\\_site\\index.html",
+              "RelativeToolTip": "IODateien\\doc\\_site\\index.html",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADUAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-01-08T10:26:15.689Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Bib_Testing.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\Bib_Testing.cs",
               "RelativeDocumentMoniker": "TestingSuite\\Bib_Testing.cs",
@@ -35,7 +86,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Bibliothek.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Bibliothek.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\Bibliothek.cs",
@@ -43,8 +94,7 @@
               "RelativeToolTip": "ProgrammierenLernen\\Bibliothek.cs",
               "ViewState": "AgIAAAcAAAAAMjMzMzMnwBUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T10:12:51.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T10:12:51.827Z"
             }
           ]
         }
