@@ -20,9 +20,11 @@ namespace ProgrammierenLernen
             this.adresse = adresse;
         }
 
+        public string Name { get { return name; } }
+
         public Dictionary<BuchVereinfacht, int> Katalog { get => katalog; }
 
-        public List<BibKunde> BibKundes { get => kunden; }
+        public List<BibKunde> BibKunden { get => kunden; }
 
         /// <summary>
         /// Geben Name, Adresse und Katalog Groesse von diese Bib aus.
@@ -41,29 +43,41 @@ namespace ProgrammierenLernen
         {
             string result = "";
 
-            result += "Buch Name\t\t|Buch Anzahl";
+            result += "Buch Name\t\t\t|Buch Anzahl";
 
             foreach(var kvp in katalog)
             {
-                result += $"\n{kvp.Key.Titel}\t\t|{kvp.Value}";
+                result += $"\n{kvp.Key.Titel}\t\t\t|{kvp.Value}";
             }
 
             Console.WriteLine(result);
             return result ;
         }
 
-        private bool IstKunde(BibKunde kunde)
+        private BibKunde IstKunde(BibKunde kunde)
         {
             if (kunden.Contains(kunde))
             {
-                return true;
+                return kunde;
             }
-            return false;
+            return null;
         }
 
         private bool BuchInKatalogEnthalten(BuchVereinfacht buch)
         {
             return katalog.ContainsKey(buch);
+        }
+
+        public BuchVereinfacht BuchNachTitelSuchen(string titel)
+        {
+            foreach (var kvp in katalog)
+            {
+                if (kvp.Key.Titel == titel)
+                {
+                    return kvp.Key;
+                }
+            }
+            return null;
         }
 
         /// <summary>
@@ -139,7 +153,7 @@ namespace ProgrammierenLernen
         /// <returns></returns>
         public bool KundeHinzufuegen(BibKunde bibKunde)
         {
-            if (!IstKunde(bibKunde))
+            if (IstKunde(bibKunde) == null)
             {
                 kunden.Add(bibKunde);
                 Console.WriteLine("Kunde erfolgreich hinzugefuegt.");
@@ -159,7 +173,7 @@ namespace ProgrammierenLernen
         /// <returns></returns>
         public bool KundeLoeschen(BibKunde bibKunde)
         {
-            if (IstKunde(bibKunde))
+            if (IstKunde(bibKunde) != null)
             {
                 kunden.Remove(bibKunde);
                 Console.WriteLine("Kunde erfolgreich entfernt.");
@@ -172,6 +186,19 @@ namespace ProgrammierenLernen
             }
         }
 
+        public BibKunde KundeFinden(int kndnmr, string pass)
+        {
+            foreach (BibKunde kunde in kunden)
+            {
+                if (kunde.Passwort == pass && kunde.Kundennummer == kndnmr)
+                {
+                    return kunde;
+                }
+            }
+            Console.WriteLine("Kunde nicht gefunden.");
+            return null;
+        }
+        
         /// <summary>
         /// Buch einkaufen gehen.
         /// </summary>

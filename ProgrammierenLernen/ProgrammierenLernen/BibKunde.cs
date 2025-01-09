@@ -29,8 +29,10 @@ namespace ProgrammierenLernen
             this.passwort = passwort;
             ausgelieheneBuecher = new BuchVereinfacht[3];
             zaehlerKundenummer++;
+            Console.WriteLine($"Deine Login Informationen sind wie folgt: \nKundennummer: {this.kundennummer}\nPasswort: {this.passwort}");
         }
 
+        public int Kundennummer { get => kundennummer; }
         public string Passwort { get => passwort; }
 
         public string KundeDetails()
