@@ -38,8 +38,7 @@
               "RelativeToolTip": "ProgrammierenLernen\\BibKunde.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAQwB8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T10:02:39.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T10:02:39.645Z"
             },
             {
               "$type": "Document",
@@ -51,8 +50,7 @@
               "RelativeToolTip": "ProgrammierenLernen\\BuchVereinfacht.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAA8wDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T07:53:07.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T07:53:07.041Z"
             },
             {
               "$type": "Document",
@@ -60,9 +58,9 @@
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Program.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\Program.cs",
-              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Program.cs*",
-              "RelativeToolTip": "ProgrammierenLernen\\Program.cs*",
-              "ViewState": "AgIAANAAAAAAAAAAAAAmwM8AAAArAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Program.cs",
+              "RelativeToolTip": "ProgrammierenLernen\\Program.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwC8AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T07:31:42.937Z",
               "EditorCaption": ""
@@ -75,10 +73,9 @@
               "RelativeDocumentMoniker": "ProgrammierenLernen\\Bibliothek.cs",
               "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Bibliothek.cs",
               "RelativeToolTip": "ProgrammierenLernen\\Bibliothek.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAAA4wMcAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAALwAAAAAAAAAAAA4wMcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T10:12:51.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T10:12:51.827Z"
             }
           ]
         }

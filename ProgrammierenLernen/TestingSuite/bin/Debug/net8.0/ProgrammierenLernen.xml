@@ -149,12 +149,6 @@
             Method to show the details of our truck.
             </summary>
         </member>
-        <member name="M:ProgrammierenLernen.Program.TierDetails(ProgrammierenLernen.IAnimal)">
-            <summary>
-            Test this
-            </summary>
-            <param name="animal"></param>
-        </member>
         <member name="M:ProgrammierenLernen.Roomba.GerauescheMachen">
             <summary>
             
