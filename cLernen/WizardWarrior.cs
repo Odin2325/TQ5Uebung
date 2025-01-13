@@ -8,14 +8,20 @@ namespace cLernen
 {
     abstract public class Character
     {
-        protected bool vulnerable = false;
+        public bool vulnerable { get; set; } = false;
         public int health = 50;
         public string? charClass;
         protected string? name;
 
-        public bool Vulnerable { get => vulnerable;}
         abstract public override string ToString();
-        abstract public void DoDamage(Character opponent);
+        virtual public void DoDamage(Character opponent)
+        {
+            if (opponent.health <= 0)
+            {
+                Console.WriteLine("Can't kill dead people. That's Death's job.");
+                return;
+            }
+        }
     }
 
     public class Wizard: Character
@@ -40,17 +46,12 @@ namespace cLernen
         }
         public override void DoDamage(Character opponent)
         {
-            if (opponent.health <= 0)
-            {
-                Console.WriteLine("Can't kill dead people. That's Death's job.");
-                return;
-            }
+            base.DoDamage(opponent);
             if (spellPrepared)
             {
                 spellPrepared = false;
                 base.vulnerable = true;
                 opponent.health -= 12;
-
             }
             else
                 opponent.health -= 3;
@@ -60,9 +61,7 @@ namespace cLernen
     }
 
     public class Warrior: Character
-    {
-        
-
+    {     
         public Warrior(string name) : base()
         {
             this.name = name;
@@ -75,12 +74,8 @@ namespace cLernen
         }
         public override void DoDamage(Character opponent)
         {
-            if (opponent.health <= 0)
-            {   
-                Console.WriteLine("Can't kill dead people. That's Death's job.");
-                return;
-            }
-            if (opponent.Vulnerable)
+            base.DoDamage(opponent);
+            if (opponent.vulnerable)
                 opponent.health -= 10;
             else
                 opponent.health -= 6;

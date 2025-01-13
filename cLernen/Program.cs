@@ -15,8 +15,8 @@ namespace cLernen
             Wizard rincewind = new Wizard("Rincewind");
             Console.WriteLine(rincewind.ToString());
             Console.WriteLine(conan.ToString());
-            Console.WriteLine(conan.Vulnerable);
-            Console.WriteLine(rincewind.Vulnerable);
+            Console.WriteLine(conan.vulnerable);
+            Console.WriteLine(rincewind.vulnerable);
             rincewind.DoDamage(conan);
             Console.WriteLine($"Conan Health: {conan.health}.");
             conan.DoDamage(rincewind);
@@ -30,9 +30,9 @@ namespace cLernen
             conan.DoDamage(rincewind);
             conan.DoDamage(rincewind);
             conan.DoDamage(rincewind);
-            Console.WriteLine(rincewind.Vulnerable);
+            Console.WriteLine(rincewind.vulnerable);
             rincewind.DoDamage(conan);
-            Console.WriteLine(rincewind.Vulnerable);
+            Console.WriteLine(rincewind.vulnerable);
 
 
             /*
