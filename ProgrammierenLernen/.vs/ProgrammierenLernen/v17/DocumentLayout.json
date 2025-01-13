@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\testingsuite\\bibkunde_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B00ABA4E-8AED-40CA-AA23-B9E048A55953}|TestingSuite\\TestingSuite.csproj|solutionrelative:testingsuite\\bibkunde_testing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\programmierenlernen\\programmierenlernen\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7D96C44B-82E4-4DAA-BA42-6594C41AE385}|ProgrammierenLernen\\ProgrammierenLernen.csproj|solutionrelative:programmierenlernen\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +35,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "BibKunde_Testing.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BibKunde_Testing.cs",
+              "RelativeDocumentMoniker": "TestingSuite\\BibKunde_Testing.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\TestingSuite\\BibKunde_Testing.cs",
+              "RelativeToolTip": "TestingSuite\\BibKunde_Testing.cs",
+              "ViewState": "AgIAAA0AAAAAbGZmZmbWvxQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T07:08:20.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "BibKunde.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BibKunde.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\BibKunde.cs",
               "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BibKunde.cs",
               "RelativeToolTip": "ProgrammierenLernen\\BibKunde.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA8AAAA2AAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T10:02:39.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "BuchVereinfacht.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\BuchVereinfacht.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\BuchVereinfacht.cs",
@@ -51,12 +68,11 @@
               "RelativeToolTip": "ProgrammierenLernen\\BuchVereinfacht.cs",
               "ViewState": "AgIAAC0AAAAAAAAAAAA4wDgAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T07:53:07.041Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T07:53:07.041Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Program.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\Program.cs",
@@ -64,12 +80,11 @@
               "RelativeToolTip": "ProgrammierenLernen\\Program.cs",
               "ViewState": "AgIAACQAAAAgAAAAAAAowCwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T07:31:42.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-09T07:31:42.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Bibliothek.cs",
               "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\Bibliothek.cs",
               "RelativeDocumentMoniker": "ProgrammierenLernen\\Bibliothek.cs",
@@ -77,8 +92,7 @@
               "RelativeToolTip": "ProgrammierenLernen\\Bibliothek.cs",
               "ViewState": "AgIAAL0AAAAAAAAAAAAcwMcAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-07T10:12:51.827Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-07T10:12:51.827Z"
             }
           ]
         }
