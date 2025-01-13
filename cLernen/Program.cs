@@ -11,15 +11,43 @@ namespace cLernen
     {
         static void Main(string[] args)
         {
-            Bibkunde john = new Bibkunde("John", "Wick", 42, "Hollywood 4");
+            Warrior conan = new Warrior("Conan the Barbarian");
+            Wizard rincewind = new Wizard("Rincewind");
+            Console.WriteLine(rincewind.ToString());
+            Console.WriteLine(conan.ToString());
+            Console.WriteLine(conan.Vulnerable);
+            Console.WriteLine(rincewind.Vulnerable);
+            rincewind.DoDamage(conan);
+            Console.WriteLine($"Conan Health: {conan.health}.");
+            conan.DoDamage(rincewind);
+            Console.WriteLine($"Rincewind Health: {rincewind.health}.");
+            rincewind.PrepareSpell();
+            rincewind.DoDamage(conan);
+            Console.WriteLine($"Conan Health: {conan.health}.");
+            conan.DoDamage(rincewind);
+            Console.WriteLine($"Rincewind Health: {rincewind.health}.");
+            conan.DoDamage(rincewind);
+            conan.DoDamage(rincewind);
+            conan.DoDamage(rincewind);
+            conan.DoDamage(rincewind);
+            Console.WriteLine(rincewind.Vulnerable);
+            rincewind.DoDamage(conan);
+            Console.WriteLine(rincewind.Vulnerable);
+
+
+            /*
+            Bibliothek uniBib = new Bibliothek("Unibibliothek", "Hollywood 1-3");
+            Bibkunde john = new Bibkunde("John", "Wick", 42, "Hollywood 4", uniBib.KundennummerErstellen());
+            Bibkunde john2 = new Bibkunde("John", "Doe", 18, "Bronx", uniBib.KundennummerErstellen());
             Buch dogTraining = new Buch(375, "Cesar Millan", "Be the Pack Leader", "Bildung", "87664533578", "2007", new DateTime(2025, 1, 1));
             Buch fevreDream = new Buch(450, "George R. R. Martin", "Fevre Dream", "Fantasy", "576907857", "1982", new DateTime(2023,01,01));
-            john.GuthabenAufladen(10m);
-            john.BuchAusleihen(dogTraining);
-            john.BuchAusleihen(fevreDream);
+            //john.GuthabenAufladen(10m);
+            uniBib.BuchAusleihen(dogTraining, john);
+            uniBib.BuchAusleihen(fevreDream, john);
             Console.WriteLine(john.KundenDetails());
+            Console.WriteLine(john2.KundenDetails());
             john.BücherAnzeigen();
-            /*
+
             Person john = new Person("John Wick", "Hollywood", true);
             Person bob = new Person("BobtheBuilder", "Next Door", false);
             Person chucky = new Person("Chucky", "Your Room", false);

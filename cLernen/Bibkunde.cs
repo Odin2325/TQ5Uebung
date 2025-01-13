@@ -12,19 +12,22 @@ namespace cLernen
         private string nachname;
         private int alter;
         private string adresse;
-        private decimal guthaben = 0m;
-        private Dictionary<Buch, DateOnly> ausgelieheneBücher = new();
-        private string kundennummer = NummerErstellen(11);
+        public decimal guthaben = 0m;
+        private Dictionary<Buch, DateOnly> ausgelieheneBücher;
+        private string kundennummer;
         private string passwort = NummerErstellen(9);
 
-        public Bibkunde(string vorname, string nachname, int alter, string adresse)
+        public Bibkunde(string vorname, string nachname, int alter, string adresse, string kundennummer)
         {
             this.vorname = vorname;
             this.nachname = nachname;
             this.alter = alter;
             this.adresse = adresse;
+            this.kundennummer = kundennummer;
+            ausgelieheneBücher = new();
         }
         public string Passwort { get => passwort; }
+        public Dictionary<Buch, DateOnly> AusgelieheneBücher { get => ausgelieheneBücher; }
 
         public string KundenDetails()
         {
@@ -33,47 +36,14 @@ namespace cLernen
 
         public void BücherAnzeigen()
         {
-            foreach (KeyValuePair<Buch, DateOnly> kvp in ausgelieheneBücher)
+            if (ausgelieheneBücher.Count == 0)
+                Console.WriteLine($"{vorname} {nachname} hat keine Bücher ausgeliehen.");
+            foreach (var kvp in ausgelieheneBücher)
             {
-                Console.WriteLine($"Titel: {kvp.Key.Titel}, Autor: {kvp.Key.Autor}, Rückgabe: {kvp.Value}");
-            }
-        }
-        public bool BuchAusleihen(Buch buch)
-        {
-            foreach (DateOnly datum in ausgelieheneBücher.Values)
-            {
-                if (datum < DateOnly.FromDateTime(DateTime.Now))
-                {
-                    Console.WriteLine("Ausstehende Rückgaben, Ausleihe nicht möglich.");
-                    return false;
-                }
-            }
-            if (ausgelieheneBücher.Count < 5 && guthaben > buch.Kosten)
-            {
-                ausgelieheneBücher.Add(buch, DateOnly.FromDateTime(DateTime.Now).AddDays(30));
-                guthaben -= buch.Kosten;
-                return true;
-            }
-            else
-            {
-                Console.WriteLine("Zu viele Bücher ausgeliehen.");
-                return false;
+                Console.WriteLine($"Titel: {kvp.Key.Titel}, Autor: {kvp.Key.Autor}, Rückgabedatum: {kvp.Value}");
             }
         }
 
-        public bool BuchZurückGeben(Buch buch)
-        {
-            for (int i = 0; i<ausgelieheneBücher.Count; i++)
-            {
-                if (ausgelieheneBücher.ContainsKey(buch))
-                {
-                    ausgelieheneBücher.Remove(buch);
-                    return true;
-                }
-            }
-            Console.WriteLine("Rückgabe nicht möglich.");
-            return false;
-        }
         static string NummerErstellen(int anzahl)
         {
             string nummer = "";
