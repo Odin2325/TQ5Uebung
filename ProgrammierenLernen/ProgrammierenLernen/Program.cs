@@ -51,7 +51,7 @@ namespace ProgrammierenLernen
             bib.BuecherKaufen(buchVereinfacht4, 30);
             
             Console.WriteLine($"Sie sind im System von: {bib.Name}. Was moechten Sie tun?");
-            while (OberMenue()) ;
+            while (OberMenue());
         }
 
         internal static bool OberMenue()
