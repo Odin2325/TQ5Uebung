@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IODateien", "IODateien\IODa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestingSuite", "TestingSuite\TestingSuite.csproj", "{B00ABA4E-8AED-40CA-AA23-B9E048A55953}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sqllite", "sqllite\sqllite.csproj", "{A2F11177-4597-40EF-A342-27F03DF15C6F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B00ABA4E-8AED-40CA-AA23-B9E048A55953}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B00ABA4E-8AED-40CA-AA23-B9E048A55953}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B00ABA4E-8AED-40CA-AA23-B9E048A55953}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2F11177-4597-40EF-A342-27F03DF15C6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2F11177-4597-40EF-A342-27F03DF15C6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2F11177-4597-40EF-A342-27F03DF15C6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2F11177-4597-40EF-A342-27F03DF15C6F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

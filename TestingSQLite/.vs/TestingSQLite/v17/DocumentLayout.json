@@ -1,0 +1,134 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 198,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
+              "RelativeToolTip": "TestingSQLite\\Repositories\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:01:54.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:01:53.324Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
+              "RelativeToolTip": "TestingSQLite\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:01:52.291Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Program.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Program.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Program.cs",
+              "RelativeToolTip": "TestingSQLite\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:01:35.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
+              "RelativeToolTip": "TestingSQLite\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:01:09.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
+              "RelativeToolTip": "TestingSQLite\\Repositories\\ClientRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T16:59:07.268Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
