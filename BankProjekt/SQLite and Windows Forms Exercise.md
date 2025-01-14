@@ -17,7 +17,7 @@ Wir erstellen einen Bank Program der SQLite und Windows Forms verwendet. Wir Üb
 
 ### **2. Datenbank Schema entwickeln**
 
-
+![alt text](https://github.com/Odin2325/TQ5Uebung/blob/main/BankProjekt/BankDBSchema.jpg?raw=true)
 
 **Ziel**: Definiere tabellen die unsere informationen speichern soll.
 
