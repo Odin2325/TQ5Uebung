@@ -5,6 +5,8 @@ using TestingSQLite.Models;
 public class ApplicationDbContext : DbContext
 {
     public DbSet<Client> Clients { get; set; }
+    public DbSet<Produkte> Produkte { get; set; }
+
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
         : base(options) { }

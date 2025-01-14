@@ -2,6 +2,7 @@
 using Microsoft.Extensions.DependencyInjection;
 using TestingSQLite.Models;
 
+
 class Program
 {
     static void Main()
@@ -19,7 +20,7 @@ class Program
         {
             var clientService = scope.ServiceProvider.GetRequiredService<IClientService>();
 
-            // Add a sample client
+            //// Add a sample client
             clientService.AddClient(new Client
             {
                 FirstName = "John",

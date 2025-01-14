@@ -1,30 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\",
+  "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\clientrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\services\\clientservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\models\\produkte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\models\\produkte.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\nicoa\\source\\repos\\testingsqlite\\testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\testingsqlite\\testingsqlite\\repositories\\produkterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E0AFB2E-F793-4A23-8347-8CDF2E17E041}|TestingSQLite\\TestingSQLite.csproj|solutionrelative:testingsqlite\\repositories\\produkterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -37,93 +45,107 @@
           "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "IRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
               "RelativeDocumentMoniker": "TestingSQLite\\Repositories\\IRepository.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\IRepository.cs",
               "RelativeToolTip": "TestingSQLite\\Repositories\\IRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:01:54.577Z",
+              "WhenOpened": "2025-01-14T09:33:22.859Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "TestingSQLite\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "TestingSQLite\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ProdukteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\ProdukteRepository.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Repositories\\ProdukteRepository.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\ProdukteRepository.cs",
+              "RelativeToolTip": "TestingSQLite\\Repositories\\ProdukteRepository.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAAowB0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:01:53.324Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "TestingSQLite\\Models\\Client.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
-              "RelativeToolTip": "TestingSQLite\\Models\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:01:52.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Program.cs",
-              "RelativeDocumentMoniker": "TestingSQLite\\Program.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Program.cs",
-              "RelativeToolTip": "TestingSQLite\\Program.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwBoAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:01:35.719Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientService.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
-              "RelativeDocumentMoniker": "TestingSQLite\\Services\\ClientService.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
-              "RelativeToolTip": "TestingSQLite\\Services\\ClientService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T17:01:09.745Z",
+              "WhenOpened": "2025-01-14T09:17:13.151Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "ClientRepository.cs",
-              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
               "RelativeDocumentMoniker": "TestingSQLite\\Repositories\\ClientRepository.cs",
-              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Repositories\\ClientRepository.cs",
               "RelativeToolTip": "TestingSQLite\\Repositories\\ClientRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAbAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAzAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-13T16:59:07.268Z",
+              "WhenOpened": "2025-01-14T07:59:47.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Produkte.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Models\\Produkte.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Models\\Produkte.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Models\\Produkte.cs",
+              "RelativeToolTip": "TestingSQLite\\Models\\Produkte.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T09:16:01.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Program.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Program.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Program.cs",
+              "RelativeToolTip": "TestingSQLite\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:59:49.096Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClientService.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Services\\ClientService.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Services\\ClientService.cs",
+              "RelativeToolTip": "TestingSQLite\\Services\\ClientService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:59:48.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Models\\Client.cs",
+              "RelativeToolTip": "TestingSQLite\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:59:46.736Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\TestingSQLite\\TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "TestingSQLite\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAcAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:59:45.752Z",
               "EditorCaption": ""
             }
           ]
