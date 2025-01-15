@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Magier und Krieger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f040ea95202e0e94aec19b6b1d2d241bacbdbebf")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dd8f4a64fce1afce2d36506e96d3e82fe8f82594")]
 [assembly: System.Reflection.AssemblyProductAttribute("Magier und Krieger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Magier und Krieger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

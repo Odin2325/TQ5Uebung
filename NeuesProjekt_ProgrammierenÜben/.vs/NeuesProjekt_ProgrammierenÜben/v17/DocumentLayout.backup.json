@@ -3,28 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingRoom\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|c:\\users\\mytq\\documents\\github\\tq5uebung\\neuesprojekt_programmieren\u00FCben\\neuesprojekt_programmieren\u00FCben\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|solutionrelative:neuesprojekt_programmieren\u00FCben\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NeuesProjekt_Programmieren\u00DCben\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|c:\\users\\mytq\\documents\\github\\tq5uebung\\neuesprojekt_programmieren\u00FCben\\neuesprojekt_programmieren\u00FCben\\class3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|solutionrelative:neuesprojekt_programmieren\u00FCben\\class3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingRoom\\Bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingRoom\\Class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NeuesProjekt_Programmieren\u00DCben\\Buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:TestingRoom\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\BibKunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:NeuesProjekt_Programmieren\u00DCben\\BibKunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|c:\\users\\mytq\\documents\\github\\tq5uebung\\neuesprojekt_programmieren\u00FCben\\neuesprojekt_programmieren\u00FCben\\bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|solutionrelative:neuesprojekt_programmieren\u00FCben\\bibliothek.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|c:\\users\\mytq\\documents\\github\\tq5uebung\\neuesprojekt_programmieren\u00FCben\\neuesprojekt_programmieren\u00FCben\\buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|solutionrelative:neuesprojekt_programmieren\u00FCben\\buchvereinfacht.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|c:\\users\\mytq\\documents\\github\\tq5uebung\\neuesprojekt_programmieren\u00FCben\\neuesprojekt_programmieren\u00FCben\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6523FB30-F608-49AA-B7CA-54E1D13DB90E}|NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben.csproj|solutionrelative:neuesprojekt_programmieren\u00FCben\\bibkunde.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,6 +51,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Program.cs",
+              "RelativeDocumentMoniker": "NeuesProjekt_Programmieren\u00DCben\\Program.cs",
+              "ToolTip": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Program.cs",
+              "RelativeToolTip": "NeuesProjekt_Programmieren\u00DCben\\Program.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA8wKABAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T18:49:22.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Class3.cs",
+              "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Class3.cs",
+              "RelativeDocumentMoniker": "NeuesProjekt_Programmieren\u00DCben\\Class3.cs",
+              "ToolTip": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Class3.cs",
+              "RelativeToolTip": "NeuesProjekt_Programmieren\u00DCben\\Class3.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-12T18:49:19.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Bibliothek.cs",
               "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\Bibliothek.cs",
               "RelativeDocumentMoniker": "TestingRoom\\Bibliothek.cs",
@@ -50,12 +83,11 @@
               "RelativeToolTip": "TestingRoom\\Bibliothek.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-08T08:14:36.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-08T08:14:36.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Bibliothek.cs",
               "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Bibliothek.cs",
               "RelativeDocumentMoniker": "NeuesProjekt_Programmieren\u00DCben\\Bibliothek.cs",
@@ -67,7 +99,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Class1.cs",
               "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\TestingRoom\\Class1.cs",
               "RelativeDocumentMoniker": "TestingRoom\\Class1.cs",
@@ -79,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Buchvereinfacht.cs",
               "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\Buchvereinfacht.cs",
               "RelativeDocumentMoniker": "NeuesProjekt_Programmieren\u00DCben\\Buchvereinfacht.cs",
@@ -103,7 +135,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BibKunde.cs",
               "DocumentMoniker": "C:\\Users\\mytq\\Documents\\GitHub\\TQ5Uebung\\NeuesProjekt_Programmieren\u00DCben\\NeuesProjekt_Programmieren\u00DCben\\BibKunde.cs",
               "RelativeDocumentMoniker": "NeuesProjekt_Programmieren\u00DCben\\BibKunde.cs",

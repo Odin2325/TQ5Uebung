@@ -112,7 +112,7 @@ namespace Magier_und_Krieger
         {
             if (characterDictionary.ContainsKey(key))
             {
-                characterDictionary[key] = character;  // Aktualisiere den Charakter im Dictionary
+                characterDictionary[key] = character; 
                 Console.WriteLine($"{character.Name} wurde im Dictionary aktualisiert!");
             }
             else
@@ -124,13 +124,9 @@ namespace Magier_und_Krieger
     }
     public static class GameUtils
     {
-        // LevelUp für jeden Charakter
         public static void PerformLevelUp(Character character)
         {
-            // Falls der Charakter ein Level-Up benötigt, rufst du die LevelUp-Methode auf
             character.LevelUp();
-
-            // Hier kannst du weitere Logik für das Level-Up hinzufügen, falls nötig
             Console.WriteLine($"Der Charakter {character.Name} hat jetzt Level {character.Level} und ist stärker!");
         }
     }
