@@ -1,16 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "39VEfhCU5SA=",
+  "dgSpecHash": "x5GXhsJx6pM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\nicoa\\.nuget\\packages\\microsoft.data.sqlite\\9.0.0\\microsoft.data.sqlite.9.0.0.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\microsoft.data.sqlite.core\\9.0.0\\microsoft.data.sqlite.core.9.0.0.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\sqlitepclraw.bundle_e_sqlite3\\2.1.10\\sqlitepclraw.bundle_e_sqlite3.2.1.10.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\sqlitepclraw.core\\2.1.10\\sqlitepclraw.core.2.1.10.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.1.10\\sqlitepclraw.lib.e_sqlite3.2.1.10.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.1.10\\sqlitepclraw.provider.e_sqlite3.2.1.10.nupkg.sha512",
-    "C:\\Users\\nicoa\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\ProgrammierenLernen\\ProgrammierenLernen.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

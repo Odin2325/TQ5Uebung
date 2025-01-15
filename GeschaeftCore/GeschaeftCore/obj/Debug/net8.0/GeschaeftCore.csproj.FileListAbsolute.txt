@@ -1,0 +1,15 @@
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\bin\Debug\net8.0\GeschaeftCore.exe
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\bin\Debug\net8.0\GeschaeftCore.deps.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\bin\Debug\net8.0\GeschaeftCore.runtimeconfig.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\bin\Debug\net8.0\GeschaeftCore.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\bin\Debug\net8.0\GeschaeftCore.pdb
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.AssemblyInfoInputs.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.AssemblyInfo.cs
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.sourcelink.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\refint\GeschaeftCore.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.pdb
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\GeschaeftCore.genruntimeconfig.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\GeschaeftCore\GeschaeftCore\obj\Debug\net8.0\ref\GeschaeftCore.dll

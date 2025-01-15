@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj": {}
+    "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj": {}
   },
   "projects": {
-    "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj": {
+    "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj",
+        "projectUniqueName": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj",
         "projectName": "IODateien",
-        "projectPath": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj",
-        "packagesPath": "C:\\Users\\nicoa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\nicoa\\Desktop\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\obj\\",
+        "projectPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\IODateien.csproj",
+        "packagesPath": "C:\\Users\\MYTQ-Trainer\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\ProgrammierenLernen\\IODateien\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\nicoa\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MYTQ-Trainer\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -42,7 +42,7 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "all"
+          "auditMode": "direct"
         },
         "SdkAnalysisLevel": "9.0.100"
       },
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

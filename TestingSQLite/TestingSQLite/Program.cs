@@ -2,7 +2,6 @@
 using Microsoft.Extensions.DependencyInjection;
 using TestingSQLite.Models;
 
-
 class Program
 {
     static void Main()
@@ -10,7 +9,7 @@ class Program
         // Set up Dependency Injection
         var serviceProvider = new ServiceCollection()
             .AddDbContext<ApplicationDbContext>(options =>
-                options.UseSqlite("Data Source=Clients.db"))
+                options.UseSqlite(@"Data Source=Clients.db"))
             .AddScoped<IRepository<Client>, ClientRepository>()
             .AddScoped<IClientService, ClientService>()
             .BuildServiceProvider();
