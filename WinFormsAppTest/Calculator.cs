@@ -1,4 +1,5 @@
 using System.Data;
+using System.Globalization;
 
 namespace WinFormsAppTest
 {
@@ -114,7 +115,6 @@ namespace WinFormsAppTest
         }
 
         private void buttonDiv_Click(object sender, EventArgs e)
-            //needs divideBy0 protection
         {
             if (solutionText.Text == "0" && curNumText.Text == "0")
                 return;
@@ -137,17 +137,17 @@ namespace WinFormsAppTest
         }
 
         private void buttonEquals_Click(object sender, EventArgs e)
-            // needs rounding
-            //calculations with curNum from equal-operation causes error
         {
             if (solutionText.Text == "0")
                 return;
             if (!int.TryParse(Char.ToString(solutionText.Text[solutionText.Text.Length - 1]), out _))
             {
+                CultureInfo.CurrentCulture = CultureInfo.InvariantCulture;
                 solutionText.Text = solutionText.Text + curNumText.Text;
-                //solutionText.Text = solutionText.Text.Substring(0, solutionText.Text.Length-1);
+
                 var result = new DataTable().Compute(solutionText.Text, null);
                 if (result != null)
+                    result = Math.Round(Convert.ToDouble(result),2);
                     curNumText.Text = result.ToString();
                 solutionText.Text = solutionText.Text + " = " + result;
             }
