@@ -1,0 +1,15 @@
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\bin\Debug\net8.0\RechnerApp.exe
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\bin\Debug\net8.0\RechnerApp.deps.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\bin\Debug\net8.0\RechnerApp.runtimeconfig.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\bin\Debug\net8.0\RechnerApp.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\bin\Debug\net8.0\RechnerApp.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.AssemblyInfoInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.AssemblyInfo.cs
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.sourcelink.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\refint\RechnerApp.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\RechnerApp.genruntimeconfig.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\RechnerApp\obj\Debug\net8.0\ref\RechnerApp.dll

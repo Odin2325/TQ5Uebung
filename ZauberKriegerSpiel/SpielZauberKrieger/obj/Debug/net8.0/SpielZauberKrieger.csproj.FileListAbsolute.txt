@@ -1,0 +1,15 @@
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\bin\Debug\net8.0\SpielZauberKrieger.exe
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\bin\Debug\net8.0\SpielZauberKrieger.deps.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\bin\Debug\net8.0\SpielZauberKrieger.runtimeconfig.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\bin\Debug\net8.0\SpielZauberKrieger.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\bin\Debug\net8.0\SpielZauberKrieger.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.AssemblyInfoInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.AssemblyInfo.cs
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.sourcelink.json
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\refint\SpielZauberKrieger.dll
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.pdb
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\SpielZauberKrieger.genruntimeconfig.cache
+C:\Users\MYTQ\Documents\GitHub\TQ5Uebung\ZauberKriegerSpiel\SpielZauberKrieger\obj\Debug\net8.0\ref\SpielZauberKrieger.dll
