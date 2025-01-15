@@ -24,9 +24,7 @@ namespace UIKunden
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _previousForm.Show();
-
-            this.Close();
+            
         }
 
         private void button2_ClickShowFullNames(object sender, EventArgs e)
