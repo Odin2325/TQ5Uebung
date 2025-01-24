@@ -1,4 +1,6 @@
-﻿void Aufgabe1()
+﻿Aufgabe2();
+
+void Aufgabe1()
 {
     int eingabe;
     var random = new Random();
