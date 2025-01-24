@@ -1,0 +1,5 @@
+@startuml
+actor       Benutzer    as benutzer
+participant atm         as atm     
+benutzer -> atm : PIN eingeben            
+@enduml

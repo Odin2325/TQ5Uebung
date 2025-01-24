@@ -1,0 +1,19 @@
+@startuml
+actor       Kunde       as kunde
+participant Shop as shop
+database    Lagerverwaltung    as db
+kunde -> shop : queryProducts()
+activate shop
+shop -> db : queryProducts()
+db -> shop : Products
+shop -> kunde : Products
+kunde -> shop : queryAvailability()
+shop -> db : queryAvailability()
+db -> shop : Availability
+shop -> kunde : Availability
+kunde -> shop : placeOrder()
+shop -> db : reserveProducts()
+db -> shop : Result
+shop -> kunde : OrderConfirmation
+deactivate shop
+@enduml
