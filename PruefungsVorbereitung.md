@@ -31,7 +31,9 @@ static List<int> VerarbeiteZahlen(List<int> liste)
 
 **Antwort:**
 
-<!-- Schreiben Sie Ihre Anwort nach diesen Grünen Teil und vor der drei striche. -->
+<!--  Es wird geprüft, ob die Zahl gerade ist (zahl % 2 == 0) und größer als 5 (zahl > 5).
+    Wenn beide Bedingungen erfüllt sind, wird die Zahl mit 3 multipliziert und in die neueListe in aufsteigender Reihenfolge eingefügt.
+ -->
 
 ---
 
