@@ -1,0 +1,23 @@
+### YamlMime:ManagedReference
+items:
+- uid: IODateien
+  commentId: N:IODateien
+  id: IODateien
+  children:
+  - IODateien.IOAufgaben
+  langs:
+  - csharp
+  - vb
+  name: IODateien
+  nameWithType: IODateien
+  fullName: IODateien
+  type: Namespace
+  assemblies:
+  - IODateien
+references:
+- uid: IODateien.IOAufgaben
+  commentId: T:IODateien.IOAufgaben
+  href: IODateien.IOAufgaben.html
+  name: IOAufgaben
+  nameWithType: IOAufgaben
+  fullName: IODateien.IOAufgaben
