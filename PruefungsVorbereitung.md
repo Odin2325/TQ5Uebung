@@ -28,8 +28,8 @@ static List<int> VerarbeiteZahlen(List<int> liste)
     return neueListe;
 }
 ```
-
-**Antwort:**
+**Antwort:** Es wird geprüft, ob die Zahl gerade ist (zahl % 2 == 0) und größer als 5 (zahl > 5).
+    Wenn beide Bedingungen erfüllt sind, wird die Zahl mit 3 multipliziert und in die neueListe in aufsteigender Reihenfolge eingefügt.
 
 <!--  Es wird geprüft, ob die Zahl gerade ist (zahl % 2 == 0) und größer als 5 (zahl > 5).
     Wenn beide Bedingungen erfüllt sind, wird die Zahl mit 3 multipliziert und in die neueListe in aufsteigender Reihenfolge eingefügt.
@@ -43,12 +43,18 @@ static List<int> VerarbeiteZahlen(List<int> liste)
 ```csharp
 static void StringReversal(string text)
 {
-// Hier die implementierung anfangen.
-
-
+    if (string.IsNullOrEmpty(text))
+    {
+        Console.WriteLine("Der String ist leer.");
+        return;
+    }
+    for (int i = text.Length - 1; i >= 0; i--)
+    {
+        Console.Write(text[i]);
+    }
 }
 ```
-sdfsdf
+
 ---
 
 ## Aufgabe 3: Struktogramm Erstellen
