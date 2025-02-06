@@ -1,0 +1,5 @@
+{
+  "IODateien": "IODateien.yml",
+  "IODateien.IOAufgaben": "IODateien.IOAufgaben.yml",
+  "IODateien.IOAufgaben.WriteToFile(System.String,System.String)": "IODateien.IOAufgaben.yml"
+}
