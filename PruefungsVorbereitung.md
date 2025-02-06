@@ -145,7 +145,7 @@ Manager-Klasse Methoden:
 
 
 Hier das Bild von deinem Klassendiagram hochladen:
-![Diagramm](C:\Users\ruth-\Downloads\Unbenanntes Diagramm(2).drawio)
+![Diagramm](C:\Users\ruth-\Downloads\Prüfung1.jpg)
 ---
 
 ## Abgabe
