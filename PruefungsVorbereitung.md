@@ -62,8 +62,7 @@ static void StringReversal(string text)
 
 Hier das Bild von deinem Struktogramm hochladen:
 
-
-
+![image](https://github.com/user-attachments/assets/d923cfa5-ae46-452c-9676-3b9686d10d32)
 ---
 
 ## Aufgabe 4: UML Klassendiagramm Erstellen
