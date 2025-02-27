@@ -8,6 +8,7 @@ namespace ProgrammierenLernen
 {
     public class BibKunde
     {
+        //Test Hochladen Git
         private string vorname;
         private string nachname;
         private int alter;
