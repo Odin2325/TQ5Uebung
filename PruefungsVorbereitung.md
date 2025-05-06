@@ -8,6 +8,7 @@
 
 ---
 
+
 ## Aufgabe 1: Code Verständnis
 **Was macht der Folgende Code?**
 
