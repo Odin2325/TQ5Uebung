@@ -1,0 +1,13 @@
+﻿@page
+@model MyWebApp.Pages.ClientsModel
+@{
+	ViewData["Title"] = "Clients";
+}
+
+<h1>Kundenliste</h1>
+<ul>
+	@foreach (var client in Model.Clients)
+	{
+		<li>@client.Vorname, @client.Nachname</li>
+	}
+</ul>

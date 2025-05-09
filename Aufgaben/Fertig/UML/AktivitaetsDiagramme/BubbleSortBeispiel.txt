@@ -1,0 +1,71 @@
+ 0 1 2
+[3 2 1]
+laenge = 3
+sorted = false
+i = 0
+
+3>2 =>true bedingung resultat yes
+temp = 3
+array[i]=array[i+1] => array[i] = 2
+[2 2 1]
+array[i+1] = temp => [2 3 1]
+sorted = true
+
+i++ => i = 1
+array[1]>array[2] => 3>1 => bedingung resultat yes
+temp = 3
+array[i]=array[i+1] => array[i] = 1
+[2 1 1]
+array[i+1] = temp =>[2 1 3]
+sorted = true
+
+i++ => i = 2
+if i<n-1 => 2<3-1 => 2<2 => false => bedingung resultat no
+
+sorted=false
+for starten
+i=0
+
+array[i]>array[i+1] => 2>1 => bedingung resultat yes
+temp = 2
+array[i] = 1
+[1 1 3]
+array[i+1] = 2
+[1 2 3]
+sorted = true
+
+i++
+1<2 => bedingung resultat yes
+array[i]>array[i+1] => 2>3 => bedingung resultat no
+i++
+2<2 => bedingung resultat no
+sorted = true => bedingung resultat yes
+
+
+sorted = false
+i=0
+1>2? => bedingung resultat no
+i++
+i<n-1 => 1<2? => bedingung resultat yes
+2<3? => bedingung resultat no
+i++
+2<2? => bedingung resultat no
+sorted=true? => bedingung resultat no
+print([1 2 3])
+end!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
