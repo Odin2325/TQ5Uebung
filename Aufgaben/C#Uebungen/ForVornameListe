@@ -1,0 +1,14 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string[] tab_vorname = new string[] { "Stalone", "Sonja", "Nabila", "Andreas" };
+            for (int compteur = 0; compteur < tab_vorname.Length; compteur++) 
+            {
+                Console.WriteLine(tab_vorname[compteur]);
+            }
+        }
+    }
+}
