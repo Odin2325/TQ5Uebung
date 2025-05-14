@@ -73,6 +73,7 @@ namespace GeschaeftCore
                     command.ExecuteNonQuery();
                 }
             }
+            //Test test, wir machen veraenderungen...
             Console.WriteLine("Eintrag hinzugefügt.");
         }
 
