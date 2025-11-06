@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\WinFormsAppTest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D8DA53CE-3343-44FD-A43F-2A7E5AF5FBA6}|WinFormsAppTest.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\winformsapptest\\calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8DA53CE-3343-44FD-A43F-2A7E5AF5FBA6}|WinFormsAppTest.csproj|solutionrelative:calculator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D8DA53CE-3343-44FD-A43F-2A7E5AF5FBA6}|WinFormsAppTest.csproj|c:\\users\\mytq-trainer\\documents\\github\\tq5uebung\\winformsapptest\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D8DA53CE-3343-44FD-A43F-2A7E5AF5FBA6}|WinFormsAppTest.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\WinFormsAppTest\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\WinFormsAppTest\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:25:06.94Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Calculator.cs",
+              "DocumentMoniker": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\WinFormsAppTest\\Calculator.cs",
+              "RelativeDocumentMoniker": "Calculator.cs",
+              "ToolTip": "C:\\Users\\MYTQ-Trainer\\Documents\\GitHub\\TQ5Uebung\\WinFormsAppTest\\Calculator.cs",
+              "RelativeToolTip": "Calculator.cs",
+              "ViewState": "AgIAAIgAAACAmZmZmdkgwI8AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-14T07:25:05.502Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,2535 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProgrammierenLernen.Utils
+  commentId: T:ProgrammierenLernen.Utils
+  id: Utils
+  parent: ProgrammierenLernen
+  children:
+  - ProgrammierenLernen.Utils.BerechneSchaltjahr(System.Int32)
+  - ProgrammierenLernen.Utils.CalculateSumme(System.Int32)
+  - ProgrammierenLernen.Utils.Collatz(System.Int32,System.Int32)
+  - ProgrammierenLernen.Utils.DateiName(System.String)
+  - ProgrammierenLernen.Utils.DateiTyp(System.String)
+  - ProgrammierenLernen.Utils.EingabePruefen
+  - ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  - ProgrammierenLernen.Utils.EinsDichMich
+  - ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  - ProgrammierenLernen.Utils.FindIndex(System.Double[],System.Double)
+  - ProgrammierenLernen.Utils.GenerateRandomWord(System.Int32)
+  - ProgrammierenLernen.Utils.JoinArray(System.Int32[],System.String)
+  - ProgrammierenLernen.Utils.JoinArray(System.String[],System.String)
+  - ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List{System.Double})
+  - ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  - ProgrammierenLernen.Utils.NANP(System.String)
+  - ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  - ProgrammierenLernen.Utils.OpenWith(System.String)
+  - ProgrammierenLernen.Utils.Pangram
+  - ProgrammierenLernen.Utils.Pangram(System.String)
+  - ProgrammierenLernen.Utils.Pangram(System.String,System.String)
+  - ProgrammierenLernen.Utils.PascalTriangle(System.Int32)
+  - ProgrammierenLernen.Utils.PinUeberpruefung(System.String)
+  - ProgrammierenLernen.Utils.PlanetenAlter
+  - ProgrammierenLernen.Utils.PrintArray(System.Int32[])
+  - ProgrammierenLernen.Utils.PrintArray(System.String[])
+  - ProgrammierenLernen.Utils.PyramideErstellen(System.Int32)
+  - ProgrammierenLernen.Utils.RandomChars(System.Int32,System.Boolean)
+  - ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  - ProgrammierenLernen.Utils.RegentropfenFaktoren(System.Int32)
+  - ProgrammierenLernen.Utils.RepeatInput
+  - ProgrammierenLernen.Utils.ReverseString(System.String)
+  - ProgrammierenLernen.Utils.RnaUebersetzung(System.String)
+  - ProgrammierenLernen.Utils.StudentAusgabe
+  - ProgrammierenLernen.Utils.Summe(System.Decimal[])
+  - ProgrammierenLernen.Utils.Summe(System.Int32,System.Int32)
+  - ProgrammierenLernen.Utils.Summe(System.Int32[])
+  - ProgrammierenLernen.Utils.TechEinkaufen(System.Decimal)
+  langs:
+  - csharp
+  - vb
+  name: Utils
+  nameWithType: Utils
+  fullName: ProgrammierenLernen.Utils
+  type: Class
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Utils
+    path: ../Utils.cs
+    startLine: 9
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public class Utils
+    content.vb: Public Class Utils
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: ProgrammierenLernen.Utils.StudentAusgabe
+  commentId: M:ProgrammierenLernen.Utils.StudentAusgabe
+  id: StudentAusgabe
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: StudentAusgabe()
+  nameWithType: Utils.StudentAusgabe()
+  fullName: ProgrammierenLernen.Utils.StudentAusgabe()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: StudentAusgabe
+    path: ../Utils.cs
+    startLine: 14
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  summary: Erzeugt eine schoene ausgabe anhand von die StudentenInfos Tupeln.
+  example: []
+  syntax:
+    content: public static void StudentAusgabe()
+    content.vb: Public Shared Sub StudentAusgabe()
+  overload: ProgrammierenLernen.Utils.StudentAusgabe*
+- uid: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List{System.Double})
+  commentId: M:ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List{System.Double})
+  id: ListStatistics(System.Collections.Generic.List{System.Double})
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: ListStatistics(List<double>)
+  nameWithType: Utils.ListStatistics(List<double>)
+  fullName: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List<double>)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: ListStatistics
+    path: ../Utils.cs
+    startLine: 146
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static (double Durchschnitt, double Summe, double Min, double Max, int Count) ListStatistics(List<double> zahlen)
+    parameters:
+    - id: zahlen
+      type: System.Collections.Generic.List{System.Double}
+    return:
+      type: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}
+    content.vb: Public Shared Function ListStatistics(zahlen As List(Of Double)) As (Durchschnitt As Double, Summe As Double, Min As Double, Max As Double, Count As Integer)
+  overload: ProgrammierenLernen.Utils.ListStatistics*
+  nameWithType.vb: Utils.ListStatistics(List(Of Double))
+  fullName.vb: ProgrammierenLernen.Utils.ListStatistics(System.Collections.Generic.List(Of Double))
+  name.vb: ListStatistics(List(Of Double))
+- uid: ProgrammierenLernen.Utils.PascalTriangle(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.PascalTriangle(System.Int32)
+  id: PascalTriangle(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PascalTriangle(int)
+  nameWithType: Utils.PascalTriangle(int)
+  fullName: ProgrammierenLernen.Utils.PascalTriangle(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PascalTriangle
+    path: ../Utils.cs
+    startLine: 184
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  summary: Creates a pyramid representing the values in Pascals Triangle.
+  example: []
+  syntax:
+    content: public static void PascalTriangle(int hoehe)
+    parameters:
+    - id: hoehe
+      type: System.Int32
+      description: ''
+    content.vb: Public Shared Sub PascalTriangle(hoehe As Integer)
+  overload: ProgrammierenLernen.Utils.PascalTriangle*
+  nameWithType.vb: Utils.PascalTriangle(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.PascalTriangle(Integer)
+  name.vb: PascalTriangle(Integer)
+- uid: ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  commentId: M:ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  id: NcR(System.Numerics.BigInteger,System.Numerics.BigInteger)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: NcR(BigInteger, BigInteger)
+  nameWithType: Utils.NcR(BigInteger, BigInteger)
+  fullName: ProgrammierenLernen.Utils.NcR(System.Numerics.BigInteger, System.Numerics.BigInteger)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: NcR
+    path: ../Utils.cs
+    startLine: 203
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  summary: Calculates n choose r.
+  example: []
+  syntax:
+    content: public static BigInteger NcR(BigInteger n, BigInteger r)
+    parameters:
+    - id: n
+      type: System.Numerics.BigInteger
+      description: ''
+    - id: r
+      type: System.Numerics.BigInteger
+      description: ''
+    return:
+      type: System.Numerics.BigInteger
+      description: ''
+    content.vb: Public Shared Function NcR(n As BigInteger, r As BigInteger) As BigInteger
+  overload: ProgrammierenLernen.Utils.NcR*
+- uid: ProgrammierenLernen.Utils.NANP(System.String)
+  commentId: M:ProgrammierenLernen.Utils.NANP(System.String)
+  id: NANP(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: NANP(string)
+  nameWithType: Utils.NANP(string)
+  fullName: ProgrammierenLernen.Utils.NANP(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: NANP
+    path: ../Utils.cs
+    startLine: 210
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void NANP(string telephoneNummer)
+    parameters:
+    - id: telephoneNummer
+      type: System.String
+    content.vb: Public Shared Sub NANP(telephoneNummer As String)
+  overload: ProgrammierenLernen.Utils.NANP*
+  nameWithType.vb: Utils.NANP(String)
+  fullName.vb: ProgrammierenLernen.Utils.NANP(String)
+  name.vb: NANP(String)
+- uid: ProgrammierenLernen.Utils.Collatz(System.Int32,System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.Collatz(System.Int32,System.Int32)
+  id: Collatz(System.Int32,System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Collatz(int, int)
+  nameWithType: Utils.Collatz(int, int)
+  fullName: ProgrammierenLernen.Utils.Collatz(int, int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Collatz
+    path: ../Utils.cs
+    startLine: 243
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static (int, int) Collatz(int n, int schritte = 0)
+    parameters:
+    - id: n
+      type: System.Int32
+    - id: schritte
+      type: System.Int32
+    return:
+      type: System.ValueTuple{System.Int32,System.Int32}
+    content.vb: Public Shared Function Collatz(n As Integer, schritte As Integer = 0) As (Integer, Integer)
+  overload: ProgrammierenLernen.Utils.Collatz*
+  nameWithType.vb: Utils.Collatz(Integer, Integer)
+  fullName.vb: ProgrammierenLernen.Utils.Collatz(Integer, Integer)
+  name.vb: Collatz(Integer, Integer)
+- uid: ProgrammierenLernen.Utils.RnaUebersetzung(System.String)
+  commentId: M:ProgrammierenLernen.Utils.RnaUebersetzung(System.String)
+  id: RnaUebersetzung(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: RnaUebersetzung(string)
+  nameWithType: Utils.RnaUebersetzung(string)
+  fullName: ProgrammierenLernen.Utils.RnaUebersetzung(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: RnaUebersetzung
+    path: ../Utils.cs
+    startLine: 272
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static List<string> RnaUebersetzung(string rnaSequenz)
+    parameters:
+    - id: rnaSequenz
+      type: System.String
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function RnaUebersetzung(rnaSequenz As String) As List(Of String)
+  overload: ProgrammierenLernen.Utils.RnaUebersetzung*
+  nameWithType.vb: Utils.RnaUebersetzung(String)
+  fullName.vb: ProgrammierenLernen.Utils.RnaUebersetzung(String)
+  name.vb: RnaUebersetzung(String)
+- uid: ProgrammierenLernen.Utils.BerechneSchaltjahr(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.BerechneSchaltjahr(System.Int32)
+  id: BerechneSchaltjahr(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: BerechneSchaltjahr(int)
+  nameWithType: Utils.BerechneSchaltjahr(int)
+  fullName: ProgrammierenLernen.Utils.BerechneSchaltjahr(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: BerechneSchaltjahr
+    path: ../Utils.cs
+    startLine: 335
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public bool BerechneSchaltjahr(int jahr)
+    parameters:
+    - id: jahr
+      type: System.Int32
+    return:
+      type: System.Boolean
+    content.vb: Public Function BerechneSchaltjahr(jahr As Integer) As Boolean
+  overload: ProgrammierenLernen.Utils.BerechneSchaltjahr*
+  nameWithType.vb: Utils.BerechneSchaltjahr(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.BerechneSchaltjahr(Integer)
+  name.vb: BerechneSchaltjahr(Integer)
+- uid: ProgrammierenLernen.Utils.PlanetenAlter
+  commentId: M:ProgrammierenLernen.Utils.PlanetenAlter
+  id: PlanetenAlter
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PlanetenAlter()
+  nameWithType: Utils.PlanetenAlter()
+  fullName: ProgrammierenLernen.Utils.PlanetenAlter()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PlanetenAlter
+    path: ../Utils.cs
+    startLine: 348
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void PlanetenAlter()
+    content.vb: Public Shared Sub PlanetenAlter()
+  overload: ProgrammierenLernen.Utils.PlanetenAlter*
+- uid: ProgrammierenLernen.Utils.RegentropfenFaktoren(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.RegentropfenFaktoren(System.Int32)
+  id: RegentropfenFaktoren(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: RegentropfenFaktoren(int)
+  nameWithType: Utils.RegentropfenFaktoren(int)
+  fullName: ProgrammierenLernen.Utils.RegentropfenFaktoren(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: RegentropfenFaktoren
+    path: ../Utils.cs
+    startLine: 368
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void RegentropfenFaktoren(int obereGrenze)
+    parameters:
+    - id: obereGrenze
+      type: System.Int32
+    content.vb: Public Shared Sub RegentropfenFaktoren(obereGrenze As Integer)
+  overload: ProgrammierenLernen.Utils.RegentropfenFaktoren*
+  nameWithType.vb: Utils.RegentropfenFaktoren(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.RegentropfenFaktoren(Integer)
+  name.vb: RegentropfenFaktoren(Integer)
+- uid: ProgrammierenLernen.Utils.EinsDichMich
+  commentId: M:ProgrammierenLernen.Utils.EinsDichMich
+  id: EinsDichMich
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: EinsDichMich()
+  nameWithType: Utils.EinsDichMich()
+  fullName: ProgrammierenLernen.Utils.EinsDichMich()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: EinsDichMich
+    path: ../Utils.cs
+    startLine: 402
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void EinsDichMich()
+    content.vb: Public Shared Sub EinsDichMich()
+  overload: ProgrammierenLernen.Utils.EinsDichMich*
+- uid: ProgrammierenLernen.Utils.TechEinkaufen(System.Decimal)
+  commentId: M:ProgrammierenLernen.Utils.TechEinkaufen(System.Decimal)
+  id: TechEinkaufen(System.Decimal)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: TechEinkaufen(decimal)
+  nameWithType: Utils.TechEinkaufen(decimal)
+  fullName: ProgrammierenLernen.Utils.TechEinkaufen(decimal)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: TechEinkaufen
+    path: ../Utils.cs
+    startLine: 416
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void TechEinkaufen(decimal budget)
+    parameters:
+    - id: budget
+      type: System.Decimal
+    content.vb: Public Shared Sub TechEinkaufen(budget As Decimal)
+  overload: ProgrammierenLernen.Utils.TechEinkaufen*
+  nameWithType.vb: Utils.TechEinkaufen(Decimal)
+  fullName.vb: ProgrammierenLernen.Utils.TechEinkaufen(Decimal)
+  name.vb: TechEinkaufen(Decimal)
+- uid: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  commentId: M:ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  id: RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary{System.String,System.Decimal},System.Collections.Generic.Dictionary{System.String,System.Int32})
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal>, Dictionary<string, int>)
+  nameWithType: Utils.RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal>, Dictionary<string, int>)
+  fullName: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary<string, decimal>, System.Collections.Generic.Dictionary<string, int>)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: RechnungErstellenOhneGesamtBetrag
+    path: ../Utils.cs
+    startLine: 498
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string RechnungErstellenOhneGesamtBetrag(Dictionary<string, decimal> produkte, Dictionary<string, int> warenkorb)
+    parameters:
+    - id: produkte
+      type: System.Collections.Generic.Dictionary{System.String,System.Decimal}
+    - id: warenkorb
+      type: System.Collections.Generic.Dictionary{System.String,System.Int32}
+    return:
+      type: System.String
+    content.vb: Public Shared Function RechnungErstellenOhneGesamtBetrag(produkte As Dictionary(Of String, Decimal), warenkorb As Dictionary(Of String, Integer)) As String
+  overload: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag*
+  nameWithType.vb: Utils.RechnungErstellenOhneGesamtBetrag(Dictionary(Of String, Decimal), Dictionary(Of String, Integer))
+  fullName.vb: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag(System.Collections.Generic.Dictionary(Of String, Decimal), System.Collections.Generic.Dictionary(Of String, Integer))
+  name.vb: RechnungErstellenOhneGesamtBetrag(Dictionary(Of String, Decimal), Dictionary(Of String, Integer))
+- uid: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  commentId: M:ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  id: MinDictionary(System.Collections.Generic.Dictionary{System.String,System.Decimal})
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: MinDictionary(Dictionary<string, decimal>)
+  nameWithType: Utils.MinDictionary(Dictionary<string, decimal>)
+  fullName: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary<string, decimal>)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: MinDictionary
+    path: ../Utils.cs
+    startLine: 513
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static decimal MinDictionary(Dictionary<string, decimal> produkte)
+    parameters:
+    - id: produkte
+      type: System.Collections.Generic.Dictionary{System.String,System.Decimal}
+    return:
+      type: System.Decimal
+    content.vb: Public Shared Function MinDictionary(produkte As Dictionary(Of String, Decimal)) As Decimal
+  overload: ProgrammierenLernen.Utils.MinDictionary*
+  nameWithType.vb: Utils.MinDictionary(Dictionary(Of String, Decimal))
+  fullName.vb: ProgrammierenLernen.Utils.MinDictionary(System.Collections.Generic.Dictionary(Of String, Decimal))
+  name.vb: MinDictionary(Dictionary(Of String, Decimal))
+- uid: ProgrammierenLernen.Utils.OpenWith(System.String)
+  commentId: M:ProgrammierenLernen.Utils.OpenWith(System.String)
+  id: OpenWith(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: OpenWith(string)
+  nameWithType: Utils.OpenWith(string)
+  fullName: ProgrammierenLernen.Utils.OpenWith(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: OpenWith
+    path: ../Utils.cs
+    startLine: 526
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void OpenWith(string pfad)
+    parameters:
+    - id: pfad
+      type: System.String
+    content.vb: Public Shared Sub OpenWith(pfad As String)
+  overload: ProgrammierenLernen.Utils.OpenWith*
+  nameWithType.vb: Utils.OpenWith(String)
+  fullName.vb: ProgrammierenLernen.Utils.OpenWith(String)
+  name.vb: OpenWith(String)
+- uid: ProgrammierenLernen.Utils.DateiTyp(System.String)
+  commentId: M:ProgrammierenLernen.Utils.DateiTyp(System.String)
+  id: DateiTyp(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: DateiTyp(string)
+  nameWithType: Utils.DateiTyp(string)
+  fullName: ProgrammierenLernen.Utils.DateiTyp(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: DateiTyp
+    path: ../Utils.cs
+    startLine: 551
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string DateiTyp(string pfad)
+    parameters:
+    - id: pfad
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DateiTyp(pfad As String) As String
+  overload: ProgrammierenLernen.Utils.DateiTyp*
+  nameWithType.vb: Utils.DateiTyp(String)
+  fullName.vb: ProgrammierenLernen.Utils.DateiTyp(String)
+  name.vb: DateiTyp(String)
+- uid: ProgrammierenLernen.Utils.DateiName(System.String)
+  commentId: M:ProgrammierenLernen.Utils.DateiName(System.String)
+  id: DateiName(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: DateiName(string)
+  nameWithType: Utils.DateiName(string)
+  fullName: ProgrammierenLernen.Utils.DateiName(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: DateiName
+    path: ../Utils.cs
+    startLine: 561
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string DateiName(string pfad)
+    parameters:
+    - id: pfad
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function DateiName(pfad As String) As String
+  overload: ProgrammierenLernen.Utils.DateiName*
+  nameWithType.vb: Utils.DateiName(String)
+  fullName.vb: ProgrammierenLernen.Utils.DateiName(String)
+  name.vb: DateiName(String)
+- uid: ProgrammierenLernen.Utils.Pangram
+  commentId: M:ProgrammierenLernen.Utils.Pangram
+  id: Pangram
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Pangram()
+  nameWithType: Utils.Pangram()
+  fullName: ProgrammierenLernen.Utils.Pangram()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Pangram
+    path: ../Utils.cs
+    startLine: 586
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static Tuple<List<string>, List<string>> Pangram()
+    return:
+      type: System.Tuple{System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String}}
+    content.vb: Public Shared Function Pangram() As Tuple(Of List(Of String), List(Of String))
+  overload: ProgrammierenLernen.Utils.Pangram*
+- uid: ProgrammierenLernen.Utils.Pangram(System.String,System.String)
+  commentId: M:ProgrammierenLernen.Utils.Pangram(System.String,System.String)
+  id: Pangram(System.String,System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Pangram(string, string)
+  nameWithType: Utils.Pangram(string, string)
+  fullName: ProgrammierenLernen.Utils.Pangram(string, string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Pangram
+    path: ../Utils.cs
+    startLine: 613
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string Pangram(string input, string sep = " ")
+    parameters:
+    - id: input
+      type: System.String
+    - id: sep
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function Pangram(input As String, sep As String = " ") As String
+  overload: ProgrammierenLernen.Utils.Pangram*
+  nameWithType.vb: Utils.Pangram(String, String)
+  fullName.vb: ProgrammierenLernen.Utils.Pangram(String, String)
+  name.vb: Pangram(String, String)
+- uid: ProgrammierenLernen.Utils.Pangram(System.String)
+  commentId: M:ProgrammierenLernen.Utils.Pangram(System.String)
+  id: Pangram(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Pangram(string)
+  nameWithType: Utils.Pangram(string)
+  fullName: ProgrammierenLernen.Utils.Pangram(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Pangram
+    path: ../Utils.cs
+    startLine: 638
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  summary: >-
+    Ein gegebener Satz wird aufgeteilt in einzelne Woerter.
+
+    Danach werden diese Woerter umgedreht mit unsere Reverse() methode.
+
+    Dann geben wir wieder alle Woerter in einen String zurueck ohne die Reihenfolge zu veraendern.
+  example: []
+  syntax:
+    content: public static string Pangram(string eingabe)
+    parameters:
+    - id: eingabe
+      type: System.String
+      description: Unser Eingabe Satz
+    return:
+      type: System.String
+      description: <ref name="eingabe">Eingabe </ref>Soll umgedreht werden.
+    content.vb: Public Shared Function Pangram(eingabe As String) As String
+  overload: ProgrammierenLernen.Utils.Pangram*
+  nameWithType.vb: Utils.Pangram(String)
+  fullName.vb: ProgrammierenLernen.Utils.Pangram(String)
+  name.vb: Pangram(String)
+- uid: ProgrammierenLernen.Utils.ReverseString(System.String)
+  commentId: M:ProgrammierenLernen.Utils.ReverseString(System.String)
+  id: ReverseString(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: ReverseString(string)
+  nameWithType: Utils.ReverseString(string)
+  fullName: ProgrammierenLernen.Utils.ReverseString(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: ReverseString
+    path: ../Utils.cs
+    startLine: 659
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string ReverseString(string wort)
+    parameters:
+    - id: wort
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function ReverseString(wort As String) As String
+  overload: ProgrammierenLernen.Utils.ReverseString*
+  nameWithType.vb: Utils.ReverseString(String)
+  fullName.vb: ProgrammierenLernen.Utils.ReverseString(String)
+  name.vb: ReverseString(String)
+- uid: ProgrammierenLernen.Utils.JoinArray(System.String[],System.String)
+  commentId: M:ProgrammierenLernen.Utils.JoinArray(System.String[],System.String)
+  id: JoinArray(System.String[],System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: JoinArray(string[], string)
+  nameWithType: Utils.JoinArray(string[], string)
+  fullName: ProgrammierenLernen.Utils.JoinArray(string[], string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: JoinArray
+    path: ../Utils.cs
+    startLine: 670
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string JoinArray(string[] zeichenFolgen, string seperator = " ")
+    parameters:
+    - id: zeichenFolgen
+      type: System.String[]
+    - id: seperator
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function JoinArray(zeichenFolgen As String(), seperator As String = " ") As String
+  overload: ProgrammierenLernen.Utils.JoinArray*
+  nameWithType.vb: Utils.JoinArray(String(), String)
+  fullName.vb: ProgrammierenLernen.Utils.JoinArray(String(), String)
+  name.vb: JoinArray(String(), String)
+- uid: ProgrammierenLernen.Utils.JoinArray(System.Int32[],System.String)
+  commentId: M:ProgrammierenLernen.Utils.JoinArray(System.Int32[],System.String)
+  id: JoinArray(System.Int32[],System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: JoinArray(int[], string)
+  nameWithType: Utils.JoinArray(int[], string)
+  fullName: ProgrammierenLernen.Utils.JoinArray(int[], string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: JoinArray
+    path: ../Utils.cs
+    startLine: 688
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string JoinArray(int[] zeichenFolgen, string seperator = " ")
+    parameters:
+    - id: zeichenFolgen
+      type: System.Int32[]
+    - id: seperator
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Shared Function JoinArray(zeichenFolgen As Integer(), seperator As String = " ") As String
+  overload: ProgrammierenLernen.Utils.JoinArray*
+  nameWithType.vb: Utils.JoinArray(Integer(), String)
+  fullName.vb: ProgrammierenLernen.Utils.JoinArray(Integer(), String)
+  name.vb: JoinArray(Integer(), String)
+- uid: ProgrammierenLernen.Utils.RandomChars(System.Int32,System.Boolean)
+  commentId: M:ProgrammierenLernen.Utils.RandomChars(System.Int32,System.Boolean)
+  id: RandomChars(System.Int32,System.Boolean)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: RandomChars(int, bool)
+  nameWithType: Utils.RandomChars(int, bool)
+  fullName: ProgrammierenLernen.Utils.RandomChars(int, bool)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: RandomChars
+    path: ../Utils.cs
+    startLine: 707
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static string RandomChars(int length, bool includeUpperCase = false)
+    parameters:
+    - id: length
+      type: System.Int32
+    - id: includeUpperCase
+      type: System.Boolean
+    return:
+      type: System.String
+    content.vb: Public Shared Function RandomChars(length As Integer, includeUpperCase As Boolean = False) As String
+  overload: ProgrammierenLernen.Utils.RandomChars*
+  nameWithType.vb: Utils.RandomChars(Integer, Boolean)
+  fullName.vb: ProgrammierenLernen.Utils.RandomChars(Integer, Boolean)
+  name.vb: RandomChars(Integer, Boolean)
+- uid: ProgrammierenLernen.Utils.GenerateRandomWord(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.GenerateRandomWord(System.Int32)
+  id: GenerateRandomWord(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: GenerateRandomWord(int)
+  nameWithType: Utils.GenerateRandomWord(int)
+  fullName: ProgrammierenLernen.Utils.GenerateRandomWord(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: GenerateRandomWord
+    path: ../Utils.cs
+    startLine: 729
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public string GenerateRandomWord(int length)
+    parameters:
+    - id: length
+      type: System.Int32
+    return:
+      type: System.String
+    content.vb: Public Function GenerateRandomWord(length As Integer) As String
+  overload: ProgrammierenLernen.Utils.GenerateRandomWord*
+  nameWithType.vb: Utils.GenerateRandomWord(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.GenerateRandomWord(Integer)
+  name.vb: GenerateRandomWord(Integer)
+- uid: ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  commentId: M:ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  id: EinkaufsListeGenerator
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: EinkaufsListeGenerator()
+  nameWithType: Utils.EinkaufsListeGenerator()
+  fullName: ProgrammierenLernen.Utils.EinkaufsListeGenerator()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: EinkaufsListeGenerator
+    path: ../Utils.cs
+    startLine: 759
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static List<string> EinkaufsListeGenerator()
+    return:
+      type: System.Collections.Generic.List{System.String}
+    content.vb: Public Shared Function EinkaufsListeGenerator() As List(Of String)
+  overload: ProgrammierenLernen.Utils.EinkaufsListeGenerator*
+- uid: ProgrammierenLernen.Utils.FindIndex(System.Double[],System.Double)
+  commentId: M:ProgrammierenLernen.Utils.FindIndex(System.Double[],System.Double)
+  id: FindIndex(System.Double[],System.Double)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: FindIndex(double[], double)
+  nameWithType: Utils.FindIndex(double[], double)
+  fullName: ProgrammierenLernen.Utils.FindIndex(double[], double)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: FindIndex
+    path: ../Utils.cs
+    startLine: 786
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static int FindIndex(double[] zahlen, double gesuchteZahl)
+    parameters:
+    - id: zahlen
+      type: System.Double[]
+    - id: gesuchteZahl
+      type: System.Double
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function FindIndex(zahlen As Double(), gesuchteZahl As Double) As Integer
+  overload: ProgrammierenLernen.Utils.FindIndex*
+  nameWithType.vb: Utils.FindIndex(Double(), Double)
+  fullName.vb: ProgrammierenLernen.Utils.FindIndex(Double(), Double)
+  name.vb: FindIndex(Double(), Double)
+- uid: ProgrammierenLernen.Utils.PrintArray(System.String[])
+  commentId: M:ProgrammierenLernen.Utils.PrintArray(System.String[])
+  id: PrintArray(System.String[])
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PrintArray(string[])
+  nameWithType: Utils.PrintArray(string[])
+  fullName: ProgrammierenLernen.Utils.PrintArray(string[])
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PrintArray
+    path: ../Utils.cs
+    startLine: 800
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void PrintArray(string[] array)
+    parameters:
+    - id: array
+      type: System.String[]
+    content.vb: Public Shared Sub PrintArray(array As String())
+  overload: ProgrammierenLernen.Utils.PrintArray*
+  nameWithType.vb: Utils.PrintArray(String())
+  fullName.vb: ProgrammierenLernen.Utils.PrintArray(String())
+  name.vb: PrintArray(String())
+- uid: ProgrammierenLernen.Utils.PrintArray(System.Int32[])
+  commentId: M:ProgrammierenLernen.Utils.PrintArray(System.Int32[])
+  id: PrintArray(System.Int32[])
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PrintArray(int[])
+  nameWithType: Utils.PrintArray(int[])
+  fullName: ProgrammierenLernen.Utils.PrintArray(int[])
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PrintArray
+    path: ../Utils.cs
+    startLine: 804
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void PrintArray(int[] array)
+    parameters:
+    - id: array
+      type: System.Int32[]
+    content.vb: Public Shared Sub PrintArray(array As Integer())
+  overload: ProgrammierenLernen.Utils.PrintArray*
+  nameWithType.vb: Utils.PrintArray(Integer())
+  fullName.vb: ProgrammierenLernen.Utils.PrintArray(Integer())
+  name.vb: PrintArray(Integer())
+- uid: ProgrammierenLernen.Utils.Summe(System.Decimal[])
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Decimal[])
+  id: Summe(System.Decimal[])
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Summe(decimal[])
+  nameWithType: Utils.Summe(decimal[])
+  fullName: ProgrammierenLernen.Utils.Summe(decimal[])
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Summe
+    path: ../Utils.cs
+    startLine: 817
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static decimal Summe(decimal[] zahlen)
+    parameters:
+    - id: zahlen
+      type: System.Decimal[]
+    return:
+      type: System.Decimal
+    content.vb: Public Shared Function Summe(zahlen As Decimal()) As Decimal
+  overload: ProgrammierenLernen.Utils.Summe*
+  nameWithType.vb: Utils.Summe(Decimal())
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Decimal())
+  name.vb: Summe(Decimal())
+- uid: ProgrammierenLernen.Utils.Summe(System.Int32,System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Int32,System.Int32)
+  id: Summe(System.Int32,System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Summe(int, int)
+  nameWithType: Utils.Summe(int, int)
+  fullName: ProgrammierenLernen.Utils.Summe(int, int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Summe
+    path: ../Utils.cs
+    startLine: 838
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static int Summe(int a, int b)
+    parameters:
+    - id: a
+      type: System.Int32
+    - id: b
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Summe(a As Integer, b As Integer) As Integer
+  overload: ProgrammierenLernen.Utils.Summe*
+  nameWithType.vb: Utils.Summe(Integer, Integer)
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Integer, Integer)
+  name.vb: Summe(Integer, Integer)
+- uid: ProgrammierenLernen.Utils.Summe(System.Int32[])
+  commentId: M:ProgrammierenLernen.Utils.Summe(System.Int32[])
+  id: Summe(System.Int32[])
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Summe(int[])
+  nameWithType: Utils.Summe(int[])
+  fullName: ProgrammierenLernen.Utils.Summe(int[])
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Summe
+    path: ../Utils.cs
+    startLine: 843
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static int Summe(int[] zahlen)
+    parameters:
+    - id: zahlen
+      type: System.Int32[]
+    return:
+      type: System.Int32
+    content.vb: Public Shared Function Summe(zahlen As Integer()) As Integer
+  overload: ProgrammierenLernen.Utils.Summe*
+  nameWithType.vb: Utils.Summe(Integer())
+  fullName.vb: ProgrammierenLernen.Utils.Summe(Integer())
+  name.vb: Summe(Integer())
+- uid: ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  commentId: M:ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  id: Faktoriell(System.Numerics.BigInteger)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: Faktoriell(BigInteger)
+  nameWithType: Utils.Faktoriell(BigInteger)
+  fullName: ProgrammierenLernen.Utils.Faktoriell(System.Numerics.BigInteger)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Faktoriell
+    path: ../Utils.cs
+    startLine: 865
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static BigInteger Faktoriell(BigInteger zahl)
+    parameters:
+    - id: zahl
+      type: System.Numerics.BigInteger
+    return:
+      type: System.Numerics.BigInteger
+    content.vb: Public Shared Function Faktoriell(zahl As BigInteger) As BigInteger
+  overload: ProgrammierenLernen.Utils.Faktoriell*
+- uid: ProgrammierenLernen.Utils.RepeatInput
+  commentId: M:ProgrammierenLernen.Utils.RepeatInput
+  id: RepeatInput
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: RepeatInput()
+  nameWithType: Utils.RepeatInput()
+  fullName: ProgrammierenLernen.Utils.RepeatInput()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: RepeatInput
+    path: ../Utils.cs
+    startLine: 875
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void RepeatInput()
+    content.vb: Public Shared Sub RepeatInput()
+  overload: ProgrammierenLernen.Utils.RepeatInput*
+- uid: ProgrammierenLernen.Utils.PyramideErstellen(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.PyramideErstellen(System.Int32)
+  id: PyramideErstellen(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PyramideErstellen(int)
+  nameWithType: Utils.PyramideErstellen(int)
+  fullName: ProgrammierenLernen.Utils.PyramideErstellen(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PyramideErstellen
+    path: ../Utils.cs
+    startLine: 897
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void PyramideErstellen(int n)
+    parameters:
+    - id: n
+      type: System.Int32
+    content.vb: Public Shared Sub PyramideErstellen(n As Integer)
+  overload: ProgrammierenLernen.Utils.PyramideErstellen*
+  nameWithType.vb: Utils.PyramideErstellen(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.PyramideErstellen(Integer)
+  name.vb: PyramideErstellen(Integer)
+- uid: ProgrammierenLernen.Utils.PinUeberpruefung(System.String)
+  commentId: M:ProgrammierenLernen.Utils.PinUeberpruefung(System.String)
+  id: PinUeberpruefung(System.String)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: PinUeberpruefung(string)
+  nameWithType: Utils.PinUeberpruefung(string)
+  fullName: ProgrammierenLernen.Utils.PinUeberpruefung(string)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: PinUeberpruefung
+    path: ../Utils.cs
+    startLine: 913
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static bool PinUeberpruefung(string echtenPin)
+    parameters:
+    - id: echtenPin
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Shared Function PinUeberpruefung(echtenPin As String) As Boolean
+  overload: ProgrammierenLernen.Utils.PinUeberpruefung*
+  nameWithType.vb: Utils.PinUeberpruefung(String)
+  fullName.vb: ProgrammierenLernen.Utils.PinUeberpruefung(String)
+  name.vb: PinUeberpruefung(String)
+- uid: ProgrammierenLernen.Utils.EingabePruefen
+  commentId: M:ProgrammierenLernen.Utils.EingabePruefen
+  id: EingabePruefen
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: EingabePruefen()
+  nameWithType: Utils.EingabePruefen()
+  fullName: ProgrammierenLernen.Utils.EingabePruefen()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: EingabePruefen
+    path: ../Utils.cs
+    startLine: 967
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void EingabePruefen()
+    content.vb: Public Shared Sub EingabePruefen()
+  overload: ProgrammierenLernen.Utils.EingabePruefen*
+- uid: ProgrammierenLernen.Utils.CalculateSumme(System.Int32)
+  commentId: M:ProgrammierenLernen.Utils.CalculateSumme(System.Int32)
+  id: CalculateSumme(System.Int32)
+  parent: ProgrammierenLernen.Utils
+  langs:
+  - csharp
+  - vb
+  name: CalculateSumme(int)
+  nameWithType: Utils.CalculateSumme(int)
+  fullName: ProgrammierenLernen.Utils.CalculateSumme(int)
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Utils.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: CalculateSumme
+    path: ../Utils.cs
+    startLine: 992
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public static void CalculateSumme(int target)
+    parameters:
+    - id: target
+      type: System.Int32
+    content.vb: Public Shared Sub CalculateSumme(target As Integer)
+  overload: ProgrammierenLernen.Utils.CalculateSumme*
+  nameWithType.vb: Utils.CalculateSumme(Integer)
+  fullName.vb: ProgrammierenLernen.Utils.CalculateSumme(Integer)
+  name.vb: CalculateSumme(Integer)
+references:
+- uid: ProgrammierenLernen
+  commentId: N:ProgrammierenLernen
+  href: ProgrammierenLernen.html
+  name: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+  fullName: ProgrammierenLernen
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProgrammierenLernen.Utils.StudentAusgabe*
+  commentId: Overload:ProgrammierenLernen.Utils.StudentAusgabe
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_StudentAusgabe
+  name: StudentAusgabe
+  nameWithType: Utils.StudentAusgabe
+  fullName: ProgrammierenLernen.Utils.StudentAusgabe
+- uid: ProgrammierenLernen.Utils.ListStatistics*
+  commentId: Overload:ProgrammierenLernen.Utils.ListStatistics
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ListStatistics_System_Collections_Generic_List_System_Double__
+  name: ListStatistics
+  nameWithType: Utils.ListStatistics
+  fullName: ProgrammierenLernen.Utils.ListStatistics
+- uid: System.Collections.Generic.List{System.Double}
+  commentId: T:System.Collections.Generic.List{System.Double}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<double>
+  nameWithType: List<double>
+  fullName: System.Collections.Generic.List<double>
+  nameWithType.vb: List(Of Double)
+  fullName.vb: System.Collections.Generic.List(Of Double)
+  name.vb: List(Of Double)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}
+  commentId: T:System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}
+  parent: System
+  definition: System.ValueTuple`5
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: (double Durchschnitt, double Summe, double Min, double Max, int Count)
+  nameWithType: (double Durchschnitt, double Summe, double Min, double Max, int Count)
+  fullName: (double Durchschnitt, double Summe, double Min, double Max, int Count)
+  nameWithType.vb: (Durchschnitt As Double, Summe As Double, Min As Double, Max As Double, Count As Integer)
+  fullName.vb: (Durchschnitt As Double, Summe As Double, Min As Double, Max As Double, Count As Integer)
+  name.vb: (Durchschnitt As Double, Summe As Double, Min As Double, Max As Double, Count As Integer)
+  spec.csharp:
+  - name: (
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Durchschnitt
+    name: Durchschnitt
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.durchschnitt
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Summe
+    name: Summe
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.summe
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Min
+    name: Min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.min
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Max
+    name: Max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.max
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Count
+    name: Count
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.count
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Durchschnitt
+    name: Durchschnitt
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.durchschnitt
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Summe
+    name: Summe
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.summe
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Min
+    name: Min
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.min
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Max
+    name: Max
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.max
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Double,System.Double,System.Double,System.Double,System.Int32}.Count
+    name: Count
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.double,system.double,system.double,system.double,system.int32-.count
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+- uid: System.ValueTuple`5
+  commentId: T:System.ValueTuple`5
+  name: (T1, T2, T3, T4, T5)
+  nameWithType: (T1, T2, T3, T4, T5)
+  fullName: (T1, T2, T3, T4, T5)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: ','
+  - name: " "
+  - name: T3
+  - name: ','
+  - name: " "
+  - name: T4
+  - name: ','
+  - name: " "
+  - name: T5
+  - name: )
+- uid: ProgrammierenLernen.Utils.PascalTriangle*
+  commentId: Overload:ProgrammierenLernen.Utils.PascalTriangle
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PascalTriangle_System_Int32_
+  name: PascalTriangle
+  nameWithType: Utils.PascalTriangle
+  fullName: ProgrammierenLernen.Utils.PascalTriangle
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProgrammierenLernen.Utils.NcR*
+  commentId: Overload:ProgrammierenLernen.Utils.NcR
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NcR_System_Numerics_BigInteger_System_Numerics_BigInteger_
+  name: NcR
+  nameWithType: Utils.NcR
+  fullName: ProgrammierenLernen.Utils.NcR
+- uid: System.Numerics.BigInteger
+  commentId: T:System.Numerics.BigInteger
+  parent: System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.numerics.biginteger
+  name: BigInteger
+  nameWithType: BigInteger
+  fullName: System.Numerics.BigInteger
+- uid: System.Numerics
+  commentId: N:System.Numerics
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Numerics
+  nameWithType: System.Numerics
+  fullName: System.Numerics
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Numerics
+    name: Numerics
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.numerics
+- uid: ProgrammierenLernen.Utils.NANP*
+  commentId: Overload:ProgrammierenLernen.Utils.NANP
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_NANP_System_String_
+  name: NANP
+  nameWithType: Utils.NANP
+  fullName: ProgrammierenLernen.Utils.NANP
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: ProgrammierenLernen.Utils.Collatz*
+  commentId: Overload:ProgrammierenLernen.Utils.Collatz
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Collatz_System_Int32_System_Int32_
+  name: Collatz
+  nameWithType: Utils.Collatz
+  fullName: ProgrammierenLernen.Utils.Collatz
+- uid: System.ValueTuple{System.Int32,System.Int32}
+  commentId: T:System.ValueTuple{System.Int32,System.Int32}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: (int, int)
+  nameWithType: (int, int)
+  fullName: (int, int)
+  nameWithType.vb: (Integer, Integer)
+  fullName.vb: (Integer, Integer)
+  name.vb: (Integer, Integer)
+  spec.csharp:
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: ProgrammierenLernen.Utils.RnaUebersetzung*
+  commentId: Overload:ProgrammierenLernen.Utils.RnaUebersetzung
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RnaUebersetzung_System_String_
+  name: RnaUebersetzung
+  nameWithType: Utils.RnaUebersetzung
+  fullName: ProgrammierenLernen.Utils.RnaUebersetzung
+- uid: System.Collections.Generic.List{System.String}
+  commentId: T:System.Collections.Generic.List{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  name: List<string>
+  nameWithType: List<string>
+  fullName: System.Collections.Generic.List<string>
+  nameWithType.vb: List(Of String)
+  fullName.vb: System.Collections.Generic.List(Of String)
+  name.vb: List(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: ProgrammierenLernen.Utils.BerechneSchaltjahr*
+  commentId: Overload:ProgrammierenLernen.Utils.BerechneSchaltjahr
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_BerechneSchaltjahr_System_Int32_
+  name: BerechneSchaltjahr
+  nameWithType: Utils.BerechneSchaltjahr
+  fullName: ProgrammierenLernen.Utils.BerechneSchaltjahr
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: ProgrammierenLernen.Utils.PlanetenAlter*
+  commentId: Overload:ProgrammierenLernen.Utils.PlanetenAlter
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PlanetenAlter
+  name: PlanetenAlter
+  nameWithType: Utils.PlanetenAlter
+  fullName: ProgrammierenLernen.Utils.PlanetenAlter
+- uid: ProgrammierenLernen.Utils.RegentropfenFaktoren*
+  commentId: Overload:ProgrammierenLernen.Utils.RegentropfenFaktoren
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RegentropfenFaktoren_System_Int32_
+  name: RegentropfenFaktoren
+  nameWithType: Utils.RegentropfenFaktoren
+  fullName: ProgrammierenLernen.Utils.RegentropfenFaktoren
+- uid: ProgrammierenLernen.Utils.EinsDichMich*
+  commentId: Overload:ProgrammierenLernen.Utils.EinsDichMich
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinsDichMich
+  name: EinsDichMich
+  nameWithType: Utils.EinsDichMich
+  fullName: ProgrammierenLernen.Utils.EinsDichMich
+- uid: ProgrammierenLernen.Utils.TechEinkaufen*
+  commentId: Overload:ProgrammierenLernen.Utils.TechEinkaufen
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_TechEinkaufen_System_Decimal_
+  name: TechEinkaufen
+  nameWithType: Utils.TechEinkaufen
+  fullName: ProgrammierenLernen.Utils.TechEinkaufen
+- uid: System.Decimal
+  commentId: T:System.Decimal
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal
+  nameWithType: decimal
+  fullName: decimal
+  nameWithType.vb: Decimal
+  fullName.vb: Decimal
+  name.vb: Decimal
+- uid: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag*
+  commentId: Overload:ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RechnungErstellenOhneGesamtBetrag_System_Collections_Generic_Dictionary_System_String_System_Decimal__System_Collections_Generic_Dictionary_System_String_System_Int32__
+  name: RechnungErstellenOhneGesamtBetrag
+  nameWithType: Utils.RechnungErstellenOhneGesamtBetrag
+  fullName: ProgrammierenLernen.Utils.RechnungErstellenOhneGesamtBetrag
+- uid: System.Collections.Generic.Dictionary{System.String,System.Decimal}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Decimal}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, decimal>
+  nameWithType: Dictionary<string, decimal>
+  fullName: System.Collections.Generic.Dictionary<string, decimal>
+  nameWithType.vb: Dictionary(Of String, Decimal)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Decimal)
+  name.vb: Dictionary(Of String, Decimal)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: )
+- uid: System.Collections.Generic.Dictionary{System.String,System.Int32}
+  commentId: T:System.Collections.Generic.Dictionary{System.String,System.Int32}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.Dictionary`2
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<string, int>
+  nameWithType: Dictionary<string, int>
+  fullName: System.Collections.Generic.Dictionary<string, int>
+  nameWithType.vb: Dictionary(Of String, Integer)
+  fullName.vb: System.Collections.Generic.Dictionary(Of String, Integer)
+  name.vb: Dictionary(Of String, Integer)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: System.Collections.Generic.Dictionary`2
+  commentId: T:System.Collections.Generic.Dictionary`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  name: Dictionary<TKey, TValue>
+  nameWithType: Dictionary<TKey, TValue>
+  fullName: System.Collections.Generic.Dictionary<TKey, TValue>
+  nameWithType.vb: Dictionary(Of TKey, TValue)
+  fullName.vb: System.Collections.Generic.Dictionary(Of TKey, TValue)
+  name.vb: Dictionary(Of TKey, TValue)
+  spec.csharp:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: <
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.Dictionary`2
+    name: Dictionary
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TKey
+  - name: ','
+  - name: " "
+  - name: TValue
+  - name: )
+- uid: ProgrammierenLernen.Utils.MinDictionary*
+  commentId: Overload:ProgrammierenLernen.Utils.MinDictionary
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_MinDictionary_System_Collections_Generic_Dictionary_System_String_System_Decimal__
+  name: MinDictionary
+  nameWithType: Utils.MinDictionary
+  fullName: ProgrammierenLernen.Utils.MinDictionary
+- uid: ProgrammierenLernen.Utils.OpenWith*
+  commentId: Overload:ProgrammierenLernen.Utils.OpenWith
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_OpenWith_System_String_
+  name: OpenWith
+  nameWithType: Utils.OpenWith
+  fullName: ProgrammierenLernen.Utils.OpenWith
+- uid: ProgrammierenLernen.Utils.DateiTyp*
+  commentId: Overload:ProgrammierenLernen.Utils.DateiTyp
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiTyp_System_String_
+  name: DateiTyp
+  nameWithType: Utils.DateiTyp
+  fullName: ProgrammierenLernen.Utils.DateiTyp
+- uid: ProgrammierenLernen.Utils.DateiName*
+  commentId: Overload:ProgrammierenLernen.Utils.DateiName
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_DateiName_System_String_
+  name: DateiName
+  nameWithType: Utils.DateiName
+  fullName: ProgrammierenLernen.Utils.DateiName
+- uid: ProgrammierenLernen.Utils.Pangram*
+  commentId: Overload:ProgrammierenLernen.Utils.Pangram
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Pangram
+  name: Pangram
+  nameWithType: Utils.Pangram
+  fullName: ProgrammierenLernen.Utils.Pangram
+- uid: System.Tuple{System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String}}
+  commentId: T:System.Tuple{System.Collections.Generic.List{System.String},System.Collections.Generic.List{System.String}}
+  parent: System
+  definition: System.Tuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<List<string>, List<string>>
+  nameWithType: Tuple<List<string>, List<string>>
+  fullName: System.Tuple<System.Collections.Generic.List<string>, System.Collections.Generic.List<string>>
+  nameWithType.vb: Tuple(Of List(Of String), List(Of String))
+  fullName.vb: System.Tuple(Of System.Collections.Generic.List(Of String), System.Collections.Generic.List(Of String))
+  name.vb: Tuple(Of List(Of String), List(Of String))
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.list-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  - name: )
+- uid: System.Tuple`2
+  commentId: T:System.Tuple`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  name: Tuple<T1, T2>
+  nameWithType: Tuple<T1, T2>
+  fullName: System.Tuple<T1, T2>
+  nameWithType.vb: Tuple(Of T1, T2)
+  fullName.vb: System.Tuple(Of T1, T2)
+  name.vb: Tuple(Of T1, T2)
+  spec.csharp:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: <
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: '>'
+  spec.vb:
+  - uid: System.Tuple`2
+    name: Tuple
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.tuple-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: ProgrammierenLernen.Utils.ReverseString*
+  commentId: Overload:ProgrammierenLernen.Utils.ReverseString
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_ReverseString_System_String_
+  name: ReverseString
+  nameWithType: Utils.ReverseString
+  fullName: ProgrammierenLernen.Utils.ReverseString
+- uid: ProgrammierenLernen.Utils.JoinArray*
+  commentId: Overload:ProgrammierenLernen.Utils.JoinArray
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_JoinArray_System_String___System_String_
+  name: JoinArray
+  nameWithType: Utils.JoinArray
+  fullName: ProgrammierenLernen.Utils.JoinArray
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Int32[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int[]
+  nameWithType: int[]
+  fullName: int[]
+  nameWithType.vb: Integer()
+  fullName.vb: Integer()
+  name.vb: Integer()
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: (
+  - name: )
+- uid: ProgrammierenLernen.Utils.RandomChars*
+  commentId: Overload:ProgrammierenLernen.Utils.RandomChars
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RandomChars_System_Int32_System_Boolean_
+  name: RandomChars
+  nameWithType: Utils.RandomChars
+  fullName: ProgrammierenLernen.Utils.RandomChars
+- uid: ProgrammierenLernen.Utils.GenerateRandomWord*
+  commentId: Overload:ProgrammierenLernen.Utils.GenerateRandomWord
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_GenerateRandomWord_System_Int32_
+  name: GenerateRandomWord
+  nameWithType: Utils.GenerateRandomWord
+  fullName: ProgrammierenLernen.Utils.GenerateRandomWord
+- uid: ProgrammierenLernen.Utils.EinkaufsListeGenerator*
+  commentId: Overload:ProgrammierenLernen.Utils.EinkaufsListeGenerator
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EinkaufsListeGenerator
+  name: EinkaufsListeGenerator
+  nameWithType: Utils.EinkaufsListeGenerator
+  fullName: ProgrammierenLernen.Utils.EinkaufsListeGenerator
+- uid: ProgrammierenLernen.Utils.FindIndex*
+  commentId: Overload:ProgrammierenLernen.Utils.FindIndex
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_FindIndex_System_Double___System_Double_
+  name: FindIndex
+  nameWithType: Utils.FindIndex
+  fullName: ProgrammierenLernen.Utils.FindIndex
+- uid: System.Double[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double[]
+  nameWithType: double[]
+  fullName: double[]
+  nameWithType.vb: Double()
+  fullName.vb: Double()
+  name.vb: Double()
+  spec.csharp:
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: (
+  - name: )
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ProgrammierenLernen.Utils.PrintArray*
+  commentId: Overload:ProgrammierenLernen.Utils.PrintArray
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PrintArray_System_String___
+  name: PrintArray
+  nameWithType: Utils.PrintArray
+  fullName: ProgrammierenLernen.Utils.PrintArray
+- uid: ProgrammierenLernen.Utils.Summe*
+  commentId: Overload:ProgrammierenLernen.Utils.Summe
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Summe_System_Decimal___
+  name: Summe
+  nameWithType: Utils.Summe
+  fullName: ProgrammierenLernen.Utils.Summe
+- uid: System.Decimal[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.decimal
+  name: decimal[]
+  nameWithType: decimal[]
+  fullName: decimal[]
+  nameWithType.vb: Decimal()
+  fullName.vb: Decimal()
+  name.vb: Decimal()
+  spec.csharp:
+  - uid: System.Decimal
+    name: decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Decimal
+    name: Decimal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.decimal
+  - name: (
+  - name: )
+- uid: ProgrammierenLernen.Utils.Faktoriell*
+  commentId: Overload:ProgrammierenLernen.Utils.Faktoriell
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_Faktoriell_System_Numerics_BigInteger_
+  name: Faktoriell
+  nameWithType: Utils.Faktoriell
+  fullName: ProgrammierenLernen.Utils.Faktoriell
+- uid: ProgrammierenLernen.Utils.RepeatInput*
+  commentId: Overload:ProgrammierenLernen.Utils.RepeatInput
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_RepeatInput
+  name: RepeatInput
+  nameWithType: Utils.RepeatInput
+  fullName: ProgrammierenLernen.Utils.RepeatInput
+- uid: ProgrammierenLernen.Utils.PyramideErstellen*
+  commentId: Overload:ProgrammierenLernen.Utils.PyramideErstellen
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PyramideErstellen_System_Int32_
+  name: PyramideErstellen
+  nameWithType: Utils.PyramideErstellen
+  fullName: ProgrammierenLernen.Utils.PyramideErstellen
+- uid: ProgrammierenLernen.Utils.PinUeberpruefung*
+  commentId: Overload:ProgrammierenLernen.Utils.PinUeberpruefung
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_PinUeberpruefung_System_String_
+  name: PinUeberpruefung
+  nameWithType: Utils.PinUeberpruefung
+  fullName: ProgrammierenLernen.Utils.PinUeberpruefung
+- uid: ProgrammierenLernen.Utils.EingabePruefen*
+  commentId: Overload:ProgrammierenLernen.Utils.EingabePruefen
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_EingabePruefen
+  name: EingabePruefen
+  nameWithType: Utils.EingabePruefen
+  fullName: ProgrammierenLernen.Utils.EingabePruefen
+- uid: ProgrammierenLernen.Utils.CalculateSumme*
+  commentId: Overload:ProgrammierenLernen.Utils.CalculateSumme
+  href: ProgrammierenLernen.Utils.html#ProgrammierenLernen_Utils_CalculateSumme_System_Int32_
+  name: CalculateSumme
+  nameWithType: Utils.CalculateSumme
+  fullName: ProgrammierenLernen.Utils.CalculateSumme

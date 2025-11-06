@@ -1,0 +1,403 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProgrammierenLernen.Point
+  commentId: T:ProgrammierenLernen.Point
+  id: Point
+  parent: ProgrammierenLernen
+  children:
+  - ProgrammierenLernen.Point.#ctor(System.Int32,System.Int32)
+  - ProgrammierenLernen.Point.Display
+  - ProgrammierenLernen.Point.x
+  - ProgrammierenLernen.Point.y
+  langs:
+  - csharp
+  - vb
+  name: Point
+  nameWithType: Point
+  fullName: ProgrammierenLernen.Point
+  type: Struct
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Program.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Point
+    path: ../Program.cs
+    startLine: 20
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public struct Point
+    content.vb: Public Structure Point
+  inheritedMembers:
+  - System.ValueType.Equals(System.Object)
+  - System.ValueType.GetHashCode
+  - System.ValueType.ToString
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetType
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+- uid: ProgrammierenLernen.Point.x
+  commentId: F:ProgrammierenLernen.Point.x
+  id: x
+  parent: ProgrammierenLernen.Point
+  langs:
+  - csharp
+  - vb
+  name: x
+  nameWithType: Point.x
+  fullName: ProgrammierenLernen.Point.x
+  type: Field
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Program.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: x
+    path: ../Program.cs
+    startLine: 22
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public int x
+    return:
+      type: System.Int32
+    content.vb: Public x As Integer
+- uid: ProgrammierenLernen.Point.y
+  commentId: F:ProgrammierenLernen.Point.y
+  id: y
+  parent: ProgrammierenLernen.Point
+  langs:
+  - csharp
+  - vb
+  name: y
+  nameWithType: Point.y
+  fullName: ProgrammierenLernen.Point.y
+  type: Field
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Program.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: y
+    path: ../Program.cs
+    startLine: 23
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public int y
+    return:
+      type: System.Int32
+    content.vb: Public y As Integer
+- uid: ProgrammierenLernen.Point.#ctor(System.Int32,System.Int32)
+  commentId: M:ProgrammierenLernen.Point.#ctor(System.Int32,System.Int32)
+  id: '#ctor(System.Int32,System.Int32)'
+  parent: ProgrammierenLernen.Point
+  langs:
+  - csharp
+  - vb
+  name: Point(int, int)
+  nameWithType: Point.Point(int, int)
+  fullName: ProgrammierenLernen.Point.Point(int, int)
+  type: Constructor
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Program.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: .ctor
+    path: ../Program.cs
+    startLine: 25
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public Point(int x, int y)
+    parameters:
+    - id: x
+      type: System.Int32
+    - id: y
+      type: System.Int32
+    content.vb: Public Sub New(x As Integer, y As Integer)
+  overload: ProgrammierenLernen.Point.#ctor*
+  nameWithType.vb: Point.New(Integer, Integer)
+  fullName.vb: ProgrammierenLernen.Point.New(Integer, Integer)
+  name.vb: New(Integer, Integer)
+- uid: ProgrammierenLernen.Point.Display
+  commentId: M:ProgrammierenLernen.Point.Display
+  id: Display
+  parent: ProgrammierenLernen.Point
+  langs:
+  - csharp
+  - vb
+  name: Display()
+  nameWithType: Point.Display()
+  fullName: ProgrammierenLernen.Point.Display()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Program.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Display
+    path: ../Program.cs
+    startLine: 31
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public void Display()
+    content.vb: Public Sub Display()
+  overload: ProgrammierenLernen.Point.Display*
+references:
+- uid: ProgrammierenLernen
+  commentId: N:ProgrammierenLernen
+  href: ProgrammierenLernen.html
+  name: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+  fullName: ProgrammierenLernen
+- uid: System.ValueType.Equals(System.Object)
+  commentId: M:System.ValueType.Equals(System.Object)
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  name: Equals(object)
+  nameWithType: ValueType.Equals(object)
+  fullName: System.ValueType.Equals(object)
+  nameWithType.vb: ValueType.Equals(Object)
+  fullName.vb: System.ValueType.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.equals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType.GetHashCode
+  commentId: M:System.ValueType.GetHashCode
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  name: GetHashCode()
+  nameWithType: ValueType.GetHashCode()
+  fullName: System.ValueType.GetHashCode()
+  spec.csharp:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.gethashcode
+  - name: (
+  - name: )
+- uid: System.ValueType.ToString
+  commentId: M:System.ValueType.ToString
+  parent: System.ValueType
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  name: ToString()
+  nameWithType: ValueType.ToString()
+  fullName: System.ValueType.ToString()
+  spec.csharp:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.ValueType.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.valuetype.tostring
+  - name: (
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.ValueType
+  commentId: T:System.ValueType
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.valuetype
+  name: ValueType
+  nameWithType: ValueType
+  fullName: System.ValueType
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: ProgrammierenLernen.Point.#ctor*
+  commentId: Overload:ProgrammierenLernen.Point.#ctor
+  href: ProgrammierenLernen.Point.html#ProgrammierenLernen_Point__ctor_System_Int32_System_Int32_
+  name: Point
+  nameWithType: Point.Point
+  fullName: ProgrammierenLernen.Point.Point
+  nameWithType.vb: Point.New
+  fullName.vb: ProgrammierenLernen.Point.New
+  name.vb: New
+- uid: ProgrammierenLernen.Point.Display*
+  commentId: Overload:ProgrammierenLernen.Point.Display
+  href: ProgrammierenLernen.Point.html#ProgrammierenLernen_Point_Display
+  name: Display
+  nameWithType: Point.Display
+  fullName: ProgrammierenLernen.Point.Display

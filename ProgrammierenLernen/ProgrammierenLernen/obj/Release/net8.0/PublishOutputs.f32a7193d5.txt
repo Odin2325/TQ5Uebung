@@ -1,0 +1,6 @@
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.exe
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.deps.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.runtimeconfig.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.pdb
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\ProgrammierenLernen\ProgrammierenLernen\bin\Release\net8.0\app.publish\ProgrammierenLernen.xml

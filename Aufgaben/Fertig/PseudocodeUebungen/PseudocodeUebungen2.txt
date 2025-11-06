@@ -1,0 +1,55 @@
+Aufgabe 1:
+Schreibe einen Pseudocode, der eine Liste von Zahlen in aufsteigender Reihenfolge sortiert. Verwende
+dafür den Bubble-Sort-Algorithmus.
+Beispiel: Eingabe: [5, 2, 9, 1]
+Ausgabe: [1, 2, 5, 9]
+
+Funktion BubbleSort(liste):
+    n = Länge der liste
+    Wiederhole (n-1) Mal:
+        Für i von 0 bis (n-2):
+            Wenn liste[i] > liste[i+1]:
+                Tausche liste[i] und liste[i+1]
+    Gib liste zurück
+
+// Beispiel-Aufruf
+Eingabe: [5, 2, 9, 1]
+Ausgabe: BubbleSort([5, 2, 9, 1])
+
+#############################################################################################################
+Aufgabe 2:
+Schreibe einen Pseudocode, der überprüft, ob eine gegebene Zahl eine Primzahl ist.
+Beispiel: Eingabe: 13
+Ausgabe: 13 ist eine Primzahl.
+
+Funktion IstPrimzahl(zahl):
+    Wenn zahl <= 1:
+        Gib "zahl ist keine Primzahl" zurück
+    Für i von 2 bis Quadratwurzel(zahl) aufgerundet:
+        Wenn zahl % i == 0:
+            Gib "zahl ist keine Primzahl" zurück
+    Gib "zahl ist eine Primzahl" zurück
+
+// Beispiel-Aufruf
+Eingabe: 13
+Ausgabe: IstPrimzahl(13)
+
+#############################################################################################################
+Aufgabe 3:
+Schreibe einen Pseudocode, der überprüft, ob ein Wort ein Palindrom ist (ein Wort, das vorwärts und
+rückwärts gleich ist).
+Beispiel: Eingabe: "radar"
+Ausgabe: "radar ist ein Palindrom."
+
+Funktion IstPalindrom(wort):
+    wort = wort in Kleinbuchstaben umwandeln
+    umgedreht = wort von hinten nach vorne
+    Wenn wort == umgedreht:
+        Gib "wort ist ein Palindrom" zurück
+    Sonst:
+        Gib "wort ist kein Palindrom" zurück
+
+// Beispiel-Aufruf
+Eingabe: "radar"
+Ausgabe: IstPalindrom("radar")
+

@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: ProgrammierenLernen.IFiguren
+  commentId: T:ProgrammierenLernen.IFiguren
+  id: IFiguren
+  parent: ProgrammierenLernen
+  children:
+  - ProgrammierenLernen.IFiguren.Hoehe
+  - ProgrammierenLernen.IFiguren.Laenge
+  - ProgrammierenLernen.IFiguren.Oberflaeche
+  - ProgrammierenLernen.IFiguren.Perimiter
+  - ProgrammierenLernen.IFiguren.X
+  - ProgrammierenLernen.IFiguren.Y
+  langs:
+  - csharp
+  - vb
+  name: IFiguren
+  nameWithType: IFiguren
+  fullName: ProgrammierenLernen.IFiguren
+  type: Interface
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: IFiguren
+    path: ../Figuren.cs
+    startLine: 8
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: public interface IFiguren
+    content.vb: Public Interface IFiguren
+- uid: ProgrammierenLernen.IFiguren.X
+  commentId: P:ProgrammierenLernen.IFiguren.X
+  id: X
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: X
+  nameWithType: IFiguren.X
+  fullName: ProgrammierenLernen.IFiguren.X
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: X
+    path: ../Figuren.cs
+    startLine: 10
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: int X { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property X As Integer
+  overload: ProgrammierenLernen.IFiguren.X*
+- uid: ProgrammierenLernen.IFiguren.Y
+  commentId: P:ProgrammierenLernen.IFiguren.Y
+  id: Y
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: Y
+  nameWithType: IFiguren.Y
+  fullName: ProgrammierenLernen.IFiguren.Y
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Y
+    path: ../Figuren.cs
+    startLine: 11
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: int Y { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Y As Integer
+  overload: ProgrammierenLernen.IFiguren.Y*
+- uid: ProgrammierenLernen.IFiguren.Laenge
+  commentId: P:ProgrammierenLernen.IFiguren.Laenge
+  id: Laenge
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: Laenge
+  nameWithType: IFiguren.Laenge
+  fullName: ProgrammierenLernen.IFiguren.Laenge
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Laenge
+    path: ../Figuren.cs
+    startLine: 12
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: double Laenge { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property Laenge As Double
+  overload: ProgrammierenLernen.IFiguren.Laenge*
+- uid: ProgrammierenLernen.IFiguren.Hoehe
+  commentId: P:ProgrammierenLernen.IFiguren.Hoehe
+  id: Hoehe
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: Hoehe
+  nameWithType: IFiguren.Hoehe
+  fullName: ProgrammierenLernen.IFiguren.Hoehe
+  type: Property
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Hoehe
+    path: ../Figuren.cs
+    startLine: 13
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: double Hoehe { get; set; }
+    parameters: []
+    return:
+      type: System.Double
+    content.vb: Property Hoehe As Double
+  overload: ProgrammierenLernen.IFiguren.Hoehe*
+- uid: ProgrammierenLernen.IFiguren.Oberflaeche
+  commentId: M:ProgrammierenLernen.IFiguren.Oberflaeche
+  id: Oberflaeche
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: Oberflaeche()
+  nameWithType: IFiguren.Oberflaeche()
+  fullName: ProgrammierenLernen.IFiguren.Oberflaeche()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Oberflaeche
+    path: ../Figuren.cs
+    startLine: 14
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: double Oberflaeche()
+    return:
+      type: System.Double
+    content.vb: Function Oberflaeche() As Double
+  overload: ProgrammierenLernen.IFiguren.Oberflaeche*
+- uid: ProgrammierenLernen.IFiguren.Perimiter
+  commentId: M:ProgrammierenLernen.IFiguren.Perimiter
+  id: Perimiter
+  parent: ProgrammierenLernen.IFiguren
+  langs:
+  - csharp
+  - vb
+  name: Perimiter()
+  nameWithType: IFiguren.Perimiter()
+  fullName: ProgrammierenLernen.IFiguren.Perimiter()
+  type: Method
+  source:
+    remote:
+      path: ProgrammierenLernen/ProgrammierenLernen/Figuren.cs
+      branch: main
+      repo: https://github.com/Odin2325/TQ5Uebung.git
+    id: Perimiter
+    path: ../Figuren.cs
+    startLine: 15
+  assemblies:
+  - ProgrammierenLernen
+  namespace: ProgrammierenLernen
+  syntax:
+    content: double Perimiter()
+    return:
+      type: System.Double
+    content.vb: Function Perimiter() As Double
+  overload: ProgrammierenLernen.IFiguren.Perimiter*
+references:
+- uid: ProgrammierenLernen
+  commentId: N:ProgrammierenLernen
+  href: ProgrammierenLernen.html
+  name: ProgrammierenLernen
+  nameWithType: ProgrammierenLernen
+  fullName: ProgrammierenLernen
+- uid: ProgrammierenLernen.IFiguren.X*
+  commentId: Overload:ProgrammierenLernen.IFiguren.X
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_X
+  name: X
+  nameWithType: IFiguren.X
+  fullName: ProgrammierenLernen.IFiguren.X
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: ProgrammierenLernen.IFiguren.Y*
+  commentId: Overload:ProgrammierenLernen.IFiguren.Y
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Y
+  name: Y
+  nameWithType: IFiguren.Y
+  fullName: ProgrammierenLernen.IFiguren.Y
+- uid: ProgrammierenLernen.IFiguren.Laenge*
+  commentId: Overload:ProgrammierenLernen.IFiguren.Laenge
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Laenge
+  name: Laenge
+  nameWithType: IFiguren.Laenge
+  fullName: ProgrammierenLernen.IFiguren.Laenge
+- uid: System.Double
+  commentId: T:System.Double
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.double
+  name: double
+  nameWithType: double
+  fullName: double
+  nameWithType.vb: Double
+  fullName.vb: Double
+  name.vb: Double
+- uid: ProgrammierenLernen.IFiguren.Hoehe*
+  commentId: Overload:ProgrammierenLernen.IFiguren.Hoehe
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Hoehe
+  name: Hoehe
+  nameWithType: IFiguren.Hoehe
+  fullName: ProgrammierenLernen.IFiguren.Hoehe
+- uid: ProgrammierenLernen.IFiguren.Oberflaeche*
+  commentId: Overload:ProgrammierenLernen.IFiguren.Oberflaeche
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Oberflaeche
+  name: Oberflaeche
+  nameWithType: IFiguren.Oberflaeche
+  fullName: ProgrammierenLernen.IFiguren.Oberflaeche
+- uid: ProgrammierenLernen.IFiguren.Perimiter*
+  commentId: Overload:ProgrammierenLernen.IFiguren.Perimiter
+  href: ProgrammierenLernen.IFiguren.html#ProgrammierenLernen_IFiguren_Perimiter
+  name: Perimiter
+  nameWithType: IFiguren.Perimiter
+  fullName: ProgrammierenLernen.IFiguren.Perimiter

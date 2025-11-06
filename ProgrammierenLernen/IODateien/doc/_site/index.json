@@ -1,0 +1,27 @@
+{
+  "api/IODateien.IOAufgaben.html": {
+    "href": "api/IODateien.IOAufgaben.html",
+    "title": "Class IOAufgaben | IOAufgaben",
+    "keywords": "Class IOAufgaben Namespace IODateien Assembly IODateien.dll Unsere Methode um Dateien Informationen zu schreiben und zu lesen. public class IOAufgaben Inheritance object IOAufgaben Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods WriteToFile(string, string) Schreibt Informationen in eine Datei. public static void WriteToFile(string path, string text) Parameters path string Der Pfad zu die gewuenschte Datei. text string Die Informationen die gespeichert werden sollen. Exceptions IOException"
+  },
+  "api/IODateien.html": {
+    "href": "api/IODateien.html",
+    "title": "Namespace IODateien | IOAufgaben",
+    "keywords": "Namespace IODateien Classes IOAufgaben Unsere Methode um Dateien Informationen zu schreiben und zu lesen."
+  },
+  "docs/getting-started.html": {
+    "href": "docs/getting-started.html",
+    "title": "Getting Started | IOAufgaben",
+    "keywords": "Getting Started"
+  },
+  "docs/introduction.html": {
+    "href": "docs/introduction.html",
+    "title": "Introduction | IOAufgaben",
+    "keywords": "Introduction"
+  },
+  "index.html": {
+    "href": "index.html",
+    "title": "This is the HOMEPAGE. | IOAufgaben",
+    "keywords": "This is the HOMEPAGE. Refer to Markdown for how to write markdown files. Quick Start Notes: Add images to the images folder if the file is referencing an image."
+  }
+}

@@ -1,0 +1,31 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: IODateien
+  name: IODateien
+  href: api/IODateien.html
+  commentId: N:IODateien
+  fullName: IODateien
+  nameWithType: IODateien
+- uid: IODateien.IOAufgaben
+  name: IOAufgaben
+  href: api/IODateien.IOAufgaben.html
+  commentId: T:IODateien.IOAufgaben
+  fullName: IODateien.IOAufgaben
+  nameWithType: IOAufgaben
+- uid: IODateien.IOAufgaben.WriteToFile(System.String,System.String)
+  name: WriteToFile(string, string)
+  href: api/IODateien.IOAufgaben.html#IODateien_IOAufgaben_WriteToFile_System_String_System_String_
+  commentId: M:IODateien.IOAufgaben.WriteToFile(System.String,System.String)
+  name.vb: WriteToFile(String, String)
+  fullName: IODateien.IOAufgaben.WriteToFile(string, string)
+  fullName.vb: IODateien.IOAufgaben.WriteToFile(String, String)
+  nameWithType: IOAufgaben.WriteToFile(string, string)
+  nameWithType.vb: IOAufgaben.WriteToFile(String, String)
+- uid: IODateien.IOAufgaben.WriteToFile*
+  name: WriteToFile
+  href: api/IODateien.IOAufgaben.html#IODateien_IOAufgaben_WriteToFile_
+  commentId: Overload:IODateien.IOAufgaben.WriteToFile
+  isSpec: "True"
+  fullName: IODateien.IOAufgaben.WriteToFile
+  nameWithType: IOAufgaben.WriteToFile

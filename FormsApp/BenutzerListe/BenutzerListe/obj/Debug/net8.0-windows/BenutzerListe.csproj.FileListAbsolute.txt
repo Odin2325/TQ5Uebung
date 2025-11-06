@@ -1,0 +1,17 @@
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\bin\Debug\net8.0-windows\BenutzerListe.exe
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\bin\Debug\net8.0-windows\BenutzerListe.deps.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\bin\Debug\net8.0-windows\BenutzerListe.runtimeconfig.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\bin\Debug\net8.0-windows\BenutzerListe.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\bin\Debug\net8.0-windows\BenutzerListe.pdb
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.Form1.resources
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.csproj.GenerateResource.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.AssemblyInfoInputs.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.AssemblyInfo.cs
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.csproj.CoreCompileInputs.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.sourcelink.json
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\refint\BenutzerListe.dll
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.pdb
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\BenutzerListe.genruntimeconfig.cache
+C:\Users\MYTQ-Trainer\Documents\GitHub\TQ5Uebung\FormsApp\BenutzerListe\BenutzerListe\obj\Debug\net8.0-windows\ref\BenutzerListe.dll

@@ -1,0 +1,151 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\pages\\clients.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\pages\\clients.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\pages\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\pages\\clients.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|c:\\users\\nicoa\\source\\repos\\mywebapp\\mywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21E9D8A6-21CC-4BD9-879A-10958237C302}|MyWebApp\\MyWebApp.csproj|solutionrelative:mywebapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 198,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MyWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MyWebApp\\Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-23T08:00:36.778Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Clients.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Clients.cshtml.cs",
+              "RelativeDocumentMoniker": "MyWebApp\\Pages\\Clients.cshtml.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Clients.cshtml.cs",
+              "RelativeToolTip": "MyWebApp\\Pages\\Clients.cshtml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:51:45.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Clients.cshtml",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Clients.cshtml",
+              "RelativeDocumentMoniker": "MyWebApp\\Pages\\Clients.cshtml",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Pages\\Clients.cshtml",
+              "RelativeToolTip": "MyWebApp\\Pages\\Clients.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-23T07:51:17.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "MyWebApp\\appsettings.json",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\appsettings.json",
+              "RelativeToolTip": "MyWebApp\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-23T07:50:15.704Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "MyWebApp\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "MyWebApp\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:47:44.782Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Client.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Models\\Client.cs",
+              "RelativeDocumentMoniker": "MyWebApp\\Models\\Client.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Models\\Client.cs",
+              "RelativeToolTip": "MyWebApp\\Models\\Client.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:46:17.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Program.cs",
+              "RelativeDocumentMoniker": "MyWebApp\\Program.cs",
+              "ToolTip": "C:\\Users\\nicoa\\source\\repos\\MyWebApp\\MyWebApp\\Program.cs",
+              "RelativeToolTip": "MyWebApp\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAACeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T07:07:12.055Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+﻿@page
+@model AboutModelModel
+@{
+    ViewData["Title"] = "About Page";
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>@Model.Message</p>
+
+<h1>Kontaktformular</h1>
+<form method="post">
+    <label>Name:</label>
+    <input type="text" name="Name" />
+    <button type="submit">Senden</button>
+</form>
