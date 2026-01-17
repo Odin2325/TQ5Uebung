@@ -1,0 +1,39 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Zahl zwischen 1 und 20 einlesen");
+            int zahl = int.Parse(Console.ReadLine());
+
+            if (zahl < 10)
+            {
+                switch (zahl)
+                {
+                    case 2:
+                    case 3:
+                    case 5:
+                    case 7:
+                        Console.WriteLine("Primzahl");
+                        break;
+                    default:
+                        Console.WriteLine("keine Primzahl");
+                        break;
+
+                }
+
+            }
+            else if (zahl > 10) 
+            {
+                Console.WriteLine("Zahl ist zu groß für die Überprüfung"); 
+            }
+
+            else
+            {
+                Console.WriteLine("Zahl ist zu groß für die Überprüfung");
+            }
+
+        }
+    }
+}

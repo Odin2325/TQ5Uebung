@@ -1,0 +1,108 @@
+                             1- Simple Calculator
+
+BEGINN Calculator Programm
+  
+  Show "enter the first number:"
+Read number1
+  
+  Show "enter the second number:"
+Read number2
+
+  Show "enter the Operator (+,-,*,/):"
+Read Opereator
+
+   if operator is "+"
+        
+       result = number1 + number2
+
+   elif operator is "-"
+       result number = number1 - number2
+
+   elif operator is "*" 
+       resultnumber = number1 * number2
+
+   elif operator is "/"
+       if number2 Not egal To 0
+           result = number1/number2
+        elif Show "Error : division by zero"
+            END of Program
+
+    elif Show "Error : Operator invalid"
+      End of Program
+   
+Show " the result ist : resultat
+
+END OF Program. 
+  
+                        2 Grading System
+
+
+Begin of the Grading System Program
+
+
+Show "Enter the Student Grade:"
+Read Note
+
+        if note >= 90
+        Show "Grade A"
+
+elif note betwen 80 AND 90
+         Show  "Grade B"
+
+elif note betwen 70 AND 80 
+        Show "Grade C" 
+
+elif note betwen 60 AND 70 
+        Show "Grade D"
+
+else
+   
+     Show "Grade F"
+
+
+END of the Grading System Program
+
+
+                      3. Find Maximum of Three Numbers 
+
+Beginn Program 
+
+Display “Enter first number:”
+Read number1
+
+Display “Enter second number:”
+Read number2
+
+Display “Enter the third number:”
+Read number3
+
+If number1 >= number2 and number1 >= number3
+max = number1
+ elif number2 >= number1 and number2 >= number3
+max = number2
+else
+max = number3
+
+Display “The largest number is: ”, max
+
+End of program  
+
+                   
+                      4. Count Down Timer 
+
+
+ Start of the program
+
+      Display "Enter a number:"
+      Read number
+
+      While number >= 0
+        Display number
+        number = number - 1
+
+End of the program
+
+  
+
+
+

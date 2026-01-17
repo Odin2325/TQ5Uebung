@@ -1,0 +1,30 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Wochentag zwischen 1 bis 7 einlesen und den Namen des Wochentages ausgibt");
+            int Wochentag = int.Parse(Console.ReadLine());
+
+            switch (Wochentag)
+            {
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                    case 5:
+                    case 6:
+                    case 7:
+                    Console.WriteLine(" Der Wochentag ist ein gültiger Tag");
+                    break;
+                    default:
+                    Console.WriteLine("Der Wochentag ist kein gültiger Tag");
+                    break;
+            }
+
+
+
+        }
+    }
+}

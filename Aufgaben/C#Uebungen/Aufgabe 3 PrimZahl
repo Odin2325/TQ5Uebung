@@ -1,0 +1,24 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main()
+
+        { Console.WriteLine("Number eingeben:");
+            int number = int.Parse(Console.ReadLine());
+
+            if (IsPrime(number))
+                
+                Console.WriteLine($"{number} ist ein Prim Zahl.");
+            
+            else Console.WriteLine($"{number} ist nicht ein Primzahl."); }
+        static bool IsPrime(int n)
+        {
+            if (n <= 1) return false;
+            for (int i = 2; i <= Math.Sqrt(n); i++)
+            {
+                if (n % i == 0) return false;
+            }
+            return true;
+     }       }
+}

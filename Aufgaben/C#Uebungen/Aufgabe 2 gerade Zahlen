@@ -1,0 +1,20 @@
+
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main()
+
+
+        { Console.WriteLine("Geben Sie eine Grenze ein:");
+            int limit = int.Parse(Console.ReadLine());
+            PrintEvenNumbers(limit);
+        }
+        static void PrintEvenNumbers(int limit)
+        { 
+            for (int i = 0; i <= limit; i += 2)
+            
+            { Console.WriteLine(i); } 
+        }
+    }
+}

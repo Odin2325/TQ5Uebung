@@ -1,0 +1,27 @@
+namespace ProgrammierUebung2
+{
+    internal class Program
+    {
+        static void Main()
+        { 
+            
+            Console.WriteLine(" geben Sie eine werte, um seine Faktorielle zu berechen: ");
+
+            int Werte = int.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Die FaKtorielle von {Werte} ist {FaKtorial(Werte)}");
+        }
+
+
+        static int Faktorielle( int n )
+
+
+        {
+            if (n == 0)
+                return 1;
+            else
+                return n * Faktorielle(n - 1);
+
+        }
+    }
+}
